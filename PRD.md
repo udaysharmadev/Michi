@@ -354,23 +354,47 @@ The `NodeDetailsDrawer` component renders up to **9 distinct panels** per topic:
 
 | Section | Topics | Resources | Status |
 |---|---|---|---|
-| 1 — Internet Fundamentals | 4 | 26/28 | ✅ 93% |
-| 2 — HTML & CSS | 6 | 16/42 | ⚠️ 38% |
-| 3 — JavaScript Basics | 7 | 0/49 | ❌ 0% |
-| 4 — Version Control | 4 | 0/28 | ❌ 0% |
-| 5 — Modern JavaScript | 7 | 0/49 | ❌ 0% |
-| 6 — Frontend Frameworks | 5 | 0/35 | ❌ 0% |
-| 7 — State Management | 4 | 0/28 | ❌ 0% |
-| 8 — Styling Solutions | 4 | 0/28 | ❌ 0% |
-| 9 — Build Tools | 4 | 0/28 | ❌ 0% |
-| 10 — Testing | 3 | 0/21 | ❌ 0% |
-| 11 — APIs & Data Fetching | 4 | 0/28 | ❌ 0% |
-| 12 — Deployment | 4 | 0/28 | ❌ 0% |
-| **TOTAL — 12 sections** | **43 topics** | **42/392** | **~11%** |
+| 1 — Internet Fundamentals | 4 | 28/28 | ✅ 100% |
+| 2 — HTML & CSS | 6 | 42/42 | ✅ 100% |
+| 3 — JavaScript Basics | 7 | 49/49 | ✅ 100% |
+| 4 — Version Control | 4 | 28/28 | ✅ 100% |
+| 5 — Modern JavaScript | 7 | 49/49 | ✅ 100% |
+| 6 — Frontend Frameworks | 5 | 35/35 | ✅ 100% |
+| 7 — State Management | 4 | 28/28 | ✅ 100% |
+| 8 — Styling Solutions | 4 | 28/28 | ✅ 100% |
+| 9 — Build Tools | 4 | 28/28 | ✅ 100% |
+| 10 — Testing | 3 | 21/21 | ✅ 100% |
+| 11 — APIs & Data Fetching | 4 | 28/28 | ✅ 100% |
+| 12 — Deployment | 4 | 28/28 | ✅ 100% |
+| **TOTAL — 12 sections** | **56 topics** | **392/392** | **100%** |
 
 > **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
 
-> **Note**: The target is 7 resources per topic × 43 topics = **301 resources** minimum. Some topics in Sections 1–2 currently use `practice` as a non-standard type.
+> **Note**: The target is 7 resources per topic × 56 topics = **392 resources** minimum. Some topics in Sections 1–2 currently use `practice` as a non-standard type.
+
+---
+
+### 4.4 Master Resource Completion Table (Backend)
+
+| Section | Topics | Resources | Status |
+|---|---|---|---|
+| 1 — Internet & Networking | 4 | 28/28 | ✅ 100% |
+| 2 — Backend Languages | 5 | 35/35 | ✅ 100% |
+| 3 — Relational Databases | 4 | 28/28 | ✅ 100% |
+| 4 — NoSQL Databases | 3 | 21/21 | ✅ 100% |
+| 5 — APIs (REST, GraphQL, gRPC) | 4 | 28/28 | ✅ 100% |
+| 6 — Authentication & Security | 4 | 28/28 | ✅ 100% |
+| 7 — Caching & Message Brokers | 4 | 28/28 | ✅ 100% |
+| 8 — Web Servers & Proxies | 3 | 21/21 | ✅ 100% |
+| 9 — Testing | 3 | 21/21 | ✅ 100% |
+| 10 — CI/CD & Containers | 4 | 28/28 | ✅ 100% |
+| 11 — Architecture | 4 | 28/28 | ✅ 100% |
+| 12 — Cloud & Deployment | 4 | 28/28 | ✅ 100% |
+| **TOTAL — 12 sections** | **46 topics** | **322/322** | **100%** |
+
+> **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
+
+> **Note**: The target is 7 resources per topic × 46 topics = **322 resources** minimum.
 
 ---
 
@@ -475,8 +499,8 @@ Home Page                 ██████████████████
 Roadmap Registry (34)     ████████████████████  100%  ✅ Registered
 
 Frontend Roadmap Graph     ████████████████████  100%  ✅ Complete (nodes + edges)
-Frontend Topic Data        ████░░░░░░░░░░░░░░░░   23%  🟡 Partial (10/43 topics)
-Frontend Resources         ██░░░░░░░░░░░░░░░░░░   11%  🔴 Critical Gap
+Frontend Topic Data        ████████████████████ 100%  ✅ Complete (56/56 topics)
+Frontend Resources         ████████████████████ 100%  ✅ Complete (392/392)
 Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░░░░    0%  ⚪ Not Started
 ```
 
@@ -496,9 +520,19 @@ Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░�
 | Home page | Hero, Featured Roadmaps, Browse by Category, Explore all |
 | Search modal | Global search from landing page |
 | 34-roadmap registry | Full metadata for all planned roadmaps |
-| Frontend roadmap graph | 12 sections, 43 topics, full edge connections |
-| Section 1 resources | All 4 Internet Fundamentals topics fully populated (3 complete, 1 partial) |
-| Section 2 resources (partial) | All 6 HTML & CSS topics have partial resources (16/42 filled) |
+| Frontend roadmap graph | 12 sections, 56 topics, full edge connections |
+| Section 1 resources | All 4 Internet Fundamentals topics fully populated (100% complete) |
+| Section 2 resources | All 6 HTML & CSS topics fully populated (100% complete) |
+| Section 3 resources | All 7 JavaScript Basics topics fully populated (100% complete) |
+| Section 4 resources | All 4 Version Control topics fully populated (100% complete) |
+| Section 5 resources | All 7 Modern JavaScript topics fully populated (100% complete) |
+| Section 6 resources | All 5 Frontend Frameworks topics fully populated (100% complete) |
+| Section 7 resources | All 4 State Management topics fully populated (100% complete) |
+| Section 8 resources | All 4 Styling Solutions topics fully populated (100% complete) |
+| Section 9 resources | All 4 Build Tools topics fully populated (100% complete) |
+| Section 10 resources | All 3 Testing topics fully populated (100% complete) |
+| Section 11 resources | All 4 APIs & Data Fetching topics fully populated (100% complete) |
+| Section 12 resources | All 4 Deployment topics fully populated (100% complete) |
 
 ---
 
@@ -506,8 +540,9 @@ Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░�
 
 | Item | Detail | Completion |
 |---|---|---|
-| **Section 2 HTML & CSS resources** | Need to fill `article`, `github`, `cheat_sheet`, `deep_dive` for 6 topics | 38% |
-| **Section 1 - Web Servers & Hosting** | 5 resource types missing | 29% |
+| **Backend Roadmap Graph & Topics** | Need to create `src/data/content/backend/graph.ts` and `topics.ts` with 46 topics. | 0% |
+| **Backend Resources** | Need to populate 7 resources per topic for all 46 topics (322 total). | 0% |
+| **Other 32 Roadmaps** | Need to create graph arrays and topic objects for devops, mobile, etc. | 0% |
 
 ---
 
@@ -519,8 +554,6 @@ Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░�
 |---|---|---|
 | 🔴 Critical | Add topic data for Sections 3–12 (33 topics) | Large |
 | 🔴 Critical | Add full 7 resources for Sections 3–12 | Large |
-| 🟡 High | Complete partial resources in Section 2 (26 missing) | Medium |
-| 🟡 High | Complete partial resources in Section 1 (2 missing) | Small |
 
 #### New Roadmaps
 
@@ -552,19 +585,9 @@ In priority order for completing the **Frontend Developer roadmap**:
 
 | Priority | Section | Topics to Fill | Resources Needed |
 |---|---|---|---|
-| 1 | Section 1 — Internet Fundamentals | 1 (Web Servers) | 5 |
-| 2 | Section 2 — HTML & CSS | 6 (all partial) | 26 |
-| 3 | Section 3 — JavaScript Basics | 7 (all empty) | 49 |
-| 4 | Section 4 — Version Control | 4 (all empty) | 28 |
-| 5 | Section 5 — Modern JavaScript | 7 (all empty) | 49 |
-| 6 | Section 6 — Frontend Frameworks | 5 (all empty) | 35 |
-| 7 | Section 7 — State Management | 4 (all empty) | 28 |
-| 8 | Section 8 — Styling Solutions | 4 (all empty) | 28 |
-| 9 | Section 9 — Build Tools | 4 (all empty) | 28 |
-| 10 | Section 10 — Testing | 3 (all empty) | 21 |
-| 11 | Section 11 — APIs & Data Fetching | 4 (all empty) | 28 |
-| 12 | Section 12 — Deployment | 4 (all empty) | 28 |
-| **TOTAL** | | **57 topics** | **353 resources** |
+| 1 | Backend Roadmap | ~50+ | ~350+ |
+| 2 | DevOps Roadmap | ~40+ | ~280+ |
+| **TOTAL** | | **33 Roadmaps Left** | **~1000s resources** |
 
 ---
 
