@@ -16,6 +16,7 @@ export type RoadmapContentNode = {
     difficulty?: "Beginner" | "Intermediate" | "Advanced";
     status?: "Pending" | "In Progress" | "Completed";
     isHighlighted?: boolean;
+    isLarge?: boolean;
     // For topic nodes
     slug?: string;
     linkTo?: string;

@@ -2,8 +2,8 @@ import { RoadmapContentNode, RoadmapContentEdge } from "@/data/types";
 
 export const fullstackGraphNodes: RoadmapContentNode[] = [
     // --- 1. Pre-requisites (Standalone Links) ---
-    { id: "n_fs_prereq_1", type: "topic", position: { x: 150, y: 80 }, data: { title: "Frontend Roadmap", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "layout", linkTo: "frontend" } },
-    { id: "n_fs_prereq_2", type: "topic", position: { x: 150, y: 220 }, data: { title: "Backend Roadmap", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "server", linkTo: "backend" } },
+    { id: "n_fs_prereq_1", type: "topic", position: { x: 150, y: 80 }, data: { title: "Frontend", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "layout", linkTo: "frontend", isLarge: true } },
+    { id: "n_fs_prereq_2", type: "topic", position: { x: 150, y: 220 }, data: { title: "Backend", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "server", linkTo: "backend", isLarge: true } },
 
     // --- 2. Full Stack Integration (Purple) ---
     { id: "s_fs_integ", type: "section", position: { x: 576, y: 0 }, data: { title: "Full Stack Integration", sectionNumber: 2, color: "purple", sectionIcon: "code" } },

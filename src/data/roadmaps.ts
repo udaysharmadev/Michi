@@ -22,9 +22,9 @@ export type RoadmapMeta = {
 
 export const roadmaps: RoadmapMeta[] = [
   // Development
-  { id: "r_01", slug: "frontend", title: "Frontend Developer", description: "Learn how to build user interfaces and web applications.", category: "Development", difficulty: "Beginner", estimatedTopics: 120 },
-  { id: "r_02", slug: "backend", title: "Backend Developer", description: "Master server-side programming, databases, and APIs.", category: "Development", difficulty: "Intermediate", estimatedTopics: 140 },
-  { id: "r_03", slug: "fullstack", title: "Full Stack Developer", description: "Bridge the gap between frontend and backend systems.", category: "Development", difficulty: "Advanced", estimatedTopics: 200 },
+  { id: "r_01", slug: "frontend", title: "Frontend", description: "Learn how to build user interfaces and web applications.", category: "Development", difficulty: "Beginner", estimatedTopics: 120 },
+  { id: "r_02", slug: "backend", title: "Backend", description: "Master server-side programming, databases, and APIs.", category: "Development", difficulty: "Intermediate", estimatedTopics: 140 },
+  { id: "r_03", slug: "fullstack", title: "Full Stack", description: "Bridge the gap between frontend and backend systems.", category: "Development", difficulty: "Advanced", estimatedTopics: 200 },
   { id: "r_04", slug: "mobile", title: "Mobile Developer", description: "Build native and cross-platform mobile applications.", category: "Development", difficulty: "Intermediate", estimatedTopics: 110 },
   { id: "r_05", slug: "android", title: "Android Developer", description: "Create native applications for the Android ecosystem.", category: "Development", difficulty: "Beginner", estimatedTopics: 95 },
   { id: "r_06", slug: "ios", title: "iOS Developer", description: "Master Swift and the Apple ecosystem for app development.", category: "Development", difficulty: "Beginner", estimatedTopics: 90 },

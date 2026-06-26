@@ -72,7 +72,7 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
     <div
       onMouseEnter={() => setHoveredNodeId(id)}
       onMouseLeave={() => setHoveredNodeId(null)}
-      className={`group w-[220px] h-[90px] bg-white border rounded-[16px] flex flex-col justify-between p-3.5 relative transition-all duration-200 ease-out cursor-pointer ${hoverClasses} ${progressClass}`}
+      className={`group ${data.isLarge ? 'w-[250px] h-[100px]' : 'w-[220px] h-[90px]'} bg-white border rounded-[16px] flex flex-col justify-between p-3.5 relative transition-all duration-200 ease-out cursor-pointer ${hoverClasses} ${progressClass}`}
     >
       {/* Handles */}
       <Handle id="left" type="target" position={Position.Left} className="w-2 h-2 !bg-gray-400 border-none -ml-1 opacity-0" />
@@ -92,7 +92,7 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
             <IconComponent className="w-5 h-5 text-gray-700" />
           </div>
         )}
-        <h3 className="text-[13px] font-bold text-gray-900 leading-tight line-clamp-2">
+        <h3 className={`${data.isLarge ? 'text-[15px]' : 'text-[13px]'} font-bold text-gray-900 leading-tight line-clamp-2`}>
           {data.title}
         </h3>
       </div>
