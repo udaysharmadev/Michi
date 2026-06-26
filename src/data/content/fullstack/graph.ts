@@ -1,10 +1,9 @@
 import { RoadmapContentNode, RoadmapContentEdge } from "@/data/types";
 
 export const fullstackGraphNodes: RoadmapContentNode[] = [
-    // --- 1. Pre-requisites (Blue) ---
-    { id: "s_fs_prereq", type: "section", position: { x: 0, y: 0 }, data: { title: "Pre-requisites", sectionNumber: 1, color: "blue", sectionIcon: "globe" } },
-    { id: "n_fs_prereq_1", type: "topic", parentId: "s_fs_prereq", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Frontend Roadmap", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "layout", row: 0, col: 0, linkTo: "frontend" } },
-    { id: "n_fs_prereq_2", type: "topic", parentId: "s_fs_prereq", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Backend Roadmap", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "server", row: 0, col: 1, linkTo: "backend" } },
+    // --- 1. Pre-requisites (Standalone Links) ---
+    { id: "n_fs_prereq_1", type: "topic", position: { x: 150, y: 80 }, data: { title: "Frontend Roadmap", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "layout", linkTo: "frontend" } },
+    { id: "n_fs_prereq_2", type: "topic", position: { x: 150, y: 220 }, data: { title: "Backend Roadmap", difficulty: "Intermediate", estimatedTime: "Months", sectionColor: "blue", icon: "server", linkTo: "backend" } },
 
     // --- 2. Full Stack Integration (Purple) ---
     { id: "s_fs_integ", type: "section", position: { x: 576, y: 0 }, data: { title: "Full Stack Integration", sectionNumber: 2, color: "purple", sectionIcon: "code" } },
@@ -35,11 +34,9 @@ export const fullstackGraphNodes: RoadmapContentNode[] = [
 ];
 
 export const fullstackGraphEdges: RoadmapContentEdge[] = [
-    // Pre-requisites internal
-    { id: "fs_e1", source: "n_fs_prereq_1", target: "n_fs_prereq_2", sourceHandle: "right", targetHandle: "left" },
-
     // Pre-requisites to Integration (Combining arrows conceptually)
-    { id: "fs_e_sec_1", source: "n_fs_prereq_2", target: "n_fs_integ_1", sourceHandle: "right", targetHandle: "left" },
+    { id: "fs_e_sec_1a", source: "n_fs_prereq_1", target: "n_fs_integ_1", sourceHandle: "right", targetHandle: "left" },
+    { id: "fs_e_sec_1b", source: "n_fs_prereq_2", target: "n_fs_integ_1", sourceHandle: "right", targetHandle: "left" },
 
     // Integration internal
     { id: "fs_e2", source: "n_fs_integ_1", target: "n_fs_integ_2", sourceHandle: "right", targetHandle: "left" },

@@ -18,9 +18,12 @@ export const useLayoutEngine = () => {
     // Group topics by section
     const sectionToTopics: Record<string, Node[]> = {};
     sections.forEach(s => { sectionToTopics[s.id] = []; });
+    const standaloneNodes: Node[] = [];
     topics.forEach(t => {
       if (t.parentId && sectionToTopics[t.parentId]) {
          sectionToTopics[t.parentId].push(t);
+      } else if (!t.parentId) {
+         standaloneNodes.push(t);
       }
     });
     
@@ -73,7 +76,7 @@ export const useLayoutEngine = () => {
     }
     
     // React Flow requires parent nodes to appear before their children in the nodes array
-    const layoutedNodes = [...placedSections, ...childNodes];
+    const layoutedNodes = [...placedSections, ...childNodes, ...standaloneNodes];
     const layoutedEdges = edges.map(e => ({
        ...e,
        type: "custom",
