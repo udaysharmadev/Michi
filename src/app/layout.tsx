@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Developer Knowledge Graph",
-  description: "Visual learning platform and knowledge graph for developers.",
+  title: "Michi",
+  description: "Navigate the complexity of modern software engineering. Explore premium, visually-driven developer roadmaps.",
 };
 
 export default function RootLayout({

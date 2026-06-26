@@ -7,21 +7,25 @@ export function RoadmapCard({ roadmap }: { roadmap: RoadmapMeta }) {
   const badgeColors = getCategoryBadgeColors(roadmap.category);
 
   return (
-    <Link 
+    <Link
       href={`/roadmaps/${roadmap.slug}`}
-      className="group flex flex-col p-8 rounded-2xl border border-gray-200 bg-white hover:border-gray-300 hover:shadow-md transition-all duration-300 h-full"
+      className="group flex flex-col p-8 rounded-2xl border border-gray-200 bg-white
+        hover:border-gray-300 hover:shadow-md hover:-translate-y-[2px]
+        transition-[transform,box-shadow,border-color] duration-200
+        active:scale-[0.98] active:shadow-sm active:duration-75
+        h-full"
     >
       <div className="flex items-start justify-between mb-4">
-        <h3 className="text-2xl font-bold text-gray-900 tracking-tight leading-snug group-hover:text-black transition-colors">
+        <h3 className="text-2xl font-bold text-gray-900 tracking-tight leading-snug group-hover:text-black transition-colors" style={{ textWrap: "balance" } as React.CSSProperties}>
           {roadmap.title}
         </h3>
         {!['frontend', 'backend', 'fullstack'].includes(roadmap.slug) && (
-          <span className={`px-2.5 py-1 rounded-md text-xs font-semibold uppercase tracking-wider border ${badgeColors}`}>
+          <span className={`px-2.5 py-1 rounded-md text-xs font-semibold uppercase tracking-wider border shrink-0 ml-3 ${badgeColors}`}>
             {roadmap.category}
           </span>
         )}
       </div>
-      
+
       <p className="text-gray-500 mb-8 text-sm leading-relaxed flex-1">
         {roadmap.description}
       </p>
@@ -38,9 +42,9 @@ export function RoadmapCard({ roadmap }: { roadmap: RoadmapMeta }) {
           </span>
         </div>
 
-        <div className="flex items-center gap-2 text-sm font-semibold text-gray-500 group-hover:text-black transition-colors pt-4 border-t border-gray-100">
+        <div className="flex items-center gap-2 text-sm font-semibold text-gray-500 group-hover:text-black transition-colors duration-150 pt-4 border-t border-gray-100">
           View Roadmap
-          <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform" />
+          <ArrowRight className="w-4 h-4 transform group-hover:translate-x-1 transition-transform duration-150" />
         </div>
       </div>
     </Link>

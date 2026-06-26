@@ -32,7 +32,7 @@ export default function RoadmapsDiscoveryPage() {
       
       <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12">
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold tracking-tight text-gray-900 mb-4">
+          <h1 className="text-5xl md:text-6xl font-bold tracking-tight text-gray-900 mb-4">
             Discovery
           </h1>
           <p className="text-xl text-gray-500 max-w-2xl">
@@ -55,8 +55,8 @@ export default function RoadmapsDiscoveryPage() {
                 />
               </div>
 
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">Categories</h3>
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-sm font-semibold text-gray-900">Categories</h3>
                 {selectedCategory !== "All" && (
                   <button onClick={() => setSelectedCategory("All")} className="text-xs text-gray-500 hover:text-black">Clear</button>
                 )}
@@ -81,8 +81,8 @@ export default function RoadmapsDiscoveryPage() {
             </div>
 
             <div>
-              <div className="flex items-center justify-between mb-4">
-                <h3 className="text-sm font-semibold text-gray-900 uppercase tracking-wider">Difficulty</h3>
+              <div className="flex items-center justify-between mb-3">
+                <h3 className="text-sm font-semibold text-gray-900">Difficulty</h3>
                 {selectedDifficulty !== "All" && (
                   <button onClick={() => setSelectedDifficulty("All")} className="text-xs text-gray-500 hover:text-black">Clear</button>
                 )}
