@@ -87,56 +87,56 @@ export const graphNodes: RoadmapContentNode[] = [
 export const graphEdges: RoadmapContentEdge[] = [
     { id: "be1", source: "n_bint_1", target: "n_bint_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be2", source: "n_bint_1", target: "n_bint_3", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be3", source: "n_bint_2", target: "n_bint_4", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be4", source: "s_int", target: "s_lang", sourceHandle: "right", targetHandle: "left" },
+    { id: "be4", source: "n_bint_2", target: "n_bint_4", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "be_sec_1", source: "n_bint_2", target: "n_blang_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be5", source: "n_blang_1", target: "n_blang_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be6", source: "n_blang_1", target: "n_blang_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be7", source: "n_blang_3", target: "n_blang_4", sourceHandle: "right", targetHandle: "left" },
     { id: "be8", source: "n_blang_3", target: "n_blang_5", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be9", source: "s_lang", target: "s_rdb", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_2", source: "n_blang_2", target: "n_rdb_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be10", source: "n_rdb_1", target: "n_rdb_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be11", source: "n_rdb_1", target: "n_rdb_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be12", source: "n_rdb_2", target: "n_rdb_4", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be13", source: "s_rdb", target: "s_nosql", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_3", source: "n_rdb_2", target: "n_nosql_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be14", source: "n_nosql_1", target: "n_nosql_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be15", source: "n_nosql_1", target: "n_nosql_3", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be16", source: "s_nosql", target: "s_bapi", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "be_sec_4", source: "n_nosql_2", target: "n_bapi_1", sourceHandle: "bottom", targetHandle: "top" },
 
     { id: "be17", source: "n_bapi_1", target: "n_bapi_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be18", source: "n_bapi_1", target: "n_bapi_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be19", source: "n_bapi_2", target: "n_bapi_4", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be20", source: "s_bapi", target: "s_auth", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_5", source: "n_bapi_2", target: "n_auth_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be21", source: "n_auth_1", target: "n_auth_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be22", source: "n_auth_1", target: "n_auth_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be23", source: "n_auth_2", target: "n_auth_4", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be24", source: "s_auth", target: "s_cache", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_6", source: "n_auth_2", target: "n_cache_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be25", source: "n_cache_1", target: "n_cache_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be26", source: "n_cache_1", target: "n_cache_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be27", source: "n_cache_3", target: "n_cache_4", sourceHandle: "right", targetHandle: "left" },
-    { id: "be28", source: "s_cache", target: "s_web", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_7", source: "n_cache_2", target: "n_web_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be29", source: "n_web_1", target: "n_web_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be30", source: "n_web_1", target: "n_web_3", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be31", source: "s_web", target: "s_btest", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "be_sec_8", source: "n_web_2", target: "n_btest_1", sourceHandle: "bottom", targetHandle: "top" },
 
     { id: "be32", source: "n_btest_1", target: "n_btest_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be33", source: "n_btest_1", target: "n_btest_3", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be34", source: "s_btest", target: "s_cicd", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_9", source: "n_btest_2", target: "n_cicd_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be35", source: "n_cicd_1", target: "n_cicd_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be36", source: "n_cicd_1", target: "n_cicd_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be37", source: "n_cicd_2", target: "n_cicd_4", sourceHandle: "bottom", targetHandle: "top" },
-    { id: "be38", source: "s_cicd", target: "s_arch", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_10", source: "n_cicd_2", target: "n_arch_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be39", source: "n_arch_1", target: "n_arch_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be40", source: "n_arch_1", target: "n_arch_3", sourceHandle: "bottom", targetHandle: "top" },
     { id: "be41", source: "n_arch_3", target: "n_arch_4", sourceHandle: "right", targetHandle: "left" },
-    { id: "be42", source: "s_arch", target: "s_cloud", sourceHandle: "right", targetHandle: "left" },
+    { id: "be_sec_11", source: "n_arch_2", target: "n_cloud_1", sourceHandle: "right", targetHandle: "left" },
 
     { id: "be43", source: "n_cloud_1", target: "n_cloud_2", sourceHandle: "right", targetHandle: "left" },
     { id: "be44", source: "n_cloud_1", target: "n_cloud_3", sourceHandle: "bottom", targetHandle: "top" },
