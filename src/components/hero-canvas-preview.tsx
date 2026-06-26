@@ -1,61 +1,63 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import { motion, useMotionValue, useSpring, useReducedMotion } from "motion/react";
+import { motion, useReducedMotion } from "motion/react";
 
-// ── Floating node data ─────────────────────────────────────────────────────
+const easeStrong = [0.23, 1, 0.32, 1] as const;
+
+// ── Node positions and data ─────────────────────────────────────────────────
 const nodes = [
-  { id: "react",   label: "React",      dot: "bg-blue-500",    x: 148, y: 200, z: 10 },
-  { id: "ts",      label: "TypeScript", dot: "bg-blue-400",    x: 52,  y: 72,  z: 0  },
-  { id: "node",    label: "Node.js",    dot: "bg-emerald-500", x: 282, y: 122, z: 0  },
-  { id: "next",    label: "Next.js",    dot: "bg-gray-700",    x: 28,  y: 352, z: 0  },
-  { id: "docker",  label: "Docker",     dot: "bg-sky-500",     x: 290, y: 360, z: 0  },
+  { id: "react",   label: "React",       dot: "bg-blue-500",     x: 148, y: 196, isCenter: true  },
+  { id: "ts",      label: "TypeScript",  dot: "bg-blue-400",     x: 38,  y: 68,  isCenter: false },
+  { id: "node",    label: "Node.js",     dot: "bg-emerald-500",  x: 280, y: 118, isCenter: false },
+  { id: "next",    label: "Next.js",     dot: "bg-gray-700",     x: 22,  y: 346, isCenter: false },
+  { id: "docker",  label: "Docker",      dot: "bg-sky-500",      x: 278, y: 348, isCenter: false },
+  { id: "psql",    label: "PostgreSQL",  dot: "bg-indigo-500",   x: 155, y: 368, isCenter: false },
 ];
 
-// SVG connector paths between nodes (React is center hub)
 const edges = [
-  { d: "M 178 200 Q 148 140 152 98"  },    // React → TypeScript
-  { d: "M 248 200 Q 282 168 320 154" },    // React → Node.js
-  { d: "M 148 250 Q 100 310 88 360"  },    // React → Next.js
-  { d: "M 248 250 Q 290 310 328 368" },    // React → Docker
+  { d: "M 192 196 Q 160 148 136 106" },
+  { d: "M 248 210 Q 292 178 318 158" },
+  { d: "M 148 246 Q 100 308 84 350"  },
+  { d: "M 248 252 Q 296 316 322 356" },
+  { d: "M 200 256 Q 200 320 218 370" },
 ];
 
-// ── FloatingNode ────────────────────────────────────────────────────────────
-function FloatingNode({
-  label,
-  dot,
-  x,
-  y,
-  z,
-  floatOffset,
-  delay,
+const floatOffsets = [0, -7, -5, -9, -6, -4];
+const floatDurations = [5.5, 4.2, 6.1, 4.8, 5.0, 6.4];
+
+// ── Node component ──────────────────────────────────────────────────────────
+function NodeCard({
+  label, dot, x, y, isCenter, floatOffset, floatDuration, motionDelay,
 }: {
-  label: string;
-  dot: string;
-  x: number;
-  y: number;
-  z: number;
-  floatOffset: number;
-  delay: number;
+  label: string; dot: string; x: number; y: number; isCenter: boolean;
+  floatOffset: number; floatDuration: number; motionDelay: number;
 }) {
-  const isCentral = z === 10;
   return (
     <motion.div
-      className={`absolute select-none ${
-        isCentral
-          ? "px-5 py-3 bg-black border border-black rounded-2xl shadow-lg text-sm font-bold text-white ring-4 ring-black/10"
-          : "px-4 py-2.5 bg-white border border-gray-200 rounded-xl shadow-sm text-sm font-semibold text-gray-900"
-      } flex items-center gap-2`}
-      style={{ left: x, top: y, zIndex: isCentral ? 10 : 1 }}
-      animate={{ y: [0, floatOffset, 0] }}
+      className={`absolute select-none flex items-center gap-2 ${
+        isCenter
+          ? "px-5 py-3 bg-gray-900 border-0 rounded-2xl shadow-2xl text-sm font-bold text-white ring-4 ring-gray-900/15 z-10"
+          : "px-4 py-2.5 bg-white border border-gray-200 rounded-xl shadow-sm text-sm font-semibold text-gray-800 z-0"
+      }`}
+      style={{ left: x, top: y }}
+      initial={{ opacity: 0, scale: 0.85 }}
+      animate={{
+        opacity: 1,
+        scale: 1,
+        y: [0, floatOffset, 0],
+      }}
       transition={{
-        duration: 4 + delay,
-        repeat: Infinity,
-        ease: "easeInOut",
-        delay,
+        opacity: { duration: 0.5, delay: motionDelay, ease: easeStrong },
+        scale:   { duration: 0.5, delay: motionDelay, ease: easeStrong },
+        y: {
+          duration: floatDuration,
+          repeat: Infinity,
+          ease: "easeInOut",
+          delay: motionDelay + 0.5,
+        },
       }}
     >
-      <div className={`w-2 h-2 rounded-full shrink-0 ${dot} ${isCentral ? "animate-pulse" : ""}`} />
+      <div className={`w-2 h-2 rounded-full shrink-0 ${dot} ${isCenter ? "animate-pulse" : ""}`} />
       {label}
     </motion.div>
   );
@@ -63,26 +65,17 @@ function FloatingNode({
 
 // ── Main export ─────────────────────────────────────────────────────────────
 export function HeroCanvasPreview() {
-  const shouldReduceMotion = useReducedMotion();
+  const shouldReduce = useReducedMotion();
 
-  if (shouldReduceMotion) {
-    // Accessible static fallback — no motion, all nodes visible
+  if (shouldReduce) {
     return (
-      <div className="relative h-[480px] w-full max-w-xl">
-        <div className="absolute inset-0 bg-gray-50 border border-gray-200 rounded-3xl shadow-[0_8px_40px_rgb(0,0,0,0.05)] overflow-hidden">
-          <div className="absolute inset-0 opacity-30" style={{ backgroundImage: "radial-gradient(#d1d5db 1.5px, transparent 1.5px)", backgroundSize: "24px 24px" }} />
-          {nodes.map((node) => (
-            <div
-              key={node.id}
-              className={`absolute px-4 py-2.5 rounded-xl shadow-sm text-sm font-semibold flex items-center gap-2 ${
-                node.z === 10
-                  ? "bg-black border border-black text-white font-bold rounded-2xl shadow-lg px-5 py-3"
-                  : "bg-white border border-gray-200 text-gray-900"
-              }`}
-              style={{ left: node.x, top: node.y }}
-            >
-              <div className={`w-2 h-2 rounded-full ${node.dot}`} />
-              {node.label}
+      <div className="relative h-[480px] w-full max-w-[500px]">
+        <div className="absolute inset-0 bg-gray-50/80 border border-gray-200 rounded-3xl overflow-hidden">
+          <div className="absolute inset-0 opacity-25" style={{ backgroundImage: "radial-gradient(#cbd5e1 1.5px, transparent 1.5px)", backgroundSize: "22px 22px" }} />
+          {nodes.map((n) => (
+            <div key={n.id} className={`absolute px-4 py-2.5 rounded-xl text-sm font-semibold flex items-center gap-2 ${n.isCenter ? "bg-gray-900 text-white font-bold px-5 py-3 rounded-2xl shadow-xl" : "bg-white border border-gray-200 text-gray-800 shadow-sm"}`} style={{ left: n.x, top: n.y }}>
+              <div className={`w-2 h-2 rounded-full ${n.dot}`} />
+              {n.label}
             </div>
           ))}
         </div>
@@ -92,52 +85,65 @@ export function HeroCanvasPreview() {
 
   return (
     <motion.div
-      className="relative h-[480px] w-full max-w-xl"
-      initial={{ opacity: 0, scale: 0.97 }}
-      animate={{ opacity: 1, scale: 1 }}
-      transition={{ duration: 0.7, delay: 0.3, ease: [0.23, 1, 0.32, 1] }}
+      className="relative h-[480px] w-full max-w-[500px]"
+      initial={{ opacity: 0, x: 20 }}
+      animate={{ opacity: 1, x: 0 }}
+      transition={{ duration: 0.8, delay: 0.2, ease: easeStrong }}
     >
-      <div className="absolute inset-0 bg-gray-50 border border-gray-200 rounded-3xl shadow-[0_8px_40px_rgb(0,0,0,0.05)] overflow-hidden">
+      <div className="absolute inset-0 bg-gray-50/80 border border-gray-200 rounded-3xl overflow-hidden shadow-[0_12px_48px_rgb(0,0,0,0.06)]">
         {/* Dot grid */}
         <div
-          className="absolute inset-0 opacity-30"
-          style={{ backgroundImage: "radial-gradient(#d1d5db 1.5px, transparent 1.5px)", backgroundSize: "24px 24px" }}
+          className="absolute inset-0 opacity-25"
+          style={{ backgroundImage: "radial-gradient(#cbd5e1 1.5px, transparent 1.5px)", backgroundSize: "22px 22px" }}
         />
 
-        {/* Connector lines */}
-        <svg className="absolute inset-0 w-full h-full pointer-events-none">
+        {/* SVG connectors */}
+        <svg className="absolute inset-0 w-full h-full pointer-events-none overflow-visible">
+          <defs>
+            <marker id="arrowhead" markerWidth="6" markerHeight="4" refX="3" refY="2" orient="auto">
+              <polygon points="0 0, 6 2, 0 4" fill="#e2e8f0" />
+            </marker>
+          </defs>
           {edges.map((edge, i) => (
             <motion.path
               key={i}
               d={edge.d}
               fill="none"
               stroke="#e2e8f0"
-              strokeWidth="2"
+              strokeWidth="1.5"
               strokeDasharray="5 5"
+              markerEnd="url(#arrowhead)"
               initial={{ pathLength: 0, opacity: 0 }}
               animate={{ pathLength: 1, opacity: 1 }}
-              transition={{ duration: 1, delay: 0.5 + i * 0.15, ease: [0.23, 1, 0.32, 1] }}
+              transition={{ duration: 1.2, delay: 0.6 + i * 0.12, ease: easeStrong }}
             />
           ))}
         </svg>
 
         {/* Floating nodes */}
         {nodes.map((node, i) => (
-          <FloatingNode
+          <NodeCard
             key={node.id}
-            label={node.label}
-            dot={node.dot}
-            x={node.x}
-            y={node.y}
-            z={node.z}
-            floatOffset={node.z === 10 ? -6 : -4 + (i % 3)}
-            delay={i * 0.4}
+            {...node}
+            floatOffset={floatOffsets[i]}
+            floatDuration={floatDurations[i]}
+            motionDelay={0.3 + i * 0.1}
           />
         ))}
 
-        {/* Fade vignette on edges */}
-        <div className="absolute inset-0 rounded-3xl" style={{
-          background: "radial-gradient(ellipse at center, transparent 60%, rgba(249,250,251,0.6) 100%)"
+        {/* Bottom badge */}
+        <motion.div
+          className="absolute bottom-5 right-5 px-3 py-1.5 bg-white border border-gray-200 rounded-lg shadow-sm text-[11px] font-semibold text-gray-500"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5, delay: 1.4 }}
+        >
+          30+ roadmaps
+        </motion.div>
+
+        {/* Edge vignette */}
+        <div className="absolute inset-0 rounded-3xl pointer-events-none" style={{
+          background: "radial-gradient(ellipse at center, transparent 55%, rgba(249,250,251,0.55) 100%)"
         }} />
       </div>
     </motion.div>
