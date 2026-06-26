@@ -15,9 +15,11 @@ export function RoadmapCard({ roadmap }: { roadmap: RoadmapMeta }) {
         <h3 className="text-2xl font-bold text-gray-900 tracking-tight leading-snug group-hover:text-black transition-colors">
           {roadmap.title}
         </h3>
-        <span className={`px-2.5 py-1 rounded-md text-xs font-semibold uppercase tracking-wider border ${badgeColors}`}>
-          {roadmap.category}
-        </span>
+        {!['frontend', 'backend', 'fullstack'].includes(roadmap.slug) && (
+          <span className={`px-2.5 py-1 rounded-md text-xs font-semibold uppercase tracking-wider border ${badgeColors}`}>
+            {roadmap.category}
+          </span>
+        )}
       </div>
       
       <p className="text-gray-500 mb-8 text-sm leading-relaxed flex-1">
