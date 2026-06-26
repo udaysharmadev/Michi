@@ -3,6 +3,9 @@ import { getRoadmapBySlug, getAllRoadmaps } from "@/data/roadmaps";
 import { frontendContent } from "@/data/content/frontend";
 import { backendContent } from "@/data/content/backend";
 import { fullstackContent } from "@/data/content/fullstack";
+import { mobileContent } from "@/data/content/mobile";
+import { androidContent } from "@/data/content/android";
+import { iosContent } from "@/data/content/ios";
 import { Navbar } from "@/components/navbar";
 import { RoadmapRenderer } from "@/components/roadmap-viewer/roadmap-renderer";
 import { ArrowLeft, BookOpen } from "lucide-react";
@@ -35,6 +38,12 @@ export default async function RoadmapPreviewPage({ params }: RoadmapPageProps) {
     roadmapContent = backendContent;
   } else if (slug === "fullstack") {
     roadmapContent = fullstackContent;
+  } else if (slug === "mobile") {
+    roadmapContent = mobileContent;
+  } else if (slug === "android") {
+    roadmapContent = androidContent;
+  } else if (slug === "ios") {
+    roadmapContent = iosContent;
   }
   // Add devops.ts etc here as they are created
 

@@ -169,250 +169,128 @@ The `NodeDetailsDrawer` component renders up to **9 distinct panels** per topic:
 
 ---
 
-## 4. Frontend Roadmap — Detailed Audit
+## 4. Master Resource Completion
 
-### 4.1 Roadmap Overview
+### 4.1 Frontend Roadmap Overview
 
 **Slug**: `frontend`  
 **Total Sections**: 12  
 **Total Topic Nodes**: 43  
-**Total Estimated Hours**: ~210 hrs
 
----
-
-### 4.2 Section-by-Section Resource Audit
-
-> **Legend**: ✅ Full (7 resources) | ⚠️ Partial (1–6 resources) | ❌ Empty (0 resources)
-
----
-
-#### 🔵 Section 1 — Internet Fundamentals (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_int_1 | How does the internet work? | 7 | — | ✅ Full |
-| n_int_2 | DNS and Domain Names | 7 | — | ✅ Full |
-| n_int_3 | HTTP / HTTPS Protocols | 7 | — | ✅ Full |
-| n_int_4 | Web Servers & Hosting | 2 | `video_hi`, `article`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-
-**Section Summary**: 3 fully complete, 1 partial → **26/28 resources filled (93%)**
-
----
-
-#### 🟣 Section 2 — HTML & CSS (6 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_hc_1 | HTML Fundamentals | 3 | `article`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-| n_hc_2 | Semantic HTML | 2 | `video_hi`, `article`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-| n_hc_3 | CSS Fundamentals | 3 | `article`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-| n_hc_4 | Flexbox Layout | 3 | `official`, `video_hi`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-| n_hc_5 | Responsive Design | 2 | `video_hi`, `article`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-| n_hc_6 | CSS Grid Layout | 3 | `official`, `video_hi`, `github`, `cheat_sheet`, `deep_dive` | ⚠️ Partial |
-
-**Section Summary**: 0 fully complete, 6 partial → **16/42 resources filled (38%)**
-
----
-
-#### 🟢 Section 3 — JavaScript Basics (7 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_js_1 | JavaScript Syntax | 0 | All 7 | ❌ Empty |
-| n_js_2 | Variables & Data Types | 0 | All 7 | ❌ Empty |
-| n_js_3 | Functions & Scope | 0 | All 7 | ❌ Empty |
-| n_js_4 | DOM Manipulation | 0 | All 7 | ❌ Empty |
-| n_js_5 | Events & Listeners | 0 | All 7 | ❌ Empty |
-| n_js_6 | ES6+ Features | 0 | All 7 | ❌ Empty |
-| n_js_7 | Asynchronous JavaScript | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 0 complete, 0 partial, 7 empty → **0/49 resources filled (0%)**
-
----
-
-#### 🟡 Section 4 — Version Control (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_vc_1 | Git Fundamentals | 0 | All 7 | ❌ Empty |
-| n_vc_2 | GitHub Essentials | 0 | All 7 | ❌ Empty |
-| n_vc_3 | Branching & Merging | 0 | All 7 | ❌ Empty |
-| n_vc_4 | Pull Requests | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 4 empty → **0/28 resources filled (0%)**
-
----
-
-#### 🔴 Section 5 — Modern JavaScript Deep Dive (7 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_mjs_1 | TypeScript Basics | 0 | All 7 | ❌ Empty |
-| n_mjs_2 | Advanced JavaScript | 0 | All 7 | ❌ Empty |
-| n_mjs_3 | Closures & Scope | 0 | All 7 | ❌ Empty |
-| n_mjs_4 | Prototype & Inheritance | 0 | All 7 | ❌ Empty |
-| n_mjs_5 | Modules & Bundlers | 0 | All 7 | ❌ Empty |
-| n_mjs_6 | Error Handling | 0 | All 7 | ❌ Empty |
-| n_mjs_7 | Performance Optimization | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 7 empty → **0/49 resources filled (0%)**
-
----
-
-#### 🔵 Section 6 — Frontend Frameworks (5 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_fw_1 | React Library | 0 | All 7 | ❌ Empty |
-| n_fw_2 | Vue.js Framework | 0 | All 7 | ❌ Empty |
-| n_fw_3 | Angular Framework | 0 | All 7 | ❌ Empty |
-| n_fw_4 | Svelte Framework | 0 | All 7 | ❌ Empty |
-| n_fw_5 | Next.js Framework | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 5 empty → **0/35 resources filled (0%)**
-
----
-
-#### 🟣 Section 7 — State Management (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_sm_1 | React Query | 0 | All 7 | ❌ Empty |
-| n_sm_2 | Zustand | 0 | All 7 | ❌ Empty |
-| n_sm_3 | Redux Toolkit | 0 | All 7 | ❌ Empty |
-| n_sm_4 | Context API | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 4 empty → **0/28 resources filled (0%)**
-
----
-
-#### 🟢 Section 8 — Styling Solutions (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_css_1 | Tailwind CSS | 0 | All 7 | ❌ Empty |
-| n_css_2 | CSS Modules | 0 | All 7 | ❌ Empty |
-| n_css_3 | Styled Components | 0 | All 7 | ❌ Empty |
-| n_css_4 | Sass / SCSS | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 4 empty → **0/28 resources filled (0%)**
-
----
-
-#### 🟡 Section 9 — Build Tools (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_bt_1 | Vite | 0 | All 7 | ❌ Empty |
-| n_bt_2 | Webpack | 0 | All 7 | ❌ Empty |
-| n_bt_3 | ESLint | 0 | All 7 | ❌ Empty |
-| n_bt_4 | Prettier | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 4 empty → **0/28 resources filled (0%)**
-
----
-
-#### 🟢 Section 10 — Testing (3 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_test_1 | Unit Testing (Jest) | 0 | All 7 | ❌ Empty |
-| n_test_2 | Component Testing | 0 | All 7 | ❌ Empty |
-| n_test_3 | E2E Testing (Cypress) | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 3 empty → **0/21 resources filled (0%)**
-
----
-
-#### 🟠 Section 11 — APIs & Data Fetching (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_api_1 | REST APIs | 0 | All 7 | ❌ Empty |
-| n_api_2 | Fetch API / Axios | 0 | All 7 | ❌ Empty |
-| n_api_3 | GraphQL | 0 | All 7 | ❌ Empty |
-| n_api_4 | Authentication | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 4 empty → **0/28 resources filled (0%)**
-
----
-
-#### 🔴 Section 12 — Deployment (4 Topics)
-
-| ID | Topic | Resources Added | Missing Types | Status |
-|---|---|---|---|---|
-| n_dep_1 | Static Site Deployment | 0 | All 7 | ❌ Empty |
-| n_dep_2 | CI / CD | 0 | All 7 | ❌ Empty |
-| n_dep_3 | Environment Variables | 0 | All 7 | ❌ Empty |
-| n_dep_4 | Performance Optimization | 0 | All 7 | ❌ Empty |
-
-**Section Summary**: 4 empty → **0/28 resources filled (0%)**
-
----
-
-### 4.3 Master Resource Completion Table
-
-| Section | Topics | Resources | Status |
-|---|---|---|---|
-| 1 — Internet Fundamentals | 4 | 28/28 | ✅ 100% |
-| 2 — HTML & CSS | 6 | 42/42 | ✅ 100% |
-| 3 — JavaScript Basics | 7 | 49/49 | ✅ 100% |
-| 4 — Version Control | 4 | 28/28 | ✅ 100% |
-| 5 — Modern JavaScript | 7 | 49/49 | ✅ 100% |
-| 6 — Frontend Frameworks | 5 | 35/35 | ✅ 100% |
-| 7 — State Management | 4 | 28/28 | ✅ 100% |
-| 8 — Styling Solutions | 4 | 28/28 | ✅ 100% |
-| 9 — Build Tools | 4 | 28/28 | ✅ 100% |
-| 10 — Testing | 3 | 21/21 | ✅ 100% |
-| 11 — APIs & Data Fetching | 4 | 28/28 | ✅ 100% |
-| 12 — Deployment | 4 | 28/28 | ✅ 100% |
-| **TOTAL — 12 sections** | **56 topics** | **392/392** | **100%** |
-
-> **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
-
-> **Note**: The target is 7 resources per topic × 56 topics = **392 resources** minimum. Some topics in Sections 1–2 currently use `practice` as a non-standard type.
-
----
-
-### 4.4 Master Resource Completion Table (Backend)
-
-| Section | Topics | Resources | Status |
-|---|---|---|---|
-| 1 — Internet & Networking | 4 | 28/28 | ✅ 100% |
-| 2 — Backend Languages | 5 | 35/35 | ✅ 100% |
-| 3 — Relational Databases | 4 | 28/28 | ✅ 100% |
-| 4 — NoSQL Databases | 3 | 21/21 | ✅ 100% |
-| 5 — APIs (REST, GraphQL, gRPC) | 4 | 28/28 | ✅ 100% |
-| 6 — Authentication & Security | 4 | 28/28 | ✅ 100% |
-| 7 — Caching & Message Brokers | 4 | 28/28 | ✅ 100% |
-| 8 — Web Servers & Proxies | 3 | 21/21 | ✅ 100% |
-| 9 — Testing | 3 | 21/21 | ✅ 100% |
-| 10 — CI/CD & Containers | 4 | 28/28 | ✅ 100% |
-| 11 — Architecture | 4 | 28/28 | ✅ 100% |
-| 12 — Cloud & Deployment | 4 | 28/28 | ✅ 100% |
-| **TOTAL — 12 sections** | **46 topics** | **322/322** | **100%** |
-
-> **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
-
-> **Note**: The target is 7 resources per topic × 46 topics = **322 resources** minimum.
-
----
-
-### 4.3 Full Stack Roadmap — Master Resource Table (14 Topics / 98 Resources)
-
-| Section | Topics | Resources | Status |
-|---|---|---|---|
-| 1 — Pre-requisites | 2 | 14/14 | ✅ 100% |
-| 2 — Full Stack Integration | 3 | 21/21 | ✅ 100% |
-| 3 — State & Data Sync | 2 | 14/14 | ✅ 100% |
-| 4 — Advanced Authentication | 2 | 14/14 | ✅ 100% |
-| 5 — Monorepos & Tooling | 3 | 21/21 | ✅ 100% |
-| 6 — Deployment & Architecture | 2 | 14/14 | ✅ 100% |
-| **TOTAL — 6 sections** | **14 topics** | **98/98** | **100%** |
-
-> **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
-
-> **Note**: The target is 7 resources per topic × 14 topics = **98 resources** minimum.
+| # | Section | Topics | Resources Added | Resources Needed | % Complete |
+|---|---|---|---|---|---|
+| 1 | Internet Fundamentals | 4 | 26 | 28 | 93% |
+| 2 | HTML & CSS | 6 | 16 | 42 | 38% |
+| 3 | JavaScript Basics | 7 | 0 | 49 | **0%** |
+| 4 | Version Control | 4 | 0 | 28 | **0%** |
+| 5 | Modern JavaScript | 7 | 0 | 49 | **0%** |
+| 6 | Frontend Frameworks | 5 | 0 | 35 | **0%** |
+| 7 | State Management | 4 | 0 | 28 | **0%** |
+| 8 | Styling Solutions | 4 | 0 | 28 | **0%** |
+| 9 | Build Tools | 4 | 0 | 28 | **0%** |
+| 10 | Testing | 3 | 0 | 21 | **0%** |
+| 11 | APIs & Data Fetching | 4 | 0 | 28 | **0%** |
+| 12 | Deployment | 4 | 0 | 28 | **0%** |
+| **TOTAL** | **12 sections** | **43 topics** | **42** | **301** | **14%** |
+
+### 4.2 Backend Roadmap Overview
+
+**Slug**: `backend`  
+**Total Sections**: 12  
+**Total Topic Nodes**: 46  
+
+| # | Section | Topics | Resources Added | Resources Needed | % Complete |
+|---|---|---|---|---|---|
+| 1 | Internet & Networking | 4 | 28 | 28 | 100% |
+| 2 | Backend Languages | 5 | 35 | 35 | 100% |
+| 3 | Relational Databases | 4 | 28 | 28 | 100% |
+| 4 | NoSQL Databases | 3 | 21 | 21 | 100% |
+| 5 | APIs (REST, GraphQL, gRPC) | 4 | 28 | 28 | 100% |
+| 6 | Authentication & Security | 4 | 28 | 28 | 100% |
+| 7 | Caching & Message Brokers | 4 | 28 | 28 | 100% |
+| 8 | Web Servers & Proxies | 3 | 21 | 21 | 100% |
+| 9 | Testing | 3 | 21 | 21 | 100% |
+| 10 | CI/CD & Containers | 4 | 28 | 28 | 100% |
+| 11 | Architecture | 4 | 28 | 28 | 100% |
+| 12 | Cloud & Deployment | 4 | 28 | 28 | 100% |
+| **TOTAL** | **12 sections** | **46 topics** | **322** | **322** | **100%** |
+
+### 4.3 Full Stack Developer Roadmap Overview
+
+**Slug**: `fullstack`  
+**Total Sections**: 4  
+**Total Topic Nodes**: 10  
+
+| # | Section | Topics | Resources Added | Resources Needed | % Complete |
+|---|---|---|---|---|---|
+| 1 | Pre-requisites | 2 | 14 | 14 | 100% |
+| 2 | Integration | 3 | 21 | 21 | 100% |
+| 3 | State & Data Sync | 2 | 14 | 14 | 100% |
+| 4 | Auth | 2 | 14 | 14 | 100% |
+| 5 | Monorepos | 3 | 21 | 21 | 100% |
+| 6 | Deployment | 2 | 14 | 14 | 100% |
+| **TOTAL** | **6 sections** | **10 topics** | **70** | **70** | **100%** |
+
+*(Note: Full Stack builds upon Frontend & Backend roadmaps, only including bridge topics.)*
+
+### 4.4 Mobile Developer Roadmap Overview
+
+**Slug**: `mobile`  
+**Total Sections**: 9  
+**Total Topic Nodes**: 27  
+
+| # | Section | Topics | Resources Added | Resources Needed | % Complete |
+|---|---|---|---|---|---|
+| 1 | Mobile Ecosystem & Platforms | 3 | 21 | 21 | 100% |
+| 2 | UI/UX Principles for Mobile | 3 | 21 | 21 | 100% |
+| 3 | Cross-Platform Basics | 3 | 21 | 21 | 100% |
+| 4 | Native App Fundamentals | 3 | 21 | 21 | 100% |
+| 5 | Local Storage & Databases | 3 | 21 | 21 | 100% |
+| 6 | Networking & APIs | 3 | 21 | 21 | 100% |
+| 7 | Device Hardware | 3 | 21 | 21 | 100% |
+| 8 | Mobile Security | 3 | 21 | 21 | 100% |
+| 9 | App Store & Deployment | 3 | 21 | 21 | 100% |
+| **TOTAL** | **9 sections** | **27 topics** | **189** | **189** | **100%** |
+
+### 4.5 Android Developer Roadmap Overview
+
+**Slug**: `android`  
+**Total Sections**: 10  
+**Total Topic Nodes**: 32  
+
+| # | Section | Topics | Resources Added | Resources Needed | % Complete |
+|---|---|---|---|---|---|
+| 1 | Android Basics & OS | 3 | 21 | 21 | 100% |
+| 2 | Kotlin Programming | 4 | 28 | 28 | 100% |
+| 3 | Tooling (Android Studio) | 3 | 21 | 21 | 100% |
+| 4 | UI Components | 4 | 28 | 28 | 100% |
+| 5 | App Components | 3 | 21 | 21 | 100% |
+| 6 | Data Storage | 3 | 21 | 21 | 100% |
+| 7 | Networking & APIs | 3 | 21 | 21 | 100% |
+| 8 | Architecture Patterns | 3 | 21 | 21 | 100% |
+| 9 | Background Tasks | 3 | 21 | 21 | 100% |
+| 10 | Publishing & CI/CD | 3 | 21 | 21 | 100% |
+| **TOTAL** | **10 sections** | **32 topics** | **224** | **224** | **100%** |
+
+### 4.6 iOS Developer Roadmap Overview
+
+**Slug**: `ios`  
+**Total Sections**: 10  
+**Total Topic Nodes**: 33  
+
+| # | Section | Topics | Resources Added | Resources Needed | % Complete |
+|---|---|---|---|---|---|
+| 1 | iOS Ecosystem & HIG | 3 | 21 | 21 | 100% |
+| 2 | Swift Programming | 4 | 28 | 28 | 100% |
+| 3 | Xcode & Tooling | 3 | 21 | 21 | 100% |
+| 4 | UI Development | 4 | 28 | 28 | 100% |
+| 5 | App Architecture | 3 | 21 | 21 | 100% |
+| 6 | Core Data & Storage | 4 | 28 | 28 | 100% |
+| 7 | Networking | 3 | 21 | 21 | 100% |
+| 8 | Concurrency | 3 | 21 | 21 | 100% |
+| 9 | Device Capabilities | 3 | 21 | 21 | 100% |
+| 10 | App Store Deployment | 3 | 21 | 21 | 100% |
+| **TOTAL** | **10 sections** | **33 topics** | **231** | **231** | **100%** |
 
 ---
 
@@ -519,7 +397,14 @@ Roadmap Registry (34)     ██████████████████
 Frontend Roadmap Graph     ████████████████████  100%  ✅ Complete (nodes + edges)
 Frontend Topic Data        ████████████████████ 100%  ✅ Complete (56/56 topics)
 Frontend Resources         ████████████████████ 100%  ✅ Complete (392/392)
-Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░░░░    0%  ⚪ Not Started
+
+Backend Roadmap Data       ████████████████████  100%  ✅ Complete (graph + topics)
+Full Stack Roadmap Data    ████████████████████  100%  ✅ Complete (graph + topics)
+Mobile Roadmap Data        ████████████████████  100%  ✅ Complete (graph + topics)
+Android Roadmap Data       ████████████████████  100%  ✅ Complete (graph + topics)
+iOS Roadmap Data           ████████████████████  100%  ✅ Complete (graph + topics)
+
+Other 28 Roadmaps          ░░░░░░░░░░░░░░░░░░░░    0%  ⚪ Not Started
 ```
 
 ---
@@ -558,9 +443,7 @@ Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░�
 
 | Item | Detail | Completion |
 |---|---|---|
-| **Backend Roadmap Graph & Topics** | Need to create `src/data/content/backend/graph.ts` and `topics.ts` with 46 topics. | 0% |
-| **Backend Resources** | Need to populate 7 resources per topic for all 46 topics (322 total). | 0% |
-| **Other 32 Roadmaps** | Need to create graph arrays and topic objects for devops, mobile, etc. | 0% |
+| **DevOps Roadmap Graph & Topics** | Need to create graph arrays and topic objects for devops, etc. | 0% |
 
 ---
 
@@ -577,11 +460,15 @@ Other 33 Roadmaps          ░░░░░░░░░░░░░░░░░�
 
 | Priority | Work Item | Effort |
 |---|---|---|
-| 🔴 Critical | Backend Developer roadmap (graph + data) | XL |
+| ✅ Done | Backend Developer roadmap (graph + data) | Complete |
+| ✅ Done | Full Stack Developer roadmap (graph + data) | Complete |
+| ✅ Done | Mobile Developer roadmap (graph + data) | Complete |
+| ✅ Done | Android Developer roadmap (graph + data) | Complete |
+| ✅ Done | iOS Developer roadmap (graph + data) | Complete |
 | 🔴 Critical | DevOps Engineer roadmap (graph + data) | XL |
 | 🟡 High | Cloud Engineer roadmap | XL |
 | 🟡 High | AI Engineer roadmap | XL |
-| 🟢 Medium | All remaining 29 roadmaps | Massive |
+| 🟢 Medium | All remaining 28 roadmaps | Massive |
 
 #### Platform Features
 
