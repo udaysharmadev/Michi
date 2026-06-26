@@ -398,6 +398,24 @@ The `NodeDetailsDrawer` component renders up to **9 distinct panels** per topic:
 
 ---
 
+### 4.3 Full Stack Roadmap — Master Resource Table (14 Topics / 98 Resources)
+
+| Section | Topics | Resources | Status |
+|---|---|---|---|
+| 1 — Pre-requisites | 2 | 14/14 | ✅ 100% |
+| 2 — Full Stack Integration | 3 | 21/21 | ✅ 100% |
+| 3 — State & Data Sync | 2 | 14/14 | ✅ 100% |
+| 4 — Advanced Authentication | 2 | 14/14 | ✅ 100% |
+| 5 — Monorepos & Tooling | 3 | 21/21 | ✅ 100% |
+| 6 — Deployment & Architecture | 2 | 14/14 | ✅ 100% |
+| **TOTAL — 6 sections** | **14 topics** | **98/98** | **100%** |
+
+> **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
+
+> **Note**: The target is 7 resources per topic × 14 topics = **98 resources** minimum.
+
+---
+
 ### 4.4 Topics Missing ALL Knowledge Data
 
 The following topics have no `resources` AND no deep knowledge fields (`whyLearnThis`, `learningOutcomes`, etc.) in `topics.ts`. These are **data gaps**, not just resource gaps:

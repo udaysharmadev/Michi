@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useCallback } from "react";
+import { useRouter } from "next/navigation";
 import {
   ReactFlow,
   Background,
@@ -45,6 +46,8 @@ export function RoadmapCanvas({
   onNodeSelect,
 }: RoadmapCanvasProps) {
   
+  const router = useRouter();
+
   const onPaneClick = useCallback(() => {
     onNodeSelect(null);
   }, [onNodeSelect]);
@@ -52,10 +55,15 @@ export function RoadmapCanvas({
   const onNodeClick = useCallback(
     (_: React.MouseEvent, node: Node) => {
       if (node.type === "topic") {
-        onNodeSelect(node as Node<RoadmapContentNode["data"]>);
+        const data = node.data as RoadmapContentNode["data"];
+        if (data.linkTo) {
+          router.push(`/roadmaps/${data.linkTo}`);
+        } else {
+          onNodeSelect(node as Node<RoadmapContentNode["data"]>);
+        }
       }
     },
-    [onNodeSelect]
+    [onNodeSelect, router]
   );
 
   return (

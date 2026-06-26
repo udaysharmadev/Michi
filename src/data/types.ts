@@ -18,6 +18,7 @@ export type RoadmapContentNode = {
     isHighlighted?: boolean;
     // For topic nodes
     slug?: string;
+    linkTo?: string;
     icon?: string;
     estimatedTime?: string;
     sectionColor?: "blue" | "green" | "yellow" | "purple" | "red" | "orange";
