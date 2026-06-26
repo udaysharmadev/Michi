@@ -352,23 +352,25 @@ The `NodeDetailsDrawer` component renders up to **9 distinct panels** per topic:
 
 ### 4.3 Master Resource Completion Table
 
-| # | Section | Topics | Resources Added | Resources Needed | % Complete |
-|---|---|---|---|---|---|
-| 1 | Internet Fundamentals | 4 | 26 | 28 | 93% |
-| 2 | HTML & CSS | 6 | 16 | 42 | 38% |
-| 3 | JavaScript Basics | 7 | 0 | 49 | **0%** |
-| 4 | Version Control | 4 | 0 | 28 | **0%** |
-| 5 | Modern JavaScript | 7 | 0 | 49 | **0%** |
-| 6 | Frontend Frameworks | 5 | 0 | 35 | **0%** |
-| 7 | State Management | 4 | 0 | 28 | **0%** |
-| 8 | Styling Solutions | 4 | 0 | 28 | **0%** |
-| 9 | Build Tools | 4 | 0 | 28 | **0%** |
-| 10 | Testing | 3 | 0 | 21 | **0%** |
-| 11 | APIs & Data Fetching | 4 | 0 | 28 | **0%** |
-| 12 | Deployment | 4 | 0 | 28 | **0%** |
-| **TOTAL** | **12 sections** | **43 topics** | **42** | **392** | **~11%** |
+| Section | Topics | Resources | Status |
+|---|---|---|---|
+| 1 — Internet Fundamentals | 4 | 26/28 | ✅ 93% |
+| 2 — HTML & CSS | 6 | 16/42 | ⚠️ 38% |
+| 3 — JavaScript Basics | 7 | 0/49 | ❌ 0% |
+| 4 — Version Control | 4 | 0/28 | ❌ 0% |
+| 5 — Modern JavaScript | 7 | 0/49 | ❌ 0% |
+| 6 — Frontend Frameworks | 5 | 0/35 | ❌ 0% |
+| 7 — State Management | 4 | 0/28 | ❌ 0% |
+| 8 — Styling Solutions | 4 | 0/28 | ❌ 0% |
+| 9 — Build Tools | 4 | 0/28 | ❌ 0% |
+| 10 — Testing | 3 | 0/21 | ❌ 0% |
+| 11 — APIs & Data Fetching | 4 | 0/28 | ❌ 0% |
+| 12 — Deployment | 4 | 0/28 | ❌ 0% |
+| **TOTAL — 12 sections** | **43 topics** | **42/392** | **~11%** |
 
-> **Note**: The target is 7 resources per topic × 43 topics × 1 roadmap = **301 resources** for the standard 7-type requirement. Some topics in Section 1–2 currently use `practice` as a non-standard type.
+> **Legend**: ✅ ≥ 80% complete &nbsp;|&nbsp; ⚠️ 1–79% complete &nbsp;|&nbsp; ❌ 0% complete
+
+> **Note**: The target is 7 resources per topic × 43 topics = **301 resources** minimum. Some topics in Sections 1–2 currently use `practice` as a non-standard type.
 
 ---
 
