@@ -3,6 +3,7 @@ import { TopicData } from "@/data/types";
 export const backendTopics: Record<string, TopicData> = {
   // --- 1. Internet & Networking ---
   "n_bint_1": {
+    title: "How The Internet Works",
     slug: "how-the-internet-works",
     whyLearnThis: "As a backend developer, your code lives on servers connected via the internet. Understanding how data travels across the globe is foundational.",
     whenIsItUsed: "Whenever debugging network latency, configuring firewalls, or designing distributed systems.",
@@ -33,6 +34,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_bint_2": {
+    title: "Http Https",
     slug: "http-https",
     whyLearnThis: "HTTP is the language of the Web. Your backend APIs will constantly receive HTTP requests and send HTTP responses.",
     whenIsItUsed: "Handling API requests, setting headers, configuring security, and debugging client-server communication.",
@@ -63,6 +65,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_bint_3": {
+    title: "Dns",
     slug: "dns",
     whyLearnThis: "DNS (Domain Name System) translates human-readable domain names (google.com) into machine-readable IP addresses. You must understand it to deploy apps.",
     whenIsItUsed: "When pointing a domain name to a server or load balancer.",
@@ -93,6 +96,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_bint_4": {
+    title: "Osi Model",
     slug: "osi-model",
     whyLearnThis: "The OSI model is a conceptual framework that helps you understand how different network protocols interact. It is essential for advanced debugging.",
     whenIsItUsed: "When debugging complex network issues or learning about firewalls and load balancing (e.g., L4 vs L7 load balancing).",
@@ -124,6 +128,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 2. Backend Languages ---
   "n_blang_1": {
+    title: "Nodejs",
     slug: "nodejs",
     whyLearnThis: "Node.js allows you to run JavaScript on the server, meaning you can write your entire stack in one language. It is incredibly fast and excels at I/O heavy operations.",
     whenIsItUsed: "Building real-time apps, APIs, microservices, and streaming services.",
@@ -154,6 +159,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_blang_2": {
+    title: "Python",
     slug: "python",
     whyLearnThis: "Python is readable, versatile, and the undisputed king of Data Science, AI, and Machine Learning. In backend, Django and FastAPI are immensely popular.",
     whenIsItUsed: "When building data-heavy applications, rapid prototyping, or integrating with machine learning models.",
@@ -184,6 +190,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_blang_3": {
+    title: "Java",
     slug: "java",
     whyLearnThis: "Java is the backbone of enterprise software. It is strictly typed, highly scalable, and runs anywhere via the JVM.",
     whenIsItUsed: "Building large-scale enterprise systems, banking applications, and complex architectures.",
@@ -214,6 +221,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_blang_4": {
+    title: "Go",
     slug: "go",
     whyLearnThis: "Go (Golang) was built by Google for modern, concurrent, and highly scalable network services. It compiles to machine code and is blazing fast.",
     whenIsItUsed: "Building high-performance microservices, CLI tools, and cloud-native infrastructure (Docker/K8s are written in Go).",
@@ -244,6 +252,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_blang_5": {
+    title: "Rust",
     slug: "rust",
     whyLearnThis: "Rust offers the speed of C++ with guaranteed memory safety. It prevents segfaults and data races at compile time via its unique ownership model.",
     whenIsItUsed: "When writing system-level tools, WebAssembly, or backend services where performance and safety are absolutely critical.",
@@ -275,6 +284,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 3. Relational Databases ---
   "n_rdb_1": {
+    title: "Sql Basics",
     slug: "sql-basics",
     whyLearnThis: "SQL (Structured Query Language) is how you talk to relational databases. It has been the industry standard for decades and is absolutely essential.",
     whenIsItUsed: "Whenever retrieving, inserting, updating, or deleting structured data.",
@@ -305,6 +315,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_rdb_2": {
+    title: "Postgresql",
     slug: "postgresql",
     whyLearnThis: "PostgreSQL is the world's most advanced open-source relational database. It is incredibly robust, highly compliant with SQL standards, and widely used.",
     whenIsItUsed: "As the primary datastore for complex backend architectures needing ACID compliance.",
@@ -335,6 +346,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_rdb_3": {
+    title: "Mysql",
     slug: "mysql",
     whyLearnThis: "MySQL is arguably the most popular open-source database on the web. It's the engine behind WordPress and countless massive scale applications.",
     whenIsItUsed: "In highly read-heavy applications, LAMP stack apps, or when simple horizontal replication is desired.",
@@ -365,6 +377,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_rdb_4": {
+    title: "Database Design Normalization",
     slug: "database-design-normalization",
     whyLearnThis: "A bad database schema will ruin an application before it even scales. Proper design ensures data integrity, avoids duplication, and keeps queries fast.",
     whenIsItUsed: "During the initial architecture phase of building a new feature or application.",
@@ -396,6 +409,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 4. NoSQL Databases ---
   "n_nosql_1": {
+    title: "Mongodb",
     slug: "mongodb",
     whyLearnThis: "MongoDB is the most popular document database. It stores data in JSON-like objects (BSON), allowing for incredibly flexible and rapid development.",
     whenIsItUsed: "For prototyping, handling unstructured data, or building real-time analytics dashboards.",
@@ -426,6 +440,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_nosql_2": {
+    title: "Redis",
     slug: "redis",
     whyLearnThis: "Redis is an in-memory key-value data store. Because it reads/writes from RAM rather than a hard drive, it is unfathomably fast.",
     whenIsItUsed: "Caching API responses, managing user sessions, rate limiting, and real-time leaderboards.",
@@ -456,6 +471,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_nosql_3": {
+    title: "Cassandra",
     slug: "cassandra",
     whyLearnThis: "Apache Cassandra is a wide-column NoSQL store built for massive scale, high availability, and writing vast amounts of data with zero single points of failure.",
     whenIsItUsed: "When you have huge volumes of write-heavy data across multiple geographical datacenters.",
@@ -487,6 +503,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 5. APIs ---
   "n_bapi_1": {
+    title: "Rest Apis",
     slug: "rest-apis",
     whyLearnThis: "REST is the architectural standard for the internet. Almost all web applications communicate with backend servers via REST APIs.",
     whenIsItUsed: "Whenever exposing backend functionality to clients (web, mobile, or public third parties).",
@@ -517,6 +534,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_bapi_2": {
+    title: "Graphql",
     slug: "graphql",
     whyLearnThis: "GraphQL lets clients request exactly the data they need, solving the 'over-fetching' and 'under-fetching' issues of standard REST APIs.",
     whenIsItUsed: "In complex applications where clients need heavily nested data, or when aggregating data from multiple backend microservices.",
@@ -547,6 +565,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_bapi_3": {
+    title: "Grpc",
     slug: "grpc",
     whyLearnThis: "gRPC is a high-performance framework developed by Google. It uses Protocol Buffers (protobufs) and HTTP/2 to communicate incredibly fast between services.",
     whenIsItUsed: "For backend-to-backend communication in microservice architectures where JSON parsing is too slow.",
@@ -577,6 +596,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_bapi_4": {
+    title: "Websockets",
     slug: "websockets",
     whyLearnThis: "WebSockets allow for full-duplex, persistent, real-time communication between the client and server. HTTP is request-response; WebSockets are continuous.",
     whenIsItUsed: "Building chat apps, live sports tickers, collaborative editing tools, or real-time dashboards.",
@@ -608,6 +628,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 6. Authentication & Security ---
   "n_auth_1": {
+    title: "Hashing And Salting",
     slug: "hashing-and-salting",
     whyLearnThis: "Never store plaintext passwords in a database. Hashing and salting ensure that even if your database is compromised, user passwords remain secure.",
     whenIsItUsed: "Whenever implementing a user registration or login system.",
@@ -638,6 +659,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_auth_2": {
+    title: "Jwt And Session Auth",
     slug: "jwt-and-session-auth",
     whyLearnThis: "HTTP is stateless. You need a mechanism to remember that a user is logged in as they navigate your site. Sessions and JWTs solve this.",
     whenIsItUsed: "In every application that requires user accounts.",
@@ -668,6 +690,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_auth_3": {
+    title: "Oauth2 And Oidc",
     slug: "oauth2-and-oidc",
     whyLearnThis: "OAuth 2.0 allows users to log into your app using Google, GitHub, or Facebook without creating a new password. OIDC builds identity on top of it.",
     whenIsItUsed: "When implementing 'Log in with Google' or delegating access to third-party services.",
@@ -698,6 +721,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_auth_4": {
+    title: "Web Security Cors",
     slug: "web-security-cors",
     whyLearnThis: "The web is hostile. Understanding common attacks (XSS, CSRF, SQLi) and browser security policies (CORS) is mandatory to protect user data.",
     whenIsItUsed: "Whenever deploying a backend that communicates with web browsers or handles user input.",
@@ -729,6 +753,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 7. Caching & Message Brokers ---
   "n_cache_1": {
+    title: "Caching Concepts",
     slug: "caching-concepts",
     whyLearnThis: "Database queries are slow and expensive. Caching stores the result of an expensive operation in fast memory so subsequent requests are nearly instant.",
     whenIsItUsed: "When an application scales and database reads become a bottleneck.",
@@ -759,6 +784,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cache_2": {
+    title: "Redis Caching",
     slug: "redis-caching",
     whyLearnThis: "Redis is the industry standard for distributed caching. It provides extremely fast, memory-based storage accessible across multiple backend servers.",
     whenIsItUsed: "When you have multiple backend instances that need to share a single, fast cache layer.",
@@ -789,6 +815,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cache_3": {
+    title: "Rabbitmq",
     slug: "rabbitmq",
     whyLearnThis: "RabbitMQ is a widely used message broker. It allows different parts of your system to communicate asynchronously, improving reliability and decoupling services.",
     whenIsItUsed: "When processing background jobs (like sending emails) or routing messages in a microservices architecture.",
@@ -819,6 +846,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cache_4": {
+    title: "Apache Kafka",
     slug: "apache-kafka",
     whyLearnThis: "Kafka is a distributed event streaming platform built for massive scale. Unlike RabbitMQ which deletes messages when read, Kafka stores them as a persistent log.",
     whenIsItUsed: "For real-time data pipelines, massive telemetry ingestion, and event-driven microservices at scale.",
@@ -850,6 +878,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 8. Web Servers & Proxies ---
   "n_web_1": {
+    title: "Nginx",
     slug: "nginx",
     whyLearnThis: "Nginx is a lightning-fast web server and reverse proxy. It sits in front of your application servers, handling raw HTTP traffic efficiently.",
     whenIsItUsed: "Deploying production applications, terminating SSL, serving static files, or load balancing.",
@@ -880,6 +909,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_web_2": {
+    title: "Apache",
     slug: "apache",
     whyLearnThis: "Apache HTTP Server is the historically dominant web server. While Nginx has surpassed it for modern apps, Apache is incredibly flexible and heavily used in PHP environments.",
     whenIsItUsed: "Working with legacy systems, LAMP stack (Linux, Apache, MySQL, PHP), or complex `.htaccess` routing.",
@@ -910,6 +940,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_web_3": {
+    title: "Reverse Proxies Load Balancers",
     slug: "reverse-proxies-load-balancers",
     whyLearnThis: "A reverse proxy handles incoming traffic and distributes it to your backend servers. It enables high availability, scaling, and security.",
     whenIsItUsed: "Whenever scaling an application beyond a single server.",
@@ -941,6 +972,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 9. Testing ---
   "n_btest_1": {
+    title: "Unit Testing",
     slug: "unit-testing",
     whyLearnThis: "Unit testing ensures that individual, isolated functions in your backend work correctly. It builds the foundation of a reliable codebase.",
     whenIsItUsed: "Testing utility functions, complex math, data formatting, or isolated class methods.",
@@ -971,6 +1003,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_btest_2": {
+    title: "Integration Testing",
     slug: "integration-testing",
     whyLearnThis: "Integration tests verify that different parts of your system work together. For a backend, this usually means testing API endpoints against a real database.",
     whenIsItUsed: "Ensuring an API route behaves as expected from request to database insertion.",
@@ -1001,6 +1034,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_btest_3": {
+    title: "E2e Testing",
     slug: "e2e-testing",
     whyLearnThis: "End-to-end testing simulates real users interacting with the full stack, including the frontend UI, backend API, and database.",
     whenIsItUsed: "Testing critical business flows (like Checkout or Login) before deployment.",
@@ -1032,6 +1066,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 10. CI/CD & Containers ---
   "n_cicd_1": {
+    title: "Docker Basics",
     slug: "docker-basics",
     whyLearnThis: "Docker solves the 'it works on my machine' problem. It packages your application and its environment (OS, libraries, dependencies) into a single, portable container.",
     whenIsItUsed: "Whenever deploying a modern application, sharing dev environments, or running integration tests.",
@@ -1062,6 +1097,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cicd_2": {
+    title: "Docker Compose",
     slug: "docker-compose",
     whyLearnThis: "Real applications require multiple containers (e.g., a backend container, a database container, a Redis container). Docker Compose allows you to define and run them all together.",
     whenIsItUsed: "For local development and testing complex multi-container architectures.",
@@ -1092,6 +1128,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cicd_3": {
+    title: "Cicd Pipelines",
     slug: "cicd-pipelines",
     whyLearnThis: "Continuous Integration / Continuous Deployment (CI/CD) automates the testing and deployment of your code. It prevents broken code from reaching production.",
     whenIsItUsed: "Every time a developer pushes code to a repository.",
@@ -1122,6 +1159,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cicd_4": {
+    title: "Github Actions",
     slug: "github-actions",
     whyLearnThis: "GitHub Actions is built directly into GitHub. It is currently the most popular and accessible way to set up CI/CD for modern repositories.",
     whenIsItUsed: "For linting, testing, building, and deploying code hosted on GitHub.",
@@ -1153,6 +1191,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 11. Architecture ---
   "n_arch_1": {
+    title: "Monoliths Vs Microservices",
     slug: "monoliths-vs-microservices",
     whyLearnThis: "Choosing the right architecture is critical. Monoliths are easier to build and test; microservices allow independent scaling and deployment.",
     whenIsItUsed: "When designing a new application or scaling an existing one that has become too large and complex.",
@@ -1183,6 +1222,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_arch_2": {
+    title: "Serverless Architecture",
     slug: "serverless-architecture",
     whyLearnThis: "Serverless abstracts away server management. You write functions, and the cloud provider automatically scales them from zero to millions of requests.",
     whenIsItUsed: "For unpredictable workloads, cron jobs, or rapidly scaling APIs without managing infrastructure.",
@@ -1213,6 +1253,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_arch_3": {
+    title: "Api Gateway Bff",
     slug: "api-gateway-bff",
     whyLearnThis: "In a microservices world, clients shouldn't need to know the IP address of 20 different services. An API Gateway or BFF (Backend for Frontend) handles routing.",
     whenIsItUsed: "When aggregating data from multiple services or tailoring responses for specific clients (Mobile vs Web).",
@@ -1243,6 +1284,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_arch_4": {
+    title: "Event Driven Architecture",
     slug: "event-driven-architecture",
     whyLearnThis: "Event-Driven architectures react to state changes (events) rather than relying on synchronous API calls. It creates highly decoupled, scalable systems.",
     whenIsItUsed: "When building real-time systems, IoT backends, or complex asynchronous workflows.",
@@ -1274,6 +1316,7 @@ export const backendTopics: Record<string, TopicData> = {
   },
   // --- 12. Cloud & Deployment ---
   "n_cloud_1": {
+    title: "Cloud Providers",
     slug: "cloud-providers",
     whyLearnThis: "Modern applications run in the cloud. Understanding the core primitives (Compute, Storage, Networking) of major providers is essential for deploying apps.",
     whenIsItUsed: "Whenever launching a production application.",
@@ -1304,6 +1347,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cloud_2": {
+    title: "Infrastructure As Code",
     slug: "infrastructure-as-code",
     whyLearnThis: "Clicking around a cloud console to create servers is error-prone and unrepeatable. IaC allows you to define your entire infrastructure using code.",
     whenIsItUsed: "When provisioning infrastructure in a repeatable, version-controlled manner.",
@@ -1334,6 +1378,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cloud_3": {
+    title: "Kubernetes",
     slug: "kubernetes",
     whyLearnThis: "Kubernetes (K8s) is the industry standard for orchestrating containers. It automates the deployment, scaling, and management of containerized applications.",
     whenIsItUsed: "When running complex, large-scale microservice architectures that require high availability.",
@@ -1364,6 +1409,7 @@ export const backendTopics: Record<string, TopicData> = {
     ]
   },
   "n_cloud_4": {
+    title: "Monitoring Observability",
     slug: "monitoring-observability",
     whyLearnThis: "If your app crashes in the forest and there are no logs, did it really crash? Monitoring lets you know your app is healthy; Observability helps you debug it when it's not.",
     whenIsItUsed: "Constantly in production to ensure uptime and debug issues.",

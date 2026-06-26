@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import { getRoadmapBySlug, getAllRoadmaps } from "@/data/roadmaps";
 import { frontendContent } from "@/data/content/frontend";
+import { backendContent } from "@/data/content/backend";
 import { Navbar } from "@/components/navbar";
 import { RoadmapRenderer } from "@/components/roadmap-viewer/roadmap-renderer";
 import { ArrowLeft, BookOpen } from "lucide-react";
@@ -29,8 +30,10 @@ export default async function RoadmapPreviewPage({ params }: RoadmapPageProps) {
   let roadmapContent = null;
   if (slug === "frontend") {
     roadmapContent = frontendContent;
+  } else if (slug === "backend") {
+    roadmapContent = backendContent;
   }
-  // Add backend.ts, devops.ts etc here as they are created
+  // Add devops.ts etc here as they are created
 
   return (
     <div className="h-screen w-full flex flex-col bg-[#f8fafc] overflow-hidden">
