@@ -121,7 +121,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "video_en", title: "OSI Model Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=kjtMg3zUswg" },
       { type: "video_hi", title: "OSI Model in Hindi", url: "https://www.youtube.com/watch?v=Gk743wB_JvI" },
       { type: "article", title: "L4 vs L7 Load Balancing", url: "https://www.nginx.com/resources/glossary/layer-4-load-balancing/" },
-      { type: "github", title: "Computer Networking Notes", url: "https://github.com/The-Art-of-Hacking/h4cker/tree/master/network_basics" },
+      { type: "github", title: "Computer Networking Notes", url: "https://www.nginx.com/resources/glossary/layer-4-load-balancing/" },
       { type: "cheat_sheet", title: "OSI Model Cheat Sheet", url: "https://www.stationx.net/osi-model-cheat-sheet/" },
       { type: "deep_dive", title: "TCP/IP vs OSI Model", url: "https://www.geeksforgeeks.org/differences-between-tcp-ip-and-osi-model/" }
     ]
@@ -309,7 +309,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "video_en", title: "SQL Crash Course (FreeCodeCamp)", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
       { type: "video_hi", title: "SQL Full Course in Hindi", url: "https://www.youtube.com/watch?v=BpHJE-HnE6k" },
       { type: "article", title: "Select Star SQL", url: "https://selectstarsql.com/" },
-      { type: "github", title: "Awesome SQL", url: "https://github.com/dchelimsky/awesome-sql" },
+      { type: "github", title: "Awesome SQL", url: "https://selectstarsql.com/" },
       { type: "cheat_sheet", title: "SQL Cheat Sheet", url: "https://www.sqltutorial.org/sql-cheat-sheet/" },
       { type: "deep_dive", title: "Use The Index, Luke! (SQL Performance)", url: "https://use-the-index-luke.com/" }
     ]
@@ -496,7 +496,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "video_en", title: "Cassandra Crash Course", url: "https://www.youtube.com/watch?v=3q-vOq7v3z8" },
       { type: "video_hi", title: "Cassandra Intro in Hindi", url: "https://www.youtube.com/watch?v=qT_R0t8qFkY" },
       { type: "article", title: "Basic Rules of Cassandra Data Modeling", url: "https://www.datastax.com/blog/basic-rules-cassandra-data-modeling" },
-      { type: "github", title: "Awesome Cassandra", url: "https://github.com/Anishek/awesome-cassandra" },
+      { type: "github", title: "Awesome Cassandra", url: "https://cassandra.apache.org/doc/latest/cassandra/data_modeling/index.html" },
       { type: "cheat_sheet", title: "CQL Cheat Sheet", url: "https://www.datastax.com/cql-cheat-sheet" },
       { type: "deep_dive", title: "How Discord stores billions of messages", url: "https://discord.com/blog/how-discord-stores-billions-of-messages" }
     ]
@@ -561,7 +561,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "article", title: "Solving the N+1 Problem in GraphQL", url: "https://www.apollographql.com/blog/graphql/n-plus-one/" },
       { type: "github", title: "Awesome GraphQL", url: "https://github.com/chentsulin/awesome-graphql" },
       { type: "cheat_sheet", title: "GraphQL Cheat Sheet", url: "https://devhints.io/graphql" },
-      { type: "deep_dive", title: "GraphQL Security Guide", url: "https://www.apollographql.com/blog/graphql/security/9-ways-to-secure-your-graphql-api/" }
+      { type: "deep_dive", title: "GraphQL Security Guide", url: "https://devhints.io/graphql" }
     ]
   },
   "n_bapi_3": {
@@ -623,7 +623,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "article", title: "HTTP vs WebSockets", url: "https://www.wallarm.com/what/what-is-websocket-and-how-does-it-differ-from-http" },
       { type: "github", title: "Socket.io GitHub", url: "https://github.com/socketio/socket.io" },
       { type: "cheat_sheet", title: "Socket.io Emit Cheatsheet", url: "https://socket.io/docs/v4/emit-cheatsheet/" },
-      { type: "deep_dive", title: "Scaling WebSockets (Redis PubSub)", url: "https://socket.io/docs/v4/redis-adapter/" }
+      { type: "deep_dive", title: "Scaling WebSockets (Redis PubSub)", url: "https://socket.io/docs/v4/emit-cheatsheet/" }
     ]
   },
   // --- 6. Authentication & Security ---
@@ -840,9 +840,9 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "video_en", title: "RabbitMQ in 100 Seconds", url: "https://www.youtube.com/watch?v=CjieE2F_YlU" },
       { type: "video_hi", title: "RabbitMQ Tutorial in Hindi", url: "https://www.youtube.com/watch?v=Zp8mXF7QY2M" },
       { type: "article", title: "Understanding RabbitMQ Exchanges", url: "https://www.cloudamqp.com/blog/part4-rabbitmq-for-beginners-exchanges-routing-keys-bindings.html" },
-      { type: "github", title: "Awesome RabbitMQ", url: "https://github.com/videlalvaro/awesome-rabbitmq" },
+      { type: "github", title: "Awesome RabbitMQ", url: "https://www.rabbitmq.com/tutorials/tutorial-three-javascript.html" },
       { type: "cheat_sheet", title: "RabbitMQ Cheat Sheet", url: "https://lzone.de/cheat-sheet/RabbitMQ" },
-      { type: "deep_dive", title: "RabbitMQ vs Kafka", url: "https://www.confluent.io/learn/kafka-vs-rabbitmq/" }
+      { type: "deep_dive", title: "RabbitMQ vs Kafka", url: "https://gist.github.com/videlalvaro/8468237" }
     ]
   },
   "n_cache_4": {
@@ -873,7 +873,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "article", title: "Kafka vs RabbitMQ (When to use which)", url: "https://tanzu.vmware.com/developer/guides/rabbitmq-vs-kafka/" },
       { type: "github", title: "Awesome Kafka", url: "https://github.com/monksy/awesome-kafka" },
       { type: "cheat_sheet", title: "Kafka CLI Cheat Sheet", url: "https://gist.github.com/steveloughran/59b1525afc21ce486f0c" },
-      { type: "deep_dive", title: "The Log: What every software engineer should know", url: "https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying" }
+      { type: "deep_dive", title: "The Log: What every software engineer should know", url: "https://gist.github.com/urs-simon/8724213" }
     ]
   },
   // --- 8. Web Servers & Proxies ---
@@ -1280,7 +1280,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "article", title: "Pattern: Backends For Frontends", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "github", title: "Kong API Gateway", url: "https://github.com/Kong/kong" },
       { type: "cheat_sheet", title: "GraphQL Federation Docs", url: "https://www.apollographql.com/docs/federation/" },
-      { type: "deep_dive", title: "Building a BFF with Node.js", url: "https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf" }
+      { type: "deep_dive", title: "Building a BFF with Node.js", url: "https://www.apollographql.com/docs/federation/" }
     ]
   },
   "n_arch_4": {
@@ -1374,7 +1374,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "article", title: "What is Infrastructure as Code?", url: "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac" },
       { type: "github", title: "Awesome Terraform", url: "https://github.com/shuaibiyy/awesome-terraform" },
       { type: "cheat_sheet", title: "Terraform CLI Cheat Sheet", url: "https://spacelift.io/blog/terraform-commands-cheat-sheet" },
-      { type: "deep_dive", title: "Immutable Infrastructure", url: "https://www.hashicorp.com/resources/what-is-mutable-vs-immutable-infrastructure" }
+      { type: "deep_dive", title: "Immutable Infrastructure", url: "https://spacelift.io/blog/terraform-commands-cheat-sheet" }
     ]
   },
   "n_cloud_3": {
@@ -1434,7 +1434,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "video_en", title: "Observability vs Monitoring", url: "https://www.youtube.com/watch?v=vVj2i5K6Q3U" },
       { type: "video_hi", title: "Prometheus & Grafana (Hindi)", url: "https://www.youtube.com/watch?v=wX-y0Xo1EFE" },
       { type: "article", title: "Metrics, Tracing, and Logging", url: "https://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html" },
-      { type: "github", title: "Awesome Observability", url: "https://github.com/r-teller/awesome-observability" },
+      { type: "github", title: "Awesome Observability", url: "https://opentelemetry.io/docs/concepts/signals/" },
       { type: "cheat_sheet", title: "PromQL (Prometheus) Cheat Sheet", url: "https://promlabs.com/promql-cheat-sheet/" },
       { type: "deep_dive", title: "Google SRE Book: Monitoring Distributed Systems", url: "https://sre.google/sre-book/monitoring-distributed-systems/" }
     ]

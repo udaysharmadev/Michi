@@ -61,7 +61,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Best Practices for REST API Integration", url: "https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/" },
       { type: "github", title: "TRPC for Type-Safe APIs", url: "https://github.com/trpc/trpc" },
       { type: "cheat_sheet", title: "Fetch API Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" },
-      { type: "deep_dive", title: "Deep Dive into GraphQL caching", url: "https://www.apollographql.com/blog/graphql-caching" }
+      { type: "deep_dive", title: "Deep Dive into GraphQL caching", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" }
     ]
   },
   n_fs_integ_2: {
@@ -99,7 +99,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "video_en", title: "Backend for Frontend Pattern Explained", url: "https://www.youtube.com/watch?v=mtnE_F9Tq6U" },
       { type: "video_hi", title: "BFF Architecture Hindi", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
       { type: "article", title: "Sam Newman on BFF", url: "https://samnewman.io/patterns/architectural/bff/" },
-      { type: "github", title: "BFF Boilerplate", url: "https://github.com/Azure-Samples/microservices-bff" },
+      { type: "github", title: "BFF Boilerplate", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "cheat_sheet", title: "API Gateway vs BFF", url: "https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf" },
       { type: "deep_dive", title: "Designing Resilient BFFs", url: "https://martinfowler.com/articles/micro-frontends.html" }
     ]
@@ -137,7 +137,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     commonMistakes: ["Memory leaks with multiple listeners", "Not handling reconnections"],
     realWorldApplications: ["Google Docs collaborative editing", "Discord chat"],
     resources: [
-      { type: "official", title: "Socket.io Documentation", url: "https://socket.io/docs/v4/" },
+      { type: "official", title: "Socket.io Documentation", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" },
       { type: "video_en", title: "Build a Chat App with Socket.io", url: "https://www.youtube.com/watch?v=rxzOqP9YwmM" },
       { type: "video_hi", title: "WebSockets in Hindi", url: "https://www.youtube.com/watch?v=Fj-N3nL5N6c" },
       { type: "article", title: "WebSockets vs Server-Sent Events", url: "https://web.dev/eventsource-basics/" },
