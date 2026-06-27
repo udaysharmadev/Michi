@@ -1,6 +1,5 @@
 "use client";
 
-import { useRef } from "react";
 import { motion, useReducedMotion } from "motion/react";
 
 const ROADMAP_TITLES = [
@@ -21,7 +20,7 @@ export function RoadmapMarquee() {
     return (
       <div className="flex flex-wrap gap-3 justify-center py-6">
         {ROADMAP_TITLES.slice(0, 10).map((title) => (
-          <span key={title} className="px-4 py-2 rounded-full bg-gray-50 border border-gray-200 text-sm font-medium text-gray-600">
+          <span key={title} className="px-4 py-2 rounded-full bg-card border border-border text-sm font-semibold text-muted-foreground">
             {title}
           </span>
         ))}
@@ -35,7 +34,7 @@ export function RoadmapMarquee() {
         className="flex gap-4 w-max"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
-          duration: 28,
+          duration: 35,
           repeat: Infinity,
           ease: "linear",
         }}
@@ -43,7 +42,7 @@ export function RoadmapMarquee() {
         {items.map((title, i) => (
           <span
             key={i}
-            className="shrink-0 px-5 py-2.5 rounded-full bg-gray-50 border border-gray-150 text-sm font-medium text-gray-600 whitespace-nowrap"
+            className="shrink-0 px-5 py-2.5 rounded-full bg-card border border-border text-sm font-semibold text-muted-foreground whitespace-nowrap shadow-sm hover:border-primary/40 hover:text-foreground transition-colors cursor-default"
           >
             {title}
           </span>

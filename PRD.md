@@ -436,6 +436,8 @@ Other 28 Roadmaps          ░░░░░░░░░░░░░░░░░�
 | Section 10 resources | All 3 Testing topics fully populated (100% complete) |
 | Section 11 resources | All 4 APIs & Data Fetching topics fully populated (100% complete) |
 | Section 12 resources | All 4 Deployment topics fully populated (100% complete) |
+| **Phase 1: UI/UX Overhaul** | Redesigned Theme, Navbar, Hero, Pages, Cards, Marquee, Footer & Viewer |
+| **Phase 2: Fix Resource Links** | Replaced ~145 broken placeholder YouTube links in Mobile/Android/iOS roadmaps |
 
 ---
 
@@ -515,12 +517,14 @@ In priority order for completing the **Frontend Developer roadmap**:
 | Token | Value |
 |---|---|
 | **Primary Color Palette** | Section-color-coded (blue, purple, green, yellow, red, orange) |
-| **Canvas Background** | `#f8fafc` (slate-50) |
-| **Card/Drawer Background** | `white` with `border-gray-200` |
-| **Typography** | System fonts (Tailwind default) |
+| **Brand Accent** | Electric Indigo/Blue (`oklch(0.55 0.18 264)` in light mode) |
+| **Canvas Background** | Tinted neutral `oklch(0.99 0.005 264)` (Light) / `oklch(0.13 0.02 264)` (Dark) |
+| **Card/Drawer Background** | `oklch(1 0 0)` (Light) / `oklch(0.15 0.02 264)` (Dark) |
+| **Typography** | `Outfit` (Headings) + `Geist Sans` (Body) + `Geist Mono` (Code) |
 | **Difficulty Colors** | Emerald (Beginner), Indigo (Intermediate), Rose (Advanced) |
 | **Progress Colors** | Gray (Not Started), Amber (Learning), Emerald (Completed) |
 | **Border Radius** | `rounded-xl` (12px) for cards, `rounded-2xl` for icons |
+| **Dark Mode** | Supported via `next-themes` and `ThemeProvider` |
 | **Animation** | `slide-in-from-right` (drawer), `animate-spin` (loader) |
 
 ---

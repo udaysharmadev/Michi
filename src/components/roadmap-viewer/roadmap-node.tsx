@@ -22,16 +22,16 @@ const iconMap: Record<string, React.FC<{ className?: string }>> = {
 
 // ── Difficulty colors ───────────────────────────────────────────────────────
 const difficultyColors: Record<string, string> = {
-  Beginner:     "text-emerald-600 bg-emerald-50",
-  Intermediate: "text-indigo-600 bg-indigo-50",
-  Advanced:     "text-rose-600 bg-rose-50",
+  Beginner:     "text-emerald-500 bg-emerald-500/10 border-emerald-500/20",
+  Intermediate: "text-indigo-500 bg-indigo-500/10 border-indigo-500/20",
+  Advanced:     "text-rose-500 bg-rose-500/10 border-rose-500/20",
 };
 
 // ── Progress border colors ──────────────────────────────────────────────────
 const progressStyles: Record<string, string> = {
   not_started: "",
-  learning:    "border-l-[3px] !border-l-blue-400 bg-blue-50/40",
-  completed:   "border-l-[3px] !border-l-emerald-500 bg-emerald-50/40",
+  learning:    "border-l-[3px] !border-l-amber-500 bg-amber-500/5",
+  completed:   "border-l-[3px] !border-l-emerald-500 bg-emerald-500/5",
 };
 
 // ── Component ───────────────────────────────────────────────────────────────
@@ -57,13 +57,13 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
   // Compute visual classes
   let hoverClasses: string;
   if (isHighlighted || isHovered) {
-    hoverClasses = "border-blue-400 shadow-lg ring-1 ring-blue-400/20 -translate-y-[2px] z-20";
+    hoverClasses = "border-primary shadow-lg ring-1 ring-primary/30 -translate-y-[2px] z-20";
   } else if (isConnected) {
-    hoverClasses = "border-blue-200 ring-1 ring-blue-200/40 shadow-md z-10";
+    hoverClasses = "border-primary/50 ring-1 ring-primary/20 shadow-md z-10";
   } else if (isDimmed) {
-    hoverClasses = "border-gray-200 shadow-sm saturate-[0.7] z-0";
+    hoverClasses = "border-border/50 shadow-sm saturate-50 opacity-60 z-0";
   } else {
-    hoverClasses = "border-gray-200 shadow-sm hover:border-gray-300 hover:shadow-md hover:-translate-y-[1px] hover:ring-1 hover:ring-black/5 z-0";
+    hoverClasses = "border-border shadow-sm hover:border-primary/40 hover:shadow-md hover:-translate-y-[1px] z-0";
   }
 
   const IconComponent = data.icon && iconMap[data.icon] ? iconMap[data.icon] : null;
@@ -79,15 +79,14 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
     <div
       onMouseEnter={() => setHoveredNodeId(id)}
       onMouseLeave={() => setHoveredNodeId(null)}
-      className={`group ${sizeClass} bg-white border rounded-2xl flex flex-col justify-between p-4 relative cursor-pointer
-        transition-[transform,box-shadow,border-color,opacity,filter]
-        duration-150
+      className={`group ${sizeClass} bg-card text-foreground border rounded-2xl flex flex-col justify-between p-4 relative cursor-pointer
+        transition-all duration-200
         active:scale-[0.97] active:shadow-sm active:duration-[80ms]
         ${hoverClasses} ${progressClass}`}
     >
       {/* Handles */}
-      <Handle id="left"   type="target" position={Position.Left}   className="w-2 h-2 !bg-gray-400 border-none -ml-1 opacity-0" />
-      <Handle id="top"    type="target" position={Position.Top}    className="w-2 h-2 !bg-gray-400 border-none -mt-1 opacity-0" />
+      <Handle id="left"   type="target" position={Position.Left}   className="w-2 h-2 !bg-muted-foreground border-none -ml-1 opacity-0" />
+      <Handle id="top"    type="target" position={Position.Top}    className="w-2 h-2 !bg-muted-foreground border-none -mt-1 opacity-0" />
 
       {/* Completed checkmark */}
       {progress === "completed" && (
@@ -97,13 +96,13 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
       )}
 
       {/* Content */}
-      <div className="flex items-start gap-2.5 min-w-0">
+      <div className="flex items-start gap-2.5 min-w-0 pr-4">
         {IconComponent && (
           <div className="shrink-0 mt-0.5">
-            <IconComponent className="w-[18px] h-[18px] text-gray-600" />
+            <IconComponent className="w-[18px] h-[18px] text-muted-foreground group-hover:text-foreground transition-colors" />
           </div>
         )}
-        <h3 className={`${titleSize} font-semibold text-gray-900 leading-snug line-clamp-2`}>
+        <h3 className={`font-heading ${titleSize} font-bold leading-snug line-clamp-2`}>
           {data.title}
         </h3>
       </div>
@@ -112,11 +111,11 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
       <div className="flex items-center justify-between mt-auto gap-2">
         {viewMode === "detailed" && (
           <>
-            <span className={`px-2 py-0.5 rounded-md text-[11px] font-semibold uppercase tracking-wide ${diffClass}`}>
+            <span className={`px-2 py-0.5 rounded-md border text-[10px] font-bold uppercase tracking-wider ${diffClass}`}>
               {data.difficulty || "Beginner"}
             </span>
             {data.estimatedTime && (
-              <span className="flex items-center gap-1 text-[11px] font-medium text-gray-400">
+              <span className="flex items-center gap-1.5 text-[11px] font-semibold text-muted-foreground">
                 <Clock className="w-3 h-3" />
                 {data.estimatedTime}
               </span>
@@ -127,23 +126,23 @@ export const RoadmapNode = memo(({ id, data }: NodeProps<RoadmapContentNode>) =>
 
       {/* Hover tooltip — appears after delay on detailed mode */}
       {viewMode === "detailed" && (
-        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 px-3 py-2.5 bg-gray-900 text-white rounded-xl shadow-xl text-xs w-[210px] opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-500 pointer-events-none z-50">
-          <div className="font-semibold mb-1 truncate">{data.title}</div>
-          <div className="flex items-center justify-between text-gray-300">
+        <div className="absolute bottom-full left-1/2 -translate-x-1/2 mb-3 px-3 py-2.5 bg-foreground text-background rounded-xl shadow-xl text-xs w-[210px] opacity-0 group-hover:opacity-100 transition-opacity duration-200 delay-500 pointer-events-none z-50">
+          <div className="font-heading font-bold mb-1 truncate">{data.title}</div>
+          <div className="flex items-center justify-between opacity-80 font-medium">
             <span>{data.difficulty || "Beginner"}</span>
             {data.estimatedTime && <span>{data.estimatedTime}</span>}
           </div>
           {connectedNodeIds.size > 0 && hoveredNodeId === id && (
-            <div className="text-gray-400 mt-1 text-[10px]">
+            <div className="opacity-60 mt-1 text-[10px] font-medium">
               {connectedNodeIds.size - 1} related topics
             </div>
           )}
-          <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-gray-900 rotate-45" />
+          <div className="absolute top-full left-1/2 -translate-x-1/2 -mt-1 w-2 h-2 bg-foreground rotate-45" />
         </div>
       )}
 
-      <Handle id="right"  type="source" position={Position.Right}  className="w-2 h-2 !bg-gray-400 border-none -mr-1 opacity-0" />
-      <Handle id="bottom" type="source" position={Position.Bottom} className="w-2 h-2 !bg-gray-400 border-none -mb-1 opacity-0" />
+      <Handle id="right"  type="source" position={Position.Right}  className="w-2 h-2 !bg-muted-foreground border-none -mr-1 opacity-0" />
+      <Handle id="bottom" type="source" position={Position.Bottom} className="w-2 h-2 !bg-muted-foreground border-none -mb-1 opacity-0" />
     </div>
   );
 });

@@ -25,9 +25,9 @@ const iconMap: Record<string, React.FC<{ className?: string }>> = {
 
 // ── Difficulty badge colors ─────────────────────────────────────────────────
 const difficultyColors: Record<string, string> = {
-  Beginner: "text-emerald-700 bg-emerald-50 border-emerald-200",
-  Intermediate: "text-indigo-700 bg-indigo-50 border-indigo-200",
-  Advanced: "text-rose-700 bg-rose-50 border-rose-200",
+  Beginner: "text-emerald-500 bg-emerald-500/10 border-emerald-500/20",
+  Intermediate: "text-indigo-500 bg-indigo-500/10 border-indigo-500/20",
+  Advanced: "text-rose-500 bg-rose-500/10 border-rose-500/20",
 };
 
 // ── Progress status config ──────────────────────────────────────────────────
@@ -36,22 +36,22 @@ const progressConfig = [
     status: "not_started" as const,
     label: "Not Started",
     icon: Circle,
-    activeClass: "bg-gray-900 text-white border-gray-900",
-    inactiveClass: "bg-white text-gray-600 border-gray-200 hover:border-gray-400",
+    activeClass: "bg-primary text-primary-foreground border-primary",
+    inactiveClass: "bg-background text-muted-foreground border-border hover:border-primary/50 hover:bg-muted",
   },
   {
     status: "learning" as const,
     label: "Learning",
     icon: BookOpen,
     activeClass: "bg-amber-500 text-white border-amber-500",
-    inactiveClass: "bg-white text-gray-600 border-gray-200 hover:border-amber-300",
+    inactiveClass: "bg-background text-muted-foreground border-border hover:border-amber-500/50 hover:bg-amber-500/10 hover:text-amber-500",
   },
   {
     status: "completed" as const,
     label: "Completed",
     icon: CheckCircle2,
     activeClass: "bg-emerald-500 text-white border-emerald-500",
-    inactiveClass: "bg-white text-gray-600 border-gray-200 hover:border-emerald-300",
+    inactiveClass: "bg-background text-muted-foreground border-border hover:border-emerald-500/50 hover:bg-emerald-500/10 hover:text-emerald-500",
   },
 ] as const;
 
@@ -114,12 +114,12 @@ export function NodeDetailsDrawer({
   const ResourceColor = (type: string) => {
     switch (type) {
       case 'video_en':
-      case 'video_hi': return "bg-red-50 group-hover:bg-red-100 text-red-500";
-      case 'official': return "bg-blue-50 group-hover:bg-blue-100 text-blue-500";
-      case 'github': return "bg-gray-100 group-hover:bg-gray-200 text-gray-800";
-      case 'cheat_sheet': return "bg-yellow-50 group-hover:bg-yellow-100 text-yellow-600";
-      case 'deep_dive': return "bg-purple-50 group-hover:bg-purple-100 text-purple-600";
-      default: return "bg-indigo-50 group-hover:bg-indigo-100 text-indigo-500";
+      case 'video_hi': return "bg-red-500/10 group-hover:bg-red-500/20 text-red-500";
+      case 'official': return "bg-blue-500/10 group-hover:bg-blue-500/20 text-blue-500";
+      case 'github': return "bg-foreground/10 group-hover:bg-foreground/20 text-foreground";
+      case 'cheat_sheet': return "bg-yellow-500/10 group-hover:bg-yellow-500/20 text-yellow-600";
+      case 'deep_dive': return "bg-purple-500/10 group-hover:bg-purple-500/20 text-purple-500";
+      default: return "bg-primary/10 group-hover:bg-primary/20 text-primary";
     }
   };
 
@@ -137,15 +137,15 @@ export function NodeDetailsDrawer({
   };
 
   return (
-    <div className="absolute top-0 right-0 h-full w-[460px] bg-white border-l border-gray-200 shadow-2xl z-50 flex flex-col pointer-events-auto animate-in slide-in-from-right duration-200">
+    <div className="absolute top-0 right-0 h-full w-[460px] bg-card border-l border-border shadow-2xl z-50 flex flex-col pointer-events-auto animate-in slide-in-from-right duration-200">
       {/* ── Header ─────────────────────────────────────────────────────── */}
-      <div className="flex items-center justify-between px-6 py-4 border-b border-gray-100 shrink-0 bg-white z-10 sticky top-0 shadow-sm">
-        <h2 className="text-xs font-semibold uppercase tracking-widest text-gray-400">
+      <div className="flex items-center justify-between px-6 py-4 border-b border-border shrink-0 bg-card z-10 sticky top-0 shadow-sm">
+        <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
           Knowledge Entity
         </h2>
         <button
           onClick={onClose}
-          className="p-1.5 text-gray-400 hover:text-gray-900 hover:bg-gray-100 rounded-lg transition-colors duration-200 cursor-pointer"
+          className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors duration-200 cursor-pointer"
         >
           <X className="w-5 h-5" />
         </button>
@@ -154,17 +154,17 @@ export function NodeDetailsDrawer({
       {/* ── Scrollable Content ─────────────────────────────────────────── */}
       <div className="flex-1 overflow-y-auto p-6 scroll-smooth">
         {/* ─── 1. Hero ─────────────────────────────────────────────────── */}
-        <div className="border-b border-gray-100 pb-5 mb-5">
+        <div className="border-b border-border pb-5 mb-5">
           <div className="flex items-start gap-4 mb-4">
-            <div className="w-14 h-14 shrink-0 flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100 border border-gray-200 rounded-2xl shadow-sm">
+            <div className="w-14 h-14 shrink-0 flex items-center justify-center bg-muted/50 border border-border rounded-2xl shadow-sm">
               {IconComponent ? (
-                <IconComponent className="w-7 h-7 text-gray-800" />
+                <IconComponent className="w-7 h-7 text-foreground" />
               ) : (
-                <div className="w-5 h-5 rounded-full bg-gray-300" />
+                <div className="w-5 h-5 rounded-full bg-muted-foreground/30" />
               )}
             </div>
             <div className="flex-1 min-w-0">
-              <h1 className="text-2xl font-black tracking-tight text-gray-900 leading-tight mb-2">
+              <h1 className="font-heading text-2xl font-black tracking-tight text-foreground leading-tight mb-2">
                 {nodeData.title}
               </h1>
               <div className="flex items-center gap-2 flex-wrap">
@@ -172,7 +172,7 @@ export function NodeDetailsDrawer({
                   {nodeData.difficulty || "Beginner"}
                 </span>
                 {nodeData.estimatedTime && (
-                  <span className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-widest text-gray-500 border border-gray-200 px-2 py-1 rounded-full bg-gray-50">
+                  <span className="inline-flex items-center gap-1 text-[11px] font-semibold uppercase tracking-widest text-muted-foreground border border-border px-2 py-1 rounded-full bg-muted/30">
                     <Clock className="w-3 h-3" />
                     {nodeData.estimatedTime}
                   </span>
@@ -183,7 +183,7 @@ export function NodeDetailsDrawer({
         </div>
 
         {/* ─── 2. Progress Status ──────────────────────────────────────── */}
-        <div className="border-b border-gray-100 pb-5 mb-5">
+        <div className="border-b border-border pb-5 mb-5">
           <div className="flex gap-2">
             {progressConfig.map((cfg) => {
               const isActive = currentProgress === cfg.status;
@@ -206,11 +206,11 @@ export function NodeDetailsDrawer({
 
         {/* ─── 3. Why Learn This? ──────────────────────────────────────── */}
         {nodeData.whyLearnThis && (
-          <div className="border-b border-gray-100 pb-5 mb-5 bg-blue-50/50 -mx-6 px-6 py-4 border-t">
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-blue-600 mb-2 flex items-center gap-1.5">
+          <div className="border-b border-border pb-5 mb-5 bg-primary/5 -mx-6 px-6 py-4 border-t">
+            <h3 className="font-heading text-xs font-bold uppercase tracking-widest text-primary mb-2 flex items-center gap-1.5">
               Why Learn This?
             </h3>
-            <p className="text-sm text-gray-700 leading-relaxed">
+            <p className="text-sm text-foreground/80 leading-relaxed font-medium">
               {nodeData.whyLearnThis}
             </p>
           </div>
@@ -218,21 +218,21 @@ export function NodeDetailsDrawer({
 
         {/* ─── 4. Context (When/Where) ─────────────────────────────────── */}
         {(nodeData.whenIsItUsed || nodeData.whereIsItUsed) && (
-          <div className="border-b border-gray-100 pb-5 mb-5">
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          <div className="border-b border-border pb-5 mb-5">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
               Context
             </h3>
             <div className="space-y-3">
               {nodeData.whenIsItUsed && (
                 <div>
-                  <span className="text-xs font-semibold text-gray-900 block mb-1">When is it used?</span>
-                  <p className="text-sm text-gray-600">{nodeData.whenIsItUsed}</p>
+                  <span className="text-xs font-bold text-foreground block mb-1">When is it used?</span>
+                  <p className="text-sm text-muted-foreground font-medium">{nodeData.whenIsItUsed}</p>
                 </div>
               )}
               {nodeData.whereIsItUsed && (
                 <div>
-                  <span className="text-xs font-semibold text-gray-900 block mb-1">Where is it used?</span>
-                  <p className="text-sm text-gray-600">{nodeData.whereIsItUsed}</p>
+                  <span className="text-xs font-bold text-foreground block mb-1">Where is it used?</span>
+                  <p className="text-sm text-muted-foreground font-medium">{nodeData.whereIsItUsed}</p>
                 </div>
               )}
             </div>
@@ -241,11 +241,11 @@ export function NodeDetailsDrawer({
 
         {/* ─── 5. Learning Outcomes ────────────────────────────────────── */}
         {nodeData.learningOutcomes && nodeData.learningOutcomes.length > 0 && (
-          <div className="border-b border-gray-100 pb-5 mb-5">
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+          <div className="border-b border-border pb-5 mb-5">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
               Learning Outcomes
             </h3>
-            <ul className="space-y-2.5 text-sm text-gray-700">
+            <ul className="space-y-2.5 text-sm text-foreground/80 font-medium">
               {nodeData.learningOutcomes.map((outcome, idx) => (
                 <li key={idx} className="flex gap-2.5 items-start">
                   <CheckCircle2 className="w-4 h-4 text-emerald-500 shrink-0 mt-0.5" />
@@ -258,11 +258,11 @@ export function NodeDetailsDrawer({
 
         {/* ─── 6. Real World Applications ──────────────────────────────── */}
         {nodeData.realWorldApplications && nodeData.realWorldApplications.length > 0 && (
-          <div className="border-b border-gray-100 pb-5 mb-5">
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3 flex items-center gap-1.5">
+          <div className="border-b border-border pb-5 mb-5">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3 flex items-center gap-1.5">
               Real World Applications
             </h3>
-            <ul className="list-disc pl-5 space-y-1.5 text-sm text-gray-600">
+            <ul className="list-disc pl-5 space-y-1.5 text-sm text-muted-foreground font-medium">
               {nodeData.realWorldApplications.map((app, idx) => (
                 <li key={idx}>{app}</li>
               ))}
@@ -272,11 +272,11 @@ export function NodeDetailsDrawer({
 
         {/* ─── 7. Common Mistakes ──────────────────────────────────────── */}
         {nodeData.commonMistakes && nodeData.commonMistakes.length > 0 && (
-          <div className="border-b border-gray-100 pb-5 mb-5 bg-rose-50/50 -mx-6 px-6 py-4 border-t">
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-rose-600 mb-3 flex items-center gap-1.5">
+          <div className="border-b border-border pb-5 mb-5 bg-rose-500/5 -mx-6 px-6 py-4 border-t">
+            <h3 className="font-heading text-xs font-bold uppercase tracking-widest text-rose-500 mb-3 flex items-center gap-1.5">
               Common Mistakes
             </h3>
-            <ul className="space-y-2 text-sm text-gray-700">
+            <ul className="space-y-2 text-sm text-foreground/80 font-medium">
               {nodeData.commonMistakes.map((mistake, idx) => (
                 <li key={idx} className="flex gap-2 items-start">
                   <span className="text-rose-500 font-bold shrink-0 mt-0.5">•</span>
@@ -288,33 +288,33 @@ export function NodeDetailsDrawer({
         )}
 
         {/* ─── 8. Graph Context (Prereqs / Leads To) ───────────────────── */}
-        <div className="border-b border-gray-100 pb-5 mb-5 grid grid-cols-2 gap-4">
+        <div className="border-b border-border pb-5 mb-5 grid grid-cols-2 gap-4">
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 flex items-center gap-1">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2 flex items-center gap-1">
               <ArrowLeft className="w-3 h-3" /> Prerequisites
             </h3>
             {prerequisites.length > 0 ? (
               <div className="flex flex-col gap-1.5">
                 {prerequisites.map((n) => (
-                  <span key={n.id} className="text-sm font-medium text-gray-700">{n.data.title}</span>
+                  <span key={n.id} className="text-sm font-semibold text-foreground/90">{n.data.title}</span>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-gray-400 italic">None</p>
+              <p className="text-sm text-muted-foreground italic font-medium">None</p>
             )}
           </div>
           <div>
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-2 flex items-center gap-1">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-2 flex items-center gap-1">
               <ArrowRight className="w-3 h-3" /> Leads To
             </h3>
             {leadsTo.length > 0 ? (
               <div className="flex flex-col gap-1.5">
                 {leadsTo.map((n) => (
-                  <span key={n.id} className="text-sm font-medium text-gray-700">{n.data.title}</span>
+                  <span key={n.id} className="text-sm font-semibold text-foreground/90">{n.data.title}</span>
                 ))}
               </div>
             ) : (
-              <p className="text-sm text-gray-400 italic">End of path</p>
+              <p className="text-sm text-muted-foreground italic font-medium">End of path</p>
             )}
           </div>
         </div>
@@ -322,7 +322,7 @@ export function NodeDetailsDrawer({
         {/* ─── 9. Resources ────────────────────────────────────────────── */}
         {nodeData.resources && nodeData.resources.length > 0 ? (
           <div className="pb-4">
-            <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
               Curated Resources
             </h3>
             <div className="flex flex-col gap-2.5">
@@ -334,16 +334,16 @@ export function NodeDetailsDrawer({
                     href={res.url}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="group flex items-center gap-3 p-3 rounded-xl border border-gray-200 bg-white hover:border-gray-300 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
+                    className="group flex items-center gap-3 p-3 rounded-xl border border-border bg-background hover:border-primary/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200"
                   >
                     <div className={`w-10 h-10 shrink-0 flex items-center justify-center rounded-lg transition-colors duration-200 ${colorClasses}`}>
                       <ResourceIcon type={res.type} className="w-5 h-5" />
                     </div>
                     <div className="flex-1 min-w-0">
-                      <div className="text-sm font-semibold text-gray-900 group-hover:text-blue-600 transition-colors truncate">
+                      <div className="text-sm font-bold text-foreground group-hover:text-primary transition-colors truncate">
                         {res.title}
                       </div>
-                      <div className="text-[11px] font-medium text-gray-500 uppercase tracking-wider mt-0.5">
+                      <div className="text-[11px] font-bold text-muted-foreground uppercase tracking-wider mt-0.5">
                         {ResourceLabel(res.type)}
                       </div>
                     </div>
@@ -354,10 +354,10 @@ export function NodeDetailsDrawer({
           </div>
         ) : (
           <div className="pb-4">
-             <h3 className="text-xs font-semibold uppercase tracking-widest text-gray-400 mb-3">
+             <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
               Curated Resources
             </h3>
-            <p className="text-sm text-gray-500 italic">No resources added yet.</p>
+            <p className="text-sm text-muted-foreground italic font-medium">No resources added yet.</p>
           </div>
         )}
 
