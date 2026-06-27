@@ -467,10 +467,10 @@ Other 28 Roadmaps          ░░░░░░░░░░░░░░░░░�
 | ✅ Done | Mobile Developer roadmap (graph + data) | Complete |
 | ✅ Done | Android Developer roadmap (graph + data) | Complete |
 | ✅ Done | iOS Developer roadmap (graph + data) | Complete |
-| 🔴 Critical | DevOps Engineer roadmap (graph + data) | XL |
-| 🟡 High | Cloud Engineer roadmap | XL |
-| 🟡 High | AI Engineer roadmap | XL |
-| 🟢 Medium | All remaining 28 roadmaps | Massive |
+| ✅ Done | DevOps Engineer roadmap (graph + data) | Complete |
+| ✅ Done | Cloud Engineer roadmap (graph + data) | Complete |
+| ✅ Done | AI Engineer roadmap (graph + data) | Complete |
+| 🟢 Medium | All remaining 25 roadmaps | Massive |
 
 #### Platform Features
 

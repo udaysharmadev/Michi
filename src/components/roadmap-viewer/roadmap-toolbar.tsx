@@ -16,13 +16,13 @@ export function RoadmapToolbar() {
   return (
     <div className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto">
       {/* View Mode toggle */}
-      <div className="flex bg-white border border-gray-200 rounded-xl shadow-sm overflow-hidden">
+      <div className="flex bg-card border border-border rounded-xl shadow-sm overflow-hidden">
         <button
           onClick={() => setViewMode("detailed")}
           className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold transition-all duration-200 cursor-pointer ${
             viewMode === "detailed"
-              ? "bg-gray-900 text-white"
-              : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
+              ? "bg-foreground text-background"
+              : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
           }`}
         >
           <LayoutGrid className="w-3.5 h-3.5" />
@@ -32,8 +32,8 @@ export function RoadmapToolbar() {
           onClick={() => setViewMode("overview")}
           className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold transition-all duration-200 cursor-pointer ${
             viewMode === "overview"
-              ? "bg-gray-900 text-white"
-              : "text-gray-500 hover:text-gray-900 hover:bg-gray-50"
+              ? "bg-foreground text-background"
+              : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
           }`}
         >
           <List className="w-3.5 h-3.5" />
@@ -42,10 +42,10 @@ export function RoadmapToolbar() {
       </div>
 
       {/* Zoom controls */}
-      <div className="flex items-center bg-white border border-gray-200 rounded-xl shadow-sm">
+      <div className="flex items-center bg-card border border-border rounded-xl shadow-sm">
         <button
           onClick={() => zoomOut()}
-          className="p-2 text-gray-400 hover:text-gray-900 transition-colors duration-200 cursor-pointer"
+          className="p-2 text-muted-foreground/70 hover:text-foreground transition-colors duration-200 cursor-pointer"
         >
           <Minus className="w-3.5 h-3.5" />
         </button>
@@ -54,7 +54,7 @@ export function RoadmapToolbar() {
         </div>
         <button
           onClick={() => zoomIn()}
-          className="p-2 text-gray-400 hover:text-gray-900 transition-colors duration-200 cursor-pointer"
+          className="p-2 text-muted-foreground/70 hover:text-foreground transition-colors duration-200 cursor-pointer"
         >
           <Plus className="w-3.5 h-3.5" />
         </button>
@@ -63,7 +63,7 @@ export function RoadmapToolbar() {
       {/* Fit View */}
       <button
         onClick={() => fitView({ duration: 600, padding: 0.04 })}
-        className="flex items-center gap-1.5 px-3 py-2 bg-white border border-gray-200 rounded-xl shadow-sm text-xs font-semibold text-gray-500 hover:text-gray-900 hover:bg-gray-50 transition-colors duration-200 cursor-pointer"
+        className="flex items-center gap-1.5 px-3 py-2 bg-card border border-border rounded-xl shadow-sm text-xs font-semibold text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors duration-200 cursor-pointer"
       >
         <Maximize className="w-3.5 h-3.5" />
         Fit

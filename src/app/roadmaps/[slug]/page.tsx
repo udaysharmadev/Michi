@@ -1,11 +1,6 @@
 import { notFound } from "next/navigation";
 import { getRoadmapBySlug, getAllRoadmaps } from "@/data/roadmaps";
-import { frontendContent } from "@/data/content/frontend";
-import { backendContent } from "@/data/content/backend";
-import { fullstackContent } from "@/data/content/fullstack";
-import { mobileContent } from "@/data/content/mobile";
-import { androidContent } from "@/data/content/android";
-import { iosContent } from "@/data/content/ios";
+import { getContentBySlug } from "@/data/content/registry";
 import { Navbar } from "@/components/navbar";
 import { RoadmapRenderer } from "@/components/roadmap-viewer/roadmap-renderer";
 import { ArrowLeft, BookOpen } from "lucide-react";
@@ -30,22 +25,8 @@ export default async function RoadmapPreviewPage({ params }: RoadmapPageProps) {
     notFound();
   }
 
-  // Define logic to fetch correct static content based on slug
-  let roadmapContent = null;
-  if (slug === "frontend") {
-    roadmapContent = frontendContent;
-  } else if (slug === "backend") {
-    roadmapContent = backendContent;
-  } else if (slug === "fullstack") {
-    roadmapContent = fullstackContent;
-  } else if (slug === "mobile") {
-    roadmapContent = mobileContent;
-  } else if (slug === "android") {
-    roadmapContent = androidContent;
-  } else if (slug === "ios") {
-    roadmapContent = iosContent;
-  }
-  // Add devops.ts etc here as they are created
+  // Fetch static content dynamically
+  const roadmapContent = await getContentBySlug(slug);
 
   return (
     <div className="h-screen w-full flex flex-col bg-background overflow-hidden text-foreground">

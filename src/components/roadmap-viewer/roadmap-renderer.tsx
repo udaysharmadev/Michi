@@ -84,20 +84,20 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
 
   if (!isLayouted) {
     return (
-      <div className="flex w-full h-full items-center justify-center bg-[#f8fafc]">
+      <div className="flex w-full h-full items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-8 h-8 border-2 border-gray-300 border-t-gray-900 rounded-full animate-spin" />
-          <span className="text-sm font-medium text-gray-500">Mapping knowledge graph...</span>
+          <div className="w-8 h-8 border-2 border-border border-t-foreground rounded-full animate-spin" />
+          <span className="text-sm font-medium text-muted-foreground">Mapping knowledge graph...</span>
         </div>
       </div>
     );
   }
 
   return (
-    <div className="flex w-full h-screen bg-[#f8fafc] overflow-hidden">
+    <div className="flex w-full h-screen bg-background overflow-hidden">
       
       {/* Fixed Sidebar */}
-      <div className="w-[320px] shrink-0 h-full border-r border-gray-200 shadow-[4px_0_24px_rgba(0,0,0,0.02)] z-10 bg-white">
+      <div className="w-[320px] shrink-0 h-full border-r border-border shadow-[4px_0_24px_rgba(0,0,0,0.02)] z-10 bg-card">
         <RoadmapSidebar roadmap={roadmap} nodes={initialNodes} />
       </div>
 

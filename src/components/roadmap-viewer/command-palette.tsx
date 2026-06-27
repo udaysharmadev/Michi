@@ -119,12 +119,12 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
 
       {/* Modal */}
       <div
-        className="relative w-full max-w-xl bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden animate-in zoom-in-95 fade-in duration-200"
+        className="relative w-full max-w-xl bg-card rounded-2xl shadow-2xl border border-border overflow-hidden animate-in zoom-in-95 fade-in duration-200"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search input */}
-        <div className="flex items-center gap-3 px-5 py-4 border-b border-gray-100">
-          <Search className="w-5 h-5 text-gray-400 shrink-0" />
+        <div className="flex items-center gap-3 px-5 py-4 border-b border-border/50">
+          <Search className="w-5 h-5 text-muted-foreground/70 shrink-0" />
           <input
             ref={inputRef}
             type="text"
@@ -132,9 +132,9 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
             onChange={(e) => setQuery(e.target.value)}
             onKeyDown={handleKeyDown}
             placeholder="Search topics..."
-            className="flex-1 text-base text-gray-900 placeholder:text-gray-400 outline-none bg-transparent"
+            className="flex-1 text-base text-foreground placeholder:text-muted-foreground/70 outline-none bg-transparent"
           />
-          <kbd className="hidden sm:inline-flex items-center gap-1 px-2 py-1 text-[10px] font-semibold text-gray-400 bg-gray-100 rounded-md border border-gray-200">
+          <kbd className="hidden sm:inline-flex items-center gap-1 px-2 py-1 text-[10px] font-semibold text-muted-foreground/70 bg-muted rounded-md border border-border">
             ESC
           </kbd>
         </div>
@@ -144,15 +144,15 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
           {query.trim() === "" ? (
             <div className="px-5 py-12 text-center">
               <Command className="w-8 h-8 text-gray-300 mx-auto mb-3" />
-              <p className="text-sm text-gray-400">Start typing to search topics...</p>
+              <p className="text-sm text-muted-foreground/70">Start typing to search topics...</p>
               <p className="text-xs text-gray-300 mt-1">
-                <kbd className="px-1.5 py-0.5 bg-gray-100 rounded text-gray-400 font-mono">⌘K</kbd> to toggle
+                <kbd className="px-1.5 py-0.5 bg-muted rounded text-muted-foreground/70 font-mono">⌘K</kbd> to toggle
               </p>
             </div>
           ) : results.length === 0 ? (
             <div className="px-5 py-12 text-center">
               <Search className="w-8 h-8 text-gray-300 mx-auto mb-3" />
-              <p className="text-sm text-gray-400">No topics found for &ldquo;{query}&rdquo;</p>
+              <p className="text-sm text-muted-foreground/70">No topics found for &ldquo;{query}&rdquo;</p>
             </div>
           ) : (
             results.map((node, idx) => {
@@ -166,10 +166,10 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
                   onClick={() => handleSelect(node.id)}
                   onMouseEnter={() => setActiveIndex(idx)}
                   className={`w-full flex items-center gap-3 px-5 py-3 text-left transition-colors duration-100 cursor-pointer ${
-                    isActive ? "bg-gray-50" : "hover:bg-gray-50"
+                    isActive ? "bg-muted/50" : "hover:bg-muted/50"
                   }`}
                 >
-                  <div className="w-9 h-9 shrink-0 flex items-center justify-center bg-gray-100 rounded-xl">
+                  <div className="w-9 h-9 shrink-0 flex items-center justify-center bg-muted rounded-xl">
                     {Icon ? (
                       <Icon className="w-4 h-4 text-gray-700" />
                     ) : (
@@ -178,7 +178,7 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
                   </div>
 
                   <div className="flex-1 min-w-0">
-                    <div className="text-sm font-semibold text-gray-900 truncate">
+                    <div className="text-sm font-semibold text-foreground truncate">
                       {node.data.title}
                     </div>
                     <div className="flex items-center gap-2 mt-0.5">
@@ -186,13 +186,13 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
                         {node.data.difficulty || "Beginner"}
                       </span>
                       {node.data.estimatedTime && (
-                        <span className="text-[10px] text-gray-400">{node.data.estimatedTime}</span>
+                        <span className="text-[10px] text-muted-foreground/70">{node.data.estimatedTime}</span>
                       )}
                     </div>
                   </div>
 
                   {isActive && (
-                    <CornerDownLeft className="w-4 h-4 text-gray-400 shrink-0" />
+                    <CornerDownLeft className="w-4 h-4 text-muted-foreground/70 shrink-0" />
                   )}
                 </button>
               );
@@ -202,7 +202,7 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
 
         {/* Footer */}
         {results.length > 0 && (
-          <div className="flex items-center gap-4 px-5 py-2.5 border-t border-gray-100 text-[10px] text-gray-400">
+          <div className="flex items-center gap-4 px-5 py-2.5 border-t border-border/50 text-[10px] text-muted-foreground/70">
             <span className="flex items-center gap-1">
               <ArrowUp className="w-3 h-3" />
               <ArrowDown className="w-3 h-3" />
@@ -213,7 +213,7 @@ export function CommandPalette({ nodes, onNodeSelect }: CommandPaletteProps) {
               select
             </span>
             <span className="flex items-center gap-1">
-              <kbd className="px-1 py-0.5 bg-gray-100 rounded font-mono">esc</kbd>
+              <kbd className="px-1 py-0.5 bg-muted rounded font-mono">esc</kbd>
               close
             </span>
           </div>

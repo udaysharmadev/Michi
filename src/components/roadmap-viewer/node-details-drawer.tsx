@@ -43,14 +43,14 @@ const progressConfig = [
     status: "learning" as const,
     label: "Learning",
     icon: BookOpen,
-    activeClass: "bg-amber-500 text-white border-amber-500",
+    activeClass: "bg-amber-500 text-background border-amber-500",
     inactiveClass: "bg-background text-muted-foreground border-border hover:border-amber-500/50 hover:bg-amber-500/10 hover:text-amber-500",
   },
   {
     status: "completed" as const,
     label: "Completed",
     icon: CheckCircle2,
-    activeClass: "bg-emerald-500 text-white border-emerald-500",
+    activeClass: "bg-emerald-500 text-background border-emerald-500",
     inactiveClass: "bg-background text-muted-foreground border-border hover:border-emerald-500/50 hover:bg-emerald-500/10 hover:text-emerald-500",
   },
 ] as const;

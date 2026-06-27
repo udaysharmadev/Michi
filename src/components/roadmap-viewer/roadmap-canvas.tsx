@@ -103,7 +103,7 @@ export function RoadmapCanvas({
       />
       
       <Controls 
-        className="bg-white border-gray-200 fill-gray-600 shadow-sm !rounded-xl" 
+        className="bg-card border-border fill-gray-600 shadow-sm !rounded-xl" 
         showInteractive={false}
       />
       

@@ -18,7 +18,7 @@ export function RoadmapMinimap() {
         return "#cbd5e1";
       }}
       maskColor="rgba(255, 255, 255, 0.6)"
-      className="!bg-white !border-2 !border-gray-200 !shadow-lg !rounded-2xl overflow-hidden !right-5 !bottom-5 pointer-events-auto"
+      className="!bg-card !border-2 !border-border !shadow-lg !rounded-2xl overflow-hidden !right-5 !bottom-5 pointer-events-auto"
       zoomable
       pannable
       nodeStrokeWidth={2}

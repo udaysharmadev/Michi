@@ -11,33 +11,12 @@ import {
   CheckCircle, Circle, BarChart3,
 } from "lucide-react";
 import { getCategoryBadgeColors } from "@/lib/colors";
+import { FeaturesBento } from "@/components/features-bento";
 
 export default function Home() {
   const roadmaps = getAllRoadmaps();
   const categories = getCategories();
   const featuredRoadmaps = roadmaps.slice(0, 6);
-
-  // ── How it works steps ────────────────────────────────────────────────────
-  const steps = [
-    {
-      num: "01",
-      title: "Pick a path",
-      body: "Browse 30+ curated roadmaps across development, AI, infrastructure, and more. Filter by difficulty or domain.",
-      icon: <Map className="w-6 h-6" />,
-    },
-    {
-      num: "02",
-      title: "Follow the graph",
-      body: "Each roadmap is an interactive knowledge graph. See exactly how topics connect, and what to learn next.",
-      icon: <Layers className="w-6 h-6" />,
-    },
-    {
-      num: "03",
-      title: "Track your progress",
-      body: "Mark topics as learning or done. Your progress is saved locally — no account required.",
-      icon: <CheckCircle className="w-6 h-6" />,
-    },
-  ];
 
   // ── Category accent map ───────────────────────────────────────────────────
   const categoryMeta: Record<string, { icon: React.ReactNode; }> = {
@@ -88,38 +67,7 @@ export default function Home() {
         </div>
 
         {/* ── How it works ───────────────────────────────────────────── */}
-        <section className="py-28 px-6 max-w-7xl mx-auto">
-          <Reveal>
-            <div className="mb-16">
-              <h2 className="font-heading text-4xl md:text-5xl font-extrabold tracking-tight mb-4" style={{ letterSpacing: "-0.02em", textWrap: "balance" } as React.CSSProperties}>
-                From zero to fluent,<br />systematically.
-              </h2>
-              <p className="text-lg text-muted-foreground max-w-lg">
-                Michi turns complex engineering disciplines into clear, visual paths you can actually follow.
-              </p>
-            </div>
-          </Reveal>
-
-          <div className="grid md:grid-cols-3 gap-8 lg:gap-12">
-            {steps.map((step, i) => (
-              <Reveal key={step.num} delay={i * 0.1}>
-                <div className="flex flex-col gap-5 relative p-6 rounded-3xl bg-card border border-border hover:border-primary/30 transition-colors">
-                  {/* Step number + icon */}
-                  <div className="flex items-center gap-4">
-                    <div className="w-12 h-12 rounded-2xl bg-primary flex items-center justify-center text-primary-foreground shrink-0 shadow-lg shadow-primary/20">
-                      {step.icon}
-                    </div>
-                    <span className="font-heading text-5xl font-black text-muted/30 leading-none select-none absolute top-4 right-6 pointer-events-none">
-                      {step.num}
-                    </span>
-                  </div>
-                  <h3 className="font-heading text-xl font-bold mt-2">{step.title}</h3>
-                  <p className="text-muted-foreground leading-relaxed text-[15px]">{step.body}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </section>
+        <FeaturesBento />
 
         {/* ── Featured Roadmaps ──────────────────────────────────────── */}
         <section className="py-28 px-6 max-w-7xl mx-auto border-t border-border">

@@ -69,10 +69,10 @@ const colorMap: Record<string, { border: string; bg: string; pillText: string; p
     pillBg:   "bg-orange-50 border-orange-200",
   },
   default: {
-    border:   "border-gray-200",
+    border:   "border-border",
     bg:       "bg-gradient-to-br from-gray-50/30 to-transparent",
     pillText: "text-gray-600",
-    pillBg:   "bg-gray-50 border-gray-200",
+    pillBg:   "bg-muted/50 border-border",
   },
 };
 
