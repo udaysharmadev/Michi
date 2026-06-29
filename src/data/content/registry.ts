@@ -21,6 +21,16 @@ export async function getContentBySlug(slug: string): Promise<RoadmapContent | n
         return (await import("./cloud")).cloudContent;
       case "ai-engineer":
         return (await import("./ai-engineer")).aiEngineerContent;
+      case "cyber-security":
+        return (await import("./cyber-security")).cyberSecurityContent;
+      case "blockchain":
+        return (await import("./blockchain")).blockchainContent;
+      case "game":
+        return (await import("./game")).gameDeveloperContent;
+      case "machine-learning":
+        return (await import("./machine-learning")).machineLearningContent;
+      case "system-design":
+        return (await import("./system-design")).systemDesignContent;
       default:
         return null;
     }

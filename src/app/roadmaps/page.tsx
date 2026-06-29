@@ -30,10 +30,15 @@ export default function RoadmapsDiscoveryPage() {
   }, [allRoadmaps, search, selectedCategory, selectedDifficulty]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[20%] right-[-10%] w-[30%] h-[30%] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
+      
       <Navbar />
       
-      <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12 md:py-20">
+      <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12 md:py-20 relative z-10">
         <header className="mb-12 md:mb-16">
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="font-heading text-5xl md:text-6xl font-extrabold tracking-tight mb-4" style={{ letterSpacing: "-0.03em" }}>
@@ -126,10 +131,10 @@ export default function RoadmapsDiscoveryPage() {
             {filteredRoadmaps.length > 0 ? (
               <motion.div 
                 layout
-                className="grid grid-cols-1 xl:grid-cols-2 gap-6"
+                className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6"
               >
                 <AnimatePresence mode="popLayout">
-                  {filteredRoadmaps.map(roadmap => (
+                  {filteredRoadmaps.map((roadmap, idx) => (
                     <motion.div
                       key={roadmap.id}
                       layout
@@ -137,6 +142,9 @@ export default function RoadmapsDiscoveryPage() {
                       animate={{ opacity: 1, scale: 1 }}
                       exit={{ opacity: 0, scale: 0.95 }}
                       transition={{ duration: 0.2 }}
+                      className={clsx(
+                        idx % 5 === 0 ? "lg:col-span-2 xl:col-span-2" : "col-span-1"
+                      )}
                     >
                       <RoadmapCard roadmap={roadmap} />
                     </motion.div>
