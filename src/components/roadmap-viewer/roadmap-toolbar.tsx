@@ -2,8 +2,9 @@
 
 import React from "react";
 import { useReactFlow, useStore, useNodes } from "@xyflow/react";
-import { LayoutGrid, List, Minus, Plus, Maximize } from "lucide-react";
+import { LayoutGrid, List, Minus, Plus, Maximize, Share2 } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
+import { toast } from "sonner";
 
 export function RoadmapToolbar() {
   const { zoomIn, zoomOut, fitView } = useReactFlow();
@@ -24,6 +25,15 @@ export function RoadmapToolbar() {
   }
   const totalTopics = topicNodes.length;
   const progressPercent = totalTopics > 0 ? Math.round((completed / totalTopics) * 100) : 0;
+
+  const handleShare = () => {
+    if (typeof window !== "undefined") {
+      navigator.clipboard.writeText(window.location.href);
+      toast.success("Link copied to clipboard!", {
+        description: "You can now share this roadmap with others.",
+      });
+    }
+  };
 
   return (
     <div className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto">
@@ -79,6 +89,15 @@ export function RoadmapToolbar() {
       >
         <Maximize className="w-3.5 h-3.5" />
         Fit
+      </button>
+
+      {/* Share Button */}
+      <button
+        onClick={handleShare}
+        className="flex items-center gap-1.5 px-3 py-2 bg-primary/10 border border-primary/20 rounded-xl shadow-sm text-xs font-semibold text-primary hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer"
+      >
+        <Share2 className="w-3.5 h-3.5" />
+        Share
       </button>
 
       {/* Progress */}
