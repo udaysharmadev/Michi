@@ -41,3 +41,28 @@ export function getProgressStats(
   const percentage = total > 0 ? Math.round((completed / total) * 100) : 0;
   return { total, completed, learning, notStarted, percentage };
 }
+
+const NOTES_KEY_PREFIX = 'roadmap_notes_';
+
+export function getNotes(slug: string): Record<string, string> {
+  if (typeof window === 'undefined') return {};
+  try {
+    const raw = localStorage.getItem(`${NOTES_KEY_PREFIX}${slug}`);
+    return raw ? JSON.parse(raw) : {};
+  } catch {
+    return {};
+  }
+}
+
+export function setNodeNote(slug: string, nodeId: string, note: string): Record<string, string> {
+  const current = getNotes(slug);
+  if (!note || note.trim() === '') {
+    delete current[nodeId];
+  } else {
+    current[nodeId] = note;
+  }
+  if (typeof window !== 'undefined') {
+    localStorage.setItem(`${NOTES_KEY_PREFIX}${slug}`, JSON.stringify(current));
+  }
+  return { ...current };
+}

@@ -41,6 +41,16 @@ export async function getContentBySlug(slug: string): Promise<RoadmapContent | n
         return (await import("./llm")).llmContent;
       case "sre":
         return (await import("./sre")).sreContent;
+      case "ux-ui":
+        return (await import("./ux-ui")).uxUiDesignerContent;
+      case "software-architect":
+        return (await import("./software-architect")).softwareArchitectContent;
+      case "qa-engineer":
+        return (await import("./qa-engineer")).qaEngineerContent;
+      case "product-manager":
+        return (await import("./product-manager")).productManagerContent;
+      case "dba":
+        return (await import("./dba")).dbaContent;
       default:
         return null;
     }

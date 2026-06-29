@@ -44,7 +44,7 @@ export const roadmaps: RoadmapMeta[] = [
   { id: "r_16", slug: "cloud", title: "Cloud Engineer", description: "Design and manage cloud infrastructure on AWS, GCP, or Azure.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 135 },
   { id: "r_17", slug: "sre", title: "Site Reliability Engineer", description: "Apply software engineering practices to infrastructure.", category: "Infrastructure", difficulty: "Advanced", estimatedTopics: 140 },
   { id: "r_18", slug: "platform", title: "Platform Engineer", description: "Build internal developer platforms to increase productivity.", category: "Infrastructure", difficulty: "Advanced", estimatedTopics: 120 },
-  { id: "r_19", slug: "db-admin", title: "Database Administrator", description: "Manage, optimize, and secure database systems.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 90 },
+  { id: "r_19", slug: "dba", title: "Database Administrator", description: "Manage, optimize, and secure database systems.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 90 },
 
   // Security
   { id: "r_20", slug: "cyber-security", title: "Cyber Security Expert", description: "Protect systems, networks, and data from attacks.", category: "Security", difficulty: "Beginner", estimatedTopics: 170 },
@@ -64,12 +64,14 @@ export const roadmaps: RoadmapMeta[] = [
   { id: "r_30", slug: "nlp", title: "NLP Engineer", description: "Build systems that understand human language.", category: "Research", difficulty: "Advanced", estimatedTopics: 110 },
 
   // Design
-  { id: "r_31", slug: "ui-ux", title: "UI/UX Designer", description: "Design intuitive and beautiful user experiences.", category: "Design", difficulty: "Beginner", estimatedTopics: 100 },
+  { id: "r_31", slug: "ux-ui", title: "UX/UI Designer", description: "Design intuitive and beautiful user experiences.", category: "Design", difficulty: "Beginner", estimatedTopics: 100 },
   { id: "r_32", slug: "design-engineer", title: "Design Engineer", description: "Bridge the gap between design and frontend engineering.", category: "Design", difficulty: "Intermediate", estimatedTopics: 95 },
 
   // Product
   { id: "r_33", slug: "tpm", title: "Technical Product Manager", description: "Manage product strategy with deep technical insight.", category: "Product", difficulty: "Intermediate", estimatedTopics: 80 },
   { id: "r_34", slug: "scrum-master", title: "Scrum Master", description: "Facilitate agile development processes.", category: "Product", difficulty: "Beginner", estimatedTopics: 50 },
+  { id: "r_35", slug: "product-manager", title: "Product Manager", description: "Define product strategy and guide execution.", category: "Product", difficulty: "Intermediate", estimatedTopics: 90 },
+  { id: "r_36", slug: "qa-engineer", title: "QA Engineer", description: "Ensure software quality through manual and automated testing.", category: "Development", difficulty: "Beginner", estimatedTopics: 75 },
 ];
 
 export function getAllRoadmaps(): RoadmapMeta[] {

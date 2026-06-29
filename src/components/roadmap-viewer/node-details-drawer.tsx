@@ -71,7 +71,7 @@ export function NodeDetailsDrawer({
   allNodes,
   allEdges,
 }: NodeDetailsDrawerProps) {
-  const { progressMap, setNodeProgress } = useRoadmapInteraction();
+  const { progressMap, setNodeProgress, notesMap, setNodeNote } = useRoadmapInteraction();
 
   // ── Compute prerequisites (edges where target === nodeId) ───────────────
   const prerequisites = useMemo(() => {
@@ -321,7 +321,7 @@ export function NodeDetailsDrawer({
 
         {/* ─── 9. Resources ────────────────────────────────────────────── */}
         {nodeData.resources && nodeData.resources.length > 0 ? (
-          <div className="pb-4">
+          <div className="pb-5 mb-5 border-b border-border">
             <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
               Curated Resources
             </h3>
@@ -353,13 +353,26 @@ export function NodeDetailsDrawer({
             </div>
           </div>
         ) : (
-          <div className="pb-4">
+          <div className="pb-5 mb-5 border-b border-border">
              <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
               Curated Resources
             </h3>
             <p className="text-sm text-muted-foreground italic font-medium">No resources added yet.</p>
           </div>
         )}
+
+        {/* ─── 10. Personal Notes ──────────────────────────────────────── */}
+        <div className="pb-4">
+          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
+            Personal Notes
+          </h3>
+          <textarea
+            value={notesMap[nodeId] || ""}
+            onChange={(e) => setNodeNote(nodeId, e.target.value)}
+            placeholder="Add your markdown notes for this topic..."
+            className="w-full min-h-[150px] p-3 text-sm bg-background border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-200 resize-y text-foreground placeholder:text-muted-foreground/50"
+          />
+        </div>
 
       </div>
     </div>

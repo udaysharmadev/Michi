@@ -2,7 +2,7 @@
 
 import React, { createContext, useContext, useState, useMemo, useCallback, useEffect, ReactNode } from 'react';
 import { Edge } from '@xyflow/react';
-import { ProgressStatus, getProgress, setNodeProgress as persistProgress } from './progress-utils';
+import { ProgressStatus, getProgress, setNodeProgress as persistProgress, getNotes, setNodeNote as persistNodeNote } from './progress-utils';
 
 // ---------- Types ----------
 interface AdjacencyData {
@@ -29,6 +29,10 @@ interface RoadmapInteractionContextType {
   // Command palette
   commandPaletteOpen: boolean;
   setCommandPaletteOpen: (open: boolean) => void;
+
+  // Notes
+  notesMap: Record<string, string>;
+  setNodeNote: (nodeId: string, note: string) => void;
 }
 
 const EMPTY_SET = new Set<string>();
@@ -44,6 +48,8 @@ const RoadmapInteractionContext = createContext<RoadmapInteractionContextType>({
   setViewMode: () => {},
   commandPaletteOpen: false,
   setCommandPaletteOpen: () => {},
+  notesMap: {},
+  setNodeNote: () => {},
 });
 
 export const useRoadmapInteraction = () => useContext(RoadmapInteractionContext);
@@ -129,12 +135,14 @@ interface ProviderProps {
 export function RoadmapInteractionProvider({ children, edges, slug }: ProviderProps) {
   const [hoveredNodeId, setHoveredNodeId] = useState<string | null>(null);
   const [progressMap, setProgressMap] = useState<Record<string, ProgressStatus>>({});
+  const [notesMap, setNotesMap] = useState<Record<string, string>>({});
   const [viewMode, setViewMode] = useState<'detailed' | 'overview'>('detailed');
   const [commandPaletteOpen, setCommandPaletteOpen] = useState(false);
 
-  // Load progress from localStorage on mount
+  // Load progress and notes from localStorage on mount
   useEffect(() => {
     setProgressMap(getProgress(slug));
+    setNotesMap(getNotes(slug));
   }, [slug]);
 
   // Build adjacency map once when edges change
@@ -152,6 +160,11 @@ export function RoadmapInteractionProvider({ children, edges, slug }: ProviderPr
     setProgressMap(updated);
   }, [slug]);
 
+  const setNodeNote = useCallback((nodeId: string, note: string) => {
+    const updated = persistNodeNote(slug, nodeId, note);
+    setNotesMap(updated);
+  }, [slug]);
+
   const value = useMemo(() => ({
     hoveredNodeId,
     setHoveredNodeId,
@@ -163,7 +176,9 @@ export function RoadmapInteractionProvider({ children, edges, slug }: ProviderPr
     setViewMode,
     commandPaletteOpen,
     setCommandPaletteOpen,
-  }), [hoveredNodeId, connectedNodeIds, connectedEdgeIds, progressMap, setNodeProgress, viewMode, commandPaletteOpen]);
+    notesMap,
+    setNodeNote,
+  }), [hoveredNodeId, connectedNodeIds, connectedEdgeIds, progressMap, setNodeProgress, viewMode, commandPaletteOpen, notesMap, setNodeNote]);
 
   return (
     <RoadmapInteractionContext.Provider value={value}>
