@@ -19,7 +19,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Data & Model Versioning (DVC) Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=RBSUwFGa6Fk"
+        "url": "https://www.youtube.com/watch?v=pCJ15nGFgVg"
       }
     ]
   },

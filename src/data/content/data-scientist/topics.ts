@@ -8,7 +8,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Linear Algebra Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=QL4_4GAWvPs"
+        "url": "https://www.youtube.com/watch?v=SioiFuMRiv4"
       }
     ]
   },
@@ -19,7 +19,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Calculus Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=WsQQvHm4lSw"
+        "url": "https://www.youtube.com/watch?v=HfACrKJ_Y2w"
       }
     ]
   },

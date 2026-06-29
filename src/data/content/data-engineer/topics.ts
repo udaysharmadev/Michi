@@ -52,7 +52,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "BigQuery Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=MYAfyPlVVak"
+        "url": "https://www.youtube.com/watch?v=17oYw-y4WG8"
       }
     ]
   },
@@ -74,7 +74,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hadoop Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=JK2MdJAWEGc"
+        "url": "https://www.youtube.com/watch?v=aReuLtY0YMI"
       }
     ]
   },
@@ -96,7 +96,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "MapReduce Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=SqvAaB3vK8U"
+        "url": "https://www.youtube.com/watch?v=pcTFiU7wKkQ"
       }
     ]
   },

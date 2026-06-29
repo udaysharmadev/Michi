@@ -8,7 +8,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Transformers Architecture Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=qrsNX1Rwle0"
+        "url": "https://www.youtube.com/watch?v=csWluHwfsB8"
       }
     ]
   },
@@ -19,7 +19,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Attention Mechanism Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=KMHkbXzHn7s"
+        "url": "https://www.youtube.com/watch?v=fjJOgb-E41w"
       }
     ]
   },
@@ -118,7 +118,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Embeddings Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=sZGuyTLjsco"
+        "url": "https://www.youtube.com/watch?v=izbifbq3-eI"
       }
     ]
   },
@@ -129,7 +129,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "LangChain & LlamaIndex Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=UCC-lyoTfSrcJzA1ab3APAgw"
+        "url": "https://www.youtube.com/watch?v=1bUy-1hGZpI"
       }
     ]
   },

@@ -41,7 +41,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Linux Internals Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=LKCVKw9CzFo"
+        "url": "https://www.youtube.com/watch?v=e01GGTKmtpc"
       }
     ]
   },
@@ -85,7 +85,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Prometheus Tutorial",
         "type": "video",
-        "url": "https://www.youtube.com/watch?v=h4Sl21AKiDg"
+        "url": "https://www.youtube.com/watch?v=ddZjhv66o_o"
       }
     ]
   },

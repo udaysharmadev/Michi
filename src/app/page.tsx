@@ -143,27 +143,32 @@ export default function Home() {
         </section>
 
         {/* ── CTA section ────────────────────────────────────────────── */}
-        <section className="py-28 px-6 bg-background">
-          <div className="max-w-5xl mx-auto">
+        <section className="py-32 px-6 bg-background relative overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-full bg-primary/5 blur-[120px] rounded-full pointer-events-none" />
+          
+          <div className="max-w-5xl mx-auto relative z-10">
             <Reveal>
-              <div className="relative overflow-hidden bg-foreground rounded-[2rem] px-10 py-16 md:px-16 md:py-20 flex flex-col md:flex-row items-center justify-between gap-10 shadow-2xl">
-                {/* Decorative background glow */}
-                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-64 h-64 bg-primary rounded-full blur-[100px] opacity-20 pointer-events-none" />
+              <div className="relative overflow-hidden bg-card/60 backdrop-blur-xl border border-border/50 rounded-[2.5rem] px-10 py-16 md:px-16 md:py-20 flex flex-col md:flex-row items-center justify-between gap-12 shadow-2xl group">
+                
+                {/* Decorative background glow inside the card */}
+                <div className="absolute top-0 right-0 -mr-20 -mt-20 w-80 h-80 bg-primary/20 rounded-full blur-[100px] pointer-events-none group-hover:bg-primary/30 transition-colors duration-700" />
+                <div className="absolute bottom-0 left-0 -ml-20 -mb-20 w-80 h-80 bg-indigo-500/10 rounded-full blur-[100px] pointer-events-none group-hover:bg-indigo-500/20 transition-colors duration-700" />
                 
                 <div className="text-center md:text-left relative z-10">
-                  <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-extrabold text-background mb-4 leading-tight" style={{ letterSpacing: "-0.02em", textWrap: "balance" } as React.CSSProperties}>
-                    Ready to map your path?
+                  <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground mb-6 leading-tight tracking-tight" style={{ letterSpacing: "-0.02em", textWrap: "balance" } as React.CSSProperties}>
+                    Ready to map <br className="hidden md:block" /> your path?
                   </h2>
-                  <p className="text-muted text-lg max-w-md font-medium">
-                    No account, no paywall. Just pick a roadmap and start learning.
+                  <p className="text-muted-foreground text-lg max-w-md font-medium">
+                    No account, no paywall. Just pick a roadmap and start learning today.
                   </p>
                 </div>
+                
                 <Link
                   href="/roadmaps"
-                  className="relative z-10 shrink-0 inline-flex items-center gap-2 px-8 py-4 bg-background rounded-2xl text-base font-bold text-foreground hover:scale-105 transition-all duration-200 active:scale-[0.97] group shadow-xl"
+                  className="relative z-10 shrink-0 inline-flex items-center justify-center gap-3 px-8 py-5 bg-foreground text-background dark:bg-primary dark:text-primary-foreground rounded-2xl text-lg font-bold hover:scale-105 transition-all duration-300 active:scale-[0.97] group/btn shadow-[0_0_40px_-10px_rgba(0,0,0,0.2)] dark:shadow-[0_0_40px_-10px_rgba(var(--primary),0.4)]"
                 >
                   Explore roadmaps
-                  <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-200" />
+                  <ArrowRight className="w-5 h-5 group-hover/btn:translate-x-1.5 transition-transform duration-300" />
                 </Link>
               </div>
             </Reveal>
