@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const dataEngineerContent: RoadmapContent = {
   slug: "data-engineer",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

@@ -8,7 +8,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Android Platform Architecture", type: "official", url: "https://developer.android.com/guide/platform" },
             { title: "Android Architecture Explained (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=ada99UCvELI" },
-            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=ada99UCvELI" },
+            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
             { title: "Android Architecture Layers Explained", type: "article", url: "https://www.geeksforgeeks.org/android-architecture/" },
             { title: "android/architecture-samples", type: "github", url: "https://github.com/android/architecture-samples" },
             { title: "Android Stack Visual Cheat Sheet", type: "cheat_sheet", url: "https://developer.android.com/guide/platform#library-layer" },
@@ -34,7 +34,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Permissions on Android", type: "official", url: "https://developer.android.com/guide/topics/permissions/overview" },
             { title: "Android Runtime Permissions (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=9ZPVAQit8Sc" },
-            { title: "Android Permissions in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=9ZPVAQit8Sc" },
+            { title: "Android Permissions in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=G4cOrT1mnb8" },
             { title: "Requesting Runtime Permissions", type: "article", url: "https://developer.android.com/training/permissions/requesting" },
             { title: "accompanist/permissions by Google", type: "github", url: "https://github.com/google/accompanist/tree/main/permissions" },
             { title: "Permissions Best Practices", type: "cheat_sheet", url: "https://developer.android.com/training/permissions/usage-notes" },
@@ -74,7 +74,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Kotlin Classes Docs", type: "official", url: "https://kotlinlang.org/docs/classes.html" },
             { title: "OOP in Kotlin (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=ZSyfYfEFVnM" },
-            { title: "Kotlin OOP in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=ZSyfYfEFVnM" },
+            { title: "Kotlin OOP in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=kiHu0-Z6xHI" },
             { title: "Kotlin Data Classes Explained", type: "article", url: "https://kotlinlang.org/docs/data-classes.html" },
             { title: "skydoves/kotlin-bootcamp", type: "github", url: "https://github.com/skydoves/kotlin-bootcamp" },
             { title: "Kotlin Classes Quick Reference", type: "cheat_sheet", url: "https://www.raywenderlich.com/4951992-kotlin-cheat-sheet-and-quick-reference" },
@@ -127,7 +127,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Run apps on Android Emulator", type: "official", url: "https://developer.android.com/studio/run/emulator" },
             { title: "ADB Commands Every Developer Should Know", type: "video_en", url: "https://www.youtube.com/watch?v=BERHIgpwXus" },
-            { title: "ADB and Fastboot in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=BERHIgpwXus" },
+            { title: "ADB and Fastboot in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=ubwEU7gZAgg" },
             { title: "Android Debug Bridge (ADB) Docs", type: "article", url: "https://developer.android.com/tools/adb" },
             { title: "mzlogin/awesome-adb", type: "github", url: "https://github.com/mzlogin/awesome-adb" },
             { title: "ADB Command Cheat Sheet", type: "cheat_sheet", url: "https://www.automatetheplanet.com/adb-cheat-sheet/" },
@@ -180,7 +180,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Lists and grids in Compose", type: "official", url: "https://developer.android.com/jetpack/compose/lists" },
             { title: "LazyColumn & LazyRow Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=z2bS2btp_AI" },
-            { title: "RecyclerView in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=z2bS2btp_AI" },
+            { title: "RecyclerView in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=yPL13Iwy6oM" },
             { title: "Migrating from RecyclerView to LazyColumn", type: "article", url: "https://developer.android.com/jetpack/compose/migrate/migration-scenarios/recycler-view" },
             { title: "android/architecture-components-samples Paging", type: "github", url: "https://github.com/android/architecture-components-samples/tree/main/PagingSample" },
             { title: "LazyColumn Documentation Reference", type: "cheat_sheet", url: "https://developer.android.com/jetpack/compose/lists#lazy-lists" },
@@ -194,7 +194,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Introduction to Activities", type: "official", url: "https://developer.android.com/guide/components/activities/intro-activities" },
             { title: "Activity Lifecycle Explained (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=WHilu0MiRSs" },
-            { title: "Activity Lifecycle in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=WHilu0MiRSs" },
+            { title: "Activity Lifecycle in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=DVvLFGZFmbI" },
             { title: "The Activity Lifecycle Explained", type: "article", url: "https://developer.android.com/guide/components/activities/activity-lifecycle" },
             { title: "xxv/android-lifecycle (Visual Diagram)", type: "github", url: "https://github.com/xxv/android-lifecycle" },
             { title: "Activity Lifecycle Cheat Sheet", type: "cheat_sheet", url: "https://developer.android.com/guide/components/activities/activity-lifecycle#alc" },
@@ -219,8 +219,8 @@ export const topicsData: Record<string, TopicData> = {
         description: "Use Intents to communicate between components and implement app navigation with Jetpack Navigation.",
         resources: [
             { title: "Intents and Intent Filters", type: "official", url: "https://developer.android.com/guide/components/intents-filters" },
-            { title: "Implicit vs Explicit Intents (CodingWithMitch)", type: "video_en", url: "https://www.youtube.com/watch?v=UCd78xKLS5kS4rammy9EKO7A" },
-            { title: "Intents in Hindi (Anuj Bhaiya)", type: "video_hi", url: "https://www.youtube.com/watch?v=UCd78xKLS5kS4rammy9EKO7A" },
+            { title: "Implicit vs Explicit Intents (CodingWithMitch)", type: "video_en", url: "https://www.youtube.com/watch?v=aLeWGcwSs7M" },
+            { title: "Intents in Hindi (Anuj Bhaiya)", type: "video_hi", url: "https://www.youtube.com/watch?v=I1y8hNsJLxI" },
             { title: "Common Intents (Official Reference)", type: "article", url: "https://developer.android.com/guide/components/intents-common" },
             { title: "IntentPlayground sample", type: "github", url: "https://github.com/android/user-interface-samples/tree/main/IntentPlayground" },
             { title: "Intent Actions Quick Reference", type: "cheat_sheet", url: "https://gist.github.com/lopspower/1a6fbaad38a7c1dd3cd4" },
@@ -234,7 +234,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Save data in a local database using Room", type: "official", url: "https://developer.android.com/training/data-storage/room" },
             { title: "Room DB Full Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=yPL13Iwy6oM" },
-            { title: "Room Database in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=yPL13Iwy6oM" },
+            { title: "Room Database in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=DVvLFGZFmbI" },
             { title: "7 Steps to Room (Android Developers blog)", type: "article", url: "https://medium.com/androiddevelopers/7-steps-to-room-27a5fe5f99b2" },
             { title: "googlecodelabs/android-room-with-a-view", type: "github", url: "https://github.com/googlecodelabs/android-room-with-a-view" },
             { title: "Room Annotations Reference", type: "cheat_sheet", url: "https://developer.android.com/training/data-storage/room/defining-data" },
@@ -260,7 +260,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Data and file storage overview", type: "official", url: "https://developer.android.com/training/data-storage" },
             { title: "Scoped Storage Explained (Android Developers)", type: "video_en", url: "https://www.youtube.com/watch?v=sswLpKeAoxs" },
-            { title: "Android File Storage in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=sswLpKeAoxs" },
+            { title: "Android File Storage in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=A5x35G2pAtw" },
             { title: "Understanding Scoped Storage", type: "article", url: "https://medium.com/androiddevelopers/scoped-storage-in-android-c92a4ae45384" },
             { title: "android/storage-samples", type: "github", url: "https://github.com/android/storage-samples" },
             { title: "Storage Best Practices Reference", type: "cheat_sheet", url: "https://developer.android.com/training/data-storage/app-specific" },
@@ -274,7 +274,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Retrofit Official Documentation", type: "official", url: "https://square.github.io/retrofit/" },
             { title: "Retrofit with Coroutines (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=t6Sql3WMAnk" },
-            { title: "Retrofit in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=t6Sql3WMAnk" },
+            { title: "Retrofit in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=ubwEU7gZAgg" },
             { title: "Using Retrofit with Coroutines", type: "article", url: "https://developer.android.com/kotlin/coroutines" },
             { title: "square/retrofit", type: "github", url: "https://github.com/square/retrofit" },
             { title: "Retrofit Annotations Cheat Sheet", type: "cheat_sheet", url: "https://square.github.io/retrofit/#built-in-converters" },
@@ -327,7 +327,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Clean Architecture by Uncle Bob", type: "official", url: "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html" },
             { title: "Clean Architecture for Android (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=sBAB_EKYPYs" },
-            { title: "Clean Architecture in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=sBAB_EKYPYs" },
+            { title: "Clean Architecture in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=fqQWUmVHNDI" },
             { title: "Clean Architecture on Android (ProAndroidDev)", type: "article", url: "https://proandroiddev.com/clean-architecture-data-flow-dependency-rule-615ffdd79e29" },
             { title: "android10/Android-CleanArchitecture", type: "github", url: "https://github.com/android10/Android-CleanArchitecture" },
             { title: "Domain Layer Guide", type: "cheat_sheet", url: "https://developer.android.com/topic/architecture/domain-layer" },

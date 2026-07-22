@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Transformers Architecture Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=csWluHwfsB8"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Attention Mechanism Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=fjJOgb-E41w"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Tokenization Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=zduSFxRajkE"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Few-Shot Prompting Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=sW5xoicq5TY"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Chain of Thought (CoT) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=wwHnP8DJe2o"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "ReAct Prompting Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=KpFVe6znfqQ"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "PEFT & LoRA Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=Us5ZFp16PaU"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "RLHF Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=T_X4XFwKX8k"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Direct Preference Optimization (DPO) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=k2pD3k1485A"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Vector Databases Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=72XgD322wZ8"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Embeddings Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=izbifbq3-eI"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "LangChain & LlamaIndex Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=1bUy-1hGZpI"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "vLLM Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=McLdlg5Gc9s"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Quantization (AWQ/GPTQ) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=mNE_d-C82lI"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "GGUF & llama.cpp Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=vW30o4U9BFE"
       }
     ]

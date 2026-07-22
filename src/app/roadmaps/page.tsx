@@ -1,6 +1,7 @@
 "use client";
 
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect, Suspense } from "react";
+import { useSearchParams, useRouter, usePathname } from "next/navigation";
 import { getAllRoadmaps, getCategories, Category, Difficulty } from "@/data/roadmaps";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
@@ -9,14 +10,37 @@ import { Search, SlidersHorizontal, Map } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { clsx } from "clsx";
 
-export default function RoadmapsDiscoveryPage() {
+function RoadmapsDiscoveryContent() {
   const allRoadmaps = getAllRoadmaps();
   const categories = getCategories();
+  const router = useRouter();
+  const pathname = usePathname();
+  const searchParams = useSearchParams();
+  
+  const categoryParam = searchParams.get("category");
+  const initialCategory = categories.includes(categoryParam as Category) ? (categoryParam as Category) : "All";
   
   const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<Category | "All">("All");
+  const [selectedCategory, setSelectedCategory] = useState<Category | "All">(initialCategory);
   const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty | "All">("All");
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
+
+  // Sync state to URL
+  useEffect(() => {
+    const params = new URLSearchParams(searchParams.toString());
+    if (selectedCategory !== "All") {
+      params.set("category", selectedCategory);
+    } else {
+      params.delete("category");
+    }
+    
+    // Only update URL if it actually changed to avoid infinite loops
+    const newSearch = params.toString();
+    const currentSearch = searchParams.toString();
+    if (newSearch !== currentSearch) {
+      router.replace(`${pathname}${newSearch ? `?${newSearch}` : ""}`, { scroll: false });
+    }
+  }, [selectedCategory, pathname, router, searchParams]);
   
   const filteredRoadmaps = useMemo(() => {
     return allRoadmaps.filter(r => {
@@ -30,16 +54,8 @@ export default function RoadmapsDiscoveryPage() {
   }, [allRoadmaps, search, selectedCategory, selectedDifficulty]);
 
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
-      <div className="absolute top-[20%] right-[-10%] w-[30%] h-[30%] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
-      
-      <Navbar />
-      
-      <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12 md:py-20 relative z-10">
-        <header className="mb-12 md:mb-16">
+    <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12 md:py-20 relative z-10">
+      <header className="mb-12 md:mb-16">
           <motion.div initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }}>
             <h1 className="font-heading text-5xl md:text-6xl font-extrabold tracking-tight mb-4" style={{ letterSpacing: "-0.03em" }}>
               Discovery
@@ -179,6 +195,22 @@ export default function RoadmapsDiscoveryPage() {
           </div>
         </div>
       </main>
+  );
+}
+
+export default function RoadmapsDiscoveryPage() {
+  return (
+    <div className="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden">
+      {/* Decorative background elements */}
+      <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
+      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
+      <div className="absolute top-[20%] right-[-10%] w-[30%] h-[30%] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
+      
+      <Navbar />
+      
+      <Suspense fallback={<div className="flex-1 max-w-7xl mx-auto w-full px-6 py-12 md:py-20 min-h-[50vh]" />}>
+        <RoadmapsDiscoveryContent />
+      </Suspense>
 
       <Footer />
     </div>

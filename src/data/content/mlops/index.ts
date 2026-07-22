@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const mlopsContent: RoadmapContent = {
   slug: "mlops",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

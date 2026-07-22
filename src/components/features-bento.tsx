@@ -12,11 +12,11 @@ export function FeaturesBento() {
 
   const fadeUp = {
     initial: { opacity: 0, y: 30 },
-    animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] } },
+    animate: { opacity: 1, y: 0, transition: { duration: 0.7, ease: [0.16, 1, 0.3, 1] as any } },
   };
 
   return (
-    <section className="py-28 px-6 max-w-7xl mx-auto border-t border-border/40 relative">
+    <section id="features" className="py-28 px-6 max-w-7xl mx-auto border-t border-border/40 relative">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[1px] bg-gradient-to-r from-transparent via-primary/20 to-transparent" />
       
       <div className="mb-20 text-center md:text-left flex flex-col md:flex-row md:items-end justify-between gap-6">

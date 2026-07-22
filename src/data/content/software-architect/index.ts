@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const softwareArchitectContent: RoadmapContent = {
   slug: "software-architect",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

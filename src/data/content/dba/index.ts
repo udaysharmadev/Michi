@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const dbaContent: RoadmapContent = {
   slug: "dba",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

@@ -8,27 +8,8 @@ import {
 } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import { RoadmapContentNode, RoadmapContentEdge, TopicData } from "@/data/types";
-import {
-  SiJavascript, SiGit, SiGithub, SiTypescript, SiReact,
-  SiVuedotjs, SiAngular, SiSvelte, SiNextdotjs, SiRedux,
-  SiTailwindcss, SiSass, SiVite, SiWebpack, SiEslint,
-  SiPrettier, SiJest, SiCypress, SiGraphql, SiHtml5, SiCss,
-} from "react-icons/si";
-
-// ── Icon map ────────────────────────────────────────────────────────────────
-const iconMap: Record<string, React.FC<{ className?: string }>> = {
-  SiJavascript, SiGit, SiGithub, SiTypescript, SiReact,
-  SiVuedotjs, SiAngular, SiSvelte, SiNextdotjs, SiRedux,
-  SiTailwindcss, SiSass, SiVite, SiWebpack, SiEslint,
-  SiPrettier, SiJest, SiCypress, SiGraphql, SiHtml5, SiCss,
-};
-
-// ── Difficulty badge colors ─────────────────────────────────────────────────
-const difficultyColors: Record<string, string> = {
-  Beginner: "text-emerald-500 bg-emerald-500/10 border-emerald-500/20",
-  Intermediate: "text-indigo-500 bg-indigo-500/10 border-indigo-500/20",
-  Advanced: "text-rose-500 bg-rose-500/10 border-rose-500/20",
-};
+import { SiGithub } from "react-icons/si";
+import { iconMap, difficultyColors } from "@/lib/icon-map";
 
 // ── Progress status config ──────────────────────────────────────────────────
 const progressConfig = [
@@ -90,6 +71,24 @@ export function NodeDetailsDrawer({
       .map((e) => e.target);
     return allNodes.filter((n) => targetIds.includes(n.id));
   }, [nodeId, allEdges, allNodes]);
+
+  // ── Notes State & Sync ──────────────────────────────────────────────────
+  const safeNodeId = nodeId || "";
+  const [localNote, setLocalNote] = React.useState(notesMap[safeNodeId] || "");
+  
+  // Sync local note when nodeId changes
+  React.useEffect(() => {
+    setLocalNote(notesMap[safeNodeId] || "");
+  }, [safeNodeId, notesMap]);
+  
+  // Debounce save to localStorage
+  React.useEffect(() => {
+    if (!safeNodeId) return;
+    const timer = setTimeout(() => {
+      setNodeNote(safeNodeId, localNote);
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [localNote, safeNodeId, setNodeNote]);
 
   if (!nodeData || !nodeId) return null;
 
@@ -367,8 +366,8 @@ export function NodeDetailsDrawer({
             Personal Notes
           </h3>
           <textarea
-            value={notesMap[nodeId] || ""}
-            onChange={(e) => setNodeNote(nodeId, e.target.value)}
+            value={localNote}
+            onChange={(e) => setLocalNote(e.target.value)}
             placeholder="Add your markdown notes for this topic..."
             className="w-full min-h-[150px] p-3 text-sm bg-background border border-border rounded-xl focus:border-primary focus:ring-1 focus:ring-primary outline-none transition-all duration-200 resize-y text-foreground placeholder:text-muted-foreground/50"
           />

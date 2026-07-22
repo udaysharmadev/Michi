@@ -3,8 +3,9 @@
 import React, { useMemo } from "react";
 import Link from "next/link";
 import {
-  ArrowLeft, Map, Activity, Clock, Star, Search,
+  ArrowLeft, Map, Activity, Clock, Search,
   BookOpen, CheckCircle2, Circle, BarChart3,
+  ChevronLeft, RotateCcw, CheckCheck,
 } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import { getProgressStats } from "./progress-utils";
@@ -22,11 +23,13 @@ function parseHours(time?: string): number {
 export function RoadmapSidebar({
   roadmap,
   nodes,
+  onToggleSidebar,
 }: {
   roadmap: RoadmapMeta;
   nodes: RoadmapContentNode[];
+  onToggleSidebar?: () => void;
 }) {
-  const { progressMap, setCommandPaletteOpen } = useRoadmapInteraction();
+  const { progressMap, setCommandPaletteOpen, setNodeProgress, notesMap } = useRoadmapInteraction();
 
   const topicNodes = useMemo(
     () => nodes.filter((n) => n.type === "topic"),
@@ -59,25 +62,39 @@ export function RoadmapSidebar({
     return total;
   }, [topicNodes]);
 
+  const handleMarkAllComplete = () => {
+    topicIds.forEach(id => setNodeProgress(id, 'completed'));
+  };
+
+  const handleResetProgress = () => {
+    topicIds.forEach(id => setNodeProgress(id, 'not_started'));
+  };
+
   return (
     <div className="flex flex-col h-full p-6 w-full bg-card relative z-40 overflow-y-auto">
-      {/* Header */}
-      <Link
-        href="/roadmaps"
-        className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground/70 hover:text-foreground transition-colors duration-150 mb-6"
-      >
-        <ArrowLeft className="w-4 h-4" /> Back to Roadmaps
-      </Link>
+      {/* Header row */}
+      <div className="flex items-center justify-between mb-6">
+        <Link
+          href="/roadmaps"
+          className="inline-flex items-center gap-2 text-sm font-medium text-muted-foreground/70 hover:text-foreground transition-colors duration-150"
+        >
+          <ArrowLeft className="w-4 h-4" /> Back
+        </Link>
+        {onToggleSidebar && (
+          <button
+            onClick={onToggleSidebar}
+            className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors"
+            aria-label="Collapse sidebar"
+          >
+            <ChevronLeft className="w-4 h-4" />
+          </button>
+        )}
+      </div>
 
       <div className="mb-6">
-        <div className="flex items-start justify-between gap-2 mb-2">
-          <h1 className="text-2xl font-bold text-foreground tracking-tight leading-snug">
-            {roadmap.title}
-          </h1>
-          <button className="text-gray-300 hover:text-amber-400 transition-colors duration-150 shrink-0 mt-0.5 cursor-pointer">
-            <Star className="w-5 h-5" />
-          </button>
-        </div>
+        <h1 className="text-2xl font-bold text-foreground tracking-tight leading-snug mb-2">
+          {roadmap.title}
+        </h1>
         <p className="text-sm text-muted-foreground leading-relaxed">
           {roadmap.description}
         </p>
@@ -100,15 +117,15 @@ export function RoadmapSidebar({
           <div className="flex items-center gap-3">
             <span className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-400" />
-              <span className="font-semibold text-gray-700">{diffCounts.beginner}</span>
+              <span className="font-semibold text-foreground">{diffCounts.beginner}</span>
             </span>
             <span className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-indigo-400" />
-              <span className="font-semibold text-gray-700">{diffCounts.intermediate}</span>
+              <span className="font-semibold text-foreground">{diffCounts.intermediate}</span>
             </span>
             <span className="flex items-center gap-1.5">
               <span className="w-2.5 h-2.5 rounded-full bg-rose-400" />
-              <span className="font-semibold text-gray-700">{diffCounts.advanced}</span>
+              <span className="font-semibold text-foreground">{diffCounts.advanced}</span>
             </span>
           </div>
         </div>
@@ -131,11 +148,16 @@ export function RoadmapSidebar({
           <span className="text-muted-foreground font-bold">{stats.percentage}%</span>
         </div>
 
-        {/* Progress bar */}
+        {/* Animated progress bar */}
         <div className="w-full h-2.5 bg-muted rounded-full overflow-hidden mb-3.5">
           <div
-            className="h-full bg-emerald-500 rounded-full transition-[width] duration-500"
-            style={{ transitionTimingFunction: "var(--ease-out-strong)", width: `${stats.percentage}%` }}
+            className="h-full rounded-full transition-[width] duration-700 ease-out"
+            style={{ 
+              width: `${stats.percentage}%`,
+              background: stats.percentage === 100 
+                ? 'linear-gradient(90deg, #10b981, #059669)'
+                : 'linear-gradient(90deg, #6366f1, #10b981)',
+            }}
           />
         </div>
 
@@ -154,12 +176,37 @@ export function RoadmapSidebar({
             </span>
           </div>
           <div className="flex items-center gap-1.5 text-xs">
-            <Circle className="w-3.5 h-3.5 text-gray-300 shrink-0" />
+            <Circle className="w-3.5 h-3.5 text-muted-foreground/50 shrink-0" />
             <span className="text-muted-foreground">
               <span className="font-bold text-foreground">{stats.notStarted}</span> todo
             </span>
           </div>
         </div>
+      </div>
+
+      {/* ── Completion milestone message ───────────────────────────────── */}
+      {stats.percentage === 100 && (
+        <div className="mb-4 p-3 bg-emerald-500/10 border border-emerald-500/20 rounded-xl">
+          <p className="text-xs font-semibold text-emerald-600 dark:text-emerald-400 text-center">
+            🎉 Roadmap Complete! Amazing work.
+          </p>
+        </div>
+      )}
+
+      {/* ── Quick Actions ─────────────────────────────────────────────── */}
+      <div className="grid grid-cols-2 gap-2 mb-5">
+        <button
+          onClick={handleMarkAllComplete}
+          className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg border border-border text-muted-foreground hover:text-emerald-600 hover:border-emerald-500/30 hover:bg-emerald-500/5 transition-all duration-200 cursor-pointer"
+        >
+          <CheckCheck className="w-3.5 h-3.5" /> Mark All Done
+        </button>
+        <button
+          onClick={handleResetProgress}
+          className="flex items-center justify-center gap-1.5 px-3 py-2 text-xs font-semibold rounded-lg border border-border text-muted-foreground hover:text-rose-500 hover:border-rose-500/30 hover:bg-rose-500/5 transition-all duration-200 cursor-pointer"
+        >
+          <RotateCcw className="w-3.5 h-3.5" /> Reset
+        </button>
       </div>
 
       {/* ── Spacer ────────────────────────────────────────────────────── */}

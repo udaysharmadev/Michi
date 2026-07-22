@@ -27,7 +27,7 @@ export function HeroSection() {
     <section className="relative w-full border-b border-border overflow-hidden bg-background pt-20 pb-28">
       {/* Dynamic Ambient Background */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-primary/10 via-background to-background" />
-      <div className="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none" />
+      <div className="absolute inset-0 bg-[url('/noise.svg')] opacity-20 mix-blend-overlay pointer-events-none" />
       
       {/* Glowing Orbs */}
       <div className="absolute top-0 left-1/4 -z-10 w-[500px] h-[500px] bg-primary/20 rounded-full blur-[120px] mix-blend-screen opacity-50 animate-pulse" />

@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const productManagerContent: RoadmapContent = {
   slug: "product-manager",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

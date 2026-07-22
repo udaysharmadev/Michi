@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Advanced SQL Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=-u-kCJmJHCk"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "NoSQL Databases Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=iAdTs4hVK8E"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Data Modeling Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=_jf7KZqne-8"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Snowflake Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=mP3QbYURT9k"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "BigQuery Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=17oYw-y4WG8"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Amazon Redshift Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=7bfOllAyxlg"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Hadoop Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=aReuLtY0YMI"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Apache Spark Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=FNJze2Ea780"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "MapReduce Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=pcTFiU7wKkQ"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Apache Kafka Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=ZJJHm_bd9Zo"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Apache Flink Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=nfMANR13ZSA"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Spark Streaming Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=r7FTCuTl84g"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Apache Airflow Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=IiczxlbQb8s"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Dagster Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=UCfLnv9X8jyHTe6gJ4hVBo9Q"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Prefect Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=UCMPaCpAiSuLZ0yPyUo0O9rw"
       }
     ]

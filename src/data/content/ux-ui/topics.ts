@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Design Thinking Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "User Research Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Personas & Journey Maps Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Card Sorting Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Sitemaps Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Wireframing Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Color Theory Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Typography Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Layout & Grids Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Figma Basics Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Advanced Prototyping Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Design Systems Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Usability Testing Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Accessibility (a11y) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Developer Handoff Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]

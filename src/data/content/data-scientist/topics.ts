@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Linear Algebra Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=SioiFuMRiv4"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Calculus Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=HfACrKJ_Y2w"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Probability Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=KzfWUEJjG18"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Statistics Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=eF7HoC-cLRM"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Python / R Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=jINeOUQaDTY"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Pandas & NumPy Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=sWCigkLzGdY"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Data Structures Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=Z_c4byLrNBU"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Matplotlib & Seaborn Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=xXibS9832FM"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Tableau & PowerBI Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=tNLp_JVipoQ"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Dashboards Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=pBcBXGFt8UE"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Regression & Classification Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=7ArmBVF2dCs"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Clustering Algorithms Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=Aa4MACKaDC0"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Model Evaluation Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=LbX4X71-TFI"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Intro to Deep Learning Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=R1oxezUcYZI"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Time Series Analysis Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=fxx_E0ojKrc"
       }
     ]
@@ -172,7 +172,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "NLP Basics Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=ENLEjGozrio"
       }
     ]

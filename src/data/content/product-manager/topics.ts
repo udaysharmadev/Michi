@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Product Lifecycle Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=eijE5H2VatM"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "User Empathy & Discovery Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=fqNAWyOOVfw"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Market Research Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=kFM72UJhW8s"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "OKRs & KPIs Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=MV4UViKjJ34"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Product Roadmap Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=b4YVHTqQPk8"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Competitive Analysis Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=xaIeoPtHnuY"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "User Stories & Epics Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=7hoGqhb6qAs"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Sprint Planning Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=2A9rkiIcnVI"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Prioritization (RICE, MoSCoW) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=jBOLlkgT0wg"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Wireframing for PMs Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=85b6V8vPnIk"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Tech Stack Basics for PMs Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=x51dBp6ldKY"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Data-Driven Decisions Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=EV3T1RYWC9g"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Pricing Strategy Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=sF6AMj3H0jg"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Product Launch Strategy Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=q1q9fv2l0FE"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Growth & Retention Metrics Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=_LKdNhF2WhI"
       }
     ]

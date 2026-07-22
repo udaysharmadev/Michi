@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const sreContent: RoadmapContent = {
   slug: "sre",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

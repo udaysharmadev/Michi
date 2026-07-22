@@ -22,11 +22,31 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: {
-    template: "%s | Michi",
-    default: "Michi — The Developer Knowledge Graph",
+  title: "Michi - Developer Roadmaps",
+  description: "Comprehensive, interactive learning roadmaps for modern software engineering.",
+  metadataBase: new URL("https://michi.dev"),
+  openGraph: {
+    title: "Michi - Developer Roadmaps",
+    description: "Comprehensive, interactive learning roadmaps for modern software engineering.",
+    url: "https://michi.dev",
+    siteName: "Michi",
+    type: "website",
   },
-  description: "Navigate the complexity of modern software engineering. Explore premium, visually-driven developer roadmaps.",
+  twitter: {
+    card: "summary_large_image",
+    title: "Michi - Developer Roadmaps",
+    description: "Comprehensive, interactive learning roadmaps for modern software engineering.",
+  },
+};
+
+export const viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "white" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
 };
 
 export default function RootLayout({

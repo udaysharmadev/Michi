@@ -26,7 +26,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "MDN: How the Web works", url: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" },
       { type: "video_en", title: "How the Internet Works in 5 Minutes", url: "https://www.youtube.com/watch?v=7_LPdttKXPc" },
       { type: "video_hi", title: "How Internet works? (CodeWithHarry)", url: "https://www.youtube.com/watch?v=AofBq0XEqyQ" },
-      { type: "article", title: "Cloudflare: What is the Internet?", url: "https://www.youtube.com/@CodeWithHarry" },
+      { type: "article", title: "Cloudflare: What is the Internet?", url: "https://www.cloudflare.com/learning/network-layer/internet-protocol/" },
       { type: "github", title: "how-the-internet-works", url: "https://github.com/sf-wdi-31/how-the-internet-works" },
       { type: "cheat_sheet", title: "How The Internet Works Infographic", url: "https://github.com/lionbytes/How-The-Internet-Works-Infographic" },
       { type: "deep_dive", title: "How the Internet Works, Part I", url: "https://medium.com/@vahid_d/how-the-internet-works-part-i-the-internet-infrastructure-b6574f285d8d" }
@@ -1582,7 +1582,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Auth0 Introduction to Identity", url: "https://auth0.com/docs/get-started/identity-fundamentals" },
       { type: "video_en", title: "JWT Auth Crash Course (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=mbsmsi7l3r4" },
-      { type: "video_hi", title: "JWT Authentication in Hindi", url: "https://www.youtube.com/watch?v=mbsmsi7l3r4" },
+      { type: "video_hi", title: "JWT Authentication in Hindi", url: "https://www.youtube.com/watch?v=hKB-YGF14SY" },
       { type: "article", title: "Please Stop Using Local Storage", url: "https://dev.to/rdegges/please-stop-using-local-storage-1i04" },
       { type: "github", title: "NextAuth.js", url: "https://github.com/nextauthjs/next-auth" },
       { type: "cheat_sheet", title: "OWASP Authentication Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/Authentication_Cheat_Sheet.html" },

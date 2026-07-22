@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const dataScientistContent: RoadmapContent = {
   slug: "data-scientist",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

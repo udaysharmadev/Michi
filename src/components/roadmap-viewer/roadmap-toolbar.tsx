@@ -2,13 +2,13 @@
 
 import React from "react";
 import { useReactFlow, useStore, useNodes } from "@xyflow/react";
-import { LayoutGrid, List, Minus, Plus, Maximize, Share2 } from "lucide-react";
+import { LayoutGrid, List, Minus, Plus, Maximize, Share2, CheckCheck, RotateCcw } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import { toast } from "sonner";
 
 export function RoadmapToolbar() {
   const { zoomIn, zoomOut, fitView } = useReactFlow();
-  const { viewMode, setViewMode } = useRoadmapInteraction();
+  const { viewMode, setViewMode, progressMap, setNodeProgress } = useRoadmapInteraction();
 
   // Reactive zoom from React Flow store
   const zoom = useStore((s) => s.transform[2]);
@@ -17,7 +17,6 @@ export function RoadmapToolbar() {
   // Calculate Progress
   const nodes = useNodes();
   const topicNodes = nodes.filter(n => n.type === 'topic');
-  const { progressMap } = useRoadmapInteraction();
   
   let completed = 0;
   for (const n of topicNodes) {
@@ -35,8 +34,18 @@ export function RoadmapToolbar() {
     }
   };
 
+  const handleMarkAll = () => {
+    topicNodes.forEach(n => setNodeProgress(n.id, 'completed'));
+    toast.success("All topics marked complete! 🎉");
+  };
+
+  const handleReset = () => {
+    topicNodes.forEach(n => setNodeProgress(n.id, 'not_started'));
+    toast.info("Progress reset.");
+  };
+
   return (
-    <div className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto">
+    <div className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto flex-wrap justify-center px-4">
       {/* View Mode toggle */}
       <div className="flex bg-card border border-border rounded-xl shadow-sm overflow-hidden">
         <button
@@ -71,7 +80,7 @@ export function RoadmapToolbar() {
         >
           <Minus className="w-3.5 h-3.5" />
         </button>
-        <div className="px-1.5 text-xs font-bold text-gray-700 select-none min-w-[3rem] text-center tabular-nums">
+        <div className="px-1.5 text-xs font-bold text-foreground select-none min-w-[3rem] text-center tabular-nums">
           {zoomPercent}%
         </div>
         <button
@@ -100,16 +109,40 @@ export function RoadmapToolbar() {
         Share
       </button>
 
-      {/* Progress */}
+      {/* Progress pill */}
       {totalTopics > 0 && (
         <div className="flex items-center gap-2 px-3 py-2 bg-card border border-border rounded-xl shadow-sm text-xs font-semibold text-muted-foreground ml-2">
-          <div className="w-16 h-1.5 bg-muted rounded-full overflow-hidden">
+          <div className="relative w-16 h-1.5 bg-muted rounded-full overflow-hidden">
             <div 
-              className="h-full bg-emerald-500 transition-all duration-500 ease-out" 
-              style={{ width: `${progressPercent}%` }}
+              className="absolute inset-y-0 left-0 rounded-full transition-all duration-700 ease-out"
+              style={{ 
+                width: `${progressPercent}%`,
+                background: progressPercent === 100 ? '#10b981' : 'linear-gradient(90deg, #6366f1, #10b981)',
+              }}
             />
           </div>
           <span className="w-8 tabular-nums">{progressPercent}%</span>
+        </div>
+      )}
+
+      {/* Quick action buttons */}
+      {totalTopics > 0 && (
+        <div className="flex items-center bg-card border border-border rounded-xl shadow-sm overflow-hidden">
+          <button
+            onClick={handleMarkAll}
+            title="Mark all topics as complete"
+            className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-muted-foreground hover:text-emerald-600 hover:bg-emerald-500/5 transition-colors duration-200 cursor-pointer"
+          >
+            <CheckCheck className="w-3.5 h-3.5" />
+          </button>
+          <div className="w-px h-4 bg-border" />
+          <button
+            onClick={handleReset}
+            title="Reset all progress"
+            className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-muted-foreground hover:text-rose-500 hover:bg-rose-500/5 transition-colors duration-200 cursor-pointer"
+          >
+            <RotateCcw className="w-3.5 h-3.5" />
+          </button>
         </div>
       )}
     </div>

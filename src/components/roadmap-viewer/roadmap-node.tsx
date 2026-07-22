@@ -5,27 +5,7 @@ import { Handle, Position, type NodeProps } from "@xyflow/react";
 import { CheckCircle2, Clock } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import type { RoadmapContentNode } from "@/data/types";
-import {
-  SiJavascript, SiGit, SiGithub, SiTypescript, SiReact,
-  SiVuedotjs, SiAngular, SiSvelte, SiNextdotjs, SiRedux,
-  SiTailwindcss, SiSass, SiVite, SiWebpack, SiEslint,
-  SiPrettier, SiJest, SiCypress, SiGraphql, SiHtml5, SiCss,
-} from "react-icons/si";
-
-// ── Icon map ────────────────────────────────────────────────────────────────
-const iconMap: Record<string, React.FC<{ className?: string }>> = {
-  SiJavascript, SiGit, SiGithub, SiTypescript, SiReact,
-  SiVuedotjs, SiAngular, SiSvelte, SiNextdotjs, SiRedux,
-  SiTailwindcss, SiSass, SiVite, SiWebpack, SiEslint,
-  SiPrettier, SiJest, SiCypress, SiGraphql, SiHtml5, SiCss,
-};
-
-// ── Difficulty colors ───────────────────────────────────────────────────────
-const difficultyColors: Record<string, string> = {
-  Beginner:     "text-emerald-500 bg-emerald-500/10 border-emerald-500/20",
-  Intermediate: "text-indigo-500 bg-indigo-500/10 border-indigo-500/20",
-  Advanced:     "text-rose-500 bg-rose-500/10 border-rose-500/20",
-};
+import { iconMap, difficultyColors } from "@/lib/icon-map";
 
 // ── Progress border colors ──────────────────────────────────────────────────
 const progressStyles: Record<string, string> = {

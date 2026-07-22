@@ -1,15 +1,9 @@
 "use client";
 
 import { motion, useReducedMotion } from "motion/react";
+import { getAllRoadmaps } from "@/data/roadmaps";
 
-const ROADMAP_TITLES = [
-  "Frontend Developer", "Backend Developer", "Full Stack Developer",
-  "AI Engineer", "DevOps Engineer", "Cloud Engineer", "Machine Learning",
-  "Cyber Security", "System Design", "iOS Developer", "Android Developer",
-  "Data Scientist", "Site Reliability", "Software Architect",
-  "LLM Engineer", "Blockchain Developer", "Platform Engineer",
-  "MLOps Engineer", "Research Engineer", "Mobile Developer",
-];
+const ROADMAP_TITLES = getAllRoadmaps().map((r) => r.title);
 
 export function RoadmapMarquee() {
   const shouldReduce = useReducedMotion();

@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "SDLC & STLC Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=kSU2MPeptpM"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Types of Testing Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=sbW4RThXNL8"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Test Cases & Plans Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=aOZPLQth6zE"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Exploratory Testing Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=dlbkG5keG1g"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Bug Reporting & Jira Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://www.youtube.com/watch?v=43p8cZ3a3Ww"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Agile & Scrum for QA Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Programming for QA (Java/Python/JS) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Selenium WebDriver Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Cypress & Playwright Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Postman Basics Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "REST Assured Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "GraphQL Testing Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "CI/CD Integration Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Performance Testing (JMeter) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Mobile Testing (Appium) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]

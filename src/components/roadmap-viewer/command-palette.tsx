@@ -4,25 +4,7 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import { Search, Command, CornerDownLeft, ArrowUp, ArrowDown } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import type { RoadmapContentNode } from "@/data/types";
-import {
-  SiJavascript, SiGit, SiGithub, SiTypescript, SiReact,
-  SiVuedotjs, SiAngular, SiSvelte, SiNextdotjs, SiRedux,
-  SiTailwindcss, SiSass, SiVite, SiWebpack, SiEslint,
-  SiPrettier, SiJest, SiCypress, SiGraphql, SiHtml5, SiCss,
-} from "react-icons/si";
-
-const iconMap: Record<string, React.FC<{ className?: string }>> = {
-  SiJavascript, SiGit, SiGithub, SiTypescript, SiReact,
-  SiVuedotjs, SiAngular, SiSvelte, SiNextdotjs, SiRedux,
-  SiTailwindcss, SiSass, SiVite, SiWebpack, SiEslint,
-  SiPrettier, SiJest, SiCypress, SiGraphql, SiHtml5, SiCss,
-};
-
-const difficultyColors: Record<string, string> = {
-  Beginner: "text-emerald-600 bg-emerald-50",
-  Intermediate: "text-indigo-600 bg-indigo-50",
-  Advanced: "text-rose-600 bg-rose-50",
-};
+import { iconMap, difficultyColors } from "@/lib/icon-map";
 
 interface CommandPaletteProps {
   nodes: RoadmapContentNode[];

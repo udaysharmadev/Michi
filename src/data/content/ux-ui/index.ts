@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const uxUiDesignerContent: RoadmapContent = {
   slug: "ux-ui",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

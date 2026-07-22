@@ -99,7 +99,7 @@ export function RoadmapCanvas({
         variant={BackgroundVariant.Dots} 
         gap={32} 
         size={1.5} 
-        color="#e2e8f0" 
+        color="var(--color-border)" 
       />
       
       <Controls 

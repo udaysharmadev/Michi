@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const llmContent: RoadmapContent = {
   slug: "llm",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

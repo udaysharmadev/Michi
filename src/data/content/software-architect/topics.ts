@@ -7,7 +7,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "SOLID Principles Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -18,7 +18,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "CAP Theorem Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -29,7 +29,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "DRY, KISS, YAGNI Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -40,7 +40,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Monolith vs Microservices Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -51,7 +51,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Event-Driven Architecture Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -62,7 +62,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Serverless Architecture Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -73,7 +73,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Load Balancing Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -84,7 +84,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Caching Strategies Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -95,7 +95,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Message Queues Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -106,7 +106,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "SQL vs NoSQL Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Sharding & Replication Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -128,7 +128,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Event Sourcing & CQRS Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -139,7 +139,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Identity & Access (IAM) Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -150,7 +150,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Rate Limiting Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]
@@ -161,7 +161,7 @@ export const topics: Record<string, TopicData> = {
     "resources": [
       {
         "title": "Disaster Recovery Tutorial",
-        "type": "video",
+        "type": "video_en",
         "url": "https://youtube.com/"
       }
     ]

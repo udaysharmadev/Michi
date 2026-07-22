@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState, useCallback, useEffect } from "react";
+import React, { useState, useCallback, useEffect, useRef } from "react";
 import { ReactFlowProvider, Node, Edge, useNodesState, useEdgesState, useReactFlow } from "@xyflow/react";
 import { RoadmapCanvas } from "./roadmap-canvas";
 import { RoadmapSidebar } from "./roadmap-sidebar";
@@ -22,28 +22,40 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
   const [nodes, setNodes, onNodesChange] = useNodesState<Node>([]);
   const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
   const [isLayouted, setIsLayouted] = useState(false);
+  const [sidebarOpen, setSidebarOpen] = useState(true);
   
   const { getLayoutedElements } = useLayoutEngine();
   const { setCenter, getNode } = useReactFlow();
   
   const [selectedNode, setSelectedNode] = useState<Node<TopicData> | null>(null);
+  const topicNodesRef = useRef<Node[]>([]);
 
-  // Run layout algorithm on mount
+  // Run layout algorithm synchronously on mount
   useEffect(() => {
-    const runLayout = async () => {
-      const { layoutedNodes, layoutedEdges } = await getLayoutedElements(
-        initialNodes as Node[], 
-        initialEdges as Edge[]
-      );
-      setNodes([...layoutedNodes]);
-      setEdges([...layoutedEdges]);
-      setIsLayouted(true);
+    const { layoutedNodes, layoutedEdges } = getLayoutedElements(
+      initialNodes as Node[], 
+      initialEdges as Edge[],
+      roadmap.slug
+    );
+    topicNodesRef.current = layoutedNodes.filter(n => n.type === 'topic');
+    setNodes([...layoutedNodes]);
+    setEdges([...layoutedEdges]);
+    setIsLayouted(true);
+  }, [initialNodes, initialEdges, getLayoutedElements, setNodes, setEdges, roadmap.slug]);
+
+  // Escape key to close drawer
+  useEffect(() => {
+    const handler = (e: KeyboardEvent) => {
+      if (e.key === 'Escape' && selectedNode) {
+        handleCloseDrawer();
+      }
     };
-    runLayout();
-  }, [initialNodes, initialEdges, getLayoutedElements, setNodes, setEdges]);
+    window.addEventListener('keydown', handler);
+    return () => window.removeEventListener('keydown', handler);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selectedNode]);
 
   const handleNodeFocus = useCallback((nodeId: string) => {
-    // Highlight the target node
     setNodes((nds) =>
       nds.map((n) => ({
         ...n,
@@ -51,12 +63,10 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
       }))
     );
 
-    // Find and select the node for the drawer
     const targetNode = nodes.find(n => n.id === nodeId && n.type === 'topic');
     if (targetNode) {
       setSelectedNode(targetNode as Node<TopicData>);
       
-      // Fly camera to the node
       const rfNode = getNode(nodeId);
       if (rfNode) {
         const parentNode = rfNode.parentId ? getNode(rfNode.parentId) : null;
@@ -69,7 +79,6 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
 
   const handleNodeSelect = useCallback((node: Node<TopicData> | null) => {
     setSelectedNode(node);
-    
     setNodes((nds) =>
       nds.map((n) => ({
         ...n,
@@ -96,13 +105,34 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
   return (
     <div className="flex w-full h-screen bg-background overflow-hidden">
       
-      {/* Fixed Sidebar */}
-      <div className="w-[320px] shrink-0 h-full border-r border-border shadow-[4px_0_24px_rgba(0,0,0,0.02)] z-10 bg-card">
-        <RoadmapSidebar roadmap={roadmap} nodes={initialNodes} />
+      {/* Sidebar — togglable on mobile */}
+      <div className={`
+        ${sidebarOpen ? 'w-[320px]' : 'w-0'} 
+        shrink-0 h-full border-r border-border shadow-[4px_0_24px_rgba(0,0,0,0.02)] z-10 bg-card
+        transition-[width] duration-300 overflow-hidden
+      `}>
+        <RoadmapSidebar 
+          roadmap={roadmap} 
+          nodes={initialNodes} 
+          onToggleSidebar={() => setSidebarOpen(s => !s)}
+        />
       </div>
 
       {/* Main Viewport Container */}
-      <div className="flex-1 h-full relative flex flex-col">
+      <div className="flex-1 h-full relative flex flex-col min-w-0">
+        {/* Mobile sidebar toggle button */}
+        {!sidebarOpen && (
+          <button
+            onClick={() => setSidebarOpen(true)}
+            className="absolute top-5 left-5 z-40 p-2 bg-card border border-border rounded-xl shadow-sm text-muted-foreground hover:text-foreground transition-colors"
+            aria-label="Open sidebar"
+          >
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        )}
+
         {/* Floating Toolbar */}
         <RoadmapToolbar />
         

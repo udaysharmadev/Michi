@@ -17,6 +17,6 @@ const nodes = graphNodes.map(node => {
 
 export const qaEngineerContent: RoadmapContent = {
   slug: "qa-engineer",
-  nodes,
-  edges,
+  nodes: nodes as any,
+  edges: edges as any,
 };

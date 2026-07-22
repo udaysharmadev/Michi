@@ -15,7 +15,6 @@ export function Navbar() {
 
   const navLinks = [
     { name: "Roadmaps", href: "/roadmaps" },
-    { name: "About", href: "/about" },
   ];
 
   return (
@@ -63,9 +62,6 @@ export function Navbar() {
               <SiGithub className="w-[1.2rem] h-[1.2rem]" />
             </a>
             <ThemeToggle />
-            <button className="h-9 px-4 inline-flex items-center justify-center rounded-lg bg-primary text-primary-foreground text-sm font-medium hover:bg-primary/90 transition-colors shadow-sm cursor-pointer">
-              Sign In
-            </button>
           </div>
         </div>
 
@@ -104,9 +100,6 @@ export function Navbar() {
                 </Link>
               );
             })}
-            <button className="w-full h-11 inline-flex items-center justify-center rounded-xl bg-primary text-primary-foreground font-semibold hover:bg-primary/90 transition-colors shadow-sm mt-2">
-              Sign In
-            </button>
             <div className="h-px w-full bg-border my-2" />
             <div className="flex items-center justify-between">
               <a 

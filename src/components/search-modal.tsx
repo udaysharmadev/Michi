@@ -3,24 +3,27 @@
 import React, { useState, useEffect } from "react";
 import { Command } from "cmdk";
 import { Search, Map } from "lucide-react";
-import { useRouter } from "next/navigation";
+import { useRouter, usePathname } from "next/navigation";
 import { getAllRoadmaps } from "@/data/roadmaps";
 
 export function SearchModal() {
   const [open, setOpen] = useState(false);
   const router = useRouter();
+  const pathname = usePathname();
   const roadmaps = getAllRoadmaps();
+  const isOnViewer = pathname?.startsWith("/roadmaps/") && pathname !== "/roadmaps";
 
   useEffect(() => {
     const down = (e: KeyboardEvent) => {
       if (e.key === "k" && (e.metaKey || e.ctrlKey)) {
+        if (isOnViewer) return; // Let the command palette handle it
         e.preventDefault();
         setOpen((open) => !open);
       }
     };
     document.addEventListener("keydown", down);
     return () => document.removeEventListener("keydown", down);
-  }, []);
+  }, [isOnViewer]);
 
   return (
     <>

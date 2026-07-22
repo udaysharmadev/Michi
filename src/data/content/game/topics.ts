@@ -57,7 +57,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=mgfD-QJLhEA"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -117,7 +117,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=mhd9FXYdf4s"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -237,7 +237,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=iqlH4okiQqg"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -477,7 +477,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=kb-Ww8HaHuE"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -537,7 +537,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=U08ScgT3RVM"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -657,7 +657,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=r2nD_knsNrc"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -777,7 +777,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=UqUNUODVCyU"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -837,7 +837,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=Z0TXkkJ6mEE"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   },
@@ -1072,12 +1072,12 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Video Tutorial",
         "type": "video_en",
-        "url": "https://www.youtube.com/watch?v=UCY73ezqIsytzYoJwaF6AFJQ"
+        "url": "https://www.youtube.com/watch?v=XtQMytORBmM"
       },
       {
         "title": "Hindi Tutorial",
         "type": "video_hi",
-        "url": "https://www.youtube.com/watch?v=UCY73ezqIsytzYoJwaF6AFJQ"
+        "url": "https://www.youtube.com/watch?v=bRSAl95GGXI"
       }
     ]
   }
