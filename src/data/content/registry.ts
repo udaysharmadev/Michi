@@ -31,17 +31,14 @@ export async function getContentBySlug(slug: string): Promise<RoadmapContent | n
         return (await import("./machine-learning")).machineLearningContent;
       case "system-design":
         return (await import("./system-design")).systemDesignContent;
-      // Stub roadmaps are excluded from the registry so they show as "Coming Soon"
-      // case "data-scientist":
-      // case "data-engineer":
-      // case "mlops":
-      // case "llm":
-      // case "sre":
-      // case "ux-ui":
-      // case "software-architect":
-      // case "qa-engineer":
-      // case "product-manager":
-      // case "dba":
+      case "software-architect":
+        return (await import("./software-architect")).softwareArchitectContent;
+      case "qa-engineer":
+        return (await import("./qa-engineer")).qaEngineerContent;
+      case "ux-ui":
+        return (await import("./ux-ui")).uxUiDesignerContent;
+      case "data-engineer":
+        return (await import("./data-engineer")).dataEngineerContent;
       default:
         return null;
     }
