@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Outfit } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
+import { AuthProvider } from "@/features/auth/auth-context";
+import { AuthModal } from "@/features/auth/auth-modal";
 import "./globals.css";
 
 import { Toaster } from "sonner";
@@ -67,8 +69,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          {children}
-          <Toaster position="top-center" richColors theme="system" />
+          <AuthProvider>
+            {children}
+            <AuthModal />
+            <Toaster position="top-center" richColors theme="system" />
+          </AuthProvider>
         </ThemeProvider>
       </body>
     </html>
