@@ -136,7 +136,12 @@ export function NodeDetailsDrawer({
   };
 
   return (
-    <div className="absolute top-0 right-0 h-full w-[460px] bg-card border-l border-border shadow-2xl z-50 flex flex-col pointer-events-auto animate-in slide-in-from-right duration-200">
+    <aside 
+      role="dialog" 
+      aria-label="Topic Details" 
+      aria-modal="true"
+      className="absolute top-0 right-0 h-full w-[460px] max-w-full bg-card border-l border-border shadow-2xl z-50 flex flex-col pointer-events-auto animate-in slide-in-from-right duration-200"
+    >
       {/* ── Header ─────────────────────────────────────────────────────── */}
       <div className="flex items-center justify-between px-6 py-4 border-b border-border shrink-0 bg-card z-10 sticky top-0 shadow-sm">
         <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
@@ -144,6 +149,7 @@ export function NodeDetailsDrawer({
         </h2>
         <button
           onClick={onClose}
+          aria-label="Close topic drawer"
           className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors duration-200 cursor-pointer"
         >
           <X className="w-5 h-5" />
@@ -374,6 +380,6 @@ export function NodeDetailsDrawer({
         </div>
 
       </div>
-    </div>
+    </aside>
   );
 }

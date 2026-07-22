@@ -71,7 +71,11 @@ export function RoadmapSidebar({
   };
 
   return (
-    <div className="flex flex-col h-full p-6 w-full bg-card relative z-40 overflow-y-auto">
+    <aside 
+      role="region" 
+      aria-label="Roadmap Overview"
+      className="flex flex-col h-full p-6 w-full bg-card relative z-40 overflow-y-auto"
+    >
       {/* Header row */}
       <div className="flex items-center justify-between mb-6">
         <Link
@@ -223,6 +227,6 @@ export function RoadmapSidebar({
           ⌘K
         </kbd>
       </button>
-    </div>
+    </aside>
   );
 }

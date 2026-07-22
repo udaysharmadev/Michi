@@ -45,7 +45,11 @@ export function RoadmapToolbar() {
   };
 
   return (
-    <div className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto flex-wrap justify-center px-4">
+    <div 
+      role="toolbar" 
+      aria-label="Roadmap Controls"
+      className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto flex-wrap justify-center px-4"
+    >
       {/* View Mode toggle */}
       <div className="flex bg-card border border-border rounded-xl shadow-sm overflow-hidden">
         <button
