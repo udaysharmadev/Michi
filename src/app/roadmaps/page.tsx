@@ -6,9 +6,10 @@ import { getAllRoadmaps, getCategories, Category, Difficulty } from "@/data/road
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
 import { RoadmapCard } from "@/components/roadmap-card";
-import { Search, SlidersHorizontal, Map } from "lucide-react";
+import { Search, SlidersHorizontal, Map, Star } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { clsx } from "clsx";
+import { useBookmarks } from "@/hooks/use-bookmarks";
 
 function RoadmapsDiscoveryContent() {
   const allRoadmaps = getAllRoadmaps();
@@ -16,25 +17,25 @@ function RoadmapsDiscoveryContent() {
   const router = useRouter();
   const pathname = usePathname();
   const searchParams = useSearchParams();
+  const { bookmarks, isLoaded: bookmarksLoaded } = useBookmarks();
   
   const categoryParam = searchParams.get("category");
   const initialCategory = categories.includes(categoryParam as Category) ? (categoryParam as Category) : "All";
   
   const [search, setSearch] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState<Category | "All">(initialCategory);
+  const [selectedCategory, setSelectedCategory] = useState<Category | "All" | "Favorites">(initialCategory);
   const [selectedDifficulty, setSelectedDifficulty] = useState<Difficulty | "All">("All");
   const [mobileFiltersOpen, setMobileFiltersOpen] = useState(false);
 
   // Sync state to URL
   useEffect(() => {
     const params = new URLSearchParams(searchParams.toString());
-    if (selectedCategory !== "All") {
+    if (selectedCategory !== "All" && selectedCategory !== "Favorites") {
       params.set("category", selectedCategory);
     } else {
       params.delete("category");
     }
     
-    // Only update URL if it actually changed to avoid infinite loops
     const newSearch = params.toString();
     const currentSearch = searchParams.toString();
     if (newSearch !== currentSearch) {
@@ -46,12 +47,19 @@ function RoadmapsDiscoveryContent() {
     return allRoadmaps.filter(r => {
       const matchSearch = r.title.toLowerCase().includes(search.toLowerCase()) || 
                           r.description.toLowerCase().includes(search.toLowerCase());
-      const matchCategory = selectedCategory === "All" || r.category === selectedCategory;
+      
+      let matchCategory = true;
+      if (selectedCategory === "Favorites") {
+        matchCategory = bookmarks.includes(r.slug);
+      } else if (selectedCategory !== "All") {
+        matchCategory = r.category === selectedCategory;
+      }
+
       const matchDifficulty = selectedDifficulty === "All" || r.difficulty === selectedDifficulty;
       
       return matchSearch && matchCategory && matchDifficulty;
     });
-  }, [allRoadmaps, search, selectedCategory, selectedDifficulty]);
+  }, [allRoadmaps, search, selectedCategory, selectedDifficulty, bookmarks]);
 
   return (
     <main className="flex-1 max-w-7xl mx-auto w-full px-6 py-12 md:py-20 relative z-10">
@@ -97,6 +105,20 @@ function RoadmapsDiscoveryContent() {
                 >
                   All Categories
                 </button>
+
+                {/* Favorites Pill */}
+                {bookmarksLoaded && bookmarks.length > 0 && (
+                  <button 
+                    onClick={() => setSelectedCategory("Favorites")}
+                    className={`flex items-center justify-between text-left px-3 py-2 rounded-lg text-sm font-medium transition-colors ${selectedCategory === "Favorites" ? "bg-amber-500 text-background font-bold shadow-md shadow-amber-500/20" : "text-amber-500 hover:bg-amber-500/10"}`}
+                  >
+                    <span className="flex items-center gap-2">
+                      <Star className="w-4 h-4 fill-current" /> Favorites
+                    </span>
+                    <span className="text-xs px-1.5 py-0.5 rounded bg-background/20 font-bold">{bookmarks.length}</span>
+                  </button>
+                )}
+
                 {categories.map(cat => (
                   <button 
                     key={cat}
@@ -178,7 +200,9 @@ function RoadmapsDiscoveryContent() {
                 </div>
                 <h3 className="font-heading text-2xl font-bold mb-2">No roadmaps found</h3>
                 <p className="text-muted-foreground max-w-sm mb-6">
-                  We couldn't find any roadmaps matching your current filters. Try clearing them to see more results.
+                  {selectedCategory === "Favorites" 
+                    ? "You haven't bookmarked any roadmaps yet. Click the star icon on any card to add it to your favorites."
+                    : "We couldn't find any roadmaps matching your current filters. Try clearing them to see more results."}
                 </p>
                 <button 
                   onClick={() => {

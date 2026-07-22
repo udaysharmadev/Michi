@@ -1,11 +1,34 @@
+"use client";
+
 import Link from "next/link";
-import { ArrowRight, BookOpen, BarChart } from "lucide-react";
+import { ArrowRight, BookOpen, BarChart, Star } from "lucide-react";
 import { RoadmapMeta } from "@/data/roadmaps";
+import { useBookmarks } from "@/hooks/use-bookmarks";
+import { trackEvent } from "@/lib/analytics";
 
 export function RoadmapCard({ roadmap }: { roadmap: RoadmapMeta }) {
+  const { isBookmarked, toggleBookmark } = useBookmarks();
+  const bookmarked = isBookmarked(roadmap.slug);
+
+  const handleBookmarkClick = (e: React.MouseEvent) => {
+    toggleBookmark(roadmap.slug, e);
+    trackEvent({
+      type: "bookmark_toggle",
+      roadmapSlug: roadmap.slug,
+    });
+  };
+
+  const handleCardClick = () => {
+    trackEvent({
+      type: "roadmap_view",
+      roadmapSlug: roadmap.slug,
+    });
+  };
+
   return (
     <Link
       href={`/roadmaps/${roadmap.slug}`}
+      onClick={handleCardClick}
       className="group flex flex-col p-7 rounded-[2rem] border border-border/60 bg-card
         hover:border-primary/30 hover:shadow-[0_8px_30px_rgb(0,0,0,0.12)] hover:-translate-y-1.5
         dark:hover:shadow-[0_8px_30px_rgba(255,255,255,0.04)]
@@ -25,9 +48,25 @@ export function RoadmapCard({ roadmap }: { roadmap: RoadmapMeta }) {
             {roadmap.title}
           </h3>
         </div>
-        <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-border/80 bg-background text-muted-foreground shrink-0 shadow-sm">
-          {roadmap.category}
-        </span>
+
+        <div className="flex items-center gap-2 shrink-0">
+          {/* Bookmark Button */}
+          <button
+            onClick={handleBookmarkClick}
+            className={`p-2 rounded-xl border transition-all duration-300 cursor-pointer ${
+              bookmarked
+                ? "bg-amber-500/10 border-amber-500/30 text-amber-500 scale-105"
+                : "bg-background/80 border-border/80 text-muted-foreground/60 hover:text-amber-500 hover:border-amber-500/30"
+            }`}
+            aria-label={bookmarked ? "Remove from bookmarks" : "Add to bookmarks"}
+          >
+            <Star className={`w-4 h-4 ${bookmarked ? "fill-amber-500" : ""}`} />
+          </button>
+
+          <span className="px-3 py-1 rounded-full text-[10px] font-bold uppercase tracking-widest border border-border/80 bg-background text-muted-foreground shadow-sm">
+            {roadmap.category}
+          </span>
+        </div>
       </div>
 
       <p className="text-muted-foreground mb-8 text-[15px] leading-relaxed flex-1 relative z-10 font-medium pr-4">
