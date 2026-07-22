@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useMemo } from "react";
+import React, { useMemo, useState } from "react";
 import {
   X, Clock, Circle, BookOpen, CheckCircle2,
   ExternalLink, PlayCircle, FileText, ArrowRight, ArrowLeft,
-  AlertTriangle, Lightbulb, Briefcase, Globe
+  AlertTriangle, Lightbulb, Briefcase, Globe, Share2, Download, Check
 } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import { RoadmapContentNode, RoadmapContentEdge, TopicData } from "@/data/types";
 import { SiGithub } from "react-icons/si";
 import { iconMap, difficultyColors } from "@/lib/icon-map";
+import { toast } from "sonner";
 
 // ── Progress status config ──────────────────────────────────────────────────
 const progressConfig = [
@@ -135,6 +136,34 @@ export function NodeDetailsDrawer({
     }
   };
 
+  const [copiedLink, setCopiedLink] = useState(false);
+
+  const handleShareTopic = () => {
+    if (typeof window !== "undefined" && nodeId) {
+      const url = `${window.location.origin}${window.location.pathname}#${nodeId}`;
+      navigator.clipboard.writeText(url);
+      setCopiedLink(true);
+      setTimeout(() => setCopiedLink(false), 2000);
+      toast.success("Topic link copied to clipboard!", {
+        description: `Direct link to "${nodeData.title}" copied.`,
+      });
+    }
+  };
+
+  const handleExportNotes = () => {
+    if (typeof window !== "undefined") {
+      const content = `# ${nodeData.title}\n\n## Personal Notes\n\n${localNote || "*No notes recorded for this topic yet.*"}\n\n---\n*Exported from Michi Roadmap Engine*`;
+      const blob = new Blob([content], { type: "text/markdown" });
+      const url = URL.createObjectURL(blob);
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = `${nodeData.title.toLowerCase().replace(/[^a-z0-9]+/g, "-")}-notes.md`;
+      a.click();
+      URL.revokeObjectURL(url);
+      toast.success("Notes exported as Markdown!");
+    }
+  };
+
   return (
     <aside 
       role="dialog" 
@@ -147,13 +176,22 @@ export function NodeDetailsDrawer({
         <h2 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
           Knowledge Entity
         </h2>
-        <button
-          onClick={onClose}
-          aria-label="Close topic drawer"
-          className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors duration-200 cursor-pointer"
-        >
-          <X className="w-5 h-5" />
-        </button>
+        <div className="flex items-center gap-1.5">
+          <button
+            onClick={handleShareTopic}
+            title="Copy Topic Direct Link"
+            className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors duration-200 cursor-pointer"
+          >
+            {copiedLink ? <Check className="w-4 h-4 text-emerald-500" /> : <Share2 className="w-4 h-4" />}
+          </button>
+          <button
+            onClick={onClose}
+            aria-label="Close topic drawer"
+            className="p-1.5 text-muted-foreground hover:text-foreground hover:bg-muted rounded-lg transition-colors duration-200 cursor-pointer"
+          >
+            <X className="w-5 h-5" />
+          </button>
+        </div>
       </div>
 
       {/* ── Scrollable Content ─────────────────────────────────────────── */}
@@ -368,9 +406,19 @@ export function NodeDetailsDrawer({
 
         {/* ─── 10. Personal Notes ──────────────────────────────────────── */}
         <div className="pb-4">
-          <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground mb-3">
-            Personal Notes
-          </h3>
+          <div className="flex items-center justify-between mb-3">
+            <h3 className="text-xs font-bold uppercase tracking-widest text-muted-foreground">
+              Personal Notes
+            </h3>
+            {localNote && localNote.trim().length > 0 && (
+              <button
+                onClick={handleExportNotes}
+                className="inline-flex items-center gap-1 text-[11px] font-semibold text-primary hover:underline cursor-pointer"
+              >
+                <Download className="w-3 h-3" /> Export .md
+              </button>
+            )}
+          </div>
           <textarea
             value={localNote}
             onChange={(e) => setLocalNote(e.target.value)}
