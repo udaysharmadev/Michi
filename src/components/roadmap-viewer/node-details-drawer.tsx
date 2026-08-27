@@ -4,7 +4,7 @@ import React, { useMemo, useState } from "react";
 import {
   X, Clock, Circle, BookOpen, CheckCircle2,
   ExternalLink, PlayCircle, FileText, ArrowRight, ArrowLeft,
-  AlertTriangle, Lightbulb, Briefcase, Globe, Share2, Download, Check
+  Lightbulb, Briefcase, Share2, Download, Check
 } from "lucide-react";
 import { useRoadmapInteraction } from "./roadmap-context";
 import { RoadmapContentNode, RoadmapContentEdge, TopicData } from "@/data/types";
@@ -76,12 +76,21 @@ export function NodeDetailsDrawer({
   // ── Notes State & Sync ──────────────────────────────────────────────────
   const safeNodeId = nodeId || "";
   const [localNote, setLocalNote] = React.useState(notesMap[safeNodeId] || "");
-  
-  // Sync local note when nodeId changes
-  React.useEffect(() => {
+
+  // The editor is reset when the *topic* changes, using React's documented
+  // adjust-state-during-render pattern rather than an effect.
+  //
+  // An effect keyed on `[safeNodeId, notesMap]` — which is what this was — reverts the
+  // textarea every time `notesMap` changes, and the debounced save below is what
+  // changes it. Type, wait 500ms, keep typing, and the save round-trip overwrites
+  // whatever was typed in between. Keying on the topic id means the reset happens
+  // exactly when the learner switches topics, which is the only time it should.
+  const [noteFor, setNoteFor] = React.useState(safeNodeId);
+  if (noteFor !== safeNodeId) {
+    setNoteFor(safeNodeId);
     setLocalNote(notesMap[safeNodeId] || "");
-  }, [safeNodeId, notesMap]);
-  
+  }
+
   // Debounce save to localStorage
   React.useEffect(() => {
     if (!safeNodeId) return;
@@ -90,6 +99,24 @@ export function NodeDetailsDrawer({
     }, 500);
     return () => clearTimeout(timer);
   }, [localNote, safeNodeId, setNodeNote]);
+
+  // ── Share feedback ──────────────────────────────────────────────────────
+  // Kept here with every other hook, deliberately far from the handler that uses
+  // it. This `useState` used to sit beside that handler, 45 lines *below*
+  // `if (!nodeData) return null`, so the drawer ran six hooks while closed and
+  // seven once a node was selected. React aborted the render with "Rendered more
+  // hooks than during the previous render" and the drawer never opened at all.
+  // Hook order is a property of the call site, not of what reads nicely.
+  const [copiedLink, setCopiedLink] = useState(false);
+  const copiedTimer = React.useRef<ReturnType<typeof setTimeout> | null>(null);
+
+  // The 2s reset must not outlive the component.
+  React.useEffect(
+    () => () => {
+      if (copiedTimer.current !== null) clearTimeout(copiedTimer.current);
+    },
+    [],
+  );
 
   if (!nodeData || !nodeId) return null;
 
@@ -136,18 +163,24 @@ export function NodeDetailsDrawer({
     }
   };
 
-  const [copiedLink, setCopiedLink] = useState(false);
-
-  const handleShareTopic = () => {
-    if (typeof window !== "undefined" && nodeId) {
-      const url = `${window.location.origin}${window.location.pathname}#${nodeId}`;
-      navigator.clipboard.writeText(url);
-      setCopiedLink(true);
-      setTimeout(() => setCopiedLink(false), 2000);
-      toast.success("Topic link copied to clipboard!", {
-        description: `Direct link to "${nodeData.title}" copied.`,
-      });
+  const handleShareTopic = async () => {
+    if (typeof window === "undefined" || !nodeId) return;
+    const url = `${window.location.origin}${window.location.pathname}#${nodeId}`;
+    try {
+      await navigator.clipboard.writeText(url);
+    } catch {
+      // Clipboard access needs a secure context and can be denied outright. Claiming
+      // "copied" when nothing was copied is worse than admitting it, so show the URL
+      // and let the learner take it by hand.
+      toast.error("Could not copy the link.", { description: url });
+      return;
     }
+    setCopiedLink(true);
+    if (copiedTimer.current !== null) clearTimeout(copiedTimer.current);
+    copiedTimer.current = setTimeout(() => setCopiedLink(false), 2000);
+    toast.success("Topic link copied to clipboard!", {
+      description: `Direct link to "${nodeData.title}" copied.`,
+    });
   };
 
   const handleExportNotes = () => {
