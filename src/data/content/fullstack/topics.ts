@@ -36,7 +36,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Backend Roadmap", url: "/roadmaps/backend" },
       { type: "video_en", title: "Backend Web Development Bootcamp", url: "https://www.youtube.com/watch?v=Oe421EPjeBE" },
       { type: "video_hi", title: "Backend Web Development Course in Hindi", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
-      { type: "article", title: "How to become a Backend Developer", url: "https://www.freecodecamp.org/news/how-to-become-a-backend-developer/" },
+      { type: "article", title: "How to become a Backend Developer", url: "https://roadmap.sh/backend" },
       { type: "github", title: "Backend Developer Roadmap Repo", url: "https://github.com/kamranahmedse/developer-roadmap" },
       { type: "cheat_sheet", title: "Backend Cheat Sheet", url: "https://devhints.io/" },
       { type: "deep_dive", title: "Backend System Design", url: "https://github.com/donnemartin/system-design-primer" }
@@ -80,7 +80,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "CORS in Node.js Hindi", url: "https://www.youtube.com/watch?v=3R-a7E0V_wE" },
       { type: "article", title: "How to fix CORS errors", url: "https://javascript.info/fetch-crossorigin" },
       { type: "github", title: "Express CORS Middleware", url: "https://github.com/expressjs/cors" },
-      { type: "cheat_sheet", title: "CORS Headers Cheat Sheet", url: "https://httptoolkit.com/blog/cors-guide/" },
+      { type: "cheat_sheet", title: "CORS Headers Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" },
       { type: "deep_dive", title: "Deep Dive into Same-Origin Policy", url: "https://web.dev/same-origin-policy/" }
     ]
   },
@@ -100,7 +100,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "BFF Architecture Hindi", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
       { type: "article", title: "Sam Newman on BFF", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "github", title: "BFF Boilerplate", url: "https://samnewman.io/patterns/architectural/bff/" },
-      { type: "cheat_sheet", title: "API Gateway vs BFF", url: "https://blog.bitsrc.io/bff-pattern-backend-for-frontend-an-introduction-e4fa965128bf" },
+      { type: "cheat_sheet", title: "API Gateway vs BFF", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "deep_dive", title: "Designing Resilient BFFs", url: "https://martinfowler.com/articles/micro-frontends.html" }
     ]
   },
@@ -120,7 +120,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "React Query Optimistic Updates", url: "https://tanstack.com/query/latest/docs/react/guides/optimistic-updates" },
       { type: "video_en", title: "Optimistic UI in React", url: "https://www.youtube.com/watch?v=2-G8Fbz_0iY" },
       { type: "video_hi", title: "Optimistic UI Concept Hindi", url: "https://www.youtube.com/watch?v=uX3B1u7M25c" },
-      { type: "article", title: "True UI Performance with Optimistic UI", url: "https://uxplanet.org/optimistic-ui-a-guide-to-perceived-performance-786d7905d475" },
+      { type: "article", title: "True UI Performance with Optimistic UI", url: "https://web.dev/articles/add-manifest" },
       { type: "github", title: "SWR Mutation Example", url: "https://github.com/vercel/swr" },
       { type: "cheat_sheet", title: "Cache Update Cheat Sheet", url: "https://tkdodo.eu/blog/mastering-mutations-in-react-query" },
       { type: "deep_dive", title: "Deep Dive into CQRS and Optimistic UI", url: "https://martinfowler.com/bliki/CQRS.html" }
@@ -182,7 +182,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "OAuth 2.0 Refresh Token", url: "https://oauth.net/2/grant-types/refresh-token/" },
       { type: "video_en", title: "JWT Refresh Tokens Explained", url: "https://www.youtube.com/watch?v=mbsmsi7l3r4" },
       { type: "video_hi", title: "Refresh Token implementation Hindi", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
-      { type: "article", title: "Axios Interceptors for Token Refresh", url: "https://thedutchhacker.com/how-to-use-axios-interceptors-for-token-refreshing/" },
+      { type: "article", title: "Axios Interceptors for Token Refresh", url: "https://axios-http.com/docs/interceptors" },
       { type: "github", title: "React JWT Refresh Example", url: "https://github.com/gitdagray/react_jwt_auth" },
       { type: "cheat_sheet", title: "Token Storage Cheat Sheet", url: "https://auth0.com/docs/secure/security-guidance/data-security/token-storage" },
       { type: "deep_dive", title: "Refresh Token Rotation Strategy", url: "https://auth0.com/docs/secure/tokens/refresh-tokens/refresh-token-rotation" }
@@ -224,7 +224,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Turborepo Docs", url: "https://turbo.build/repo/docs" },
       { type: "video_en", title: "Turborepo in 100 Seconds", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
       { type: "video_hi", title: "Turborepo Crash Course Hindi", url: "https://www.youtube.com/watch?v=Fj-N3nL5N6c" },
-      { type: "article", title: "Turborepo vs Nx", url: "https://blog.logrocket.com/turborepo-vs-nx/" },
+      { type: "article", title: "Turborepo vs Nx", url: "https://turbo.build/repo/docs" },
       { type: "github", title: "Turborepo Starter", url: "https://github.com/vercel/turbo/tree/main/examples/basic" },
       { type: "cheat_sheet", title: "Turbo CLI Options", url: "https://turbo.build/repo/docs/reference/command-line-reference" },
       { type: "deep_dive", title: "Remote Caching Architecture", url: "https://turbo.build/repo/docs/core-concepts/remote-caching" }
@@ -244,7 +244,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "NPM Workspaces", url: "https://docs.npmjs.com/cli/v7/using-npm/workspaces" },
       { type: "video_en", title: "Sharing Types in a Monorepo", url: "https://www.youtube.com/watch?v=68M-gN0B8-Q" },
       { type: "video_hi", title: "NPM Workspaces Tutorial Hindi", url: "https://www.youtube.com/watch?v=uX3B1u7M25c" },
-      { type: "article", title: "How to share code in a Monorepo", url: "https://www.smashingmagazine.com/2021/04/monorepo-lerna-yarn-workspaces/" },
+      { type: "article", title: "How to share code in a Monorepo", url: "https://lerna.js.org/docs/getting-started" },
       { type: "github", title: "Yarn Workspaces Example", url: "https://github.com/yarnpkg/berry/tree/master/packages/plugin-workspace-tools" },
       { type: "cheat_sheet", title: "Package.json Exports", url: "https://nodejs.org/api/packages.html#exports" },
       { type: "deep_dive", title: "Deep Dive into Module Resolution", url: "https://www.typescriptlang.org/docs/handbook/module-resolution.html" }
@@ -268,7 +268,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "Deploying MERN stack app Hindi", url: "https://www.youtube.com/watch?v=eB1wW-UuQY4" },
       { type: "article", title: "Vercel vs AWS", url: "https://www.sst.dev/blog/vercel-vs-aws.html" },
       { type: "github", title: "AWS CDK Examples", url: "https://github.com/aws-samples/aws-cdk-examples" },
-      { type: "cheat_sheet", title: "Deployment Checklist", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Tools_and_setup/Deployment_checklist" },
+      { type: "cheat_sheet", title: "Deployment Checklist", url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing" },
       { type: "deep_dive", title: "Infrastructure as Code", url: "https://www.terraform.io/intro" }
     ]
   },
@@ -286,7 +286,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "AWS Serverless vs Containers", url: "https://aws.amazon.com/compare/the-difference-between-containers-and-serverless/" },
       { type: "video_en", title: "Serverless vs Docker in 100 Seconds", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
       { type: "video_hi", title: "Serverless Architecture Hindi", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
-      { type: "article", title: "When to use Serverless vs Containers", url: "https://www.datadoghq.com/blog/serverless-vs-containers/" },
+      { type: "article", title: "When to use Serverless vs Containers", url: "https://www.cloudflare.com/learning/serverless/serverless-vs-containers/" },
       { type: "github", title: "Serverless Framework", url: "https://github.com/serverless/serverless" },
       { type: "cheat_sheet", title: "Docker Cheat Sheet", url: "https://docker.com/" },
       { type: "deep_dive", title: "Deep Dive into Kubernetes", url: "https://kubernetes.io/docs/concepts/" }

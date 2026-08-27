@@ -6,7 +6,19 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "lint:gate": "eslint src/data/schema src/data/__tests__ scripts/validate-content.mts scripts/promote-content.mts scripts/lib --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test --import tsx \"src/**/*.test.mts\"",
+    "validate": "node --import tsx scripts/validate-content.mts",
+    "validate:strict": "node --import tsx scripts/validate-content.mts --strict",
+    "validate:ci": "node --import tsx scripts/validate-content.mts --baseline=content-baseline.json --limit=0",
+    "validate:baseline": "node --import tsx scripts/validate-content.mts --update-baseline=content-baseline.json",
+    "promote": "node --import tsx scripts/promote-content.mts",
+    "verify": "npm run typecheck && npm run lint:gate && npm run validate:ci && npm run test"
+  },
+  "engines": {
+    "node": ">=24.0.0"
   },
   "dependencies": {
     "@base-ui/react": "^1.6.0",

@@ -1,0 +1,33 @@
+{
+  "note": "Per-code issue counts that `npm run validate:ci` refuses to let rise. Fix content and re-record with `npm run validate:baseline`; never edit by hand.",
+  "defaultStatus": "draft",
+  "totals": {
+    "errors": 537,
+    "warnings": 448
+  },
+  "errors": {
+    "corpus.integrity.duplicate_slug": 4,
+    "corpus.integrity.node_without_content": 2,
+    "corpus.integrity.title_mismatch": 65,
+    "corpus.overused_url": 1,
+    "resource.url.unparseable": 2,
+    "roadmap.node.data.difficulty.unknown_value": 93,
+    "roadmap.node.data.unknown_field": 93,
+    "roadmap.node.legacy_label_field": 211,
+    "roadmap.node.legacy_root_node": 10,
+    "topic.missing_field": 56
+  },
+  "warnings": {
+    "corpus.nonstandard_export_name": 18,
+    "corpus.orphaned_content": 1,
+    "corpus.title_formatting_mismatch": 17,
+    "corpus.unresolved_next_topic": 220,
+    "corpus.unwired_content": 6,
+    "resource.lang.required_for_slot": 164,
+    "resource.url.homepage_in_official_slot": 4,
+    "resource.url.low_authority": 5,
+    "resource.url.paywalled": 10,
+    "roadmap.isolated_topics": 1,
+    "roadmap.unparented_topic": 2
+  }
+}

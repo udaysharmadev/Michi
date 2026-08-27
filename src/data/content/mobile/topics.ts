@@ -5,6 +5,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_me_1": {
         title: "Native vs Cross-platform",
         description: "Understand the differences, pros, and cons of native (Swift/Kotlin) versus cross-platform (React Native, Flutter) development.",
+        publishStatus: "review",
         resources: [
             { title: "React Native Official Docs", type: "official", url: "https://reactnative.dev/docs/getting-started" },
             { title: "Flutter vs React Native in 2024 (Fireship)", type: "video_en", url: "https://www.youtube.com/watch?v=RUT3h1kNSvQ" },
@@ -18,19 +19,21 @@ export const topicsData: Record<string, TopicData> = {
     "n_me_2": {
         title: "Mobile OS Architecture",
         description: "Learn how iOS and Android are structured: kernel, HAL, frameworks, and runtime environments.",
+        publishStatus: "review",
         resources: [
             { title: "Android Platform Architecture", type: "official", url: "https://developer.android.com/guide/platform" },
             { title: "Android vs iOS Architecture Explained", type: "video_en", url: "https://www.youtube.com/watch?v=ada99UCvELI" },
-            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
-            { title: "iOS vs Android Architecture Differences", type: "article", url: "https://www.geeksforgeeks.org/difference-between-android-and-ios-architecture/" },
+            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=fnHr_rsQwDA" },
+            { title: "iOS vs Android Architecture Differences", type: "article", url: "https://developer.android.com/guide" },
             { title: "aosp-mirror/platform_frameworks_base", type: "github", url: "https://github.com/aosp-mirror/platform_frameworks_base" },
             { title: "Android Stack Architecture Layers", type: "cheat_sheet", url: "https://developer.android.com/guide/platform#library-layer" },
-            { title: "Deep Dive: Android Core Architecture", type: "deep_dive", url: "https://source.android.com/docs/core/architecture" }
+            { title: "Deep Dive: Android Core Architecture", type: "deep_dive", url: "https://developer.android.com/guide/platform" }
         ]
     },
     "n_me_3": {
         title: "App Lifecycle",
         description: "Understand the states a mobile app moves through: launch, foreground, background, and termination.",
+        publishStatus: "review",
         resources: [
             { title: "AppState API - React Native", type: "official", url: "https://reactnative.dev/docs/appstate" },
             { title: "Activity Lifecycle Explained (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=1sjA4e_wG3w" },
@@ -45,6 +48,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_pf_1": {
         title: "JavaScript for Mobile (React Native)",
         description: "Build the JavaScript/TypeScript foundation needed to work effectively with React Native.",
+        publishStatus: "review",
         resources: [
             { title: "React Native - JavaScript Environment", type: "official", url: "https://reactnative.dev/docs/javascript-environment" },
             { title: "JavaScript for React Native (Net Ninja)", type: "video_en", url: "https://www.youtube.com/watch?v=ML0DuF9Qgis" },
@@ -58,33 +62,36 @@ export const topicsData: Record<string, TopicData> = {
     "n_pf_2": {
         title: "Dart for Flutter",
         description: "Learn the Dart programming language: syntax, types, async/await, and OOP concepts for Flutter development.",
+        publishStatus: "review",
         resources: [
             { title: "Dart Language Tour (Official)", type: "official", url: "https://dart.dev/language" },
             { title: "Dart Programming Full Course (Traversy Media)", type: "video_en", url: "https://www.youtube.com/watch?v=CzRQ9mnmh44" },
             { title: "Dart Full Course in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=nUGXH5p7-P0" },
             { title: "Dart Null Safety Guide", type: "article", url: "https://dart.dev/null-safety" },
             { title: "dart-lang/sdk", type: "github", url: "https://github.com/dart-lang/sdk" },
-            { title: "Dart Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://devhints.io/dart" },
+            { title: "Dart Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://dart.dev/language" },
             { title: "Dart Isolates & Concurrency", type: "deep_dive", url: "https://dart.dev/language/isolates" }
         ]
     },
     "n_pf_3": {
         title: "Kotlin / Swift Basics",
         description: "Learn enough Kotlin (Android) or Swift (iOS) to understand native module integrations and platform-specific code.",
+        publishStatus: "review",
         resources: [
             { title: "Kotlin Basic Syntax (Official)", type: "official", url: "https://kotlinlang.org/docs/basic-syntax.html" },
             { title: "Kotlin vs Swift - Side by Side Comparison", type: "video_en", url: "https://www.youtube.com/watch?v=xT8oP0wy-A0" },
-            { title: "Kotlin Basics in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=DVvLFGZFmbI" },
+            { title: "Kotlin Basics in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=EK_d6YhE2Wg" },
             { title: "Swift is like Kotlin – Comparison", type: "article", url: "https://nilhcem.com/swift-is-like-kotlin/" },
             { title: "Kotlin/kotlin-koans", type: "github", url: "https://github.com/Kotlin/kotlin-koans" },
             { title: "Kotlin & Swift Syntax Cheat Sheet", type: "cheat_sheet", url: "https://nilhcem.com/swift-is-like-kotlin/" },
-            { title: "Native Modules in React Native (Official)", type: "deep_dive", url: "https://reactnative.dev/docs/native-modules-intro" }
+            { title: "Native Modules in React Native (Official)", type: "deep_dive", url: "https://reactnative.dev/docs/turbo-native-modules-introduction" }
         ]
     },
     // --- 3. Cross-Platform Frameworks ---
     "n_cp_1": {
         title: "React Native Core",
         description: "Build cross-platform mobile apps with React Native using core components, JSX, and the Bridge.",
+        publishStatus: "review",
         resources: [
             { title: "React Native Core Components & APIs", type: "official", url: "https://reactnative.dev/docs/components-and-apis" },
             { title: "React Native Crash Course (Traversy Media)", type: "video_en", url: "https://www.youtube.com/watch?v=-d3ti_YW-OM" },
@@ -98,6 +105,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_cp_2": {
         title: "Flutter Widgets",
         description: "Build UIs with Flutter's widget tree, understanding stateless vs stateful widgets, and layouts.",
+        publishStatus: "review",
         resources: [
             { title: "Flutter Widget Catalog (Official)", type: "official", url: "https://docs.flutter.dev/ui/widgets" },
             { title: "Flutter Crash Course (Traversy Media)", type: "video_en", url: "https://www.youtube.com/watch?v=WOvj84xq_fc" },
@@ -111,11 +119,12 @@ export const topicsData: Record<string, TopicData> = {
     "n_cp_3": {
         title: "Expo (React Native)",
         description: "Use Expo to rapidly build and deploy React Native apps with managed workflows and universal APIs.",
+        publishStatus: "review",
         resources: [
             { title: "Expo Official Documentation", type: "official", url: "https://docs.expo.dev/" },
             { title: "Expo Tutorial for Beginners (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=XCifkDC0yXA" },
             { title: "Expo React Native in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=WSppuT4A09Y" },
-            { title: "Expo Managed vs Bare Workflow", type: "article", url: "https://docs.expo.dev/introduction/managed-vs-bare/" },
+            { title: "Expo Managed vs Bare Workflow", type: "article", url: "https://docs.expo.dev/workflow/overview/" },
             { title: "expo/expo", type: "github", url: "https://github.com/expo/expo" },
             { title: "Expo SDK API Reference", type: "cheat_sheet", url: "https://docs.expo.dev/versions/latest/" },
             { title: "EAS Build & Submit Deep Dive", type: "deep_dive", url: "https://docs.expo.dev/build/introduction/" }
@@ -125,6 +134,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_1": {
         title: "React Navigation",
         description: "Implement stack, tab, and drawer navigation in React Native using React Navigation.",
+        publishStatus: "review",
         resources: [
             { title: "React Navigation Official Docs", type: "official", url: "https://reactnavigation.org/docs/getting-started" },
             { title: "React Navigation v6 Tutorial (Traversy)", type: "video_en", url: "https://www.youtube.com/watch?v=ZP8QyCIUeIA" },
@@ -138,6 +148,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_2": {
         title: "Flutter Navigation (go_router)",
         description: "Manage routes declaratively in Flutter apps with go_router and nested navigation.",
+        publishStatus: "review",
         resources: [
             { title: "Navigation & Routing in Flutter (Official)", type: "official", url: "https://docs.flutter.dev/ui/navigation" },
             { title: "GoRouter Tutorial (Reso Coder)", type: "video_en", url: "https://www.youtube.com/watch?v=b6Z885Z46cU" },
@@ -151,6 +162,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_3": {
         title: "Styling & Responsive UI",
         description: "Style components in React Native using StyleSheet, and create adaptive layouts for different screen sizes.",
+        publishStatus: "review",
         resources: [
             { title: "StyleSheet API - React Native", type: "official", url: "https://reactnative.dev/docs/stylesheet" },
             { title: "Styling in React Native (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=XhpXOwmUYOA" },
@@ -164,11 +176,12 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_4": {
         title: "Animations (Reanimated)",
         description: "Create smooth, high-performance animations using React Native Reanimated and Gesture Handler.",
+        publishStatus: "review",
         resources: [
             { title: "React Native Reanimated Official Docs", type: "official", url: "https://docs.swmansion.com/react-native-reanimated/" },
             { title: "Reanimated 3 Tutorial (William Candillon)", type: "video_en", url: "https://www.youtube.com/watch?v=rJyhU064W8E" },
-            { title: "React Native Animations in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=kiHu0-Z6xHI" },
-            { title: "Worklets & Shared Values in Reanimated", type: "article", url: "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/worklets" },
+            { title: "React Native Animations in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=r2pHdnUfUXE" },
+            { title: "Worklets & Shared Values in Reanimated", type: "article", url: "https://docs.swmansion.com/react-native-reanimated/docs/guides/worklets" },
             { title: "software-mansion/react-native-reanimated", type: "github", url: "https://github.com/software-mansion/react-native-reanimated" },
             { title: "Reanimated Animation Types Reference", type: "cheat_sheet", url: "https://docs.swmansion.com/react-native-reanimated/docs/animations/withTiming" },
             { title: "React Native Skia for 2D Graphics", type: "deep_dive", url: "https://shopify.github.io/react-native-skia/" }
@@ -178,6 +191,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_sm_1": {
         title: "Redux Toolkit",
         description: "Manage complex global app state with Redux Toolkit, slices, and RTK Query.",
+        publishStatus: "review",
         resources: [
             { title: "Redux Toolkit Official Docs", type: "official", url: "https://redux-toolkit.js.org/" },
             { title: "Redux Toolkit Full Tutorial (Dave Gray)", type: "video_en", url: "https://www.youtube.com/watch?v=Q5TqsetwCoE" },
@@ -191,19 +205,21 @@ export const topicsData: Record<string, TopicData> = {
     "n_sm_2": {
         title: "Zustand / Jotai",
         description: "Use lightweight, modern state management libraries like Zustand or Jotai for simpler React Native apps.",
+        publishStatus: "review",
         resources: [
-            { title: "Zustand Official Docs", type: "official", url: "https://docs.pmnd.rs/zustand/getting-started/introduction" },
+            { title: "Zustand Official Docs", type: "official", url: "https://zustand-demo.pmnd.rs/" },
             { title: "Zustand Crash Course (Jack Herrington)", type: "video_en", url: "https://www.youtube.com/watch?v=LcJURRiIHMc" },
             { title: "Zustand State Management in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=KCr-UNsM3vA" },
-            { title: "State Management in React Native – Full Comparison", type: "article", url: "https://blog.logrocket.com/state-management-react-native-redux-context-api-zustand/" },
+            { title: "State Management in React Native – Full Comparison", type: "article", url: "https://reactnative.dev/docs/state" },
             { title: "pmndrs/zustand", type: "github", url: "https://github.com/pmndrs/zustand" },
-            { title: "Zustand API Reference", type: "cheat_sheet", url: "https://docs.pmnd.rs/zustand/apis/create" },
+            { title: "Zustand API Reference", type: "cheat_sheet", url: "https://github.com/pmndrs/zustand" },
             { title: "TanStack Query in React Native", type: "deep_dive", url: "https://tanstack.com/query/latest/docs/framework/react/react-native" }
         ]
     },
     "n_sm_3": {
         title: "Flutter State (Riverpod/Bloc)",
         description: "Choose the right state management solution for Flutter: Riverpod, Provider, or Bloc pattern.",
+        publishStatus: "review",
         resources: [
             { title: "Flutter State Management Options (Official)", type: "official", url: "https://docs.flutter.dev/data-and-backend/state-mgmt/options" },
             { title: "Riverpod 2.0 Full Tutorial (Reso Coder)", type: "video_en", url: "https://www.youtube.com/watch?v=EPVKdverFuw" },
@@ -218,24 +234,26 @@ export const topicsData: Record<string, TopicData> = {
     "n_api_1": {
         title: "REST API Integration",
         description: "Fetch data from REST APIs in React Native using fetch or Axios and handle loading and error states.",
+        publishStatus: "review",
         resources: [
             { title: "Networking in React Native (Official)", type: "official", url: "https://reactnative.dev/docs/network" },
             { title: "Axios in React Native (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=-mN3VyJuCjM" },
             { title: "API Calling in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=NZ4nnZ5Z_xw" },
             { title: "Using the Fetch API (MDN)", type: "article", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" },
             { title: "axios/axios", type: "github", url: "https://github.com/axios/axios" },
-            { title: "Fetch vs Axios – Which to use?", type: "cheat_sheet", url: "https://www.freecodecamp.org/news/fetch-vs-axios-which-should-you-prefer-for-making-http-requests/" },
+            { title: "Fetch vs Axios – Which to use?", type: "cheat_sheet", url: "https://axios-http.com/docs/intro" },
             { title: "Apollo GraphQL in React Native", type: "deep_dive", url: "https://www.apollographql.com/docs/react/integrations/react-native/" }
         ]
     },
     "n_api_2": {
         title: "WebSockets & Real-time",
         description: "Build real-time features like live chat, notifications, and collaborative tools using WebSockets.",
+        publishStatus: "review",
         resources: [
             { title: "WebSocket API (MDN)", type: "official", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket" },
             { title: "Socket.io with React Native Tutorial", type: "video_en", url: "https://www.youtube.com/watch?v=favi7avxIag" },
             { title: "WebSockets in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=KK1vFqPjKGs" },
-            { title: "Getting Started with Socket.io Chat App", type: "article", url: "https://socket.io/get-started/chat" },
+            { title: "Getting Started with Socket.io Chat App", type: "article", url: "https://socket.io/docs/v4/" },
             { title: "socketio/socket.io-client", type: "github", url: "https://github.com/socketio/socket.io-client" },
             { title: "WebSocket Events Reference (MDN)", type: "cheat_sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" },
             { title: "Expo SQLite for Local Real-time Data", type: "deep_dive", url: "https://docs.expo.dev/versions/latest/sdk/sqlite/" }
@@ -244,6 +262,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_api_3": {
         title: "Push Notifications",
         description: "Send and receive push notifications on iOS and Android using FCM and APNs.",
+        publishStatus: "review",
         resources: [
             { title: "Firebase Cloud Messaging (FCM) Docs", type: "official", url: "https://firebase.google.com/docs/cloud-messaging" },
             { title: "Push Notifications in React Native with Expo", type: "video_en", url: "https://www.youtube.com/watch?v=SaPOWEskPG8" },
@@ -271,19 +290,21 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_1": {
         title: "AsyncStorage / MMKV",
         description: "Persist local key-value data with AsyncStorage or the faster MMKV library.",
+        publishStatus: "review",
         resources: [
-            { title: "AsyncStorage Official Docs", type: "official", url: "https://react-native-async-storage.github.io/async-storage/" },
+            { title: "AsyncStorage Official Docs", type: "official", url: "https://github.com/react-native-async-storage/async-storage" },
             { title: "MMKV in React Native (Phillip Lackner style)", type: "video_en", url: "https://www.youtube.com/watch?v=7N5fug4O-zg" },
             { title: "AsyncStorage & Storage in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=pY-UvlALKhw" },
             { title: "MMKV vs AsyncStorage – Performance Comparison", type: "article", url: "https://blog.logrocket.com/using-react-native-mmkv/" },
             { title: "mrousavy/react-native-mmkv", type: "github", url: "https://github.com/mrousavy/react-native-mmkv" },
-            { title: "AsyncStorage API Usage Reference", type: "cheat_sheet", url: "https://react-native-async-storage.github.io/async-storage/docs/usage" },
+            { title: "AsyncStorage API Usage Reference", type: "cheat_sheet", url: "https://github.com/react-native-async-storage/async-storage#usage" },
             { title: "Secure Storage with react-native-keychain", type: "deep_dive", url: "https://github.com/oblador/react-native-keychain" }
         ]
     },
     "n_data_2": {
         title: "SQLite / WatermelonDB",
         description: "Store structured relational data locally using SQLite or the powerful WatermelonDB ORM.",
+        publishStatus: "review",
         resources: [
             { title: "expo-sqlite Official Docs", type: "official", url: "https://docs.expo.dev/versions/latest/sdk/sqlite/" },
             { title: "WatermelonDB + React Native Tutorial", type: "video_en", url: "https://www.youtube.com/watch?v=gNsNmIy_vYw" },
@@ -297,6 +318,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_3": {
         title: "Firebase Firestore",
         description: "Use Cloud Firestore as a scalable, real-time backend database for mobile apps.",
+        publishStatus: "review",
         resources: [
             { title: "Cloud Firestore Documentation", type: "official", url: "https://firebase.google.com/docs/firestore" },
             { title: "Firebase with React Native Tutorial", type: "video_en", url: "https://www.youtube.com/watch?v=-4g7henIRU8" },
@@ -311,6 +333,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_dep_1": {
         title: "EAS Build (Expo)",
         description: "Build production-ready iOS and Android binaries in the cloud using Expo Application Services.",
+        publishStatus: "review",
         resources: [
             { title: "EAS Build Introduction (Official)", type: "official", url: "https://docs.expo.dev/build/introduction/" },
             { title: "EAS Build Tutorial (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=uQCE9zl3dXU" },
@@ -324,6 +347,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_dep_2": {
         title: "Fastlane CI/CD",
         description: "Automate building, testing, and deploying to both the App Store and Google Play using Fastlane.",
+        publishStatus: "review",
         resources: [
             { title: "Fastlane Official Docs", type: "official", url: "https://docs.fastlane.tools/" },
             { title: "Fastlane for iOS & Android CI/CD", type: "video_en", url: "https://www.youtube.com/watch?v=yNqCpMLmJqE" },
@@ -337,6 +361,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_dep_3": {
         title: "App Store Publishing",
         description: "Navigate the App Store Connect and Google Play Console submission processes.",
+        publishStatus: "review",
         resources: [
             { title: "App Store Connect Help (Apple)", type: "official", url: "https://developer.apple.com/app-store-connect/" },
             { title: "Publishing to App Store & Play Store Guide", type: "video_en", url: "https://www.youtube.com/watch?v=_P-bJW-4TmY" },
@@ -350,13 +375,14 @@ export const topicsData: Record<string, TopicData> = {
     "n_dep_4": {
         title: "OTA Updates (CodePush / EAS Update)",
         description: "Push JavaScript bundle updates to users instantly without App Store review using CodePush or Expo Updates.",
+        publishStatus: "review",
         resources: [
             { title: "Expo Updates Official Docs", type: "official", url: "https://docs.expo.dev/versions/latest/sdk/updates/" },
             { title: "CodePush OTA Updates Tutorial", type: "video_en", url: "https://www.youtube.com/watch?v=DWpcD6bvTRA" },
             { title: "OTA Updates in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=XCyw6Emfvdw" },
             { title: "CodePush vs Expo EAS Update – Comparison", type: "article", url: "https://docs.expo.dev/eas-update/codepush/" },
             { title: "microsoft/react-native-code-push", type: "github", url: "https://github.com/microsoft/react-native-code-push" },
-            { title: "EAS Update Configuration Reference", type: "cheat_sheet", url: "https://docs.expo.dev/eas-update/eas-json/" },
+            { title: "EAS Update Configuration Reference", type: "cheat_sheet", url: "https://docs.expo.dev/eas-update/introduction/" },
             { title: "EAS Update Deep Dive", type: "deep_dive", url: "https://docs.expo.dev/eas-update/introduction/" }
         ]
     }

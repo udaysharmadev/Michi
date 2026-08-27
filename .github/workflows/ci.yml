@@ -1,0 +1,88 @@
+# Michi CI.
+#
+# Ordered cheapest-and-most-specific first, so the first red step is usually the one
+# that tells you what is actually wrong. Every step runs even after an earlier one
+# fails (`if: always()`), because a content change often trips several at once and
+# fixing them one CI round-trip at a time is the slowest possible loop.
+#
+# Two of these steps are ratcheted rather than absolute, and deliberately so:
+#
+#   - `validate:ci` compares per-code issue counts against `content-baseline.json`.
+#     The corpus inherited 548 errors and 265 warnings; a job that is red from day one
+#     teaches everyone to ignore it and cannot distinguish a new defect from an old
+#     one. See the header of `scripts/validate-content.mts`.
+#   - `lint:gate` covers only the directories that are clean today. The rest of the
+#     repository still reports 44 ESLint errors in `src/` and more in the legacy root
+#     scripts; the advisory `lint` step reports them without blocking. Widen
+#     `lint:gate` in package.json as each area is cleaned, and delete the advisory
+#     step once the two agree.
+
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+# A superseded run tells you about a commit nobody is looking at any more.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+env:
+  NEXT_TELEMETRY_DISABLED: '1'
+
+jobs:
+  verify:
+    name: Typecheck, lint, validate, test, build
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          # Kept in step with `engines.node` in package.json. The test runner is
+          # invoked with a glob, which needs a recent Node.
+          node-version: '24'
+          cache: npm
+
+      # `ci`, not `install`: the lockfile is the input, and a run that silently
+      # resolves a different tree is not reproducing anything.
+      - name: Install
+        run: npm ci
+
+      - name: Typecheck
+        run: npm run typecheck
+
+      - name: Lint (gate)
+        if: ${{ always() }}
+        run: npm run lint:gate
+
+      - name: Lint (advisory, whole repo)
+        if: ${{ always() }}
+        continue-on-error: true
+        run: npm run lint
+
+      # The content gate. Prints every issue (`--limit=0`) so a regression is
+      # diagnosable from the log alone, without re-running anything locally.
+      - name: Validate content
+        if: ${{ always() }}
+        run: npm run validate:ci
+
+      - name: Test
+        if: ${{ always() }}
+        run: npm run test
+
+      # Last because it is the slowest and the least specific: if it is the only red
+      # step, the problem is the build itself rather than the code or the content.
+      # Needs network access to fonts.googleapis.com — `next/font/google` fetches at
+      # build time.
+      - name: Build
+        if: ${{ always() }}
+        run: npm run build

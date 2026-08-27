@@ -1,3 +1,5 @@
+import type { PublishStatus } from "@/data/schema";
+
 export type ResourceType = 'official' | 'video_en' | 'video_hi' | 'article' | 'github' | 'cheat_sheet' | 'deep_dive';
 
 export interface Resource {
@@ -15,6 +17,14 @@ export type RoadmapContentNode = {
     description?: string;
     difficulty?: "Beginner" | "Intermediate" | "Advanced";
     status?: "Pending" | "In Progress" | "Completed";
+    /**
+     * Editorial state, mirrored from `topics.ts` by each roadmap's `index.ts`.
+     *
+     * Absent means `draft`. Distinct from `status` above, which is learner progress —
+     * the schema calls this `publishStatus` for exactly that reason. Only `"published"`
+     * may be shown to a learner or listed in the sitemap.
+     */
+    publishStatus?: PublishStatus;
     isHighlighted?: boolean;
     isLarge?: boolean;
     // For topic nodes
