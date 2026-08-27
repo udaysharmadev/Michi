@@ -11,6 +11,8 @@
  * constraint the content itself is under.
  */
 
+import { ENRICHMENT_FIELDS } from '../topic';
+
 /** A complete, publishable seven-slot resource list drawn from six distinct hosts. */
 export function sevenSlots(): Record<string, unknown>[] {
   return [
@@ -88,4 +90,22 @@ export function publishedTopic(over: Record<string, unknown> = {}): Record<strin
     resources: sevenSlots(),
     ...over,
   };
+}
+
+/**
+ * The same topic at the **core** tier: publishable, with no enrichment prose.
+ *
+ * Derived from {@link publishedTopic} by subtraction rather than written out again.
+ * That is deliberate — it makes the difference between the two tiers *exactly*
+ * `ENRICHMENT_FIELDS` and nothing else, so the fixtures cannot drift apart and a
+ * newly added enrichment field is dropped here automatically instead of silently
+ * making the core fixture invalid.
+ *
+ * 183 topics in this repository have this shape. If this fixture stops validating,
+ * nine roadmaps have become unpublishable.
+ */
+export function coreTopic(over: Record<string, unknown> = {}): Record<string, unknown> {
+  const topic = publishedTopic();
+  for (const field of ENRICHMENT_FIELDS) delete topic[field];
+  return { ...topic, ...over };
 }

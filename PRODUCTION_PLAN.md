@@ -277,19 +277,87 @@ Branch protection on `main`. **This gate is what makes every later phase safe.**
 
 ### 1.3 Quarantine, don't delete
 
-Add `status` to every topic and roadmap. Then:
+**Status: done.** What follows is what the gate measured, which differs from the estimates
+above — those were made by reading the content, these were made by validating it.
 
-- **247 Tier C topics** → `status: 'draft'`. They stay in git as raw material for Phase 3's
-  taxonomy work; they stop rendering immediately.
-- **15 Tier D topics** → `draft`.
-- **10 roadmaps with no content** → removed from `roadmaps.ts`, moved to a
-  `plannedRoadmaps` list rendered as a non-linkable "Coming next" section on `/roadmaps`.
-- 8 S3 roadmaps → `draft` until migrated (§1.4).
+Every topic carries a `publishStatus` of `draft` (implicit), `review` or `published`.
+`draft` suppresses quality rules; `review` reports them as warnings; `published` makes them
+errors. Structural rules are never suppressed at any status.
 
-After Phase 1 the site honestly presents **3 roadmaps** (frontend, backend, fullstack —
-116 real topics) plus mobile/android/ios in a clearly-labelled *Beta: resources only, no
-deep-dive layer* state. That is a smaller, credible product. Shipping 18 half-real roadmaps
-is worse than shipping 3 real ones.
+**The schema has two documented tiers**, because the corpus honestly has two shapes:
+
+| Tier | Requires | Count |
+| --- | --- | --- |
+| `core` | title, description, seven resource slots | **183** |
+| `enriched` | core plus the why/when/where and outcomes/mistakes/applications groups | **323** |
+
+Enrichment is optional as a set but faces the *full* quality bar when present, and each
+group must be filled in whole (`topic.enrichment.partial_group`). That asymmetry is what
+stops the tier being an escape hatch: the 156 generated topics have all ten fields and
+still fail. Before this split, the only topics that passed at `review` were exactly the
+156 fully-generated ones — the terse-but-real topics failed for having written less
+boilerplate. The split moves `review`-clean from **156 → 339 of 506**.
+
+**82 topics are editorially finished** — android 32/32, ios 24/33, mobile 26/27 — blocked
+only on `resource.lang.*`, which Phase 2 must supply by actually watching each video.
+`scripts/promote-content.mts` computes this rather than hand-listing it (status will be set
+three times over this project) and promoted all 82 to `review`. It never promotes to
+`published` — that would be circular — and never demotes.
+
+**Nothing is `published`, and nothing can be yet.** 350 topics are blocked on
+`resource.lang.required_for_slot`. Stamping `lang: 'hi'` by hand would assert something
+unverified and would make `resource.lang.slot_mismatch` — the rule that exists *because*
+the Hindi slot filled up with English videos — impossible to trigger again.
+
+**12 roadmaps with no content** (not 10) moved from `roadmaps` to `plannedRoadmaps` in
+`src/data/roadmaps.ts`. All nine consumers route through `getAllRoadmaps()`, so scoping
+that one function fixed the catalogue, the sitemap, the search palette, the marquee and
+the hero preview at once. `getRoadmapBySlug` deliberately cannot find a planned slug, so
+those routes 404 instead of rendering an empty canvas — a 404 is a true statement, an
+empty roadmap is not. This removes the `Research` category from the filter chips entirely
+(all three of its roadmaps are unbuilt) and reduces `Security` to `cyber-security`.
+
+Remaining `review` blockers are now a clean worklist rather than a fog: **167 topics have
+no `description` at all** (backend 46, frontend 56, fullstack 14, qa-engineer 15,
+software-architect 15, data-engineer 12, ux-ui 9) and 101 core topics carry a templated
+one. Both are §1.4 writing work.
+
+#### The finding that changes Phase 2's shape
+
+The `video_hi` slot is largely placeholder. Per-slot URL reuse across all 506 topics:
+
+| slot | refs | distinct | in a reused group |
+| --- | --- | --- | --- |
+| `video_en` | 506 | 475 | 60 |
+| `video_hi` | 415 | **271** | **219 (53%)** |
+| `official` | 415 | 385 | 54 |
+| `article` | 364 | 353 | 21 |
+
+35 Hindi URLs cover 139 topics. `youtube.com/watch?v=bRSAl95GGXI` appears in 9 `game`
+topics, all titled "Hindi Tutorial"; `1XkO-E01g7Y` appears in 7 topics across five
+unrelated roadmaps under contradictory specific titles ("Advanced SQL in Hindi
+(CodeWithHarry)" and "Information Architecture in Hindi (Ansh Mehra)" are the same URL).
+17 titles are literally "Hindi Tutorial". The titles were fabricated per topic; the URL is
+a shared placeholder. `video_en` at 475/506 distinct is, by contrast, largely genuine.
+
+**Phase 2 therefore owes ~139 topics a real Hindi video, not a verification pass.** One
+case is already an error rather than a warning: `youtube.com/watch?v=DVvLFGZFmbI` fills
+`video_hi` for 5 promoted topics across three roadmaps, so `corpus.overused_url` fails CI
+on it. It cannot be fixed offline without inventing URLs, which is precisely the
+fabrication the schema exists to catch.
+
+The duplication is not drift — it was *introduced by an earlier attempt to fix it*.
+`scripts/fix-hindi-duplicates.js` maps 87 duplicated video ids onto only **56 distinct
+replacements**, so it reintroduced duplication by construction. Its own comments say so:
+two entries are annotated `(reuse)`, one is `reuse JS video channel`, and the id it assigns
+8 times is `bRSAl95GGXI` — the same URL now sitting in 9 `game` topics. `nNqJjY53DLU` is
+assigned to both "Android Architecture Hindi" and "Swift closures Hindi", which cannot be
+one video.
+
+The consequence for Phase 2 is specific: **no `video_hi` id can be trusted, including the
+271 distinct ones.** The ids were shuffled to satisfy a uniqueness check, not chosen by
+watching anything. Treat the whole slot as unpopulated. (This script is one of the files
+§1.6 deletes; it is quoted here so the reason survives it.)
 
 ### 1.4 Migrate S3 → canonical
 

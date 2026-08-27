@@ -5,6 +5,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_bas_1": {
         title: "Android Architecture",
         description: "Understand the Android software stack, from the Linux kernel to the application framework.",
+        publishStatus: "review",
         resources: [
             { title: "Android Platform Architecture", type: "official", url: "https://developer.android.com/guide/platform" },
             { title: "Android Architecture Explained (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=ada99UCvELI" },
@@ -18,6 +19,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_bas_2": {
         title: "ART & Dalvik",
         description: "Learn about the Android Runtime (ART) and the Dalvik virtual machine that powers Android apps.",
+        publishStatus: "review",
         resources: [
             { title: "ART and Dalvik (Android Source)", type: "official", url: "https://source.android.com/docs/core/runtime" },
             { title: "ART vs Dalvik by Mark Allison", type: "video_en", url: "https://www.youtube.com/watch?v=cmyemvNmdzI" },
@@ -31,6 +33,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_bas_3": {
         title: "Android Permissions",
         description: "Learn how to request and handle runtime permissions for sensitive device resources.",
+        publishStatus: "review",
         resources: [
             { title: "Permissions on Android", type: "official", url: "https://developer.android.com/guide/topics/permissions/overview" },
             { title: "Android Runtime Permissions (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=9ZPVAQit8Sc" },
@@ -45,6 +48,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_kot_1": {
         title: "Kotlin Syntax & Basics",
         description: "Master the fundamental syntax of Kotlin: variables, functions, control flow, and collections.",
+        publishStatus: "review",
         resources: [
             { title: "Kotlin Basic Syntax Docs", type: "official", url: "https://kotlinlang.org/docs/basic-syntax.html" },
             { title: "Kotlin Crash Course (Traversy Media)", type: "video_en", url: "https://www.youtube.com/watch?v=kEEwTin0MRU" },
@@ -58,6 +62,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_kot_2": {
         title: "Null Safety",
         description: "Learn Kotlin's null safety system to eliminate NullPointerExceptions with operators like ?, !!, and ?:.",
+        publishStatus: "review",
         resources: [
             { title: "Null Safety in Kotlin (Official)", type: "official", url: "https://kotlinlang.org/docs/null-safety.html" },
             { title: "Kotlin Null Safety Explained (Android Developers)", type: "video_en", url: "https://www.youtube.com/watch?v=iYhOU9AuaFs" },
@@ -71,6 +76,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_kot_3": {
         title: "Classes & Objects",
         description: "Deep dive into Kotlin OOP: data classes, sealed classes, companion objects, and extension functions.",
+        publishStatus: "review",
         resources: [
             { title: "Kotlin Classes Docs", type: "official", url: "https://kotlinlang.org/docs/classes.html" },
             { title: "OOP in Kotlin (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=ZSyfYfEFVnM" },
@@ -84,6 +90,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_kot_4": {
         title: "Coroutines",
         description: "Write asynchronous, non-blocking code using Kotlin Coroutines with structured concurrency.",
+        publishStatus: "review",
         resources: [
             { title: "Kotlin Coroutines Guide (Official)", type: "official", url: "https://kotlinlang.org/docs/coroutines-guide.html" },
             { title: "Kotlin Coroutines (Phillip Lackner - full)", type: "video_en", url: "https://www.youtube.com/watch?v=lmRzRKIsn1g" },
@@ -98,6 +105,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_tool_1": {
         title: "Android Studio IDE",
         description: "Set up and navigate Android Studio, the official IDE for Android development.",
+        publishStatus: "review",
         resources: [
             { title: "Meet Android Studio", type: "official", url: "https://developer.android.com/studio/intro" },
             { title: "Android Studio Tutorial (Programming with Mosh)", type: "video_en", url: "https://www.youtube.com/watch?v=QCWdu3iUaeE" },
@@ -111,6 +119,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_tool_2": {
         title: "Gradle Build System",
         description: "Understand Gradle scripts, build variants, dependencies, and the Android build pipeline.",
+        publishStatus: "review",
         resources: [
             { title: "Configure Your Build (Android Docs)", type: "official", url: "https://developer.android.com/studio/build" },
             { title: "Gradle for Android (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=-dtcEMLNmn0" },
@@ -124,6 +133,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_tool_3": {
         title: "Android Emulator & ADB",
         description: "Run your apps on virtual devices and use ADB to debug, install APKs, and inspect your device.",
+        publishStatus: "review",
         resources: [
             { title: "Run apps on Android Emulator", type: "official", url: "https://developer.android.com/studio/run/emulator" },
             { title: "ADB Commands Every Developer Should Know", type: "video_en", url: "https://www.youtube.com/watch?v=BERHIgpwXus" },
@@ -138,6 +148,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_1": {
         title: "XML Layouts (Legacy)",
         description: "Build UIs with XML layout files, Views, ViewGroups, and ConstraintLayout.",
+        publishStatus: "review",
         resources: [
             { title: "Layouts Overview (Android Docs)", type: "official", url: "https://developer.android.com/guide/topics/ui/declaring-layout" },
             { title: "ConstraintLayout Tutorial (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=Gdko6n_x1NQ" },
@@ -151,6 +162,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_2": {
         title: "Jetpack Compose",
         description: "Build native Android UIs with Kotlin using the modern declarative Jetpack Compose framework.",
+        publishStatus: "review",
         resources: [
             { title: "Jetpack Compose Pathway (Official)", type: "official", url: "https://developer.android.com/courses/pathways/compose" },
             { title: "Jetpack Compose Crash Course (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=6_wK_Ud8--0" },
@@ -164,6 +176,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_3": {
         title: "Material Design 3",
         description: "Apply Google's Material Design 3 design system for consistent, accessible, modern UIs.",
+        publishStatus: "review",
         resources: [
             { title: "Material Design 3 Guidelines", type: "official", url: "https://m3.material.io/" },
             { title: "Material Design 3 in Compose (Android)", type: "video_en", url: "https://www.youtube.com/watch?v=h_JYW2hdI8U" },
@@ -177,6 +190,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_4": {
         title: "RecyclerView / LazyColumn",
         description: "Efficiently display large, scrollable lists of data with RecyclerView or Compose's LazyColumn.",
+        publishStatus: "review",
         resources: [
             { title: "Lists and grids in Compose", type: "official", url: "https://developer.android.com/jetpack/compose/lists" },
             { title: "LazyColumn & LazyRow Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=z2bS2btp_AI" },
@@ -191,6 +205,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_app_1": {
         title: "Activities & Lifecycle",
         description: "Understand the Activity lifecycle, handle configuration changes, and save/restore UI state.",
+        publishStatus: "review",
         resources: [
             { title: "Introduction to Activities", type: "official", url: "https://developer.android.com/guide/components/activities/intro-activities" },
             { title: "Activity Lifecycle Explained (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=WHilu0MiRSs" },
@@ -204,6 +219,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_app_2": {
         title: "Fragments",
         description: "Use Fragments to modularize your UI for flexible, multi-pane layouts and tablet-friendly apps.",
+        publishStatus: "review",
         resources: [
             { title: "Fragments Overview (Android Docs)", type: "official", url: "https://developer.android.com/guide/fragments" },
             { title: "Android Fragments Full Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=Rs-d-2FITWo" },
@@ -217,6 +233,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_app_3": {
         title: "Intents & Navigation",
         description: "Use Intents to communicate between components and implement app navigation with Jetpack Navigation.",
+        publishStatus: "review",
         resources: [
             { title: "Intents and Intent Filters", type: "official", url: "https://developer.android.com/guide/components/intents-filters" },
             { title: "Implicit vs Explicit Intents (CodingWithMitch)", type: "video_en", url: "https://www.youtube.com/watch?v=aLeWGcwSs7M" },
@@ -231,6 +248,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_1": {
         title: "Room Database (SQLite)",
         description: "Use the Room persistence library to store structured data locally in an SQLite database.",
+        publishStatus: "review",
         resources: [
             { title: "Save data in a local database using Room", type: "official", url: "https://developer.android.com/training/data-storage/room" },
             { title: "Room DB Full Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=yPL13Iwy6oM" },
@@ -244,6 +262,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_2": {
         title: "DataStore / SharedPreferences",
         description: "Store key-value pairs and typed objects asynchronously with Jetpack DataStore.",
+        publishStatus: "review",
         resources: [
             { title: "DataStore Official Docs", type: "official", url: "https://developer.android.com/topic/libraries/architecture/datastore" },
             { title: "Jetpack DataStore Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=LBUd6KHNBwg" },
@@ -257,6 +276,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_3": {
         title: "File Storage & MediaStore",
         description: "Read/write files and media using Android's scoped storage model and MediaStore API.",
+        publishStatus: "review",
         resources: [
             { title: "Data and file storage overview", type: "official", url: "https://developer.android.com/training/data-storage" },
             { title: "Scoped Storage Explained (Android Developers)", type: "video_en", url: "https://www.youtube.com/watch?v=sswLpKeAoxs" },
@@ -271,6 +291,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_net_1": {
         title: "Retrofit & OkHttp",
         description: "Make type-safe HTTP calls to REST APIs using Square's Retrofit and OkHttp libraries.",
+        publishStatus: "review",
         resources: [
             { title: "Retrofit Official Documentation", type: "official", url: "https://square.github.io/retrofit/" },
             { title: "Retrofit with Coroutines (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=t6Sql3WMAnk" },
@@ -284,6 +305,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_net_2": {
         title: "JSON Parsing (Moshi/Gson)",
         description: "Deserialize API responses into Kotlin data classes using Moshi or Gson converters.",
+        publishStatus: "review",
         resources: [
             { title: "Kotlinx.serialization (Official)", type: "official", url: "https://kotlinlang.org/docs/serialization.html" },
             { title: "Moshi vs Gson - Which to Use?", type: "video_en", url: "https://www.youtube.com/watch?v=z5RvwKz6DsA" },
@@ -297,6 +319,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_net_3": {
         title: "Handling Network States",
         description: "Detect connectivity changes and handle offline scenarios gracefully in your app.",
+        publishStatus: "review",
         resources: [
             { title: "Manage network usage (Android Docs)", type: "official", url: "https://developer.android.com/training/basics/network-ops/managing" },
             { title: "Monitoring Network State (Android Developers)", type: "video_en", url: "https://www.youtube.com/watch?v=X0OBAPc3dpM" },
@@ -311,6 +334,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_arch_1": {
         title: "MVVM Pattern",
         description: "Use ViewModel, LiveData, and StateFlow to separate UI from business logic in the MVVM pattern.",
+        publishStatus: "review",
         resources: [
             { title: "Guide to App Architecture (Android)", type: "official", url: "https://developer.android.com/topic/architecture" },
             { title: "MVVM Architecture Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=-xTqfilaYow" },
@@ -324,6 +348,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_arch_2": {
         title: "Clean Architecture",
         description: "Structure apps into Data, Domain, and Presentation layers for testable, maintainable codebases.",
+        publishStatus: "review",
         resources: [
             { title: "Clean Architecture by Uncle Bob", type: "official", url: "https://blog.cleancoder.com/uncle-bob/2012/08/13/the-clean-architecture.html" },
             { title: "Clean Architecture for Android (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=sBAB_EKYPYs" },
@@ -337,6 +362,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_arch_3": {
         title: "Dependency Injection (Hilt/Dagger)",
         description: "Use Hilt (built on Dagger 2) to inject dependencies automatically and write more testable code.",
+        publishStatus: "review",
         resources: [
             { title: "Dependency injection in Android", type: "official", url: "https://developer.android.com/training/dependency-injection" },
             { title: "Hilt Dependency Injection (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=bbMsuI2p1DQ" },
@@ -351,6 +377,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_bg_1": {
         title: "WorkManager",
         description: "Schedule deferrable, guaranteed background tasks that survive app restarts using WorkManager.",
+        publishStatus: "review",
         resources: [
             { title: "WorkManager API Guide", type: "official", url: "https://developer.android.com/topic/libraries/architecture/workmanager" },
             { title: "WorkManager Full Tutorial (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=A2JetouoNSc" },
@@ -364,6 +391,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_bg_2": {
         title: "Foreground Services",
         description: "Run long-running operations (like music playback or tracking) that users are aware of.",
+        publishStatus: "review",
         resources: [
             { title: "Services Overview (Android Docs)", type: "official", url: "https://developer.android.com/guide/components/services" },
             { title: "Foreground Service Tutorial (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=YZL-_XJSClc" },
@@ -377,6 +405,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_bg_3": {
         title: "Broadcast Receivers",
         description: "Listen for and respond to system-wide or app-specific broadcast announcements.",
+        publishStatus: "review",
         resources: [
             { title: "Broadcasts Overview (Android Docs)", type: "official", url: "https://developer.android.com/guide/components/broadcasts" },
             { title: "BroadcastReceiver Tutorial (CodingWithMitch)", type: "video_en", url: "https://www.youtube.com/watch?v=LoH3K4wO5q0" },
@@ -391,6 +420,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_pub_1": {
         title: "App Signing",
         description: "Generate keystores and sign your APK/AAB for release on the Google Play Store.",
+        publishStatus: "review",
         resources: [
             { title: "Sign your app (Android Docs)", type: "official", url: "https://developer.android.com/studio/publish/app-signing" },
             { title: "How to Sign & Generate a Release APK (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=odv_1fxt9BI" },
@@ -404,6 +434,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_pub_2": {
         title: "Google Play Console",
         description: "Publish, manage, and monitor your app on the Google Play Store using the Play Console.",
+        publishStatus: "review",
         resources: [
             { title: "Play Console Help Center", type: "official", url: "https://support.google.com/googleplay/android-developer" },
             { title: "How to Publish an App on Google Play (Phillip Lackner)", type: "video_en", url: "https://www.youtube.com/watch?v=yetSqJucXVs" },
@@ -417,6 +448,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_pub_3": {
         title: "CI/CD (GitHub Actions/Fastlane)",
         description: "Automate building, testing, and deploying your Android app using GitHub Actions and Fastlane.",
+        publishStatus: "review",
         resources: [
             { title: "Fastlane for Android", type: "official", url: "https://docs.fastlane.tools/getting-started/android/setup/" },
             { title: "CI/CD for Android with GitHub Actions (Aryan Mittal)", type: "video_en", url: "https://www.youtube.com/watch?v=YLtlz88zrLg" },

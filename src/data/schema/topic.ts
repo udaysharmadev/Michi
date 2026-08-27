@@ -1,12 +1,43 @@
 /**
- * The canonical `Topic` schema, and the publication policy that makes it enforceable.
+ * The canonical `Topic` schema, the two content tiers it recognises, and the
+ * publication policy that makes both enforceable.
+ *
+ * ## Two tiers, because the corpus honestly has two shapes
+ *
+ * 183 of the 506 topics in this repository consist of a title, a one-line
+ * description and a hand-picked resource list, and nothing else. Nine roadmaps are
+ * written that way throughout — android, ios, mobile, dba, sre, llm, mlops,
+ * data-scientist, product-manager. It is terse, but it is real: a specific
+ * description and three resources somebody chose. It is not filler.
+ *
+ * So the schema recognises a **core** tier and an **enriched** tier:
+ *
+ * | tier       | required                          | renders                        |
+ * |------------|-----------------------------------|--------------------------------|
+ * | `core`     | `title`, `description`, resources | the node drawer's header       |
+ * | `enriched` | core, plus the enrichment groups  | the drawer's prose sections    |
+ *
+ * The enrichment fields are optional, but *not* lax: when one is present it faces
+ * the full quality bar. Absent is a legitimate tier; present-and-boilerplate is a
+ * defect. That asymmetry is deliberate, and it is what stops the tier being an
+ * escape hatch — the 156 fully-generated topics in this repository have all ten
+ * fields, and being complete does not save them.
+ *
+ * `node-details-drawer.tsx` already renders every enrichment section conditionally,
+ * so a core topic produces a short page rather than a page full of empty headings.
+ * The tier describes content that exists, not a concession the schema invented.
+ *
+ * Half a group is the one shape neither tier allows: see
+ * {@link ENRICHMENT_GROUPS}.
  *
  * ## The policy is the point
  *
  * A validator that fails the build on every existing defect is a validator that
- * gets switched off in week one. This repository contains 515 topics of which
- * roughly 100 meet a publishable bar, so a single all-or-nothing gate would leave
- * CI permanently red and teach everyone to ignore it.
+ * gets switched off in week one. Measured at `published`, *no* topic in this
+ * repository currently passes — the floor is three errors, and 350 topics are
+ * blocked on resource `lang` values that only the Phase 2 verification pipeline can
+ * legitimately supply. A single all-or-nothing gate would leave CI permanently red
+ * and teach everyone to ignore it.
  *
  * So validation strictness is a function of {@link PublishStatus}:
  *
@@ -92,24 +123,34 @@ export interface Topic {
   /** Human-readable study estimate, e.g. `"3 hours"`, `"2 days"`. */
   readonly estimatedTime?: string;
 
-  /** Why a learner should spend time on this. Must be specific to this topic. */
-  readonly whyLearnThis: string;
-  /** The situation in which this knowledge is actually applied. */
-  readonly whenIsItUsed: string;
-  /** Concrete tools, systems or companies where it shows up. */
-  readonly whereIsItUsed: string;
-  /** The topic to study next. Should name a real topic in the corpus. */
-  readonly whatComesNext?: string;
-
-  /** What the learner will be able to do afterwards. */
-  readonly learningOutcomes: readonly string[];
-  /** Specific, observed mistakes — not generic advice. */
-  readonly commonMistakes: readonly string[];
-  /** Real systems or problems where this is the deciding knowledge. */
-  readonly realWorldApplications: readonly string[];
-
   /** The seven-slot resource list. The core deliverable of every topic. */
   readonly resources: readonly Resource[];
+
+  /* --- Enrichment tier ------------------------------------------------------ */
+  /* Optional as a set, but each field faces the full quality bar when present, */
+  /* and each group must be filled in whole. See ENRICHMENT_GROUPS.            */
+
+  /** Why a learner should spend time on this. Must be specific to this topic. */
+  readonly whyLearnThis?: string;
+  /** The situation in which this knowledge is actually applied. */
+  readonly whenIsItUsed?: string;
+  /** Concrete tools, systems or companies where it shows up. */
+  readonly whereIsItUsed?: string;
+
+  /** What the learner will be able to do afterwards. */
+  readonly learningOutcomes?: readonly string[];
+  /** Specific, observed mistakes — not generic advice. */
+  readonly commonMistakes?: readonly string[];
+  /** Real systems or problems where this is the deciding knowledge. */
+  readonly realWorldApplications?: readonly string[];
+
+  /**
+   * The topic to study next. Should name a real topic in the corpus.
+   *
+   * Not part of a group: it is a single pointer, and a topic at the end of a
+   * roadmap legitimately has nothing after it.
+   */
+  readonly whatComesNext?: string;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -177,9 +218,13 @@ const topicShape: Record<keyof Topic, Validator<unknown>> = {
   difficulty: optional(enumOf(DIFFICULTIES, 'topic.difficulty')),
   estimatedTime: optional(string({ code: 'topic.estimatedTime', minLength: 2, maxLength: 40 })),
 
-  whyLearnThis: prose('topic.whyLearnThis', { minLength: 60, maxLength: 800, minWords: 12 }),
-  whenIsItUsed: prose('topic.whenIsItUsed', { minLength: 30, maxLength: 600, minWords: 7 }),
-  whereIsItUsed: prose('topic.whereIsItUsed', { minLength: 20, maxLength: 600, minWords: 4 }),
+  // Enrichment tier. `optional` here means "a core topic may omit this", not "this
+  // may be sloppy": a present value is refined by exactly the same `prose` rules it
+  // faced when it was mandatory. Key order is what fixes issue order, so it is left
+  // matching the old shape rather than the interface.
+  whyLearnThis: optional(prose('topic.whyLearnThis', { minLength: 60, maxLength: 800, minWords: 12 })),
+  whenIsItUsed: optional(prose('topic.whenIsItUsed', { minLength: 30, maxLength: 600, minWords: 7 })),
+  whereIsItUsed: optional(prose('topic.whereIsItUsed', { minLength: 20, maxLength: 600, minWords: 4 })),
   whatComesNext: optional(
     refine(
       string({ code: 'topic.whatComesNext', minLength: 3, maxLength: 200 }),
@@ -187,27 +232,33 @@ const topicShape: Record<keyof Topic, Validator<unknown>> = {
     ),
   ),
 
-  learningOutcomes: proseList('topic.learningOutcomes', {
-    minItems: 3,
-    maxItems: 10,
-    minLength: 12,
-    maxLength: 220,
-    minWords: 3,
-  }),
-  commonMistakes: proseList('topic.commonMistakes', {
-    minItems: 2,
-    maxItems: 10,
-    minLength: 12,
-    maxLength: 260,
-    minWords: 3,
-  }),
-  realWorldApplications: proseList('topic.realWorldApplications', {
-    minItems: 2,
-    maxItems: 10,
-    minLength: 12,
-    maxLength: 260,
-    minWords: 3,
-  }),
+  learningOutcomes: optional(
+    proseList('topic.learningOutcomes', {
+      minItems: 3,
+      maxItems: 10,
+      minLength: 12,
+      maxLength: 220,
+      minWords: 3,
+    }),
+  ),
+  commonMistakes: optional(
+    proseList('topic.commonMistakes', {
+      minItems: 2,
+      maxItems: 10,
+      minLength: 12,
+      maxLength: 260,
+      minWords: 3,
+    }),
+  ),
+  realWorldApplications: optional(
+    proseList('topic.realWorldApplications', {
+      minItems: 2,
+      maxItems: 10,
+      minLength: 12,
+      maxLength: 260,
+      minWords: 3,
+    }),
+  ),
 
   resources: resourceListValidator,
 };
@@ -260,8 +311,82 @@ const topicStructureShape: Record<keyof Topic, Validator<unknown>> = {
   resources: optional(resourceListStructureValidator),
 };
 
+/* -------------------------------------------------------------------------- */
+/* Tiers                                                                      */
+/* -------------------------------------------------------------------------- */
+
+/**
+ * Enrichment fields that must be filled in as a set.
+ *
+ * Each group is one coherent answer split across fields, and the drawer renders
+ * each group as a unit — `whenIsItUsed` and `whereIsItUsed` share a single section.
+ * Half a group therefore renders as a section with a hole in it, which reads as a
+ * bug rather than as brevity. A core topic that answers none of them reads fine; a
+ * topic that answers "why" and then goes quiet on "when" and "where" does not.
+ *
+ * No topic in the corpus trips this today — the 323 enriched topics all carry all
+ * six fields, and the 183 core topics carry none. The rule costs nothing now and
+ * exists to stop the tier boundary eroding one field at a time, which is exactly
+ * how a two-tier schema decays into an untyped bag of maybes.
+ */
+export const ENRICHMENT_GROUPS: readonly {
+  readonly label: string;
+  readonly fields: readonly (keyof Topic)[];
+}[] = [
+  { label: 'why/when/where', fields: ['whyLearnThis', 'whenIsItUsed', 'whereIsItUsed'] },
+  {
+    label: 'outcomes/mistakes/applications',
+    fields: ['learningOutcomes', 'commonMistakes', 'realWorldApplications'],
+  },
+];
+
+/** Every field outside the core tier. `whatComesNext` belongs to no group. */
+export const ENRICHMENT_FIELDS: readonly (keyof Topic)[] = [
+  ...ENRICHMENT_GROUPS.flatMap((group) => group.fields),
+  'whatComesNext',
+];
+
+/**
+ * Which tier a topic occupies.
+ *
+ * `core` is a complete, publishable topic — not a deficient one. The distinction
+ * exists so reporting can say "183 core, 323 enriched" instead of implying that a
+ * third of the corpus is unfinished.
+ */
+export type TopicTier = 'core' | 'enriched';
+
+export function topicTier(topic: Topic): TopicTier {
+  return ENRICHMENT_FIELDS.some((field) => topic[field] !== undefined) ? 'enriched' : 'core';
+}
+
+/* -------------------------------------------------------------------------- */
+/* Cross-field rules                                                          */
+/* -------------------------------------------------------------------------- */
+
 /** Cross-field rules that apply to a whole topic. */
 const topicCrossFieldRules: Rule<Topic>[] = [
+  // Half an enrichment group. See ENRICHMENT_GROUPS for why this is not pedantry.
+  (topic, path) => {
+    const issues: Issue[] = [];
+    for (const group of ENRICHMENT_GROUPS) {
+      const missing = group.fields.filter((field) => topic[field] === undefined);
+      if (missing.length === 0 || missing.length === group.fields.length) continue;
+      const present = group.fields.filter((field) => topic[field] !== undefined);
+      issues.push(
+        issue(
+          joinPath(path, String(missing[0])),
+          'topic.enrichment.partial_group',
+          `Part of the ${group.label} group is missing: ${missing.join(', ')}.`,
+          {
+            severity: 'warning',
+            hint: `This group is written as a set. Either answer all of ${group.fields.join(', ')}, or remove ${present.join(', ')} and let this be a core topic.`,
+          },
+        ),
+      );
+    }
+    return issues;
+  },
+
   // A topic whose "why" and "where" are the same sentence has answered one question.
   (topic, path) => {
     const fields: (keyof Topic)[] = ['description', 'whyLearnThis', 'whenIsItUsed', 'whereIsItUsed'];

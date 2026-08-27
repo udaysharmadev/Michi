@@ -5,6 +5,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_eco_1": {
         title: "Apple Developer Program",
         description: "Understand the requirements, costs, and benefits of joining the Apple Developer Program.",
+        publishStatus: "review",
         resources: [
             { title: "Apple Developer Program Overview", type: "official", url: "https://developer.apple.com/programs/" },
             { title: "How to Set Up Apple Developer Account (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=cmaV_E0PtRk" },
@@ -18,6 +19,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_eco_2": {
         title: "Human Interface Guidelines",
         description: "Learn Apple's design principles and guidelines to create apps that feel native and intuitive on iOS.",
+        publishStatus: "review",
         resources: [
             { title: "Apple Human Interface Guidelines", type: "official", url: "https://developer.apple.com/design/human-interface-guidelines/" },
             { title: "iOS Design Principles Explained (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=1oi5YVzxqsE" },
@@ -31,6 +33,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_eco_3": {
         title: "App Sandbox & Privacy",
         description: "Understand how iOS secures user data through app sandboxing and strict privacy permission requirements.",
+        publishStatus: "review",
         resources: [
             { title: "App Sandbox Design Guide", type: "official", url: "https://developer.apple.com/documentation/security/app_sandbox" },
             { title: "iOS Privacy Permissions Explained (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=kn32PHG2wcU" },
@@ -45,6 +48,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_swift_1": {
         title: "Swift Syntax & Types",
         description: "Learn the basics of Swift: variables, constants, data types, control flow, and functions.",
+        publishStatus: "review",
         resources: [
             { title: "The Swift Programming Language (Official Book)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/" },
             { title: "Swift in 100 Seconds (Fireship)", type: "video_en", url: "https://www.youtube.com/watch?v=nAchMctX4YA" },
@@ -58,6 +62,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_swift_2": {
         title: "Optionals & Error Handling",
         description: "Use Swift optionals to safely work with missing values and handle errors using do-catch.",
+        publishStatus: "review",
         resources: [
             { title: "Optionals in Swift (Official)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Optionals" },
             { title: "Swift Optionals for Beginners (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=RRKbhUkGLBc" },
@@ -84,6 +89,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_swift_4": {
         title: "Concurrency (async/await)",
         description: "Write concurrent Swift code with async/await, actors, and structured concurrency.",
+        publishStatus: "review",
         resources: [
             { title: "Concurrency in Swift (Official)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/" },
             { title: "Swift Concurrency - async/await (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=dfs9MAKF3ik" },
@@ -98,6 +104,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_xcode_1": {
         title: "Xcode Basics",
         description: "Set up Xcode, navigate the IDE, manage simulators, and build your first iOS project.",
+        publishStatus: "review",
         resources: [
             { title: "Xcode Overview (Apple)", type: "official", url: "https://developer.apple.com/xcode/" },
             { title: "Xcode Tutorial for Beginners (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=8Xcq4yRQ0pU" },
@@ -124,6 +131,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_xcode_3": {
         title: "Swift Package Manager",
         description: "Manage third-party dependencies with the Swift Package Manager (SPM) integrated in Xcode.",
+        publishStatus: "review",
         resources: [
             { title: "Swift Package Manager (Official)", type: "official", url: "https://www.swift.org/package-manager/" },
             { title: "Using SPM in Xcode (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=jnv3K0mbIDo" },
@@ -138,6 +146,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_1": {
         title: "UIKit Basics",
         description: "Build iOS user interfaces programmatically and with Interface Builder using UIKit.",
+        publishStatus: "review",
         resources: [
             { title: "UIKit Documentation (Apple)", type: "official", url: "https://developer.apple.com/documentation/uikit" },
             { title: "UIKit Full Course (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=lkU5s5V1GTg" },
@@ -151,6 +160,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_2": {
         title: "Auto Layout",
         description: "Create adaptive, responsive layouts using Auto Layout, constraints, and StackViews.",
+        publishStatus: "review",
         resources: [
             { title: "Auto Layout Guide (Apple)", type: "official", url: "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html" },
             { title: "Auto Layout Tutorial (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=rgbnAsmPaZk" },
@@ -164,6 +174,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_ui_3": {
         title: "SwiftUI",
         description: "Build UIs declaratively with Apple's SwiftUI framework using views, state, and data binding.",
+        publishStatus: "review",
         resources: [
             { title: "SwiftUI Documentation (Apple)", type: "official", url: "https://developer.apple.com/xcode/swiftui/" },
             { title: "SwiftUI Full Tutorial (Paul Hudson - 100 Days of SwiftUI)", type: "video_en", url: "https://www.youtube.com/watch?v=-VC3hIEL7eQ" },
@@ -191,6 +202,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_arch_1": {
         title: "MVC Pattern",
         description: "Learn Apple's traditional Model-View-Controller architecture and its role in UIKit-based apps.",
+        publishStatus: "review",
         resources: [
             { title: "Model-View-Controller (Apple)", type: "official", url: "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html" },
             { title: "MVC in iOS Explained (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=pAHVSpbftYY" },
@@ -204,6 +216,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_arch_2": {
         title: "MVVM & Clean Architecture",
         description: "Build scalable iOS apps with MVVM, Combine, and Clean Architecture's layered approach.",
+        publishStatus: "review",
         resources: [
             { title: "Designing for Testability with MVVM (Apple)", type: "official", url: "https://developer.apple.com/documentation/swiftui/managing-user-interface-state" },
             { title: "MVVM in iOS with SwiftUI (Phillip Lackner style)", type: "video_en", url: "https://www.youtube.com/watch?v=-xTqfilaYow" },
@@ -231,6 +244,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_1": {
         title: "Core Data",
         description: "Persist and manage data locally in iOS apps using Apple's Core Data framework.",
+        publishStatus: "review",
         resources: [
             { title: "Core Data Documentation (Apple)", type: "official", url: "https://developer.apple.com/documentation/coredata" },
             { title: "Core Data Full Tutorial (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=O7u9nYWjvKk" },
@@ -257,6 +271,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_3": {
         title: "UserDefaults & Keychain",
         description: "Store small amounts of user data with UserDefaults and secure sensitive data in the Keychain.",
+        publishStatus: "review",
         resources: [
             { title: "UserDefaults Documentation", type: "official", url: "https://developer.apple.com/documentation/foundation/userdefaults" },
             { title: "UserDefaults & Keychain in iOS (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=Pm_AOPvfur8" },
@@ -270,6 +285,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_data_4": {
         title: "FileManager & Documents",
         description: "Read, write, and manage files within the iOS app sandbox using FileManager.",
+        publishStatus: "review",
         resources: [
             { title: "FileManager Documentation", type: "official", url: "https://developer.apple.com/documentation/foundation/filemanager" },
             { title: "File System in iOS (Kodeco Tutorial)", type: "video_en", url: "https://www.youtube.com/watch?v=zfrCWV5Ey6g" },
@@ -284,6 +300,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_net_1": {
         title: "URLSession",
         description: "Make HTTP requests, download data, and manage sessions with Apple's URLSession API.",
+        publishStatus: "review",
         resources: [
             { title: "URLSession Overview (Apple)", type: "official", url: "https://developer.apple.com/documentation/foundation/urlsession" },
             { title: "URLSession Tutorial (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=U_yWXH141DY" },
@@ -297,6 +314,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_net_2": {
         title: "JSON & Codable",
         description: "Decode API JSON responses into Swift structs/classes using the Codable protocol.",
+        publishStatus: "review",
         resources: [
             { title: "Encoding and Decoding Custom Types (Apple)", type: "official", url: "https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types" },
             { title: "Codable in Swift (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=whNFPBEI-wM" },
@@ -310,6 +328,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_net_3": {
         title: "WebSockets & Real-time",
         description: "Implement real-time communication in iOS apps using URLSessionWebSocketTask or Starscream.",
+        publishStatus: "review",
         resources: [
             { title: "URLSessionWebSocketTask (Apple)", type: "official", url: "https://developer.apple.com/documentation/foundation/urlsessionwebsockettask" },
             { title: "WebSockets in iOS with Swift (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=favi7avxIag" },
@@ -324,6 +343,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_sync_1": {
         title: "Grand Central Dispatch (GCD)",
         description: "Manage concurrency in iOS apps with Dispatch queues, groups, and semaphores.",
+        publishStatus: "review",
         resources: [
             { title: "Dispatch Documentation (Apple)", type: "official", url: "https://developer.apple.com/documentation/dispatch" },
             { title: "Grand Central Dispatch Tutorial (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=SrWWLx5wOEU" },
@@ -350,6 +370,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_sync_3": {
         title: "Swift Actors",
         description: "Eliminate data races in concurrent code by using Swift's actor model for safe mutable state.",
+        publishStatus: "review",
         resources: [
             { title: "Actors in Swift (Official)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/concurrency/#Actors" },
             { title: "Swift Actors Explained (Vincent Pradeilles)", type: "video_en", url: "https://www.youtube.com/watch?v=0EiLzaNst4I" },
@@ -390,6 +411,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_dev_3": {
         title: "Push Notifications (APNs)",
         description: "Register for and handle remote push notifications on iOS using APNs and UNUserNotificationCenter.",
+        publishStatus: "review",
         resources: [
             { title: "UserNotifications Framework", type: "official", url: "https://developer.apple.com/documentation/usernotifications" },
             { title: "Push Notifications in iOS (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=UJree24HWx0" },
@@ -417,6 +439,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_pub_2": {
         title: "TestFlight",
         description: "Distribute your iOS app to beta testers using Apple's TestFlight platform before App Store release.",
+        publishStatus: "review",
         resources: [
             { title: "TestFlight Help (Apple)", type: "official", url: "https://developer.apple.com/testflight/" },
             { title: "How to Upload to TestFlight (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=Vtl4XH6nrjg" },
@@ -430,6 +453,7 @@ export const topicsData: Record<string, TopicData> = {
     "n_pub_3": {
         title: "App Store Submission",
         description: "Prepare your app metadata, screenshots, and privacy info for a successful App Store launch.",
+        publishStatus: "review",
         resources: [
             { title: "App Store Review Guidelines", type: "official", url: "https://developer.apple.com/app-store/review/guidelines/" },
             { title: "App Store Submission Process (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=9vkkJ4tC4SQ" },

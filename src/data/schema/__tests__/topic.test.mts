@@ -18,6 +18,7 @@ import test from 'node:test';
 import assert from 'node:assert/strict';
 
 import {
+  ENRICHMENT_GROUPS,
   type PublishStatus,
   applyPublishPolicy,
   isPublished,
@@ -25,11 +26,12 @@ import {
   slugify,
   topicCountValidator,
   topicStructureValidator,
+  topicTier,
   topicValidator,
   validateTopic,
 } from '../topic';
 import { type Issue, issue } from '../validator';
-import { publishedTopic } from './fixtures.mjs';
+import { coreTopic, publishedTopic } from './fixtures.mjs';
 
 const codes = (issues: readonly Issue[]): string[] => issues.map((i) => i.code);
 const STATUSES: readonly PublishStatus[] = ['draft', 'review', 'published'];
@@ -48,6 +50,112 @@ test('the published tier is achievable: a hand-written topic passes every rule',
 
 test('the fixture also passes the full validator directly, not only through the policy', () => {
   assert.deepEqual(topicValidator.check(publishedTopic(), 'topic'), []);
+});
+
+/* -------------------------------------------------------------------------- */
+/* Tiers                                                                      */
+/* -------------------------------------------------------------------------- */
+
+test('the core tier is achievable: title, description and seven slots are enough', () => {
+  // The load-bearing test for nine roadmaps. 183 topics carry no enrichment prose at
+  // all, and the decision on record is that this is a complete topic rather than an
+  // unfinished one. If this ever fails, that decision has been reversed by accident.
+  const outcome = validateTopic(coreTopic());
+  assert.deepEqual(outcome.errors, [], 'errors');
+  assert.deepEqual(outcome.warnings, [], 'warnings');
+  assert.equal(outcome.status, 'published');
+});
+
+test('the tier is read off which fields are present, not declared', () => {
+  assert.equal(topicTier(coreTopic() as never), 'core');
+  assert.equal(topicTier(publishedTopic() as never), 'enriched');
+  // One field is enough to make a topic enriched — and therefore subject to the
+  // group rule below, which is the whole point of not having a `tier` field to set.
+  assert.equal(topicTier(coreTopic({ whatComesNext: 'Read replicas' }) as never), 'enriched');
+});
+
+test('an enrichment field that is present faces the full quality bar', () => {
+  // "Optional" must mean optional-to-omit, never optional-to-do-well. Omitting
+  // `whyLearnThis` is a tier; supplying a stub is a defect. If these two ever became
+  // the same thing, every generated topic in the corpus would pass by deleting text.
+  const stubbed = validateTopic(
+    coreTopic({
+      whyLearnThis: 'It is important to learn this topic.',
+      whenIsItUsed: 'In many situations.',
+      whereIsItUsed: 'Everywhere.',
+    }),
+  );
+  assert.ok(
+    stubbed.errors.length >= 3,
+    `expected the stubs to be rejected, got ${JSON.stringify(codes(stubbed.errors))}`,
+  );
+  assert.ok(
+    codes(stubbed.errors).every((code) => code.startsWith('topic.why') || code.startsWith('topic.when') || code.startsWith('topic.where')),
+    'every error should name the field that was stubbed',
+  );
+});
+
+test('half an enrichment group is a warning that names both ways out', () => {
+  const partial = validateTopic(
+    coreTopic({
+      whyLearnThis:
+        'Postgres forks a process per connection, so an unpooled service that opens one connection per request collapses under load long before the database runs out of CPU.',
+    }),
+  );
+  assert.deepEqual(codes(partial.errors), []);
+  assert.deepEqual(codes(partial.warnings), ['topic.enrichment.partial_group']);
+  const [only] = partial.warnings;
+  assert.equal(only?.path, 'whenIsItUsed', 'points at the first field actually missing');
+  assert.match(only?.message ?? '', /whenIsItUsed, whereIsItUsed/);
+  // Both exits are offered, because "finish it" and "drop it" are equally valid.
+  assert.match(only?.hint ?? '', /Either answer all of/);
+  assert.match(only?.hint ?? '', /or remove whyLearnThis/);
+});
+
+test('the two enrichment groups are independent of each other', () => {
+  // A topic may answer why/when/where and still leave the lists off. The groups are
+  // separate sections of the page, so completing one says nothing about the other.
+  const outcome = validateTopic(
+    coreTopic({
+      whyLearnThis: publishedTopic()['whyLearnThis'],
+      whenIsItUsed: publishedTopic()['whenIsItUsed'],
+      whereIsItUsed: publishedTopic()['whereIsItUsed'],
+    }),
+  );
+  assert.deepEqual(codes(outcome.errors), []);
+  assert.deepEqual(codes(outcome.warnings), []);
+});
+
+test('a partial group is caught in each group independently', () => {
+  const outcome = validateTopic(
+    coreTopic({
+      whyLearnThis: publishedTopic()['whyLearnThis'],
+      learningOutcomes: publishedTopic()['learningOutcomes'],
+    }),
+  );
+  assert.deepEqual(codes(outcome.warnings), [
+    'topic.enrichment.partial_group',
+    'topic.enrichment.partial_group',
+  ]);
+  assert.deepEqual(
+    outcome.warnings.map((w) => w.path),
+    ['whenIsItUsed', 'commonMistakes'],
+  );
+});
+
+test('the partial-group rule is editorial, so the status policy governs it', () => {
+  // It describes a page that reads oddly, not one that fails to render. A draft must
+  // not be nagged about it while it is still being written.
+  assert.equal(isStructuralIssue('topic.enrichment.partial_group'), false);
+  const half = coreTopic({ whyLearnThis: publishedTopic()['whyLearnThis'] });
+  assert.deepEqual(validateTopic({ ...half, publishStatus: 'draft' }).warnings, []);
+});
+
+test('every enrichment group has at least two fields, or it is not a group', () => {
+  for (const group of ENRICHMENT_GROUPS) {
+    assert.ok(group.fields.length >= 2, `${group.label} needs more than one field to be a set`);
+    assert.ok(group.label.length > 0);
+  }
 });
 
 /* -------------------------------------------------------------------------- */
@@ -206,9 +314,14 @@ test('defaultStatus raises the bar for a corpus that has opted in', () => {
     { defaultStatus: 'published' },
   );
   assert.equal(outcome.status, 'published');
-  assert.ok(
-    codes(outcome.errors).filter((c) => c === 'topic.missing_field').length >= 8,
-    'the full shape is demanded once published',
+  // Stated exactly rather than as a "more than N" proxy, because this list *is* the
+  // core tier: the minimum a published topic must carry beyond its title. Two fields.
+  // Growing this list is a content decision affecting 506 records, so it should be a
+  // deliberate edit to this assertion and not an inequality that quietly absorbs it.
+  assert.deepEqual(codes(outcome.errors), ['topic.missing_field', 'topic.missing_field']);
+  assert.deepEqual(
+    outcome.errors.map((e) => e.path),
+    ['description', 'resources'],
   );
 });
 

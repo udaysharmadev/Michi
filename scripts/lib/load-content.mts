@@ -81,9 +81,11 @@ export interface ContentLoad {
   readonly sources: readonly LoadedRoadmap[];
   /** Loader-level issues: unreadable modules, ambiguous exports, registry drift. */
   readonly issues: readonly Issue[];
-  /** Every slug listed in `roadmaps.ts`. */
+  /** Every slug in the live `roadmaps` array — the ones a learner can open. */
   readonly roadmapSlugs: readonly string[];
-  /** Slugs in `roadmaps.ts` with no content directory at all. */
+  /** Every slug in `plannedRoadmaps`: announced, unbuilt, not routable. */
+  readonly plannedSlugs: readonly string[];
+  /** Slugs in the live `roadmaps` array with no content directory at all. */
   readonly slugsWithoutContent: readonly string[];
   /** Content directories `registry.ts` never maps, so unreachable by the app. */
   readonly unwiredDirectories: readonly string[];
@@ -205,7 +207,7 @@ export async function loadContent(options: LoadOptions = {}): Promise<ContentLoa
   const issues: Issue[] = [];
   const sources: LoadedRoadmap[] = [];
 
-  const roadmapSlugs = await loadRoadmapSlugs();
+  const { live: roadmapSlugs, planned: plannedSlugs } = await loadRoadmapSlugs();
   const getContentBySlug = await loadContentRegistry();
 
   const only = options.only && options.only.length > 0 ? new Set(options.only) : undefined;
@@ -293,11 +295,20 @@ export async function loadContent(options: LoadOptions = {}): Promise<ContentLoa
       );
     }
     if (!inRoadmapRegistry) {
+      // A planned slug with content is a different mistake from a slug nobody listed:
+      // the work is done and the only thing standing between it and a learner is one
+      // line moving between two arrays. Saying "add a RoadmapMeta" there would be
+      // advice to duplicate an entry that already exists.
       issues.push(
-        issue(at, 'corpus.unlisted_roadmap', 'Content directory has no entry in `roadmaps.ts`, so it never appears in the catalogue.', {
-          severity: 'warning',
-          hint: `Add a \`RoadmapMeta\` with slug \`${name}\`, or remove the directory.`,
-        }),
+        plannedSlugs.includes(name)
+          ? issue(at, 'corpus.planned_roadmap_has_content', 'Listed in `plannedRoadmaps`, but the content directory exists — so nothing links to finished work.', {
+              severity: 'warning',
+              hint: `Move the \`${name}\` entry from \`plannedRoadmaps\` into \`roadmaps\` in \`src/data/roadmaps.ts\`.`,
+            })
+          : issue(at, 'corpus.unlisted_roadmap', 'Content directory has no entry in `roadmaps.ts`, so it never appears in the catalogue.', {
+              severity: 'warning',
+              hint: `Add a \`RoadmapMeta\` with slug \`${name}\`, or remove the directory.`,
+            }),
       );
     }
 
@@ -336,9 +347,20 @@ export async function loadContent(options: LoadOptions = {}): Promise<ContentLoa
         }),
       );
     }
+
+    // A slug in both arrays makes every question about it ambiguous — routable or not,
+    // in the sitemap or not — and the answer would depend on which list a given call
+    // site happened to read. Structural, because no content decision can resolve it.
+    for (const slug of plannedSlugs.filter((s) => roadmapSlugs.includes(s))) {
+      issues.push(
+        issue(slug, 'corpus.integrity.mismatch', 'Listed in both `roadmaps` and `plannedRoadmaps`.', {
+          hint: 'A roadmap is either live or planned. Delete whichever entry is stale.',
+        }),
+      );
+    }
   }
 
-  return { sources, issues, roadmapSlugs, slugsWithoutContent, unwiredDirectories };
+  return { sources, issues, roadmapSlugs, plannedSlugs, slugsWithoutContent, unwiredDirectories };
 }
 
 /* -------------------------------------------------------------------------- */
@@ -412,15 +434,29 @@ function resolve(
   return { name: found.name, value: found.value };
 }
 
-/** Reads the catalogue slugs from `roadmaps.ts`. */
-async function loadRoadmapSlugs(): Promise<string[]> {
+/**
+ * Reads the catalogue from `roadmaps.ts`.
+ *
+ * Both lists are read, because the interesting mistakes are about the boundary between
+ * them: a slug in neither list has invisible content, a slug in both is ambiguous, and
+ * a *planned* slug that has grown a content directory is finished work that nothing
+ * links to. Returning `planned` lets those be reported as what they are instead of all
+ * collapsing into "not in the catalogue".
+ */
+async function loadRoadmapSlugs(): Promise<{ live: string[]; planned: string[] }> {
   const catalogue = (await import('../../src/data/roadmaps')) as {
     roadmaps?: readonly { slug: string }[];
+    plannedRoadmaps?: readonly { slug: string }[];
   };
   if (!Array.isArray(catalogue.roadmaps)) {
     throw new Error('`src/data/roadmaps.ts` does not export a `roadmaps` array.');
   }
-  return catalogue.roadmaps.map((entry) => entry.slug);
+  return {
+    live: catalogue.roadmaps.map((entry) => entry.slug),
+    // Absent is not an error: a repository with nothing planned is a valid state, and
+    // this loader should not require a list to exist just so it can be empty.
+    planned: (catalogue.plannedRoadmaps ?? []).map((entry) => entry.slug),
+  };
 }
 
 /** Loads the content registry's resolver, used to detect unwired directories. */

@@ -134,17 +134,21 @@ export {
 
 export {
   DIFFICULTIES,
+  ENRICHMENT_FIELDS,
+  ENRICHMENT_GROUPS,
   PUBLISH_STATUSES,
   SLUG_PATTERN,
   type Difficulty,
   type PolicyOutcome,
   type PublishStatus,
   type Topic,
+  type TopicTier,
   applyPublishPolicy,
   isPublished,
   isStructuralIssue,
   slugify,
   topicStructureValidator,
+  topicTier,
   topicValidator,
   validateTopic,
 } from './topic';
