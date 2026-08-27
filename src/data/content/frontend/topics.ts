@@ -26,10 +26,10 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "MDN: How the Web works", url: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" },
       { type: "video_en", title: "How the Internet Works in 5 Minutes", url: "https://www.youtube.com/watch?v=7_LPdttKXPc" },
       { type: "video_hi", title: "How Internet works? (CodeWithHarry)", url: "https://www.youtube.com/watch?v=AofBq0XEqyQ" },
-      { type: "article", title: "Cloudflare: What is the Internet?", url: "https://www.cloudflare.com/learning/network-layer/internet-protocol/" },
+      { type: "article", title: "Cloudflare: What is the Internet?", url: "https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/" },
       { type: "github", title: "how-the-internet-works", url: "https://github.com/sf-wdi-31/how-the-internet-works" },
       { type: "cheat_sheet", title: "How The Internet Works Infographic", url: "https://github.com/lionbytes/How-The-Internet-Works-Infographic" },
-      { type: "deep_dive", title: "How the Internet Works, Part I", url: "https://medium.com/@vahid_d/how-the-internet-works-part-i-the-internet-infrastructure-b6574f285d8d" }
+      { type: "deep_dive", title: "How the Internet Works, Part I", url: "https://developer.mozilla.org/en-US/docs/Web/Performance/How_browsers_work" }
     ]
   },
   "n_int_2": {
@@ -86,9 +86,9 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "MDN: An overview of HTTP", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
       { type: "video_en", title: "HTTP Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=iYM2zFP3Zn0" },
       { type: "video_hi", title: "HTTP crash course (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=1XkO-E01g7Y" },
-      { type: "article", title: "What is HTTP? (Cloudflare)", url: "https://www.cloudflare.com/learning/ddos/glossary/hypertext-transfer-protocol-http/" },
+      { type: "article", title: "What is HTTP? (Cloudflare)", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP" },
       { type: "github", title: "http-status-codes repo", url: "https://github.com/waldemarnt/http-status-codes" },
-      { type: "cheat_sheet", title: "HTTP Status Codes Cheat Sheet", url: "https://www.npmjs.com/package/http-status-codes/v/2.1.4" },
+      { type: "cheat_sheet", title: "HTTP Status Codes Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" },
       { type: "deep_dive", title: "HTTP/3: Past, Present, Future", url: "https://blog.cloudflare.com/http3-the-past-present-and-future/" }
     ]
   },
@@ -115,7 +115,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "MDN: What is a web server?", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" },
       { type: "video_en", title: "What is a Web Server? (Fireship)", url: "https://www.youtube.com/watch?v=JBBKWlIB1sA" },
       { type: "video_hi", title: "Web Server Explained in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=1XkO-E01g7Y" },
-      { type: "article", title: "How Web Servers Work", url: "https://www.howtogeek.com/438814/what-is-a-web-server/" },
+      { type: "article", title: "How Web Servers Work", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" },
       { type: "github", title: "Awesome Web Servers", url: "https://github.com/n1trux/awesome-sysadmin#web-servers" },
       { type: "cheat_sheet", title: "Web Server Cheat Sheet", url: "https://cheatography.com/tag/web-server/" },
       { type: "deep_dive", title: "Inside NGINX: How We Designed for Performance & Scale", url: "https://www.nginx.com/blog/inside-nginx-how-we-designed-for-performance-scale/" }
@@ -177,7 +177,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "MDN: HTML text fundamentals", url: "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" },
       { type: "video_en", title: "Semantic HTML Tutorial (Kevin Powell)", url: "https://www.youtube.com/watch?v=kGW8AlwaIFA" },
       { type: "video_hi", title: "Semantic HTML in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=U3xXpQk4vF0" },
-      { type: "article", title: "Why use semantic HTML?", url: "https://www.freecodecamp.org/news/semantic-html5-elements-explained/" },
+      { type: "article", title: "Why use semantic HTML?", url: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics" },
       { type: "github", title: "HTML5 Semantics Repo", url: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics" },
       { type: "cheat_sheet", title: "HTML5 Semantic Elements Cheat Sheet", url: "https://www.digitalocean.com/community/tutorials/html-html5-semantic-elements" },
       { type: "deep_dive", title: "The Accessibility Tree and Semantic HTML", url: "https://web.dev/articles/the-accessibility-tree" }
@@ -272,7 +272,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Responsive Web Design Basics", url: "https://web.dev/learn/design/" },
       { type: "github", title: "Responsive Web Design FreeCodeCamp", url: "https://github.com/freeCodeCamp/freeCodeCamp" },
       { type: "cheat_sheet", title: "Media Queries Cheat Sheet", url: "https://css-tricks.com/css-media-queries/" },
-      { type: "deep_dive", title: "The State of Responsive Web Design", url: "https://www.smashingmagazine.com/2021/11/guide-responsive-web-design-container-queries/" }
+      { type: "deep_dive", title: "The State of Responsive Web Design", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries" }
     ]
   },
   "n_hc_6": {
@@ -363,7 +363,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "Variables and Data Types (Thapa Technical)", url: "https://www.youtube.com/watch?v=RnwNq3878bY" },
       { type: "article", title: "Understanding Variables, Scope, and Hoisting", url: "https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript" },
       { type: "github", title: "JavaScript Algorithms and Data Structures", url: "https://github.com/trekhleb/javascript-algorithms" },
-      { type: "cheat_sheet", title: "JS Variables Cheat Sheet", url: "https://www.codecademy.com/learn/introduction-to-javascript/modules/learn-javascript-variables/cheatsheet" },
+      { type: "cheat_sheet", title: "JS Variables Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript" },
       { type: "deep_dive", title: "JavaScript Data Types and Data Structures", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures" }
     ]
   },
@@ -485,7 +485,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "ES6 Features (Babel)", url: "https://babeljs.io/docs/en/learn" },
       { type: "video_en", title: "ES6 in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=cRHQNNiCVBM" },
       { type: "video_hi", title: "ES6 Features (Code Step By Step)", url: "https://www.youtube.com/watch?v=0h5U39O8Z9E" },
-      { type: "article", title: "A Guide to ES6 Features", url: "https://www.freecodecamp.org/news/es6-features/" },
+      { type: "article", title: "A Guide to ES6 Features", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
       { type: "github", title: "ES6 Cheatsheet Repo", url: "https://github.com/DrkSephy/es6-cheatsheet" },
       { type: "cheat_sheet", title: "ES6 Cheatsheet", url: "https://devhints.io/es6" },
       { type: "deep_dive", title: "Exploring ES6 (Book)", url: "https://devhints.io/es6" }
@@ -518,7 +518,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "Async JS (Thapa Technical)", url: "https://www.youtube.com/watch?v=B7wHpNUUT4Y" },
       { type: "article", title: "Understanding Async/Await", url: "https://javascript.info/async-await" },
       { type: "github", title: "Promise Fun", url: "https://github.com/sindresorhus/promise-fun" },
-      { type: "cheat_sheet", title: "Async/Await Cheat Sheet", url: "https://codeburst.io/javascript-async-await-with-foreach-b6ba62bbf404" },
+      { type: "cheat_sheet", title: "Async/Await Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" },
       { type: "deep_dive", title: "What the heck is the event loop anyway?", url: "https://www.youtube.com/watch?v=8aGhPhVfaqM" }
     ]
   },
@@ -582,7 +582,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "How to write a good README", url: "https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/" },
       { type: "github", title: "Awesome README", url: "https://github.com/matiassingers/awesome-readme" },
       { type: "cheat_sheet", title: "GitHub Flow Cheat Sheet", url: "https://guides.github.com/introduction/flow/" },
-      { type: "deep_dive", title: "The Architecture of GitHub", url: "https://github.blog/2022-09-08-architecting-githubs-move-to-the-cloud/" }
+      { type: "deep_dive", title: "The Architecture of GitHub", url: "https://github.blog/engineering/" }
     ]
   },
   "n_vc_3": {
@@ -673,7 +673,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "TypeScript Handbook", url: "https://www.typescriptlang.org/docs/handbook/intro.html" },
       { type: "video_en", title: "TypeScript Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=BCg4U1FzODs" },
       { type: "video_hi", title: "TypeScript Tutorial in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=xk4_1vCGucA" },
-      { type: "article", title: "Understanding TypeScript Generics", url: "https://www.freecodecamp.org/news/understanding-typescript-generics/" },
+      { type: "article", title: "Understanding TypeScript Generics", url: "https://www.typescriptlang.org/docs/handbook/2/generics.html" },
       { type: "github", title: "TypeScript Cheat Sheet Repo", url: "https://github.com/typescript-cheatsheets/react" },
       { type: "cheat_sheet", title: "TS Interfaces vs Types", url: "https://www.typescriptlang.org/cheatsheets" },
       { type: "deep_dive", title: "Advanced TypeScript Types", url: "https://mariusschulz.com/blog/series/typescript-evolution" }
@@ -734,9 +734,9 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "MDN: Closures", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" },
       { type: "video_en", title: "Closures in JavaScript (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=3a0I8ICR1Vg" },
       { type: "video_hi", title: "Closures in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=1S8SNDACRM4" },
-      { type: "article", title: "Master the JavaScript Interview: What is a Closure?", url: "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36" },
-      { type: "github", title: "JavaScript Closures Examples", url: "https://medium.com/javascript-scene/master-the-javascript-interview-what-is-a-closure-b2f0d2152b36" },
-      { type: "cheat_sheet", title: "Scope & Closures Cheat Sheet", url: "https://frontendmasters.com/courses/deep-javascript-v3/scope-closures/" },
+      { type: "article", title: "Master the JavaScript Interview: What is a Closure?", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" },
+      { type: "github", title: "JavaScript Closures Examples", url: "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/README.md" },
+      { type: "cheat_sheet", title: "Scope & Closures Cheat Sheet", url: "https://github.com/getify/You-Dont-Know-JS" },
       { type: "deep_dive", title: "ECMAScript Spec: Lexical Environments", url: "https://tc39.es/ecma262/#sec-lexical-environments" }
     ]
   },
@@ -767,7 +767,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Understanding Prototypes", url: "https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript" },
       { type: "github", title: "Object Oriented JS Tutorial", url: "https://github.com/thejsway/thejsway/blob/master/manuscript/chapter09.md" },
       { type: "cheat_sheet", title: "Prototype Cheat Sheet", url: "https://ui.dev/javascript-visualizer" },
-      { type: "deep_dive", title: "You Don't Know JS: this & Object Prototypes", url: "https://github.com/getify/You-Dont-Know-JS/tree/2nd-ed/this-object-prototypes" }
+      { type: "deep_dive", title: "You Don't Know JS: this & Object Prototypes", url: "https://github.com/getify/You-Dont-Know-JS" }
     ]
   },
   "n_mjs_5": {
@@ -796,7 +796,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "video_en", title: "JavaScript Modules Crash Course (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=cRHQNNiCVBM" },
       { type: "video_hi", title: "ES6 Modules in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=8I1rL54R8xM" },
       { type: "article", title: "A 10 minute primer to JavaScript modules", url: "https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc/" },
-      { type: "github", title: "Awesome JavaScript Modules", url: "https://flaviocopes.com/javascript-modules/" },
+      { type: "github", title: "Awesome JavaScript Modules", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" },
       { type: "cheat_sheet", title: "ESM Cheat Sheet", url: "https://hacks.mozilla.org/2015/08/es6-in-depth-modules/" },
       { type: "deep_dive", title: "How Tree Shaking Works", url: "https://webpack.js.org/guides/tree-shaking/" }
     ]
@@ -920,7 +920,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "Vue JS Crash Course Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=b4OAB3z5dEw" },
       { type: "article", title: "Vue Composition API Introduction", url: "https://vuejs.org/guide/extras/composition-api-faq.html" },
       { type: "github", title: "Awesome Vue", url: "https://github.com/vuejs/awesome-vue" },
-      { type: "cheat_sheet", title: "Vue 3 Cheat Sheet", url: "https://dev.to/adnanbabakan/vue-3-cheat-sheet-3j46" },
+      { type: "cheat_sheet", title: "Vue 3 Cheat Sheet", url: "https://vuejs.org/guide/quick-start" },
       { type: "deep_dive", title: "Reactivity in Depth (Vue)", url: "https://vuejs.org/guide/extras/reactivity-in-depth.html" }
     ]
   },
@@ -951,7 +951,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Understanding Angular Dependency Injection", url: "https://angular.io/guide/dependency-injection" },
       { type: "github", title: "Awesome Angular", url: "https://github.com/PatrickJS/awesome-angular" },
       { type: "cheat_sheet", title: "Angular Cheat Sheet", url: "https://angular.io/guide/cheatsheet" },
-      { type: "deep_dive", title: "Inside the Angular Compiler", url: "https://blog.angular.io/how-the-angular-compiler-works-42111f9d2549" }
+      { type: "deep_dive", title: "Inside the Angular Compiler", url: "https://angular.dev/overview" }
     ]
   },
   "n_fw_4": {
@@ -978,7 +978,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Svelte Interactive Tutorial", url: "https://learn.svelte.dev/" },
       { type: "video_en", title: "Svelte in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=rv3Yq-B8c2Y" },
       { type: "video_hi", title: "Svelte Crash Course Hindi", url: "https://www.youtube.com/watch?v=bO5MteI80O8" },
-      { type: "article", title: "Why Svelte is our choice", url: "https://changelog.com/posts/svelte-is-the-best" },
+      { type: "article", title: "Why Svelte is our choice", url: "https://svelte.dev/docs/introduction" },
       { type: "github", title: "Awesome Svelte", url: "https://github.com/TheComputerM/awesome-svelte" },
       { type: "cheat_sheet", title: "Svelte Cheat Sheet", url: "https://sveltesociety.dev/cheatsheet" },
       { type: "deep_dive", title: "Rethinking Reactivity (Rich Harris)", url: "https://www.youtube.com/watch?v=AdNJ3fydeao" }
@@ -1041,7 +1041,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "React Query Crash Course Hindi", url: "https://www.youtube.com/watch?v=8K1N3ROLA_Q" },
       { type: "article", title: "Practical React Query", url: "https://tkdodo.eu/blog/practical-react-query" },
       { type: "github", title: "React Query Builder", url: "https://github.com/react-querybuilder/react-querybuilder" },
-      { type: "cheat_sheet", title: "React Query Cheat Sheet", url: "https://devhints.io/react-query" },
+      { type: "cheat_sheet", title: "React Query Cheat Sheet", url: "https://tanstack.com/query/v5/docs/framework/react/overview" },
       { type: "deep_dive", title: "Inside React Query", url: "https://tkdodo.eu/blog/inside-react-query" }
     ]
   },
@@ -1072,7 +1072,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Why I switched from Redux to Zustand", url: "https://github.com/pmndrs/zustand" },
       { type: "github", title: "Zustand Repo", url: "https://github.com/pmndrs/zustand" },
       { type: "cheat_sheet", title: "Zustand Cheat Sheet", url: "https://zustand-demo.pmnd.rs/" },
-      { type: "deep_dive", title: "How Zustand Works Under the Hood", url: "https://blog.axlight.com/posts/how-zustand-works-under-the-hood/" }
+      { type: "deep_dive", title: "How Zustand Works Under the Hood", url: "https://github.com/pmndrs/zustand" }
     ]
   },
   "n_sm_3": {
@@ -1099,9 +1099,9 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Redux Toolkit Quick Start", url: "https://redux-toolkit.js.org/tutorials/quick-start" },
       { type: "video_en", title: "Redux Toolkit Tutorial (Dave Gray)", url: "https://www.youtube.com/watch?v=NqzdVN2tyvQ" },
       { type: "video_hi", title: "Redux Toolkit in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=1i04-A7kfFI" },
-      { type: "article", title: "Modern Redux with Redux Toolkit", url: "https://www.smashingmagazine.com/2020/02/redux-toolkit-modern-redux/" },
+      { type: "article", title: "Modern Redux with Redux Toolkit", url: "https://redux-toolkit.js.org/introduction/getting-started" },
       { type: "github", title: "Awesome Redux", url: "https://github.com/xgrommx/awesome-redux" },
-      { type: "cheat_sheet", title: "Redux Cheat Sheet", url: "https://github.com/reduxjs/redux/blob/master/docs/api/README.md" },
+      { type: "cheat_sheet", title: "Redux Cheat Sheet", url: "https://redux.js.org/api/api-reference" },
       { type: "deep_dive", title: "Idiomatic Redux", url: "https://blog.isquaredsoftware.com/series/idiomatic-redux/" }
     ]
   },
@@ -1193,7 +1193,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "What are CSS Modules and why do we need them?", url: "https://css-tricks.com/css-modules-part-1-need/" },
       { type: "github", title: "CSS Modules Webpack Plugin", url: "https://github.com/webpack-contrib/css-loader#modules" },
       { type: "cheat_sheet", title: "CSS Modules Syntax", url: "https://nextjs.org/docs/app/building-your-application/styling/css-modules" },
-      { type: "deep_dive", title: "The End of Global CSS", url: "https://medium.com/seek-blog/the-end-of-global-css-90d2a4a06284" }
+      { type: "deep_dive", title: "The End of Global CSS", url: "https://github.com/css-modules/css-modules" }
     ]
   },
   "n_css_3": {
@@ -1222,7 +1222,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "video_hi", title: "Styled Components in React (Thapa Technical)", url: "https://www.youtube.com/watch?v=k3d_3h_tKIE" },
       { type: "article", title: "CSS-in-JS: The Good, the Bad, and the Ugly", url: "https://www.smashingmagazine.com/2020/05/reusable-react-components-tailwind/" },
       { type: "github", title: "Awesome CSS-in-JS", url: "https://github.com/tuchk4/awesome-css-in-js" },
-      { type: "cheat_sheet", title: "Styled Components Cheat Sheet", url: "https://devhints.io/styled-components" },
+      { type: "cheat_sheet", title: "Styled Components Cheat Sheet", url: "https://styled-components.com/docs" },
       { type: "deep_dive", title: "How Styled Components Works Under the Hood", url: "https://styled-components.com/docs/basics" }
     ]
   },
@@ -1281,7 +1281,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Vite Documentation", url: "https://vitejs.dev/guide/" },
       { type: "video_en", title: "Vite Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=KCrXgy8qtjM" },
       { type: "video_hi", title: "Vite React in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=gY5sGvq-8h8" },
-      { type: "article", title: "Why Vite is the Future", url: "https://www.smashingmagazine.com/2021/04/vite-future-web-development/" },
+      { type: "article", title: "Why Vite is the Future", url: "https://vitejs.dev/guide/" },
       { type: "github", title: "Awesome Vite", url: "https://github.com/vitejs/awesome-vite" },
       { type: "cheat_sheet", title: "Vite Config Cheat Sheet", url: "https://vitejs.dev/config/" },
       { type: "deep_dive", title: "How Vite Works Under the Hood", url: "https://www.youtube.com/watch?v=qj6B3MDe4o0" }
@@ -1341,7 +1341,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "ESLint Getting Started", url: "https://eslint.org/docs/latest/user-guide/getting-started" },
       { type: "video_en", title: "Set up ESLint and Prettier (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=SydnKbGc7W8" },
       { type: "video_hi", title: "ESLint setup in React (Hindi)", url: "https://www.youtube.com/watch?v=n5V3x2u-b0I" },
-      { type: "article", title: "Why you need ESLint", url: "https://www.freecodecamp.org/news/what-is-eslint-how-do-i-use-it/" },
+      { type: "article", title: "Why you need ESLint", url: "https://eslint.org/docs/latest/use/getting-started" },
       { type: "github", title: "Airbnb JavaScript Style Guide", url: "https://github.com/airbnb/javascript" },
       { type: "cheat_sheet", title: "ESLint Configuration Options", url: "https://eslint.org/docs/latest/use/configure/configuration-files" },
       { type: "deep_dive", title: "Writing Custom ESLint Rules", url: "https://eslint.org/docs/latest/extend/custom-rules" }
@@ -1402,7 +1402,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Jest Documentation", url: "https://jestjs.io/docs/getting-started" },
       { type: "video_en", title: "Jest Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=7r4xVDI2vho" },
       { type: "video_hi", title: "Jest Testing in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=4CjA1f1vHjE" },
-      { type: "article", title: "A Beginner's Guide to Unit Testing", url: "https://www.freecodecamp.org/news/introduction-to-unit-testing-in-javascript/" },
+      { type: "article", title: "A Beginner's Guide to Unit Testing", url: "https://jestjs.io/docs/getting-started" },
       { type: "github", title: "Awesome Testing", url: "https://github.com/TheJambo/awesome-testing" },
       { type: "cheat_sheet", title: "Jest Cheat Sheet", url: "https://github.com/sapegin/jest-cheat-sheet" },
       { type: "deep_dive", title: "Testing Implementation Details", url: "https://kentcdodds.com/blog/testing-implementation-details" }
@@ -1617,7 +1617,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "A Complete Guide to Deploying React Apps", url: "https://vercel.com/docs/concepts/deployments/overview" },
       { type: "github", title: "Netlify CLI repo", url: "https://github.com/netlify/cli" },
       { type: "cheat_sheet", title: "GitHub Pages Docs", url: "https://pages.github.com/" },
-      { type: "deep_dive", title: "Understanding CDN caching", url: "https://www.cloudflare.com/learning/cdn/what-is-caching/" }
+      { type: "deep_dive", title: "Understanding CDN caching", url: "https://web.dev/articles/cache-api-quick-guide" }
     ]
   },
   "n_dep_2": {
@@ -1677,7 +1677,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "The 12 Factor App: Config", url: "https://12factor.net/config" },
       { type: "github", title: "Dotenv Package", url: "https://github.com/motdotla/dotenv" },
       { type: "cheat_sheet", title: "Vercel Environment Variables", url: "https://vercel.com/docs/concepts/projects/environment-variables" },
-      { type: "deep_dive", title: "Keeping Secrets Secret", url: "https://www.gitguardian.com/blog/best-practices-to-protect-secrets" }
+      { type: "deep_dive", title: "Keeping Secrets Secret", url: "https://docs.github.com/en/code-security/secret-scanning/introduction/about-secret-scanning" }
     ]
   },
   "n_dep_4": {
@@ -1704,9 +1704,9 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "official", title: "Web.dev: Measure", url: "https://web.dev/measure/" },
       { type: "video_en", title: "Core Web Vitals (Fireship)", url: "https://www.youtube.com/watch?v=A3e1PjO8mB0" },
       { type: "video_hi", title: "Lighthouse Tutorial in Hindi", url: "https://www.youtube.com/watch?v=1oM4V2J9u6Q" },
-      { type: "article", title: "Optimizing Core Web Vitals", url: "https://web.dev/optimize-vitals/" },
+      { type: "article", title: "Optimizing Core Web Vitals", url: "https://web.dev/articles/vitals" },
       { type: "github", title: "Lighthouse Repo", url: "https://github.com/GoogleChrome/lighthouse" },
-      { type: "cheat_sheet", title: "Core Web Vitals Cheat Sheet", url: "https://supermetrics.com/blog/core-web-vitals" },
+      { type: "cheat_sheet", title: "Core Web Vitals Cheat Sheet", url: "https://web.dev/articles/vitals" },
       { type: "deep_dive", title: "How Browser Caching Works", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Caching" }
     ]
   }

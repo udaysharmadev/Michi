@@ -14,7 +14,7 @@ export function RoadmapMarquee() {
     return (
       <div className="flex flex-wrap gap-3 justify-center py-6">
         {ROADMAP_TITLES.slice(0, 10).map((title) => (
-          <span key={title} className="px-4 py-2 rounded-full bg-card border border-border text-sm font-semibold text-muted-foreground">
+          <span key={title} className="px-4 py-2 rounded-md bg-card border border-border text-sm font-medium text-muted-foreground">
             {title}
           </span>
         ))}
@@ -36,7 +36,7 @@ export function RoadmapMarquee() {
         {items.map((title, i) => (
           <span
             key={i}
-            className="shrink-0 px-5 py-2.5 rounded-full bg-card border border-border text-sm font-semibold text-muted-foreground whitespace-nowrap shadow-sm hover:border-primary/40 hover:text-foreground transition-colors cursor-default"
+            className="shrink-0 px-5 py-2.5 rounded-md bg-card border border-border text-sm font-medium text-muted-foreground whitespace-nowrap hover:border-foreground/20 hover:text-foreground transition-colors cursor-default"
           >
             {title}
           </span>

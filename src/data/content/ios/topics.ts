@@ -55,7 +55,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "Swift Programming Full Course in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=y6rkqzqflIc" },
             { title: "Swift Variables and Constants – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/sixty/1/1/variables" },
             { title: "matteocrippa/awesome-swift", type: "github", url: "https://github.com/matteocrippa/awesome-swift" },
-            { title: "Swift Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://devhints.io/swift" },
+            { title: "Swift Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://www.swift.org/documentation/" },
             { title: "Value Types vs Reference Types Deep Dive", type: "deep_dive", url: "https://developer.apple.com/swift/blog/?id=10" }
         ]
     },
@@ -139,7 +139,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "Creating Your First Swift Package", type: "article", url: "https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode" },
             { title: "apple/swift-package-manager", type: "github", url: "https://github.com/apple/swift-package-manager" },
             { title: "Package.swift Reference", type: "cheat_sheet", url: "https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html" },
-            { title: "SPM vs CocoaPods vs Carthage", type: "deep_dive", url: "https://www.swift.org/blog/swift-package-registry/" }
+            { title: "SPM vs CocoaPods vs Carthage", type: "deep_dive", url: "https://www.swift.org/package-manager/" }
         ]
     },
     // --- 4. UI Development ---
@@ -206,10 +206,10 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Model-View-Controller (Apple)", type: "official", url: "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html" },
             { title: "MVC in iOS Explained (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=pAHVSpbftYY" },
-            { title: "MVC Architecture in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=yPL13Iwy6oM" },
+            { title: "MVC Architecture in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=q1X20ZNFCQ8" },
             { title: "Solving the Massive View Controller Problem", type: "article", url: "https://www.hackingwithswift.com/articles/123/how-to-fix-massive-view-controller" },
             { title: "onmyway133/awesome-ios-architecture", type: "github", url: "https://github.com/onmyway133/awesome-ios-architecture" },
-            { title: "iOS Architecture Patterns Overview", type: "cheat_sheet", url: "https://medium.com/ios-os-x-development/ios-architecture-patterns-ecba4c38de52" },
+            { title: "iOS Architecture Patterns Overview", type: "cheat_sheet", url: "https://developer.apple.com/tutorials/swiftui" },
             { title: "Coordinator Pattern in iOS", type: "deep_dive", url: "https://khanlou.com/2015/01/the-coordinator/" }
         ]
     },
@@ -220,11 +220,11 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Designing for Testability with MVVM (Apple)", type: "official", url: "https://developer.apple.com/documentation/swiftui/managing-user-interface-state" },
             { title: "MVVM in iOS with SwiftUI (Phillip Lackner style)", type: "video_en", url: "https://www.youtube.com/watch?v=-xTqfilaYow" },
-            { title: "MVVM in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=G4cOrT1mnb8" },
-            { title: "Clean Architecture on iOS (ProAndroidDev equivalent)", type: "article", url: "https://tech.olx.com/clean-architecture-and-mvvm-on-ios-c9d167d9f5b3" },
+            { title: "MVVM in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=09TeUXjzpKs" },
+            { title: "Clean Architecture on iOS (ProAndroidDev equivalent)", type: "article", url: "https://www.raywenderlich.com/7693556-ios-mvvm-tutorial-refactoring-from-mvc" },
             { title: "kudoleh/iOS-Clean-Architecture-MVVM", type: "github", url: "https://github.com/kudoleh/iOS-Clean-Architecture-MVVM" },
             { title: "MVVM Layers Cheat Sheet", type: "cheat_sheet", url: "https://github.com/onmyway133/awesome-ios-architecture#mvvm" },
-            { title: "Repository Pattern in iOS Apps", type: "deep_dive", url: "https://medium.com/tiendeo-tech/ios-repository-pattern-in-swift-85a8c62bf436" }
+            { title: "Repository Pattern in iOS Apps", type: "deep_dive", url: "https://developer.apple.com/documentation/swift" }
         ]
     },
     "n_arch_3": {
@@ -233,7 +233,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Combine Documentation (Apple)", type: "official", url: "https://developer.apple.com/documentation/combine" },
             { title: "Combine in Practice (WWDC 2019)", type: "video_en", url: "https://developer.apple.com/videos/play/wwdc2019/721/" },
-            { title: "Combine Framework in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=G4cOrT1mnb8" },
+            { title: "Combine Framework in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=comQ1-x2a1Q" },
             { title: "Getting Started with Combine – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/books/ios-swiftui/introduction-to-combine" },
             { title: "OpenCombine/OpenCombine", type: "github", url: "https://github.com/OpenCombine/OpenCombine" },
             { title: "Combine Operators Cheat Sheet", type: "cheat_sheet", url: "https://heckj.github.io/swiftui-notes/" },
@@ -263,7 +263,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "SwiftData Introduction (WWDC 2023)", type: "video_en", url: "https://developer.apple.com/videos/play/wwdc2023/10187/" },
             { title: "SwiftData Tutorial in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
             { title: "Meet SwiftData – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/quick-start/swiftdata" },
-            { title: "apple/sample-apps/SwiftDataIntro", type: "github", url: "https://github.com/apple/sample-apps" },
+            { title: "apple/sample-apps/SwiftDataIntro", type: "github", url: "https://developer.apple.com/sample-code/" },
             { title: "SwiftData @Model Macro Reference", type: "cheat_sheet", url: "https://developer.apple.com/documentation/swiftdata/model()" },
             { title: "SwiftData Predicates & Queries", type: "deep_dive", url: "https://developer.apple.com/documentation/foundation/predicate" }
         ]
@@ -292,7 +292,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "FileManager in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=mj4eec3WENg" },
             { title: "iOS App Sandbox & File System", type: "article", url: "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html" },
             { title: "JohnSundell/Files", type: "github", url: "https://github.com/JohnSundell/Files" },
-            { title: "FileManager API Reference", type: "cheat_sheet", url: "https://www.ioscreator.com/tutorials/file-manager-tutorial-ios-swift" },
+            { title: "FileManager API Reference", type: "cheat_sheet", url: "https://developer.apple.com/documentation/foundation/filemanager" },
             { title: "UIDocument and iCloud Deep Dive", type: "deep_dive", url: "https://developer.apple.com/documentation/uikit/uidocument" }
         ]
     },
@@ -321,7 +321,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "Codable Protocol in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=1hwQCUJ8k0U" },
             { title: "Using JSON with Custom Types – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/read/7/3/parsing-json-using-the-codable-protocol" },
             { title: "SwiftyJSON/SwiftyJSON", type: "github", url: "https://github.com/SwiftyJSON/SwiftyJSON" },
-            { title: "Codable CodingKeys Cheat Sheet", type: "cheat_sheet", url: "https://benscheirman.com/2017/06/swift-json/" },
+            { title: "Codable CodingKeys Cheat Sheet", type: "cheat_sheet", url: "https://developer.apple.com/documentation/foundation/jsondecoder" },
             { title: "Custom KeyDecodingStrategy", type: "deep_dive", url: "https://developer.apple.com/documentation/foundation/jsondecoder/keydecodingstrategy" }
         ]
     },
@@ -444,7 +444,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "TestFlight Help (Apple)", type: "official", url: "https://developer.apple.com/testflight/" },
             { title: "How to Upload to TestFlight (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=Vtl4XH6nrjg" },
             { title: "TestFlight Upload in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=jJVtg42uBX0" },
-            { title: "Beta Testing Your iOS App", type: "article", url: "https://www.kodeco.com/10204910-testflight-tutorial-ios-beta-testing" },
+            { title: "Beta Testing Your iOS App", type: "article", url: "https://developer.apple.com/testflight/" },
             { title: "fastlane/pilot", type: "github", url: "https://github.com/fastlane/fastlane/tree/master/pilot" },
             { title: "TestFlight Roles Cheat Sheet", type: "cheat_sheet", url: "https://developer.apple.com/help/app-store-connect/manage-users-and-roles/role-permissions" },
             { title: "TestFlight App Review Deep Dive", type: "deep_dive", url: "https://developer.apple.com/help/app-store-connect/test-a-beta-version/submit-an-app-for-beta-app-review" }

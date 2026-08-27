@@ -70,8 +70,6 @@ export const roadmaps: RoadmapMeta[] = [
   { id: "r_06", slug: "ios", title: "iOS Developer", description: "Master Swift and the Apple ecosystem for app development.", category: "Development", difficulty: "Beginner", estimatedTopics: 90 },
   { id: "r_07", slug: "blockchain", title: "Blockchain Developer", description: "Understand decentralized systems, smart contracts, and Web3.", category: "Development", difficulty: "Advanced", estimatedTopics: 85 },
   { id: "r_08", slug: "game", title: "Game Developer", description: "Design and program video games using modern engines.", category: "Development", difficulty: "Intermediate", estimatedTopics: 130 },
-  // Numbered last because it was added last; grouped here because it is a Development
-  // roadmap, and the comment headings are what a reader trusts over the id order.
   { id: "r_36", slug: "qa-engineer", title: "QA Engineer", description: "Ensure software quality through manual and automated testing.", category: "Development", difficulty: "Beginner", estimatedTopics: 75 },
 
   // AI & Data
@@ -79,14 +77,11 @@ export const roadmaps: RoadmapMeta[] = [
   { id: "r_10", slug: "machine-learning", title: "Machine Learning Engineer", description: "Design, build, and deploy predictive models.", category: "AI & Data", difficulty: "Advanced", estimatedTopics: 145 },
   { id: "r_11", slug: "data-scientist", title: "Data Scientist", description: "Extract insights from complex datasets.", category: "AI & Data", difficulty: "Intermediate", estimatedTopics: 125 },
   { id: "r_12", slug: "data-engineer", title: "Data Engineer", description: "Build scalable data pipelines and warehousing solutions.", category: "AI & Data", difficulty: "Intermediate", estimatedTopics: 115 },
-  { id: "r_13", slug: "mlops", title: "MLOps Engineer", description: "Bridge machine learning research and production deployment.", category: "AI & Data", difficulty: "Advanced", estimatedTopics: 105 },
   { id: "r_14", slug: "llm", title: "LLM Engineer", description: "Specialize in large language models and prompt engineering.", category: "AI & Data", difficulty: "Intermediate", estimatedTopics: 80 },
 
   // Infrastructure
   { id: "r_15", slug: "devops", title: "DevOps Engineer", description: "Unify software development and IT operations.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 160 },
   { id: "r_16", slug: "cloud", title: "Cloud Engineer", description: "Design and manage cloud infrastructure on AWS, GCP, or Azure.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 135 },
-  { id: "r_17", slug: "sre", title: "Site Reliability Engineer", description: "Apply software engineering practices to infrastructure.", category: "Infrastructure", difficulty: "Advanced", estimatedTopics: 140 },
-  { id: "r_19", slug: "dba", title: "Database Administrator", description: "Manage, optimize, and secure database systems.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 90 },
 
   // Security
   { id: "r_20", slug: "cyber-security", title: "Cyber Security Expert", description: "Protect systems, networks, and data from attacks.", category: "Security", difficulty: "Beginner", estimatedTopics: 170 },
@@ -96,10 +91,7 @@ export const roadmaps: RoadmapMeta[] = [
   { id: "r_26", slug: "system-design", title: "System Design", description: "Learn how to design highly scalable systems.", category: "Architecture", difficulty: "Intermediate", estimatedTopics: 85 },
 
   // Design
-  { id: "r_31", slug: "ux-ui", title: "UX/UI Designer", description: "Design intuitive and beautiful user experiences.", category: "Design", difficulty: "Beginner", estimatedTopics: 100 },
-
-  // Product
-  { id: "r_35", slug: "product-manager", title: "Product Manager", description: "Define product strategy and guide execution.", category: "Product", difficulty: "Intermediate", estimatedTopics: 90 },
+  { id: "r_31", slug: "ux-ui", title: "UX/UI Designer", description: "Design intuitive and beautiful user experiences.", category: "Design", difficulty: "Beginner", estimatedTopics: 100 }
 ];
 
 /**
@@ -115,7 +107,12 @@ export const roadmaps: RoadmapMeta[] = [
  */
 export const plannedRoadmaps: RoadmapMeta[] = [
   // Infrastructure
+  { id: "r_17", slug: "sre", title: "Site Reliability Engineer", description: "Apply software engineering practices to infrastructure.", category: "Infrastructure", difficulty: "Advanced", estimatedTopics: 140 },
   { id: "r_18", slug: "platform", title: "Platform Engineer", description: "Build internal developer platforms to increase productivity.", category: "Infrastructure", difficulty: "Advanced", estimatedTopics: 120 },
+  { id: "r_19", slug: "dba", title: "Database Administrator", description: "Manage, optimize, and secure database systems.", category: "Infrastructure", difficulty: "Intermediate", estimatedTopics: 90 },
+
+  // AI & Data
+  { id: "r_13", slug: "mlops", title: "MLOps Engineer", description: "Bridge machine learning research and production deployment.", category: "AI & Data", difficulty: "Advanced", estimatedTopics: 105 },
 
   // Security
   { id: "r_21", slug: "security-engineer", title: "Security Engineer", description: "Build secure systems and automate threat detection.", category: "Security", difficulty: "Intermediate", estimatedTopics: 130 },
@@ -137,6 +134,7 @@ export const plannedRoadmaps: RoadmapMeta[] = [
   // Product
   { id: "r_33", slug: "tpm", title: "Technical Product Manager", description: "Manage product strategy with deep technical insight.", category: "Product", difficulty: "Intermediate", estimatedTopics: 80 },
   { id: "r_34", slug: "scrum-master", title: "Scrum Master", description: "Facilitate agile development processes.", category: "Product", difficulty: "Beginner", estimatedTopics: 50 },
+  { id: "r_35", slug: "product-manager", title: "Product Manager", description: "Define product strategy and guide execution.", category: "Product", difficulty: "Intermediate", estimatedTopics: 90 },
 ];
 
 /** Roadmaps a learner can open. Excludes {@link plannedRoadmaps} by construction. */

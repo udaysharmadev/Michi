@@ -23,11 +23,11 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Android Platform Architecture", type: "official", url: "https://developer.android.com/guide/platform" },
             { title: "Android vs iOS Architecture Explained", type: "video_en", url: "https://www.youtube.com/watch?v=ada99UCvELI" },
-            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
-            { title: "iOS vs Android Architecture Differences", type: "article", url: "https://www.geeksforgeeks.org/difference-between-android-and-ios-architecture/" },
+            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=fnHr_rsQwDA" },
+            { title: "iOS vs Android Architecture Differences", type: "article", url: "https://developer.android.com/guide" },
             { title: "aosp-mirror/platform_frameworks_base", type: "github", url: "https://github.com/aosp-mirror/platform_frameworks_base" },
             { title: "Android Stack Architecture Layers", type: "cheat_sheet", url: "https://developer.android.com/guide/platform#library-layer" },
-            { title: "Deep Dive: Android Core Architecture", type: "deep_dive", url: "https://source.android.com/docs/core/architecture" }
+            { title: "Deep Dive: Android Core Architecture", type: "deep_dive", url: "https://developer.android.com/guide/platform" }
         ]
     },
     "n_me_3": {
@@ -69,7 +69,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "Dart Full Course in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=nUGXH5p7-P0" },
             { title: "Dart Null Safety Guide", type: "article", url: "https://dart.dev/null-safety" },
             { title: "dart-lang/sdk", type: "github", url: "https://github.com/dart-lang/sdk" },
-            { title: "Dart Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://devhints.io/dart" },
+            { title: "Dart Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://dart.dev/language" },
             { title: "Dart Isolates & Concurrency", type: "deep_dive", url: "https://dart.dev/language/isolates" }
         ]
     },
@@ -80,11 +80,11 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Kotlin Basic Syntax (Official)", type: "official", url: "https://kotlinlang.org/docs/basic-syntax.html" },
             { title: "Kotlin vs Swift - Side by Side Comparison", type: "video_en", url: "https://www.youtube.com/watch?v=xT8oP0wy-A0" },
-            { title: "Kotlin Basics in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=DVvLFGZFmbI" },
+            { title: "Kotlin Basics in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=EK_d6YhE2Wg" },
             { title: "Swift is like Kotlin – Comparison", type: "article", url: "https://nilhcem.com/swift-is-like-kotlin/" },
             { title: "Kotlin/kotlin-koans", type: "github", url: "https://github.com/Kotlin/kotlin-koans" },
             { title: "Kotlin & Swift Syntax Cheat Sheet", type: "cheat_sheet", url: "https://nilhcem.com/swift-is-like-kotlin/" },
-            { title: "Native Modules in React Native (Official)", type: "deep_dive", url: "https://reactnative.dev/docs/native-modules-intro" }
+            { title: "Native Modules in React Native (Official)", type: "deep_dive", url: "https://reactnative.dev/docs/turbo-native-modules-introduction" }
         ]
     },
     // --- 3. Cross-Platform Frameworks ---
@@ -124,7 +124,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "Expo Official Documentation", type: "official", url: "https://docs.expo.dev/" },
             { title: "Expo Tutorial for Beginners (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=XCifkDC0yXA" },
             { title: "Expo React Native in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=WSppuT4A09Y" },
-            { title: "Expo Managed vs Bare Workflow", type: "article", url: "https://docs.expo.dev/introduction/managed-vs-bare/" },
+            { title: "Expo Managed vs Bare Workflow", type: "article", url: "https://docs.expo.dev/workflow/overview/" },
             { title: "expo/expo", type: "github", url: "https://github.com/expo/expo" },
             { title: "Expo SDK API Reference", type: "cheat_sheet", url: "https://docs.expo.dev/versions/latest/" },
             { title: "EAS Build & Submit Deep Dive", type: "deep_dive", url: "https://docs.expo.dev/build/introduction/" }
@@ -180,8 +180,8 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "React Native Reanimated Official Docs", type: "official", url: "https://docs.swmansion.com/react-native-reanimated/" },
             { title: "Reanimated 3 Tutorial (William Candillon)", type: "video_en", url: "https://www.youtube.com/watch?v=rJyhU064W8E" },
-            { title: "React Native Animations in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=kiHu0-Z6xHI" },
-            { title: "Worklets & Shared Values in Reanimated", type: "article", url: "https://docs.swmansion.com/react-native-reanimated/docs/fundamentals/worklets" },
+            { title: "React Native Animations in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=r2pHdnUfUXE" },
+            { title: "Worklets & Shared Values in Reanimated", type: "article", url: "https://docs.swmansion.com/react-native-reanimated/docs/guides/worklets" },
             { title: "software-mansion/react-native-reanimated", type: "github", url: "https://github.com/software-mansion/react-native-reanimated" },
             { title: "Reanimated Animation Types Reference", type: "cheat_sheet", url: "https://docs.swmansion.com/react-native-reanimated/docs/animations/withTiming" },
             { title: "React Native Skia for 2D Graphics", type: "deep_dive", url: "https://shopify.github.io/react-native-skia/" }
@@ -207,12 +207,12 @@ export const topicsData: Record<string, TopicData> = {
         description: "Use lightweight, modern state management libraries like Zustand or Jotai for simpler React Native apps.",
         publishStatus: "review",
         resources: [
-            { title: "Zustand Official Docs", type: "official", url: "https://docs.pmnd.rs/zustand/getting-started/introduction" },
+            { title: "Zustand Official Docs", type: "official", url: "https://zustand-demo.pmnd.rs/" },
             { title: "Zustand Crash Course (Jack Herrington)", type: "video_en", url: "https://www.youtube.com/watch?v=LcJURRiIHMc" },
             { title: "Zustand State Management in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=KCr-UNsM3vA" },
-            { title: "State Management in React Native – Full Comparison", type: "article", url: "https://blog.logrocket.com/state-management-react-native-redux-context-api-zustand/" },
+            { title: "State Management in React Native – Full Comparison", type: "article", url: "https://reactnative.dev/docs/state" },
             { title: "pmndrs/zustand", type: "github", url: "https://github.com/pmndrs/zustand" },
-            { title: "Zustand API Reference", type: "cheat_sheet", url: "https://docs.pmnd.rs/zustand/apis/create" },
+            { title: "Zustand API Reference", type: "cheat_sheet", url: "https://github.com/pmndrs/zustand" },
             { title: "TanStack Query in React Native", type: "deep_dive", url: "https://tanstack.com/query/latest/docs/framework/react/react-native" }
         ]
     },
@@ -241,7 +241,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "API Calling in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=NZ4nnZ5Z_xw" },
             { title: "Using the Fetch API (MDN)", type: "article", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" },
             { title: "axios/axios", type: "github", url: "https://github.com/axios/axios" },
-            { title: "Fetch vs Axios – Which to use?", type: "cheat_sheet", url: "https://www.freecodecamp.org/news/fetch-vs-axios-which-should-you-prefer-for-making-http-requests/" },
+            { title: "Fetch vs Axios – Which to use?", type: "cheat_sheet", url: "https://axios-http.com/docs/intro" },
             { title: "Apollo GraphQL in React Native", type: "deep_dive", url: "https://www.apollographql.com/docs/react/integrations/react-native/" }
         ]
     },
@@ -253,7 +253,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "WebSocket API (MDN)", type: "official", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket" },
             { title: "Socket.io with React Native Tutorial", type: "video_en", url: "https://www.youtube.com/watch?v=favi7avxIag" },
             { title: "WebSockets in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=KK1vFqPjKGs" },
-            { title: "Getting Started with Socket.io Chat App", type: "article", url: "https://socket.io/get-started/chat" },
+            { title: "Getting Started with Socket.io Chat App", type: "article", url: "https://socket.io/docs/v4/" },
             { title: "socketio/socket.io-client", type: "github", url: "https://github.com/socketio/socket.io-client" },
             { title: "WebSocket Events Reference (MDN)", type: "cheat_sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" },
             { title: "Expo SQLite for Local Real-time Data", type: "deep_dive", url: "https://docs.expo.dev/versions/latest/sdk/sqlite/" }
@@ -292,12 +292,12 @@ export const topicsData: Record<string, TopicData> = {
         description: "Persist local key-value data with AsyncStorage or the faster MMKV library.",
         publishStatus: "review",
         resources: [
-            { title: "AsyncStorage Official Docs", type: "official", url: "https://react-native-async-storage.github.io/async-storage/" },
+            { title: "AsyncStorage Official Docs", type: "official", url: "https://github.com/react-native-async-storage/async-storage" },
             { title: "MMKV in React Native (Phillip Lackner style)", type: "video_en", url: "https://www.youtube.com/watch?v=7N5fug4O-zg" },
             { title: "AsyncStorage & Storage in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=pY-UvlALKhw" },
             { title: "MMKV vs AsyncStorage – Performance Comparison", type: "article", url: "https://blog.logrocket.com/using-react-native-mmkv/" },
             { title: "mrousavy/react-native-mmkv", type: "github", url: "https://github.com/mrousavy/react-native-mmkv" },
-            { title: "AsyncStorage API Usage Reference", type: "cheat_sheet", url: "https://react-native-async-storage.github.io/async-storage/docs/usage" },
+            { title: "AsyncStorage API Usage Reference", type: "cheat_sheet", url: "https://github.com/react-native-async-storage/async-storage#usage" },
             { title: "Secure Storage with react-native-keychain", type: "deep_dive", url: "https://github.com/oblador/react-native-keychain" }
         ]
     },
@@ -382,7 +382,7 @@ export const topicsData: Record<string, TopicData> = {
             { title: "OTA Updates in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=XCyw6Emfvdw" },
             { title: "CodePush vs Expo EAS Update – Comparison", type: "article", url: "https://docs.expo.dev/eas-update/codepush/" },
             { title: "microsoft/react-native-code-push", type: "github", url: "https://github.com/microsoft/react-native-code-push" },
-            { title: "EAS Update Configuration Reference", type: "cheat_sheet", url: "https://docs.expo.dev/eas-update/eas-json/" },
+            { title: "EAS Update Configuration Reference", type: "cheat_sheet", url: "https://docs.expo.dev/eas-update/introduction/" },
             { title: "EAS Update Deep Dive", type: "deep_dive", url: "https://docs.expo.dev/eas-update/introduction/" }
         ]
     }

@@ -193,12 +193,12 @@ function RoadmapsDiscoveryContent() {
               <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
-                className="py-24 flex flex-col items-center justify-center text-center bg-card border border-border rounded-3xl"
+                className="py-24 flex flex-col items-center justify-center text-center bg-card border border-border rounded-xl"
               >
-                <div className="w-16 h-16 bg-muted rounded-2xl flex items-center justify-center mb-6 shadow-inner">
+                <div className="w-16 h-16 bg-muted rounded-xl flex items-center justify-center mb-6">
                   <Map className="w-8 h-8 text-muted-foreground" />
                 </div>
-                <h3 className="font-heading text-2xl font-bold mb-2">No roadmaps found</h3>
+                <h3 className="text-2xl font-semibold mb-2 tracking-tight">No roadmaps found</h3>
                 <p className="text-muted-foreground max-w-sm mb-6">
                   {selectedCategory === "Favorites" 
                     ? "You haven't bookmarked any roadmaps yet. Click the star icon on any card to add it to your favorites."
@@ -210,7 +210,7 @@ function RoadmapsDiscoveryContent() {
                     setSelectedCategory("All");
                     setSelectedDifficulty("All");
                   }}
-                  className="px-6 py-2.5 rounded-xl bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-opacity active:scale-[0.98]"
+                  className="px-6 py-2.5 rounded-md bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity active:scale-[0.98]"
                 >
                   Clear all filters
                 </button>
@@ -225,10 +225,6 @@ function RoadmapsDiscoveryContent() {
 export default function RoadmapsDiscoveryPage() {
   return (
     <div className="min-h-screen flex flex-col bg-background text-foreground relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-0 left-0 w-full h-[50vh] bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
-      <div className="absolute top-[-10%] left-[-10%] w-[40%] h-[40%] rounded-full bg-primary/5 blur-[120px] pointer-events-none" />
-      <div className="absolute top-[20%] right-[-10%] w-[30%] h-[30%] rounded-full bg-blue-500/5 blur-[120px] pointer-events-none" />
       
       <Navbar />
       

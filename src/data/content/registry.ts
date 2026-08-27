@@ -39,6 +39,10 @@ export async function getContentBySlug(slug: string): Promise<RoadmapContent | n
         return (await import("./ux-ui")).uxUiDesignerContent;
       case "data-engineer":
         return (await import("./data-engineer")).dataEngineerContent;
+      case "data-scientist":
+        return (await import("./data-scientist")).dataScientistContent;
+      case "llm":
+        return (await import("./llm")).llmContent;
       default:
         return null;
     }
