@@ -53,8 +53,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Google Cloud: Compare AWS and Azure services to Google Cloud", url: "https://cloud.google.com/docs/get-started/aws-azure-gcp-service-comparison" },
-      { type: "video_en", title: "AWS vs Azure vs GCP (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=FDM6HFEeKRo" },
-      { type: "video_hi", title: "AWS vs Azure vs GCP Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_en", title: "AWS vs Azure vs GCP (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=8C_kHJ5YEiA" },
+      { type: "video_hi", title: "AWS vs Azure vs GCP Hindi", url: "https://www.youtube.com/watch?v=n6SA3tf6aA0" },
       { type: "article", title: "DigitalOcean: AWS vs Azure vs GCP", url: "https://aws.amazon.com/free/" },
       { type: "github", title: "open-guides/og-aws: Open Guide to AWS", url: "https://github.com/open-guides/og-aws" },
       { type: "cheat_sheet", title: "Cloud Provider Services Comparison", url: "https://comparecloud.in/" },
@@ -85,8 +85,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS Cost Management Documentation", url: "https://docs.aws.amazon.com/cost-management/latest/userguide/what-is-costmanagement.html" },
-      { type: "video_en", title: "AWS Cost Optimization (freeCodeCamp)", url: "https://www.youtube.com/watch?v=0d0Q3-1N3cE" },
-      { type: "video_hi", title: "AWS Cost Management in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=B0iG_lCzNI8" },
+      { type: "video_en", title: "AWS Cost Optimization (freeCodeCamp)", url: "https://www.youtube.com/watch?v=c3Cn4xYfxJY" },
+      { type: "video_hi", title: "AWS Cost Management in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=NWzfgAw_DYA" },
       { type: "article", title: "AWS: Cost Optimization Pillar — Well-Architected Framework", url: "https://docs.aws.amazon.com/wellarchitected/latest/cost-optimization-pillar/welcome.html" },
       { type: "github", title: "infracost/infracost: Cloud cost estimates for Terraform", url: "https://github.com/infracost/infracost" },
       { type: "cheat_sheet", title: "AWS Pricing Calculator", url: "https://aws.amazon.com/calculator/" },
@@ -117,8 +117,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon EC2 Documentation", url: "https://docs.aws.amazon.com/ec2/index.html" },
-      { type: "video_en", title: "EC2 Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=0d0Q3-1N3cE" },
-      { type: "video_hi", title: "AWS EC2 in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_en", title: "EC2 Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=c3Cn4xYfxJY" },
+      { type: "video_hi", title: "AWS EC2 in Hindi", url: "https://www.youtube.com/watch?v=w5lCVX6CPzM" },
       { type: "article", title: "DigitalOcean: How To Set Up Your First Server on AWS EC2", url: "https://www.digitalocean.com/community/tutorials/how-to-set-up-a-new-ubuntu-server-on-digitalocean" },
       { type: "github", title: "open-guides/og-aws: AWS EC2 section", url: "https://github.com/open-guides/og-aws#ec2" },
       { type: "cheat_sheet", title: "EC2 Instance Types Cheat Sheet", url: "https://instances.vantage.sh/" },
@@ -149,8 +149,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS Lambda Documentation", url: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html" },
-      { type: "video_en", title: "AWS Lambda Tutorial (Fireship)", url: "https://www.youtube.com/watch?v=vgisbCjtHz4" },
-      { type: "video_hi", title: "AWS Lambda in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=B0iG_lCzNI8" },
+      { type: "video_en", title: "AWS Lambda Tutorial (KodeKloud)", url: "https://www.youtube.com/watch?v=LooINFCjgJ0" },
+      { type: "video_hi", title: "AWS Lambda in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=NWzfgAw_DYA" },
       { type: "article", title: "Serverless Framework: AWS Lambda Guide", url: "https://www.serverless.com/aws-lambda/" },
       { type: "github", title: "aws/serverless-application-model: AWS SAM", url: "https://github.com/aws/serverless-application-model" },
       { type: "cheat_sheet", title: "AWS Lambda Limits Reference", url: "https://docs.aws.amazon.com/lambda/latest/dg/gettingstarted-limits.html" },
@@ -181,8 +181,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon ECS Documentation", url: "https://docs.aws.amazon.com/AmazonECS/latest/developerguide/what-is-fargate.html" },
-      { type: "video_en", title: "ECS Fargate Tutorial (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=esISkPlnxL0" },
-      { type: "video_hi", title: "AWS ECS in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=ZbZSflqJeHs" },
+      { type: "video_en", title: "ECS Fargate Tutorial (KodeKloud)", url: "https://www.youtube.com/watch?v=esISkPlnxL0" },
+      { type: "video_hi", title: "AWS ECS in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=kE9crVneLUk" },
       { type: "article", title: "DigitalOcean: Introduction to AWS ECS", url: "https://www.digitalocean.com/community/tutorials/the-docker-ecosystem-an-introduction-to-common-components" },
       { type: "github", title: "aws-samples: ECS blueprints", url: "https://github.com/aws-ia/ecs-blueprints" },
       { type: "cheat_sheet", title: "ECS vs EKS vs Fargate Comparison", url: "https://aws.amazon.com/ecs/faqs/" },
@@ -214,7 +214,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Amazon S3 Documentation", url: "https://docs.aws.amazon.com/AmazonS3/latest/userguide/Welcome.html" },
       { type: "video_en", title: "S3 Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=tfU0JEZjcsg" },
-      { type: "video_hi", title: "AWS S3 in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=ZB5ONbD_SMY" },
+      { type: "video_hi", title: "AWS S3 Static Website Hosting Hindi", url: "https://www.youtube.com/watch?v=CudfxrFJ2Qc" },
       { type: "article", title: "DigitalOcean: How To Use AWS S3 in the CLI", url: "https://www.digitalocean.com/community/tutorials/how-to-use-aws-s3-with-the-aws-cli" },
       { type: "github", title: "open-guides/og-aws: S3 Guide", url: "https://github.com/open-guides/og-aws#s3" },
       { type: "cheat_sheet", title: "AWS S3 CLI Commands Reference", url: "https://docs.aws.amazon.com/cli/latest/reference/s3/" },
@@ -246,7 +246,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Amazon EBS Documentation", url: "https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AmazonEBS.html" },
       { type: "video_en", title: "AWS EBS Deep Dive (Stephane Maarek)", url: "https://www.youtube.com/watch?v=77qLAl-lRpo" },
-      { type: "video_hi", title: "AWS EBS in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_hi", title: "AWS EBS in Hindi", url: "https://www.youtube.com/watch?v=9zE2Tmlhi7E" },
       { type: "article", title: "DigitalOcean: Block Storage vs Object Storage", url: "https://www.digitalocean.com/community/tutorials/object-storage-vs-block-storage-services" },
       { type: "github", title: "open-guides/og-aws: EBS section", url: "https://github.com/open-guides/og-aws#ebs" },
       { type: "cheat_sheet", title: "EBS Volume Types Comparison", url: "https://aws.amazon.com/ebs/volume-types/" },
@@ -277,8 +277,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon RDS Documentation", url: "https://docs.aws.amazon.com/rds/index.html" },
-      { type: "video_en", title: "AWS RDS Tutorial (freeCodeCamp)", url: "https://www.youtube.com/watch?v=ulprqHHWlng" },
-      { type: "video_hi", title: "AWS RDS in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_en", title: "AWS RDS MySQL Database Setup (Be A Better Dev)", url: "https://www.youtube.com/watch?v=Ng_zi11N4_c" },
+      { type: "video_hi", title: "AWS RDS in Hindi", url: "https://www.youtube.com/watch?v=n6SA3tf6aA0" },
       { type: "article", title: "DigitalOcean: Managed Database vs Self-Hosted", url: "https://www.digitalocean.com/products/managed-databases" },
       { type: "github", title: "open-guides/og-aws: RDS Guide", url: "https://github.com/open-guides/og-aws#rds" },
       { type: "cheat_sheet", title: "RDS Instance Types and Pricing", url: "https://aws.amazon.com/rds/instance-types/" },
@@ -309,8 +309,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon VPC Documentation", url: "https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html" },
-      { type: "video_en", title: "AWS VPC Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=7_NNlnH7sAg" },
-      { type: "video_hi", title: "AWS VPC in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=KVBON1lA9N8" },
+      { type: "video_en", title: "AWS VPC Basics (Tiny Technical Tutorials)", url: "https://www.youtube.com/watch?v=7_NNlnH7sAg" },
+      { type: "video_hi", title: "AWS VPC Tutorial Hindi", url: "https://www.youtube.com/watch?v=O2lLVFdqc2M" },
       { type: "article", title: "DigitalOcean: How VPCs Work", url: "https://www.digitalocean.com/community/tutorials/understanding-digitalocean-vpc" },
       { type: "github", title: "terraform-aws-modules/terraform-aws-vpc: Terraform VPC Module", url: "https://github.com/terraform-aws-modules/terraform-aws-vpc" },
       { type: "cheat_sheet", title: "AWS VPC Cheat Sheet (tutorials dojo)", url: "https://tutorialsdojo.com/amazon-vpc/" },
@@ -341,7 +341,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon Route 53 Documentation", url: "https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/Welcome.html" },
-      { type: "video_en", title: "Route 53 Full Tutorial (freeCodeCamp)", url: "https://www.youtube.com/watch?v=ulprqHHWlng" },
+      { type: "video_en", title: "AWS Route 53 Tutorial (S3CloudHub)", url: "https://www.youtube.com/watch?v=1Lj8bsk5-IA" },
       { type: "video_hi", title: "AWS Route 53 in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=ZB5ONbD_SMY" },
       { type: "article", title: "Cloudflare: What is Route 53?", url: "https://www.cloudflare.com/learning/dns/dns-records/" },
       { type: "github", title: "open-guides/og-aws: Route 53 Guide", url: "https://github.com/open-guides/og-aws#route-53" },
@@ -373,8 +373,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon CloudFront Documentation", url: "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/Introduction.html" },
-      { type: "video_en", title: "CloudFront Tutorial (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=RI9np1LWzqw" },
-      { type: "video_hi", title: "AWS CloudFront in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_en", title: "CDN Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=RI9np1LWzqw" },
+      { type: "video_hi", title: "AWS CloudFront in Hindi", url: "https://www.youtube.com/watch?v=w5lCVX6CPzM" },
       { type: "article", title: "Cloudflare: What is a CDN?", url: "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/" },
       { type: "github", title: "open-guides/og-aws: CloudFront Guide", url: "https://github.com/open-guides/og-aws#cloudfront" },
       { type: "cheat_sheet", title: "CloudFront Behavior Settings Reference", url: "https://docs.aws.amazon.com/AmazonCloudFront/latest/DeveloperGuide/distribution-web-values-specify.html" },
@@ -438,7 +438,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS KMS Documentation", url: "https://docs.aws.amazon.com/kms/latest/developerguide/overview.html" },
       { type: "video_en", title: "AWS KMS Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=AQDCe585Lnc" },
-      { type: "video_hi", title: "AWS KMS in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_hi", title: "AWS KMS in Hindi", url: "https://www.youtube.com/watch?v=n6SA3tf6aA0" },
       { type: "article", title: "AWS Secrets Manager Documentation", url: "https://docs.aws.amazon.com/secretsmanager/latest/userguide/intro.html" },
       { type: "github", title: "aws/aws-encryption-sdk: AWS Encryption SDK", url: "https://github.com/aws/aws-encryption-sdk-python" },
       { type: "cheat_sheet", title: "AWS Encryption Options Reference", url: "https://docs.aws.amazon.com/encryption-sdk/latest/developer-guide/crypto-cli-reference.html" },
@@ -469,8 +469,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS Compliance Programs", url: "https://aws.amazon.com/compliance/programs/" },
-      { type: "video_en", title: "AWS CloudTrail and Config Tutorial", url: "https://www.youtube.com/watch?v=ulprqHHWlng" },
-      { type: "video_hi", title: "AWS Compliance Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_en", title: "AWS CloudWatch, CloudTrail & CloudFormation", url: "https://www.youtube.com/watch?v=wA-MNkb2lU8" },
+      { type: "video_hi", title: "AWS Compliance Hindi", url: "https://www.youtube.com/watch?v=w5lCVX6CPzM" },
       { type: "article", title: "AWS: Shared Responsibility Model", url: "https://aws.amazon.com/compliance/shared-responsibility-model/" },
       { type: "github", title: "toniblyx/prowler: AWS Security and Compliance", url: "https://github.com/prowler-cloud/prowler" },
       { type: "cheat_sheet", title: "AWS SOC 2 Compliance Checklist", url: "https://aws.amazon.com/compliance/soc-faqs/" },
@@ -501,7 +501,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS Regions and Availability Zones Documentation", url: "https://aws.amazon.com/about-aws/global-infrastructure/regions_az/" },
-      { type: "video_en", title: "AWS High Availability (ByteByteGo)", url: "https://www.youtube.com/watch?v=K0Ta65OqQkY" },
+      { type: "video_en", title: "Load Balancing Explained (Gaurav Sen)", url: "https://www.youtube.com/watch?v=K0Ta65OqQkY" },
       { type: "video_hi", title: "AWS Availability Zones in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=ZB5ONbD_SMY" },
       { type: "article", title: "AWS: Reliability Pillar — Well-Architected Framework", url: "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/welcome.html" },
       { type: "github", title: "aws-samples: Multi-Region architecture samples", url: "https://github.com/aws-samples/aws-multi-region-bc-dr-workshop" },
@@ -533,8 +533,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Amazon EC2 Auto Scaling Documentation", url: "https://docs.aws.amazon.com/autoscaling/ec2/userguide/what-is-amazon-ec2-auto-scaling.html" },
-      { type: "video_en", title: "Auto Scaling Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=dGAgxozNWFE" },
-      { type: "video_hi", title: "AWS Auto Scaling in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=KVBON1lA9N8" },
+      { type: "video_en", title: "Scalability Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=EWS_CIxttVw" },
+      { type: "video_hi", title: "AWS Auto Scaling in Hindi", url: "https://www.youtube.com/watch?v=KVBON1lA9N8" },
       { type: "article", title: "DigitalOcean: Introduction to Auto Scaling", url: "https://www.digitalocean.com/community/tutorials/how-to-set-up-a-node-js-application-for-production-on-ubuntu-22-04" },
       { type: "github", title: "aws-samples: Autoscaling examples", url: "https://github.com/aws-samples/amazon-ec2-auto-scaling-group-examples" },
       { type: "cheat_sheet", title: "Auto Scaling Scaling Policy Types", url: "https://docs.aws.amazon.com/autoscaling/ec2/userguide/as-scale-based-on-demand.html" },
@@ -566,7 +566,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS Disaster Recovery Documentation", url: "https://docs.aws.amazon.com/whitepapers/latest/disaster-recovery-workloads-on-aws/disaster-recovery-options-in-the-cloud.html" },
       { type: "video_en", title: "AWS Disaster Recovery Strategies (AWS re:Invent)", url: "https://www.youtube.com/watch?v=cJZw5mrxryA" },
-      { type: "video_hi", title: "Disaster Recovery Hindi (TechPrimers)", url: "https://www.youtube.com/watch?v=4-I2RMXZJSM" },
+      { type: "video_hi", title: "Disaster Recovery Hindi (TechPrimers)", url: "https://www.youtube.com/watch?v=tk1CQmzl0Vw" },
       { type: "article", title: "AWS Reliability Pillar: DR Options", url: "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/disaster-recovery-dr-objectives.html" },
       { type: "github", title: "aws-samples: disaster recovery samples", url: "https://github.com/aws-samples/aws-multi-region-bc-dr-workshop" },
       { type: "cheat_sheet", title: "DR Strategies Comparison (RTO/RPO)", url: "https://aws.amazon.com/blogs/architecture/disaster-recovery-dr-architecture-on-aws-part-i-strategies-for-recovery-in-the-cloud/" },

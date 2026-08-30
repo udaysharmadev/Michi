@@ -14,14 +14,14 @@ export function RoadmapMinimap() {
         const progress = progressMap[n.id];
         if (progress === "completed") return "#10b981";
         if (progress === "learning") return "#3b82f6";
-        if (n.data?.isHighlighted) return "#6366f1";
+        if (n.data?.isHighlighted) return "oklch(0.65 0.2 265)";
         return "#cbd5e1";
       }}
       maskColor="rgba(255, 255, 255, 0.6)"
-      className="!bg-card !border-2 !border-border !shadow-lg !rounded-2xl overflow-hidden !right-5 !bottom-5 pointer-events-auto"
+      className="!bg-card !border !border-border !shadow-lg !rounded-xl overflow-hidden !right-4 !bottom-4 pointer-events-auto"
       zoomable
       pannable
-      nodeStrokeWidth={2}
+      nodeStrokeWidth={1.5}
     />
   );
 }

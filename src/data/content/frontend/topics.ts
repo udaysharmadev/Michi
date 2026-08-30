@@ -25,7 +25,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: How the Web works", url: "https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web/How_the_Web_works" },
       { type: "video_en", title: "How the Internet Works in 5 Minutes", url: "https://www.youtube.com/watch?v=7_LPdttKXPc" },
-      { type: "video_hi", title: "How Internet works? (CodeWithHarry)", url: "https://www.youtube.com/watch?v=AofBq0XEqyQ" },
+      { type: "video_hi", title: "How Internet works? (CodeWithHarry)", url: "https://www.youtube.com/watch?v=YE-dA5ZXCs0" },
       { type: "article", title: "Cloudflare: What is the Internet?", url: "https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/" },
       { type: "github", title: "how-the-internet-works", url: "https://github.com/sf-wdi-31/how-the-internet-works" },
       { type: "cheat_sheet", title: "How The Internet Works Infographic", url: "https://github.com/lionbytes/How-The-Internet-Works-Infographic" },
@@ -54,7 +54,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Cloudflare: What is DNS?", url: "https://www.cloudflare.com/learning/dns/what-is-dns/" },
       { type: "video_en", title: "DNS Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=mpQZVYPuDGU" },
-      { type: "video_hi", title: "What is DNS? (Thapa Technical)", url: "https://www.youtube.com/watch?v=3-M1D2K4M2I" },
+      { type: "video_hi", title: "What is DNS? (Thapa Technical)", url: "https://www.youtube.com/watch?v=Y1zLEI8KF1s" },
       { type: "article", title: "MDN: What is a domain name?", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_domain_name" },
       { type: "github", title: "Everything-About-DNS", url: "https://github.com/devanshbatham/Everything-About-DNS" },
       { type: "cheat_sheet", title: "DNS Records Cheat Sheet", url: "https://www.cloudflare.com/learning/dns/dns-records/" },
@@ -85,7 +85,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: An overview of HTTP", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
       { type: "video_en", title: "HTTP Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=iYM2zFP3Zn0" },
-      { type: "video_hi", title: "HTTP crash course (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=1XkO-E01g7Y" },
+      { type: "video_hi", title: "HTTP crash course (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=NVc-wdTbhi0" },
       { type: "article", title: "What is HTTP? (Cloudflare)", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP" },
       { type: "github", title: "http-status-codes repo", url: "https://github.com/waldemarnt/http-status-codes" },
       { type: "cheat_sheet", title: "HTTP Status Codes Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Status" },
@@ -113,8 +113,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MDN: What is a web server?", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" },
-      { type: "video_en", title: "What is a Web Server? (Fireship)", url: "https://www.youtube.com/watch?v=JBBKWlIB1sA" },
-      { type: "video_hi", title: "Web Server Explained in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=1XkO-E01g7Y" },
+      { type: "video_en", title: "What is a Web Server? (Fireship)", url: "https://www.youtube.com/watch?v=c2A5XJidIDA" },
+      { type: "video_hi", title: "Types of Servers Explained Hindi", url: "https://www.youtube.com/watch?v=0OIj2_BBA4s" },
       { type: "article", title: "How Web Servers Work", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_web_server" },
       { type: "github", title: "Awesome Web Servers", url: "https://github.com/n1trux/awesome-sysadmin#web-servers" },
       { type: "cheat_sheet", title: "Web Server Cheat Sheet", url: "https://cheatography.com/tag/web-server/" },
@@ -175,8 +175,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MDN: HTML text fundamentals", url: "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/HTML_text_fundamentals" },
-      { type: "video_en", title: "Semantic HTML Tutorial (Kevin Powell)", url: "https://www.youtube.com/watch?v=kGW8AlwaIFA" },
-      { type: "video_hi", title: "Semantic HTML in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=U3xXpQk4vF0" },
+      { type: "video_en", title: "Semantic HTML Tutorial (Kevin Powell)", url: "https://www.youtube.com/watch?v=fhoDRB53DwY" },
+      { type: "video_hi", title: "Semantic HTML in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=D4AKFyOnotE" },
       { type: "article", title: "Why use semantic HTML?", url: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics" },
       { type: "github", title: "HTML5 Semantics Repo", url: "https://developer.mozilla.org/en-US/docs/Glossary/Semantics" },
       { type: "cheat_sheet", title: "HTML5 Semantic Elements Cheat Sheet", url: "https://www.digitalocean.com/community/tutorials/html-html5-semantic-elements" },
@@ -237,7 +237,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: CSS Flexible Box Layout", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox" },
       { type: "video_en", title: "Learn Flexbox in 15 Minutes (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=fYq5PXgSsbE" },
-      { type: "video_hi", title: "Flexbox in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=Ww9g-WqlkMQ" },
+      { type: "video_hi", title: "Flexbox in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=Z199JnyMKV0" },
       { type: "article", title: "A Complete Guide to Flexbox (CSS-Tricks)", url: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/" },
       { type: "github", title: "Flexbox Froggy Source", url: "https://github.com/thomaspark/flexboxfroggy" },
       { type: "cheat_sheet", title: "Flexbox Cheat Sheet", url: "https://yoksel.github.io/flex-cheatsheet/" },
@@ -268,7 +268,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Responsive design", url: "https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design" },
       { type: "video_en", title: "Responsive Web Design Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=srvUrASNj0s" },
-      { type: "video_hi", title: "Responsive Web Design in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=B7wHpNUUT4Y" },
+      { type: "video_hi", title: "Responsive Website Design Hindi", url: "https://www.youtube.com/watch?v=1DYIm6GTlcc" },
       { type: "article", title: "Responsive Web Design Basics", url: "https://web.dev/learn/design/" },
       { type: "github", title: "Responsive Web Design FreeCodeCamp", url: "https://github.com/freeCodeCamp/freeCodeCamp" },
       { type: "cheat_sheet", title: "Media Queries Cheat Sheet", url: "https://css-tricks.com/css-media-queries/" },
@@ -298,7 +298,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: CSS Grid Layout", url: "https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout" },
       { type: "video_en", title: "Learn CSS Grid in 20 Minutes (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=9zBsdzdE4sM" },
-      { type: "video_hi", title: "CSS Grid in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=LPEj9I24Poo" },
+      { type: "video_hi", title: "CSS Grid in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=ii_Ykb2DqZc" },
       { type: "article", title: "A Complete Guide to Grid (CSS-Tricks)", url: "https://css-tricks.com/snippets/css/complete-guide-grid/" },
       { type: "github", title: "CSS Grid Generator", url: "https://css-tricks.com/snippets/css/complete-guide-grid/" },
       { type: "cheat_sheet", title: "CSS Grid Cheat Sheet", url: "https://grid.malven.co/" },
@@ -360,7 +360,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Grammar and types", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Grammar_and_types" },
       { type: "video_en", title: "JavaScript Variables (Programming with Mosh)", url: "https://www.youtube.com/watch?v=W6NZfCO5SIk" },
-      { type: "video_hi", title: "Variables and Data Types (Thapa Technical)", url: "https://www.youtube.com/watch?v=RnwNq3878bY" },
+      { type: "video_hi", title: "Variables and Data Types (Thapa Technical)", url: "https://www.youtube.com/watch?v=ORCuz7s5cCY" },
       { type: "article", title: "Understanding Variables, Scope, and Hoisting", url: "https://www.digitalocean.com/community/tutorials/understanding-variables-scope-hoisting-in-javascript" },
       { type: "github", title: "JavaScript Algorithms and Data Structures", url: "https://github.com/trekhleb/javascript-algorithms" },
       { type: "cheat_sheet", title: "JS Variables Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript" },
@@ -391,7 +391,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Functions", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" },
       { type: "video_en", title: "JavaScript Functions (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=N8ap4k_1QEQ" },
-      { type: "video_hi", title: "Functions in JS (Yahoo Baba)", url: "https://www.youtube.com/watch?v=0wF3BvR2Gvk" },
+      { type: "video_hi", title: "Functions in JS (Yahoo Baba)", url: "https://www.youtube.com/watch?v=h8V1IOolYA0" },
       { type: "article", title: "JavaScript Scope Context and this", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions" },
       { type: "github", title: "Functional Programming in JS", url: "https://github.com/stoeffel/awesome-fp-js" },
       { type: "cheat_sheet", title: "Functions Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions" },
@@ -422,7 +422,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Manipulating documents", url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Manipulating_documents" },
       { type: "video_en", title: "DOM Manipulation Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=0ik6X4DJKCc" },
-      { type: "video_hi", title: "DOM Manipulation (CodeWithHarry)", url: "https://www.youtube.com/watch?v=FIorjhXKuRw" },
+      { type: "video_hi", title: "DOM Manipulation (CodeWithHarry)", url: "https://www.youtube.com/watch?v=uoII7VSDF3k" },
       { type: "article", title: "Understanding the DOM (DigitalOcean)", url: "https://www.digitalocean.com/community/tutorial_series/understanding-the-dom-document-object-model" },
       { type: "github", title: "Vanilla JS DOM manipulation", url: "https://github.com/phuocng/html-dom" },
       { type: "cheat_sheet", title: "Vanilla JS DOM Cheat Sheet", url: "https://tobiasahlin.com/blog/move-from-jquery-to-vanilla-javascript/" },
@@ -453,7 +453,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Introduction to events", url: "https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Building_blocks/Events" },
       { type: "video_en", title: "JavaScript Events (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=XF1_MlZ5l6M" },
-      { type: "video_hi", title: "Events and Event Listeners (Thapa Technical)", url: "https://www.youtube.com/watch?v=F0O5BfXkZAA" },
+      { type: "video_hi", title: "JS Events & Event Listeners Hindi", url: "https://www.youtube.com/watch?v=d4DRAOfzgbY" },
       { type: "article", title: "Event Bubbling and Capturing", url: "https://javascript.info/bubbling-and-capturing" },
       { type: "github", title: "DOM Events List", url: "https://github.com/lukeed/dset" },
       { type: "cheat_sheet", title: "JavaScript Events Cheat Sheet", url: "https://htmlcheatsheet.com/js/" },
@@ -483,8 +483,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "ES6 Features (Babel)", url: "https://babeljs.io/docs/en/learn" },
-      { type: "video_en", title: "ES6 in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=cRHQNNiCVBM" },
-      { type: "video_hi", title: "ES6 Features (Code Step By Step)", url: "https://www.youtube.com/watch?v=0h5U39O8Z9E" },
+      { type: "video_en", title: "ES6 in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=D8HyB-W7ToI" },
+      { type: "video_hi", title: "ES6 Features (Code Step By Step)", url: "https://www.youtube.com/watch?v=B0SCJFbb6wo" },
       { type: "article", title: "A Guide to ES6 Features", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript" },
       { type: "github", title: "ES6 Cheatsheet Repo", url: "https://github.com/DrkSephy/es6-cheatsheet" },
       { type: "cheat_sheet", title: "ES6 Cheatsheet", url: "https://devhints.io/es6" },
@@ -519,7 +519,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Understanding Async/Await", url: "https://javascript.info/async-await" },
       { type: "github", title: "Promise Fun", url: "https://github.com/sindresorhus/promise-fun" },
       { type: "cheat_sheet", title: "Async/Await Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise/all" },
-      { type: "deep_dive", title: "What the heck is the event loop anyway?", url: "https://www.youtube.com/watch?v=8aGhPhVfaqM" }
+      { type: "deep_dive", title: "What the heck is the event loop anyway?", url: "https://www.youtube.com/watch?v=zgt5oTD3rRc" }
     ]
   },
   // --- 4. Version Control ---
@@ -578,7 +578,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "GitHub Skills", url: "https://skills.github.com/" },
       { type: "video_en", title: "GitHub Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=SWYqp7iY_Tc" },
-      { type: "video_hi", title: "Complete GitHub Tutorial (Thapa Technical)", url: "https://www.youtube.com/watch?v=1r-7C-FzO-Q" },
+      { type: "video_hi", title: "Complete GitHub Tutorial (Thapa Technical)", url: "https://www.youtube.com/watch?v=OWp3F9VlUT0" },
       { type: "article", title: "How to write a good README", url: "https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/" },
       { type: "github", title: "Awesome README", url: "https://github.com/matiassingers/awesome-readme" },
       { type: "cheat_sheet", title: "GitHub Flow Cheat Sheet", url: "https://guides.github.com/introduction/flow/" },
@@ -608,8 +608,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Git Branching - Basic Branching and Merging", url: "https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging" },
-      { type: "video_en", title: "Git Branches Tutorial (Corey Schafer)", url: "https://www.youtube.com/watch?v=e5PDnaYpK3M" },
-      { type: "video_hi", title: "Git Branching and Merging (Code Step By Step)", url: "https://www.youtube.com/watch?v=7uKj4r9wOq4" },
+      { type: "video_en", title: "Git Branches Tutorial (freeCodeCamp)", url: "https://www.youtube.com/watch?v=DVRQoVRzMIY" },
+      { type: "video_hi", title: "Git Branching and Merging (freeCodeCamp)", url: "https://www.youtube.com/watch?v=mAFoROnOfHs" },
       { type: "article", title: "A successful Git branching model", url: "https://nvie.com/posts/a-successful-git-branching-model/" },
       { type: "github", title: "Gitflow Workflow", url: "https://github.com/nvie/gitflow" },
       { type: "cheat_sheet", title: "Git Branching Cheat Sheet", url: "https://kapeli.com/cheat_sheets/Git.docset/Contents/Resources/Documents/index" },
@@ -640,7 +640,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "GitHub: About pull requests", url: "https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests" },
       { type: "video_en", title: "How to Create a Pull Request (Fireship)", url: "https://www.youtube.com/watch?v=8lGpZkjnkt4" },
-      { type: "video_hi", title: "Pull Request in GitHub (Thapa Technical)", url: "https://www.youtube.com/watch?v=F0O5BfXkZAA" },
+      { type: "video_hi", title: "Git Pull Request Hindi", url: "https://www.youtube.com/watch?v=y_2Ex10VbSU" },
       { type: "article", title: "The Anatomy of a Perfect Pull Request", url: "https://hugooodias.medium.com/the-anatomy-of-a-perfect-pull-request-567382bb6067" },
       { type: "github", title: "Awesome Code Review", url: "https://github.com/joho/awesome-code-review" },
       { type: "cheat_sheet", title: "GitHub PR Etiquette", url: "https://github.com/blog/1943-how-to-write-the-perfect-pull-request" },
@@ -672,7 +672,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "TypeScript Handbook", url: "https://www.typescriptlang.org/docs/handbook/intro.html" },
       { type: "video_en", title: "TypeScript Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=BCg4U1FzODs" },
-      { type: "video_hi", title: "TypeScript Tutorial in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=xk4_1vCGucA" },
+      { type: "video_hi", title: "TypeScript Tutorial in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=vIqMSIpZHV4" },
       { type: "article", title: "Understanding TypeScript Generics", url: "https://www.typescriptlang.org/docs/handbook/2/generics.html" },
       { type: "github", title: "TypeScript Cheat Sheet Repo", url: "https://github.com/typescript-cheatsheets/react" },
       { type: "cheat_sheet", title: "TS Interfaces vs Types", url: "https://www.typescriptlang.org/cheatsheets" },
@@ -702,8 +702,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MDN: this", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this" },
-      { type: "video_en", title: "The Event Loop (Philip Roberts)", url: "https://www.youtube.com/watch?v=8aGhPhVfaqM" },
-      { type: "video_hi", title: "Call, Apply, Bind in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=aG35K1U540Q" },
+      { type: "video_en", title: "The Event Loop (Philip Roberts)", url: "https://www.youtube.com/watch?v=8aGhZQkoFbQ" },
+      { type: "video_hi", title: "Call, Apply, Bind in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=tcQDnqRakxk" },
       { type: "article", title: "Understanding Memory Management", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Memory_Management" },
       { type: "github", title: "You Don't Know JS Repo", url: "https://github.com/getify/You-Dont-Know-JS" },
       { type: "cheat_sheet", title: "JS Advanced Concepts Cheat Sheet", url: "https://github.com/mbeaudru/modern-js-cheatsheet" },
@@ -733,7 +733,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Closures", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" },
       { type: "video_en", title: "Closures in JavaScript (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=3a0I8ICR1Vg" },
-      { type: "video_hi", title: "Closures in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=1S8SNDACRM4" },
+      { type: "video_hi", title: "Closures in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=Ze-JGb4I9zU" },
       { type: "article", title: "Master the JavaScript Interview: What is a Closure?", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures" },
       { type: "github", title: "JavaScript Closures Examples", url: "https://github.com/getify/You-Dont-Know-JS/blob/2nd-ed/scope-closures/README.md" },
       { type: "cheat_sheet", title: "Scope & Closures Cheat Sheet", url: "https://github.com/getify/You-Dont-Know-JS" },
@@ -762,8 +762,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MDN: Inheritance and the prototype chain", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Inheritance_and_the_prototype_chain" },
-      { type: "video_en", title: "Prototypes in JavaScript (Fireship)", url: "https://www.youtube.com/watch?v=FSs_JYwnXOU" },
-      { type: "video_hi", title: "Prototypes Explained in Hindi (Code Step By Step)", url: "https://www.youtube.com/watch?v=cM50TTV4x4c" },
+      { type: "video_en", title: "Prototypes in JavaScript (Fireship)", url: "https://www.youtube.com/watch?v=wstwjQ1yqWQ" },
+      { type: "video_hi", title: "Prototypes Explained in Hindi (Code Step By Step)", url: "https://www.youtube.com/watch?v=9Aa25yV5rtc" },
       { type: "article", title: "Understanding Prototypes", url: "https://www.digitalocean.com/community/tutorials/understanding-prototypes-and-inheritance-in-javascript" },
       { type: "github", title: "Object Oriented JS Tutorial", url: "https://github.com/thejsway/thejsway/blob/master/manuscript/chapter09.md" },
       { type: "cheat_sheet", title: "Prototype Cheat Sheet", url: "https://ui.dev/javascript-visualizer" },
@@ -793,8 +793,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MDN: JavaScript modules", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" },
-      { type: "video_en", title: "JavaScript Modules Crash Course (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=cRHQNNiCVBM" },
-      { type: "video_hi", title: "ES6 Modules in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=8I1rL54R8xM" },
+      { type: "video_en", title: "JavaScript Modules in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=qgTum6fpX5k" },
+      { type: "video_hi", title: "ES6 Modules in Hindi (Programming with Mosh)", url: "https://www.youtube.com/watch?v=NCwa_xi0Uuc" },
       { type: "article", title: "A 10 minute primer to JavaScript modules", url: "https://www.freecodecamp.org/news/javascript-modules-a-beginner-s-guide-783f7d7a5fcc/" },
       { type: "github", title: "Awesome JavaScript Modules", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules" },
       { type: "cheat_sheet", title: "ESM Cheat Sheet", url: "https://hacks.mozilla.org/2015/08/es6-in-depth-modules/" },
@@ -825,7 +825,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Control flow and error handling", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling" },
       { type: "video_en", title: "Error Handling in JavaScript (Programming with Mosh)", url: "https://www.youtube.com/watch?v=cFTFtuEQ-10" },
-      { type: "video_hi", title: "Try Catch in JavaScript (CodeWithHarry)", url: "https://www.youtube.com/watch?v=rX_3j8-W1q4" },
+      { type: "video_hi", title: "Try Catch in JavaScript (See Scott Dev)", url: "https://www.youtube.com/watch?v=-OV5tt-yFNE" },
       { type: "article", title: "A Guide to Error Handling in JS", url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch" },
       { type: "github", title: "Node.js Error Handling Best Practices", url: "https://github.com/goldbergyoni/nodebestpractices#2-error-handling-practices" },
       { type: "cheat_sheet", title: "Error Handling Cheat Sheet", url: "https://javascript.info/try-catch" },
@@ -855,7 +855,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Web.dev: Fast load times", url: "https://web.dev/fast/" },
       { type: "video_en", title: "Debounce and Throttle (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=cjIswDCKgu0" },
-      { type: "video_hi", title: "Debouncing in JS (Akshay Saini)", url: "https://www.youtube.com/watch?v=Zo-6_qx8mAw" },
+      { type: "video_hi", title: "Debouncing vs Throttling (100 Seconds)", url: "https://www.youtube.com/watch?v=Bn1kR-wg9GI" },
       { type: "article", title: "JavaScript Performance Optimization Tips", url: "https://www.smashingmagazine.com/2021/01/front-end-performance-2021-free-pdf-checklist/" },
       { type: "github", title: "Front-End Performance Checklist", url: "https://github.com/thedaviddias/Front-End-Performance-Checklist" },
       { type: "cheat_sheet", title: "Web Vitals Cheatsheet", url: "https://web.dev/vitals/" },
@@ -917,7 +917,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Vue.js Official Guide", url: "https://vuejs.org/guide/introduction.html" },
       { type: "video_en", title: "Vue.js Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=FXpIoQ_rT_c" },
-      { type: "video_hi", title: "Vue JS Crash Course Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=b4OAB3z5dEw" },
+      { type: "video_hi", title: "Vue JS Crash Course Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=4XS03yrlU9o" },
       { type: "article", title: "Vue Composition API Introduction", url: "https://vuejs.org/guide/extras/composition-api-faq.html" },
       { type: "github", title: "Awesome Vue", url: "https://github.com/vuejs/awesome-vue" },
       { type: "cheat_sheet", title: "Vue 3 Cheat Sheet", url: "https://vuejs.org/guide/quick-start" },
@@ -976,8 +976,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Svelte Interactive Tutorial", url: "https://learn.svelte.dev/" },
-      { type: "video_en", title: "Svelte in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=rv3Yq-B8c2Y" },
-      { type: "video_hi", title: "Svelte Crash Course Hindi", url: "https://www.youtube.com/watch?v=bO5MteI80O8" },
+      { type: "video_en", title: "Svelte in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=rv3Yq-B8qp4" },
+      { type: "video_hi", title: "Svelte Crash Course Hindi", url: "https://www.youtube.com/watch?v=fHx_URplLfI" },
       { type: "article", title: "Why Svelte is our choice", url: "https://svelte.dev/docs/introduction" },
       { type: "github", title: "Awesome Svelte", url: "https://github.com/TheComputerM/awesome-svelte" },
       { type: "cheat_sheet", title: "Svelte Cheat Sheet", url: "https://sveltesociety.dev/cheatsheet" },
@@ -1007,7 +1007,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Next.js Learn", url: "https://nextjs.org/learn" },
       { type: "video_en", title: "Next.js App Router Course (Codevolution)", url: "https://www.youtube.com/watch?v=ZjAqacIC_3c" },
-      { type: "video_hi", title: "Next.js Tutorial in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=Hpo_4P9tqZc" },
+      { type: "video_hi", title: "Next.js Tutorial in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=EWl7rV6OTV0" },
       { type: "article", title: "Making Sense of React Server Components", url: "https://www.joshwcomeau.com/react/server-components/" },
       { type: "github", title: "Awesome Next.js", url: "https://github.com/unicodeveloper/awesome-nextjs" },
       { type: "cheat_sheet", title: "Next.js App Router Cheat Sheet", url: "https://nextjs.org/docs" },
@@ -1038,7 +1038,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "TanStack Query Docs", url: "https://tanstack.com/query/latest" },
       { type: "video_en", title: "React Query Tutorial (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=lVLz_ASqAio" },
-      { type: "video_hi", title: "React Query Crash Course Hindi", url: "https://www.youtube.com/watch?v=8K1N3ROLA_Q" },
+      { type: "video_hi", title: "React Query Crash Course Hindi", url: "https://www.youtube.com/watch?v=jnIPUkNOJ9A" },
       { type: "article", title: "Practical React Query", url: "https://tkdodo.eu/blog/practical-react-query" },
       { type: "github", title: "React Query Builder", url: "https://github.com/react-querybuilder/react-querybuilder" },
       { type: "cheat_sheet", title: "React Query Cheat Sheet", url: "https://tanstack.com/query/v5/docs/framework/react/overview" },
@@ -1068,7 +1068,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Zustand GitHub Docs", url: "https://github.com/pmndrs/zustand" },
       { type: "video_en", title: "Zustand Crash Course (Codevolution)", url: "https://www.youtube.com/watch?v=KCr-UNsM3vA" },
-      { type: "video_hi", title: "Zustand in Hindi", url: "https://www.youtube.com/watch?v=_4E2yVf4n-U" },
+      { type: "video_hi", title: "Zustand in Hindi", url: "https://www.youtube.com/watch?v=KCr-UNsM3vA" },
       { type: "article", title: "Why I switched from Redux to Zustand", url: "https://github.com/pmndrs/zustand" },
       { type: "github", title: "Zustand Repo", url: "https://github.com/pmndrs/zustand" },
       { type: "cheat_sheet", title: "Zustand Cheat Sheet", url: "https://zustand-demo.pmnd.rs/" },
@@ -1128,7 +1128,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "React: Passing Data Deeply with Context", url: "https://react.dev/learn/passing-data-deeply-with-context" },
       { type: "video_en", title: "React Context API (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=5LrDIWkK_Bc" },
-      { type: "video_hi", title: "Context API in React (Thapa Technical)", url: "https://www.youtube.com/watch?v=5Qf72wQnMB8" },
+      { type: "video_hi", title: "Context API in React (Thapa Technical)", url: "https://www.youtube.com/watch?v=dVIKDjxZd_w" },
       { type: "article", title: "Before You Use Context", url: "https://react.dev/reference/react/useContext" },
       { type: "github", title: "React Context Example", url: "https://github.com/wesbos/React-Context" },
       { type: "cheat_sheet", title: "useContext Cheat Sheet", url: "https://react.dev/reference/react/useContext" },
@@ -1188,8 +1188,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "CSS Modules Repository", url: "https://github.com/css-modules/css-modules" },
-      { type: "video_en", title: "CSS Modules Tutorial (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=EXwE-PmtXrk" },
-      { type: "video_hi", title: "CSS Modules in React (Codevolution)", url: "https://www.youtube.com/watch?v=R_Q-AavGgno" },
+      { type: "video_en", title: "CSS Modules Tutorial (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=eQtWQOSok3k" },
+      { type: "video_hi", title: "CSS Modules in React (Codevolution)", url: "https://www.youtube.com/watch?v=ozfA-MWAjHw" },
       { type: "article", title: "What are CSS Modules and why do we need them?", url: "https://css-tricks.com/css-modules-part-1-need/" },
       { type: "github", title: "CSS Modules Webpack Plugin", url: "https://github.com/webpack-contrib/css-loader#modules" },
       { type: "cheat_sheet", title: "CSS Modules Syntax", url: "https://nextjs.org/docs/app/building-your-application/styling/css-modules" },
@@ -1219,7 +1219,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Styled Components Documentation", url: "https://styled-components.com/docs" },
       { type: "video_en", title: "Styled Components Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=02zO0hZmwnw" },
-      { type: "video_hi", title: "Styled Components in React (Thapa Technical)", url: "https://www.youtube.com/watch?v=k3d_3h_tKIE" },
+      { type: "video_hi", title: "Styled Components in React (Thapa Technical)", url: "https://www.youtube.com/watch?v=gITyxvFuLsg" },
       { type: "article", title: "CSS-in-JS: The Good, the Bad, and the Ugly", url: "https://www.smashingmagazine.com/2020/05/reusable-react-components-tailwind/" },
       { type: "github", title: "Awesome CSS-in-JS", url: "https://github.com/tuchk4/awesome-css-in-js" },
       { type: "cheat_sheet", title: "Styled Components Cheat Sheet", url: "https://styled-components.com/docs" },
@@ -1249,7 +1249,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Sass Basics", url: "https://sass-lang.com/guide" },
       { type: "video_en", title: "Sass Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=nu5mdN2JIwM" },
-      { type: "video_hi", title: "Sass / SCSS Tutorial in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=T_8e2hD9sLg" },
+      { type: "video_hi", title: "Sass / SCSS Tutorial in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=tEQOdFgUXI4" },
       { type: "article", title: "Architecture for a Sass Project", url: "https://sass-guidelin.es/" },
       { type: "github", title: "Awesome Sass", url: "https://github.com/Famolus/awesome-sass" },
       { type: "cheat_sheet", title: "Sass Cheat Sheet", url: "https://devhints.io/sass" },
@@ -1284,7 +1284,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
       { type: "article", title: "Why Vite is the Future", url: "https://vitejs.dev/guide/" },
       { type: "github", title: "Awesome Vite", url: "https://github.com/vitejs/awesome-vite" },
       { type: "cheat_sheet", title: "Vite Config Cheat Sheet", url: "https://vitejs.dev/config/" },
-      { type: "deep_dive", title: "How Vite Works Under the Hood", url: "https://www.youtube.com/watch?v=qj6B3MDe4o0" }
+      { type: "deep_dive", title: "How Vite Works Under the Hood (Evan You)", url: "https://www.youtube.com/watch?v=wFYtBqgcGWU" }
     ]
   },
   "n_bt_2": {
@@ -1309,8 +1309,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Webpack Concepts", url: "https://webpack.js.org/concepts/" },
-      { type: "video_en", title: "Webpack Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=X1nxTjVDYQk" },
-      { type: "video_hi", title: "Webpack Tutorial in Hindi", url: "https://www.youtube.com/watch?v=9_p5_N3n6_s" },
+      { type: "video_en", title: "Webpack Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=i9Xq8aExZr4" },
+      { type: "video_hi", title: "Webpack Tutorial in Hindi", url: "https://www.youtube.com/watch?v=qAUC1Hukc3g" },
       { type: "article", title: "Webpack from Nothing", url: "https://tylermcginnis.com/webpack/" },
       { type: "github", title: "Awesome Webpack", url: "https://github.com/webpack-contrib/awesome-webpack" },
       { type: "cheat_sheet", title: "Webpack Cheat Sheet", url: "https://webpack.js.org/configuration/" },
@@ -1340,7 +1340,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "ESLint Getting Started", url: "https://eslint.org/docs/latest/user-guide/getting-started" },
       { type: "video_en", title: "Set up ESLint and Prettier (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=SydnKbGc7W8" },
-      { type: "video_hi", title: "ESLint setup in React (Hindi)", url: "https://www.youtube.com/watch?v=n5V3x2u-b0I" },
+      { type: "video_hi", title: "ESLint setup in React (Hindi)", url: "https://www.youtube.com/watch?v=QAo69Ihjj-E" },
       { type: "article", title: "Why you need ESLint", url: "https://eslint.org/docs/latest/use/getting-started" },
       { type: "github", title: "Airbnb JavaScript Style Guide", url: "https://github.com/airbnb/javascript" },
       { type: "cheat_sheet", title: "ESLint Configuration Options", url: "https://eslint.org/docs/latest/use/configure/configuration-files" },
@@ -1369,8 +1369,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Prettier Documentation", url: "https://prettier.io/docs/en/" },
-      { type: "video_en", title: "Prettier Crash Course", url: "https://www.youtube.com/watch?v=VqCgcpAypFQ" },
-      { type: "video_hi", title: "Prettier VSCode Setup (Hindi)", url: "https://www.youtube.com/watch?v=68r_t9r2qEo" },
+      { type: "video_en", title: "Prettier & ESLint Setup (Traversy Media)", url: "https://www.youtube.com/watch?v=SydnKbGc7W8" },
+      { type: "video_hi", title: "VS Code Setup for Beginners (Hindi)", url: "https://www.youtube.com/watch?v=QocPSJ3ouDA" },
       { type: "article", title: "Integrating Prettier + ESLint", url: "https://prettier.io/docs/en/integrating-with-linters.html" },
       { type: "github", title: "eslint-config-prettier", url: "https://github.com/prettier/eslint-config-prettier" },
       { type: "cheat_sheet", title: "Prettier Options", url: "https://prettier.io/docs/en/options.html" },
@@ -1401,7 +1401,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Jest Documentation", url: "https://jestjs.io/docs/getting-started" },
       { type: "video_en", title: "Jest Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=7r4xVDI2vho" },
-      { type: "video_hi", title: "Jest Testing in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=4CjA1f1vHjE" },
+      { type: "video_hi", title: "Jest Testing in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=YYnOIc8-SCw" },
       { type: "article", title: "A Beginner's Guide to Unit Testing", url: "https://jestjs.io/docs/getting-started" },
       { type: "github", title: "Awesome Testing", url: "https://github.com/TheJambo/awesome-testing" },
       { type: "cheat_sheet", title: "Jest Cheat Sheet", url: "https://github.com/sapegin/jest-cheat-sheet" },
@@ -1430,8 +1430,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "React Testing Library", url: "https://testing-library.com/docs/react-testing-library/intro/" },
-      { type: "video_en", title: "React Testing Library Crash Course", url: "https://www.youtube.com/watch?v=GLSORcEMOBU" },
-      { type: "video_hi", title: "React Testing Library in Hindi", url: "https://www.youtube.com/watch?v=zJgQY3kMB4s" },
+      { type: "video_en", title: "React Testing Library Crash Course", url: "https://www.youtube.com/watch?v=iXeAYJB4xFE" },
+      { type: "video_hi", title: "React Testing Library in Hindi", url: "https://www.youtube.com/watch?v=D589Ecm6Gyg" },
       { type: "article", title: "Common mistakes with React Testing Library", url: "https://kentcdodds.com/blog/common-mistakes-with-react-testing-library" },
       { type: "github", title: "DOM Testing Library Repo", url: "https://github.com/testing-library/dom-testing-library" },
       { type: "cheat_sheet", title: "RTL Cheat Sheet", url: "https://testing-library.com/docs/dom-testing-library/cheatsheet/" },
@@ -1460,8 +1460,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Cypress Documentation", url: "https://docs.cypress.io/" },
-      { type: "video_en", title: "Playwright Crash Course (Fireship)", url: "https://www.youtube.com/watch?v=aQOSPA-XqXQ" },
-      { type: "video_hi", title: "Cypress Tutorial in Hindi", url: "https://www.youtube.com/watch?v=wX-y0Xo1EFE" },
+      { type: "video_en", title: "End-to-End Testing Explained", url: "https://www.youtube.com/watch?v=68xvfrxlEYo" },
+      { type: "video_hi", title: "Cypress End-to-End Testing", url: "https://www.youtube.com/watch?v=68xvfrxlEYo" },
       { type: "article", title: "Playwright vs Cypress", url: "https://alapanme.medium.com/cypress-vs-playwright-the-rematch-86a345e69f8d" },
       { type: "github", title: "Awesome Playwright", url: "https://github.com/mxschmitt/awesome-playwright" },
       { type: "cheat_sheet", title: "Playwright Cheat Sheet", url: "https://playwright.dev/docs/intro" },
@@ -1492,7 +1492,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "REST API Tutorial", url: "https://restfulapi.net/" },
       { type: "video_en", title: "What is a REST API? (Fireship)", url: "https://www.youtube.com/watch?v=-mN3VyJuCjM" },
-      { type: "video_hi", title: "REST API Explained (CodeWithHarry)", url: "https://www.youtube.com/watch?v=T_T5Z0iB3Fk" },
+      { type: "video_hi", title: "REST API Explained (CodeWithHarry)", url: "https://www.youtube.com/watch?v=cJAyEOZQUQY" },
       { type: "article", title: "Best Practices for REST API Design", url: "https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/" },
       { type: "github", title: "Public APIs Repo", url: "https://github.com/public-apis/public-apis" },
       { type: "cheat_sheet", title: "HTTP Status Codes cheat sheet", url: "https://httpstatuses.com/" },
@@ -1522,7 +1522,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN: Using Fetch", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" },
       { type: "video_en", title: "Fetch API vs Axios (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=cuEtnrL9-H0" },
-      { type: "video_hi", title: "Fetch API in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=O18E6jE7x9M" },
+      { type: "video_hi", title: "Fetch API in Hindi (Yahoo Baba)", url: "https://www.youtube.com/watch?v=ug0tq-EidEE" },
       { type: "article", title: "Axios Docs", url: "https://axios-http.com/docs/intro" },
       { type: "github", title: "Axios Repo", url: "https://github.com/axios/axios" },
       { type: "cheat_sheet", title: "Fetch Cheat Sheet", url: "https://devhints.io/js-fetch" },
@@ -1552,7 +1552,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "GraphQL Official Learn", url: "https://graphql.org/learn/" },
       { type: "video_en", title: "GraphQL Crash Course (Fireship)", url: "https://www.youtube.com/watch?v=eIQh02xuVw4" },
-      { type: "video_hi", title: "GraphQL in Hindi (CodeStepByStep)", url: "https://www.youtube.com/watch?v=LqUe7-4n_gE" },
+      { type: "video_hi", title: "GraphQL in Hindi (CodeStepByStep)", url: "https://www.youtube.com/watch?v=WtkKwO1viI8" },
       { type: "article", title: "REST vs GraphQL", url: "https://graphql.org/learn/" },
       { type: "github", title: "Awesome GraphQL", url: "https://github.com/chentsulin/awesome-graphql" },
       { type: "cheat_sheet", title: "GraphQL Cheat Sheet", url: "https://devhints.io/graphql" },
@@ -1613,7 +1613,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Vercel Documentation", url: "https://vercel.com/docs" },
       { type: "video_en", title: "How to deploy to Netlify", url: "https://www.youtube.com/watch?v=bjVUqvcCnxM" },
-      { type: "video_hi", title: "Host Website for Free (Hindi)", url: "https://www.youtube.com/watch?v=0bZ6lRj8P9A" },
+      { type: "video_hi", title: "Host Website for Free (Hindi)", url: "https://www.youtube.com/watch?v=CudfxrFJ2Qc" },
       { type: "article", title: "A Complete Guide to Deploying React Apps", url: "https://vercel.com/docs/concepts/deployments/overview" },
       { type: "github", title: "Netlify CLI repo", url: "https://github.com/netlify/cli" },
       { type: "cheat_sheet", title: "GitHub Pages Docs", url: "https://pages.github.com/" },
@@ -1643,7 +1643,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "GitHub Actions Documentation", url: "https://docs.github.com/en/actions" },
       { type: "video_en", title: "GitHub Actions Crash Course (Fireship)", url: "https://www.youtube.com/watch?v=eB0nUzAI7M8" },
-      { type: "video_hi", title: "CI/CD Pipeline in Hindi", url: "https://www.youtube.com/watch?v=BqB3mU-w84k" },
+      { type: "video_hi", title: "CI/CD Pipeline in Hindi", url: "https://www.youtube.com/watch?v=y7S2oSjJ8PA" },
       { type: "article", title: "What is CI/CD?", url: "https://www.redhat.com/en/topics/devops/what-is-ci-cd" },
       { type: "github", title: "Awesome Actions", url: "https://github.com/sdras/awesome-actions" },
       { type: "cheat_sheet", title: "GitHub Actions Workflow Syntax", url: "https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions" },
@@ -1673,7 +1673,7 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Node.js Process.env Docs", url: "https://nodejs.org/api/process.html#process_process_env" },
       { type: "video_en", title: "Environment Variables Explained (Traversy Media)", url: "https://www.youtube.com/watch?v=17UVejOw3zA" },
-      { type: "video_hi", title: "Dotenv in Node JS (Hindi)", url: "https://www.youtube.com/watch?v=525jB8nZpW8" },
+      { type: "video_hi", title: "Dotenv in Node JS (Hindi)", url: "https://www.youtube.com/watch?v=4L7r-Y_OSyE" },
       { type: "article", title: "The 12 Factor App: Config", url: "https://12factor.net/config" },
       { type: "github", title: "Dotenv Package", url: "https://github.com/motdotla/dotenv" },
       { type: "cheat_sheet", title: "Vercel Environment Variables", url: "https://vercel.com/docs/concepts/projects/environment-variables" },
@@ -1702,8 +1702,8 @@ export const frontendTopics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Web.dev: Measure", url: "https://web.dev/measure/" },
-      { type: "video_en", title: "Core Web Vitals (Fireship)", url: "https://www.youtube.com/watch?v=A3e1PjO8mB0" },
-      { type: "video_hi", title: "Lighthouse Tutorial in Hindi", url: "https://www.youtube.com/watch?v=1oM4V2J9u6Q" },
+      { type: "video_en", title: "Core Web Vitals (Fireship)", url: "https://www.youtube.com/watch?v=CaShN6mCJB0" },
+      { type: "video_hi", title: "Lighthouse Tutorial in Hindi", url: "https://www.youtube.com/watch?v=7Jbw3LhxJ5Y" },
       { type: "article", title: "Optimizing Core Web Vitals", url: "https://web.dev/articles/vitals" },
       { type: "github", title: "Lighthouse Repo", url: "https://github.com/GoogleChrome/lighthouse" },
       { type: "cheat_sheet", title: "Core Web Vitals Cheat Sheet", url: "https://web.dev/articles/vitals" },

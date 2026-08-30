@@ -26,7 +26,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Cisco: What is the OSI Model?", url: "https://www.cisco.com/c/en/us/support/docs/ip/routing-information-protocol-rip/13769-5.html" },
       { type: "video_en", title: "OSI Model Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=vv4y_uOneC0" },
-      { type: "video_hi", title: "OSI Model in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "OSI Model in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=nrng6uxoOjE" },
       { type: "article", title: "Cloudflare: OSI Model Definition", url: "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/" },
       { type: "github", title: "CyberSecurity Resources: Networking", url: "https://github.com/sbilly/awesome-security" },
       { type: "cheat_sheet", title: "OSI Model Cheat Sheet", url: "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/" },
@@ -58,7 +58,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Cloudflare: What is DNS?", url: "https://www.cloudflare.com/learning/dns/what-is-dns/" },
       { type: "video_en", title: "DNS Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=mpQZVYPuDGU" },
-      { type: "video_hi", title: "DNS and DHCP in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=3-M1D2K4M2I" },
+      { type: "video_hi", title: "DNS and DHCP in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=tzB5VD-DzJE" },
       { type: "article", title: "DNSSEC: An Introduction", url: "https://www.icann.org/resources/pages/dnssec-what-is-it-why-important-2019-03-05-en" },
       { type: "github", title: "Pi-hole: Network-wide Ad Blocking (DNS Sinkhole)", url: "https://github.com/pi-hole/pi-hole" },
       { type: "cheat_sheet", title: "DNS Record Types Cheat Sheet", url: "https://www.ns1.com/resources/dns-record-types-cheat-sheet" },
@@ -89,8 +89,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "NIST Cybersecurity Framework", url: "https://www.nist.gov/cyberframework" },
-      { type: "video_en", title: "Risk Management Explained (Simply Cyber)", url: "https://www.youtube.com/watch?v=9oZ_5GZ4g9E" },
-      { type: "video_hi", title: "Cyber Security Risk Management (Hindi)", url: "https://www.youtube.com/watch?v=KzfWUEJjG18" },
+      { type: "video_en", title: "Risk Management Explained (Simply Cyber)", url: "https://www.youtube.com/watch?v=JswwHeEqBIc" },
+      { type: "video_hi", title: "Cyber Security Risk Management (Hindi)", url: "https://www.youtube.com/watch?v=NkIo4pnEkjQ" },
       { type: "article", title: "ISO 27001 Overview", url: "https://www.iso.org/isoiec-27001-information-security.html" },
       { type: "github", title: "Awesome Compliance", url: "https://github.com/sbilly/awesome-security" },
       { type: "cheat_sheet", title: "CIS Controls Quick Guide", url: "https://www.cisecurity.org/controls" },
@@ -121,8 +121,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Linux File Permissions (Ubuntu)", url: "https://help.ubuntu.com/community/FilePermissions" },
-      { type: "video_en", title: "Linux Permissions Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=wBp0Rb-ZJak" },
-      { type: "video_hi", title: "Linux Permissions Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=4pNSPBfJpKw" },
+      { type: "video_en", title: "Linux File Permissions (NetworkChuck)", url: "https://www.youtube.com/watch?v=8AgHskaOq08" },
+      { type: "video_hi", title: "Linux Permissions Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=CmdSqGElxVI" },
       { type: "article", title: "Understanding SUID, SGID, and Sticky Bit", url: "https://linuxize.com/post/how-to-find-files-with-suid-and-sgid-permissions/" },
       { type: "github", title: "LinPEAS: Linux Privilege Escalation Script", url: "https://github.com/carlospolop/PEASS-ng/tree/master/linPEAS" },
       { type: "cheat_sheet", title: "Linux Permissions Cheat Sheet", url: "https://www.tutorialspoint.com/unix/unix-file-permission.htm" },
@@ -154,7 +154,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Microsoft: Active Directory Domain Services", url: "https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/get-started/virtual-dc/active-directory-domain-services-overview" },
       { type: "video_en", title: "Active Directory Basics (HackerSploit)", url: "https://www.youtube.com/watch?v=3Kq1MIfTWCE" },
-      { type: "video_hi", title: "Active Directory in Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Active Directory in Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=BsFy2pT4yzE" },
       { type: "article", title: "Introduction to Active Directory Security", url: "https://adsecurity.org/?page_id=1352" },
       { type: "github", title: "BloodHound: Active Directory Attack Path Analysis", url: "https://github.com/BloodHoundAD/BloodHound" },
       { type: "cheat_sheet", title: "AD Pentesting Cheat Sheet", url: "https://wadcoms.github.io/" },
@@ -186,7 +186,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "CISA: Securing Endpoints", url: "https://www.cisa.gov/secure-our-world" },
       { type: "video_en", title: "EDR vs Antivirus Explained", url: "https://www.youtube.com/watch?v=U1w4T03B30I" },
-      { type: "video_hi", title: "Endpoint Security in Hindi", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Endpoint Security in Hindi", url: "https://www.youtube.com/watch?v=X1ARytClVnQ" },
       { type: "article", title: "What is Endpoint Detection and Response?", url: "https://www.crowdstrike.com/cybersecurity-101/endpoint-security/endpoint-detection-and-response-edr/" },
       { type: "github", title: "OSSEC: Host-based Intrusion Detection", url: "https://github.com/ossec/ossec-hids" },
       { type: "cheat_sheet", title: "Windows Hardening Cheat Sheet", url: "https://github.com/beerisgood/Windows11_Hardening" },
@@ -218,7 +218,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "NIST: Cryptographic Standards", url: "https://csrc.nist.gov/projects/cryptographic-standards-and-guidelines" },
       { type: "video_en", title: "Cryptography Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=jhXCTbFnK8o" },
-      { type: "video_hi", title: "Cryptography in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Cryptography in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=GbFSgHSYxn0" },
       { type: "article", title: "Symmetric vs Asymmetric Encryption", url: "https://www.cloudflare.com/learning/ssl/what-is-asymmetric-encryption/" },
       { type: "github", title: "Awesome Cryptography", url: "https://github.com/sobolevn/awesome-cryptography" },
       { type: "cheat_sheet", title: "Cryptographic Algorithms Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/Cryptographic_Storage_Cheat_Sheet.html" },
@@ -250,7 +250,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OWASP: Password Storage Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html" },
       { type: "video_en", title: "Hashing vs Encryption vs Encoding", url: "https://www.youtube.com/watch?v=b4b8ktEV4Bg" },
-      { type: "video_hi", title: "Hashing Explained Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=3-M1D2K4M2I" },
+      { type: "video_hi", title: "Hashing Explained Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=3EwZp2WFfVE" },
       { type: "article", title: "How Digital Signatures Work", url: "https://www.docusign.com/how-it-works/electronic-signature/digital-signature/digital-signature-faq" },
       { type: "github", title: "Argon2 Reference Implementation", url: "https://github.com/P-H-C/phc-winner-argon2" },
       { type: "cheat_sheet", title: "Hashcat Cheat Sheet", url: "https://hashcat.net/wiki/doku.php?id=hashcat" },
@@ -281,8 +281,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Let's Encrypt: How It Works", url: "https://letsencrypt.org/how-it-works/" },
-      { type: "video_en", title: "PKI Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=33VQjoxEAWA" },
-      { type: "video_hi", title: "PKI and Digital Certificates Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "PKI Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=0ctat6RBrFo" },
+      { type: "video_hi", title: "PKI and Digital Certificates Hindi", url: "https://www.youtube.com/watch?v=GB0iINORhSc" },
       { type: "article", title: "Cloudflare: What is a Digital Certificate?", url: "https://www.cloudflare.com/learning/ssl/what-is-ssl/" },
       { type: "github", title: "OpenSSL: Cryptography and SSL/TLS Toolkit", url: "https://github.com/openssl/openssl" },
       { type: "cheat_sheet", title: "OpenSSL Commands Cheat Sheet", url: "https://www.sslshopper.com/article-most-common-openssl-commands.html" },
@@ -314,7 +314,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Cisco: What is a Firewall?", url: "https://www.cisco.com/c/en/us/products/security/firewalls/what-is-a-firewall.html" },
       { type: "video_en", title: "Firewalls vs IDS vs IPS (NetworkChuck)", url: "https://www.youtube.com/watch?v=lb1Dw0elw0Q" },
-      { type: "video_hi", title: "Firewall Concepts Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Firewall Concepts Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=DxvXhSvXhME" },
       { type: "article", title: "Understanding Next-Generation Firewalls", url: "https://www.fortinet.com/resources/cyberglossary/next-generation-firewall" },
       { type: "github", title: "Snort Rules Repository", url: "https://github.com/snort3/snort3" },
       { type: "cheat_sheet", title: "Snort Rule Writing Cheat Sheet", url: "https://docs.snort.org/start/rules" },
@@ -345,8 +345,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "WireGuard Documentation", url: "https://www.wireguard.com/" },
-      { type: "video_en", title: "VPNs Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=qTIfa62Gz5Y" },
-      { type: "video_hi", title: "VPN Concepts in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=3-M1D2K4M2I" },
+      { type: "video_en", title: "VPNs Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=32KKwgF67Ho" },
+      { type: "video_hi", title: "VPN Concepts in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=F4FzKy1_5X0" },
       { type: "article", title: "IPsec Protocol Suite Overview", url: "https://www.cloudflare.com/learning/network-layer/what-is-a-network-protocol/" },
       { type: "github", title: "OpenVPN Open Source Project", url: "https://github.com/OpenVPN/openvpn" },
       { type: "cheat_sheet", title: "VPN Protocols Comparison", url: "https://www.cisco.com/c/en/us/products/security/vpn-endpoint-security-clients/what-is-vpn.html" },
@@ -377,8 +377,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "CISA: Network Segmentation Guidance", url: "https://www.cisa.gov/topics/cyber-threats-and-advisories" },
-      { type: "video_en", title: "VLANs Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=1id6ERvfozo" },
-      { type: "video_hi", title: "Network Segmentation Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "VLANs Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=cb3a6rGrmhU" },
+      { type: "video_hi", title: "Network Segmentation Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=x7T3lxFJopw" },
       { type: "article", title: "The Concept of the DMZ", url: "https://www.fortinet.com/resources/cyberglossary/what-is-dmz" },
       { type: "github", title: "Zero Trust Architecture Resources", url: "https://github.com/pomerium/awesome-zero-trust" },
       { type: "cheat_sheet", title: "Subnetting Cheat Sheet", url: "https://www.freecodecamp.org/news/subnet-cheat-sheet-24-subnet-mask-30-26-27-29-and-other-ip-address-cidr-network-references/" },
@@ -410,7 +410,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OSINT Framework", url: "https://osintframework.com/" },
       { type: "video_en", title: "Information Gathering / Recon (TCM Security)", url: "https://www.youtube.com/watch?v=qlK174d_uu8" },
-      { type: "video_hi", title: "Reconnaissance in Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=U1w4T03B30I" },
+      { type: "video_hi", title: "Reconnaissance in Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=q1ypfGBcK3U" },
       { type: "article", title: "The OSINT Landscape", url: "https://www.sans.org/blog/what-is-open-source-intelligence/" },
       { type: "github", title: "OWASP Amass: Network Mapping", url: "https://github.com/owasp-amass/amass" },
       { type: "cheat_sheet", title: "OSINT Cheat Sheet", url: "https://inteltechniques.com/links.html" },
@@ -442,7 +442,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Nmap Official Documentation", url: "https://nmap.org/book/man.html" },
       { type: "video_en", title: "Nmap Tutorial for Beginners (NetworkChuck)", url: "https://www.youtube.com/watch?v=4t4kBkMsDbQ" },
-      { type: "video_hi", title: "Nmap Full Tutorial Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=4pNSPBfJpKw" },
+      { type: "video_hi", title: "Nmap Full Tutorial Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=CmdSqGElxVI" },
       { type: "article", title: "Top Nmap Commands for Sysadmins", url: "https://nmap.org/book/man-briefoptions.html" },
       { type: "github", title: "RustScan: Faster Nmap alternative", url: "https://github.com/RustScan/RustScan" },
       { type: "cheat_sheet", title: "Nmap Cheat Sheet (SANS)", url: "https://nmap.org/book/nse.html" },
@@ -474,7 +474,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Metasploit Unleashed (OffSec)", url: "https://www.offsec.com/metasploit-unleashed/" },
       { type: "video_en", title: "Metasploit Tutorial (TCM Security)", url: "https://www.youtube.com/watch?v=qlK174d_uu8" },
-      { type: "video_hi", title: "Metasploit in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=qlK174d_uu8" },
+      { type: "video_hi", title: "Metasploit in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=6KKbJjs3O9A" },
       { type: "article", title: "Reverse Shells vs Bind Shells", url: "https://www.netsparker.com/blog/web-security/understanding-reverse-shells/" },
       { type: "github", title: "Exploit Database", url: "https://github.com/offensive-security/exploitdb" },
       { type: "cheat_sheet", title: "Reverse Shell Cheat Sheet", url: "https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md" },
@@ -505,8 +505,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/" },
-      { type: "video_en", title: "OWASP Top 10 Explained (Simply Cyber)", url: "https://www.youtube.com/watch?v=Vq78bUe0J1I" },
-      { type: "video_hi", title: "OWASP Top 10 Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=3Kq1MIfTWCE" },
+      { type: "video_en", title: "OWASP Top 10 Explained (Simply Cyber)", url: "https://www.youtube.com/watch?v=Jzr0Jdnq_EI" },
+      { type: "video_hi", title: "OWASP Top 10 Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=5jMp3VnMRTk" },
       { type: "article", title: "Understanding Broken Access Control", url: "https://portswigger.net/web-security/access-control" },
       { type: "github", title: "OWASP NodeGoat (Vulnerable App for Practice)", url: "https://github.com/OWASP/NodeGoat" },
       { type: "cheat_sheet", title: "OWASP ASVS (Standard)", url: "https://owasp.org/www-project-application-security-verification-standard/" },
@@ -538,7 +538,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OWASP: SQL Injection Prevention", url: "https://cheatsheetseries.owasp.org/cheatsheets/SQL_Injection_Prevention_Cheat_Sheet.html" },
       { type: "video_en", title: "SQL Injection & XSS Explained (Computerphile)", url: "https://www.youtube.com/watch?v=_jKylhJtPmI" },
-      { type: "video_hi", title: "SQLi & XSS Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "SQLi & XSS Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=2OPVViV-GQk" },
       { type: "article", title: "PortSwigger: Cross-Site Scripting (XSS)", url: "https://portswigger.net/web-security/cross-site-scripting" },
       { type: "github", title: "SQLmap: Automatic SQLi tool", url: "https://github.com/sqlmapproject/sqlmap" },
       { type: "cheat_sheet", title: "XSS Filter Evasion Cheat Sheet", url: "https://owasp.org/www-community/xss-filter-evasion-cheatsheet" },
@@ -569,8 +569,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "OWASP Secure Coding Practices Quick Reference", url: "https://owasp.org/www-project-secure-coding-practices-quick-reference-guide/" },
-      { type: "video_en", title: "DevSecOps and Secure Coding (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=yhbPkxK8QZQ" },
-      { type: "video_hi", title: "Secure Coding Concepts Hindi", url: "https://www.youtube.com/watch?v=nzZkKoREEGo" },
+      { type: "video_en", title: "DevSecOps and Secure Coding (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=pYK802pSufw" },
+      { type: "video_hi", title: "Secure Coding Concepts Hindi", url: "https://www.youtube.com/watch?v=SIypa2ASDm4" },
       { type: "article", title: "Semgrep: Modern Static Analysis", url: "https://semgrep.dev/docs/" },
       { type: "github", title: "OWASP Cheat Sheet Series", url: "https://github.com/OWASP/CheatSheetSeries" },
       { type: "cheat_sheet", title: "API Security Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html" },
@@ -601,8 +601,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Splunk Free Training", url: "https://www.splunk.com/en_us/training/free-courses.html" },
-      { type: "video_en", title: "What is a SIEM? (IBM Technology)", url: "https://www.youtube.com/watch?v=1id6ERvfozo" },
-      { type: "video_hi", title: "SIEM & SOC Explained Hindi", url: "https://www.youtube.com/watch?v=uqCXQgFMHMk" },
+      { type: "video_en", title: "What Is SIEM? (IBM Technology)", url: "https://www.youtube.com/watch?v=9RfsRn7m7OE" },
+      { type: "video_hi", title: "SIEM & SOC Explained Hindi", url: "https://www.youtube.com/watch?v=tZQLgU5Wxhs" },
       { type: "article", title: "Elastic Security Introduction", url: "https://www.elastic.co/security" },
       { type: "github", title: "Sigma Rules: Generic Signature Format for SIEM", url: "https://github.com/SigmaHQ/sigma" },
       { type: "cheat_sheet", title: "Splunk SPL Quick Reference", url: "https://www.splunk.com/pdfs/solution-guides/splunk-quick-reference-guide.pdf" },
@@ -633,8 +633,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AlienVault Open Threat Exchange (OTX)", url: "https://otx.alienvault.com/" },
-      { type: "video_en", title: "Threat Intelligence Explained (Simply Cyber)", url: "https://www.youtube.com/watch?v=U1w4T03B30I" },
-      { type: "video_hi", title: "Cyber Threat Intelligence Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Threat Intelligence Explained (Simply Cyber)", url: "https://www.youtube.com/watch?v=4L_hY2lH1NY" },
+      { type: "video_hi", title: "Cyber Threat Intelligence Hindi", url: "https://www.youtube.com/watch?v=EJxzAL0Z1_s" },
       { type: "article", title: "The Pyramid of Pain", url: "https://detect-respond.blogspot.com/2013/03/the-pyramid-of-pain.html" },
       { type: "github", title: "MISP: Malware Information Sharing Platform", url: "https://github.com/MISP/MISP" },
       { type: "cheat_sheet", title: "YARA Rule Writing Cheat Sheet", url: "https://yara.readthedocs.io/en/stable/writingrules.html" },
@@ -665,8 +665,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "NIST: Computer Security Incident Handling Guide", url: "https://csrc.nist.gov/publications/detail/sp/800-61/rev-2/final" },
-      { type: "video_en", title: "Digital Forensics Tutorial (13Cubed)", url: "https://www.youtube.com/watch?v=U1w4T03B30I" },
-      { type: "video_hi", title: "Digital Forensics & Incident Response Hindi", url: "https://www.youtube.com/watch?v=x0E-2F_4_p8" },
+      { type: "video_en", title: "Digital Forensics Tutorial (13Cubed)", url: "https://www.youtube.com/watch?v=mNPu1VaVhE0" },
+      { type: "video_hi", title: "Digital Forensics & Incident Response Hindi", url: "https://www.youtube.com/watch?v=vD7uJ8aP0zA" },
       { type: "article", title: "SANS: The 6 Steps of Incident Response", url: "https://owasp.org/www-community/attacks/" },
       { type: "github", title: "Volatility Foundation: Memory Forensics", url: "https://github.com/volatilityfoundation/volatility3" },
       { type: "cheat_sheet", title: "DFIR Windows Artifacts Poster (SANS)", url: "https://www.sans.org/posters/windows-forensic-analysis/" },

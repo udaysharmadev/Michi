@@ -4,32 +4,32 @@ import { Map, ArrowLeft, Search } from "lucide-react";
 export default function NotFound() {
   return (
     <div className="min-h-screen flex items-center justify-center px-6 bg-background">
-      <div className="text-center max-w-md">
-        <div className="w-16 h-16 mx-auto mb-6 rounded-2xl bg-muted border border-border flex items-center justify-center">
-          <Map className="w-8 h-8 text-muted-foreground" />
+      <div className="text-center max-w-sm">
+        <div className="w-14 h-14 mx-auto mb-5 rounded-xl bg-muted border border-border flex items-center justify-center">
+          <Map className="w-7 h-7 text-muted-foreground" />
         </div>
-        <h1 className="font-heading text-4xl font-bold text-foreground mb-3">
+        <h1 className="font-heading text-4xl font-extrabold text-foreground mb-2 tracking-tight">
           404
         </h1>
-        <p className="text-xl font-semibold text-foreground mb-2">
+        <p className="text-base font-semibold text-foreground mb-1.5">
           Page not found
         </p>
-        <p className="text-muted-foreground mb-8 leading-relaxed">
-          The page you're looking for doesn't exist or may have been moved.
+        <p className="text-sm text-muted-foreground mb-6 leading-relaxed">
+          The page you&apos;re looking for doesn&apos;t exist or may have been moved.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
           <Link
             href="/"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-foreground text-background font-semibold hover:bg-foreground/90 transition-colors"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg bg-primary text-primary-foreground font-semibold text-sm hover:opacity-90 transition-opacity"
           >
-            <ArrowLeft className="w-4 h-4" />
+            <ArrowLeft className="w-3.5 h-3.5" />
             Back to Home
           </Link>
           <Link
             href="/roadmaps"
-            className="inline-flex items-center gap-2 px-6 py-3 rounded-xl border border-border text-foreground font-semibold hover:bg-muted transition-colors"
+            className="inline-flex items-center gap-1.5 px-5 py-2.5 rounded-lg border border-border text-foreground font-semibold text-sm hover:bg-muted transition-colors"
           >
-            <Search className="w-4 h-4" />
+            <Search className="w-3.5 h-3.5" />
             Browse Roadmaps
           </Link>
         </div>

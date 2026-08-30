@@ -1,6 +1,6 @@
 import { RoadmapContentNode, RoadmapContentEdge } from '../../types';
 
-export const nodes: RoadmapContentNode[] = [
+export const graphNodes: RoadmapContentNode[] = [
   {
     "id": "math",
     "type": "section",
@@ -327,7 +327,7 @@ export const nodes: RoadmapContentNode[] = [
   }
 ] as RoadmapContentNode[];
 
-export const edges: RoadmapContentEdge[] = [
+export const graphEdges: RoadmapContentEdge[] = [
   {
     "id": "e_n_mlm_1-n_mlm_2",
     "source": "n_mlm_1",

@@ -26,7 +26,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Attention Is All You Need Paper", url: "https://arxiv.org/abs/1706.03762" },
       { type: "video_en", title: "Transformers Explained (Andrej Karpathy)", url: "https://www.youtube.com/watch?v=kCc8FmEb1nY" },
-      { type: "video_hi", title: "Transformers Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Transformers Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=Sq1nZ0dnY0k" },
       { type: "article", title: "The Illustrated Transformer", url: "https://jalammar.github.io/illustrated-transformer/" },
       { type: "github", title: "The Annotated Transformer", url: "https://github.com/harvardnlp/annotated-transformer" },
       { type: "cheat_sheet", title: "Transformer Architecture Diagram", url: "https://arxiv.org/abs/1810.04805" },
@@ -58,7 +58,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Hugging Face Attention Overview", url: "https://huggingface.co/course/chapter1/4" },
       { type: "video_en", title: "Attention Mechanism (StatQuest)", url: "https://www.youtube.com/watch?v=eMlx5fFNoYc" },
-      { type: "video_hi", title: "Self Attention Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Self Attention Hindi", url: "https://www.youtube.com/watch?v=E1Gk1MFqSzc" },
       { type: "article", title: "Visualizing Attention", url: "https://jalammar.github.io/visualizing-neural-machine-translation-mechanics-of-seq2seq-models-with-attention/" },
       { type: "github", title: "FlashAttention Code", url: "https://github.com/Dao-AILab/flash-attention" },
       { type: "cheat_sheet", title: "QKV Matrix Cheat Sheet", url: "https://arxiv.org/abs/2307.09288" },
@@ -90,7 +90,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenAI Tokenizer Tool", url: "https://platform.openai.com/tokenizer" },
       { type: "video_en", title: "Let's build the GPT Tokenizer (Andrej Karpathy)", url: "https://www.youtube.com/watch?v=zduSFxRajkE" },
-      { type: "video_hi", title: "Tokenization in NLP Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Tokenization in NLP Hindi", url: "https://www.youtube.com/watch?v=zduSFxRajkE" },
       { type: "article", title: "Hugging Face Summary of Tokenizers", url: "https://huggingface.co/docs/transformers/tokenizer_summary" },
       { type: "github", title: "OpenAI Tiktoken Source", url: "https://github.com/openai/tiktoken" },
       { type: "cheat_sheet", title: "Tokenization Methods Overview", url: "https://nlp.seas.harvard.edu/2018/04/03/attention.html" },
@@ -121,8 +121,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "OpenAI: Prompt Engineering Basics", url: "https://platform.openai.com/docs/guides/prompt-engineering" },
-      { type: "video_en", title: "Few Shot Prompting Tutorial", url: "https://www.youtube.com/watch?v=jC4v5AS4ART" },
-      { type: "video_hi", title: "Few Shot Prompting Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "ChatGPT Prompt Engineering for Developers (DeepLearning.AI)", url: "https://www.youtube.com/watch?v=H4YK_7MAckk" },
+      { type: "video_hi", title: "Few Shot Prompting Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "PromptingGuide: Few-Shot", url: "https://www.promptingguide.ai/techniques/fewshot" },
       { type: "github", title: "LangChain FewShotPromptTemplate", url: "https://python.langchain.com/docs/modules/model_io/prompts/few_shot_examples" },
       { type: "cheat_sheet", title: "Prompt Patterns Cheat Sheet", url: "https://github.com/dair-ai/Prompt-Engineering-Guide" },
@@ -154,7 +154,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PromptingGuide: Chain of Thought", url: "https://www.promptingguide.ai/techniques/cot" },
       { type: "video_en", title: "Chain of Thought Prompting (Andrew Ng)", url: "https://www.youtube.com/watch?v=5sLYAQS9sWQ" },
-      { type: "video_hi", title: "Chain of Thought Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Chain of Thought Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "How Chain of Thought actually works", url: "https://www.promptingguide.ai/techniques/cot" },
       { type: "github", title: "Awesome Chain of Thought", url: "https://github.com/atfortes/LLM-Reasoning-Papers" },
       { type: "cheat_sheet", title: "Prompting Techniques Comparison", url: "https://learnprompting.org/" },
@@ -185,8 +185,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "LangChain ReAct Agent", url: "https://python.langchain.com/docs/modules/agents/agent_types/react" },
-      { type: "video_en", title: "ReAct Pattern Explained", url: "https://www.youtube.com/watch?v=1F_hQk_r4J4" },
-      { type: "video_hi", title: "AI Agents and ReAct Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "ReAct Pattern Explained", url: "https://www.youtube.com/watch?v=WYpR4Tx5ilU" },
+      { type: "video_hi", title: "AI Agents and ReAct Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Understanding ReAct Prompting", url: "https://www.promptingguide.ai/techniques/react" },
       { type: "github", title: "AutoGPT (ReAct in Action)", url: "https://github.com/Significant-Gravitas/AutoGPT" },
       { type: "cheat_sheet", title: "Agentic Patterns Overview", url: "https://www.deeplearning.ai/the-batch/how-agents-can-improve-llm-performance/" },
@@ -217,8 +217,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Hugging Face PEFT Docs", url: "https://huggingface.co/docs/peft/index" },
-      { type: "video_en", title: "LoRA and QLoRA Explained", url: "https://www.youtube.com/watch?v=t50ZZcjCApM" },
-      { type: "video_hi", title: "Fine-Tuning LLMs Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "LoRA and QLoRA Explained", url: "https://www.youtube.com/watch?v=Us5ZFp16PaU" },
+      { type: "video_hi", title: "Fine-Tuning LLMs Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Understanding LoRA", url: "https://sebastianraschka.com/blog/2023/llm-finetuning-lora.html" },
       { type: "github", title: "Unsloth: Fast LLM Fine-Tuning", url: "https://github.com/unslothai/unsloth" },
       { type: "cheat_sheet", title: "LoRA Hyperparameter Guide", url: "https://lightning.ai/pages/community/lora-insights/" },
@@ -250,7 +250,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenAI: Aligning Language Models", url: "https://openai.com/research/instruction-following" },
       { type: "video_en", title: "RLHF Explained (Andrej Karpathy)", url: "https://www.youtube.com/watch?v=bZQun8Y4L2A" },
-      { type: "video_hi", title: "RLHF Concept Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "RLHF Concept Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Illustrating RLHF (Hugging Face)", url: "https://huggingface.co/blog/rlhf" },
       { type: "github", title: "TRL: Transformer Reinforcement Learning", url: "https://github.com/huggingface/trl" },
       { type: "cheat_sheet", title: "Alignment Techniques Overview", url: "https://arxiv.org/abs/2309.15217" },
@@ -281,8 +281,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Hugging Face DPO Trainer", url: "https://huggingface.co/docs/trl/main/en/dpo_trainer" },
-      { type: "video_en", title: "DPO vs RLHF Explained", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
-      { type: "video_hi", title: "DPO Explained Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "DPO vs RLHF Explained", url: "https://www.youtube.com/watch?v=k2pD3k1485A" },
+      { type: "video_hi", title: "DPO Explained Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Direct Preference Optimization (Hugging Face Blog)", url: "https://huggingface.co/blog/dpo-trl" },
       { type: "github", title: "TRL DPO Implementation", url: "https://github.com/huggingface/trl" },
       { type: "cheat_sheet", title: "DPO Hyperparameters Guide", url: "https://huggingface.co/docs/trl/main/en/dpo_trainer" },
@@ -314,7 +314,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Pinecone: What is a Vector DB?", url: "https://www.pinecone.io/learn/vector-database/" },
       { type: "video_en", title: "Vector Databases Explained", url: "https://www.youtube.com/watch?v=klTvEwg3oJ4" },
-      { type: "video_hi", title: "Vector Databases in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Vector Databases in Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Comprehensive Guide to ANN", url: "https://towardsdatascience.com/comprehensive-guide-to-approximate-nearest-neighbors-algorithms-8b94f057d6b6" },
       { type: "github", title: "ChromaDB Source Code", url: "https://github.com/chroma-core/chroma" },
       { type: "cheat_sheet", title: "Vector DB Landscape Comparison", url: "https://github.com/chroma-core/chroma" },
@@ -346,7 +346,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenAI Embeddings Guide", url: "https://platform.openai.com/docs/guides/embeddings" },
       { type: "video_en", title: "Embeddings Explained (StatQuest)", url: "https://www.youtube.com/watch?v=viZrOnJclY0" },
-      { type: "video_hi", title: "Embeddings Concept Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Embeddings Concept Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Text Embeddings Visually Explained", url: "https://jalammar.github.io/illustrated-word2vec/" },
       { type: "github", title: "Sentence Transformers Repo", url: "https://github.com/UKPLab/sentence-transformers" },
       { type: "cheat_sheet", title: "MTEB Leaderboard (Best Embeddings)", url: "https://huggingface.co/spaces/mteb/leaderboard" },
@@ -378,7 +378,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "LangChain Documentation", url: "https://python.langchain.com/docs/get_started/introduction" },
       { type: "video_en", title: "LangChain Crash Course", url: "https://www.youtube.com/watch?v=aywZrzNaKjs" },
-      { type: "video_hi", title: "LangChain Tutorial Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "LangChain Tutorial Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "LlamaIndex vs LangChain", url: "https://docs.llamaindex.ai/en/stable/" },
       { type: "github", title: "LlamaIndex Repository", url: "https://github.com/run-llama/llama_index" },
       { type: "cheat_sheet", title: "LCEL Cheat Sheet", url: "https://python.langchain.com/docs/expression_language/" },
@@ -409,8 +409,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "vLLM Documentation", url: "https://docs.vllm.ai/en/latest/" },
-      { type: "video_en", title: "vLLM and PagedAttention Explained", url: "https://www.youtube.com/watch?v=5ZlakKIbqZk" },
-      { type: "video_hi", title: "LLM Deployment vLLM Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "vLLM and PagedAttention Explained", url: "https://www.youtube.com/watch?v=McLdlg5Gc9s" },
+      { type: "video_hi", title: "LLM Deployment vLLM Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "How vLLM works under the hood", url: "https://blog.vllm.ai/2023/06/20/vllm.html" },
       { type: "github", title: "vLLM Source Code", url: "https://github.com/vllm-project/vllm" },
       { type: "cheat_sheet", title: "LLM Inference Engine Comparison", url: "https://github.com/ray-project/llm-numbers" },
@@ -441,8 +441,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Hugging Face Quantization Guide", url: "https://huggingface.co/docs/transformers/main_classes/quantization" },
-      { type: "video_en", title: "LLM Quantization Explained", url: "https://www.youtube.com/watch?v=0VJNqQOQOuw" },
-      { type: "video_hi", title: "Quantization in Deep Learning Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "LLM Quantization Explained", url: "https://www.youtube.com/watch?v=mNE_d-C82lI" },
+      { type: "video_hi", title: "Quantization in Deep Learning Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "Understanding GPTQ and AWQ", url: "https://huggingface.co/docs/transformers/quantization" },
       { type: "github", title: "AutoAWQ Repo", url: "https://github.com/casper-hansen/AutoAWQ" },
       { type: "cheat_sheet", title: "GPU VRAM Calculator for LLMs", url: "https://huggingface.co/spaces/hf-accelerate/model-memory-usage" },
@@ -473,8 +473,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Ollama Official Site", url: "https://ollama.com/" },
-      { type: "video_en", title: "Run LLMs Locally with LM Studio", url: "https://www.youtube.com/watch?v=R9_mG-y84Xk" },
-      { type: "video_hi", title: "Local LLM using Ollama Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Run LLMs Locally with LM Studio", url: "https://www.youtube.com/watch?v=wxQgGK5K0rE" },
+      { type: "video_hi", title: "Local LLM using Ollama Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "What is GGUF?", url: "https://github.com/ggerganov/llama.cpp" },
       { type: "github", title: "llama.cpp Repository", url: "https://github.com/ggerganov/llama.cpp" },
       { type: "cheat_sheet", title: "Ollama CLI Commands", url: "https://github.com/ollama/ollama/blob/main/README.md" },

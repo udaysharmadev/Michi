@@ -24,7 +24,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "NumPy Linear Algebra", url: "https://numpy.org/doc/stable/reference/routines.linalg.html" },
       { type: "video_en", title: "Essence of Linear Algebra (3Blue1Brown)", url: "https://www.youtube.com/watch?v=fNk_zzaMoSs" },
-      { type: "video_hi", title: "Linear Algebra Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Linear Algebra Hindi", url: "https://www.youtube.com/watch?v=3J0x4siAzVM" },
       { type: "article", title: "Linear Algebra for Data Science", url: "https://numpy.org/doc/stable/user/quickstart.html" },
       { type: "github", title: "Math for ML Notes", url: "https://github.com/probml/pml-book" },
       { type: "cheat_sheet", title: "Linear Algebra Cheat Sheet", url: "https://ml-cheatsheet.readthedocs.io/en/latest/linear_algebra.html" },
@@ -54,7 +54,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "SciPy Optimize", url: "https://docs.scipy.org/doc/scipy/reference/optimize.html" },
       { type: "video_en", title: "Essence of Calculus (3Blue1Brown)", url: "https://www.youtube.com/watch?v=WUvTyaaNkzM" },
-      { type: "video_hi", title: "Calculus for ML Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Calculus for ML Hindi", url: "https://www.youtube.com/watch?v=w2h2fajpbQI" },
       { type: "article", title: "Calculus in Machine Learning", url: "https://towardsdatascience.com/calculus-in-machine-learning-2e7cddafa21f" },
       { type: "github", title: "Micrograd (Calculus in Code)", url: "https://github.com/karpathy/micrograd" },
       { type: "cheat_sheet", title: "Derivatives Cheat Sheet", url: "https://tutorial.math.lamar.edu/pdf/calculus_cheat_sheet_derivatives.pdf" },
@@ -84,8 +84,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "SciPy Stats", url: "https://docs.scipy.org/doc/scipy/reference/stats.html" },
-      { type: "video_en", title: "Probability Explained (StatQuest)", url: "https://www.youtube.com/watch?v=vYimHJMuTa0" },
-      { type: "video_hi", title: "Probability Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Probability Explained (StatQuest)", url: "https://www.youtube.com/watch?v=SkidyDQuupA" },
+      { type: "video_hi", title: "Probability Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=VbU99_VDIlI" },
       { type: "article", title: "Probability for Data Science", url: "https://www.khanacademy.org/math/statistics-probability" },
       { type: "github", title: "Probabilistic Programming", url: "https://github.com/pymc-devs/pymc" },
       { type: "cheat_sheet", title: "Probability Cheat Sheet", url: "https://www.probabilitycourse.com/" },
@@ -116,8 +116,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Statsmodels Documentation", url: "https://www.statsmodels.org/stable/index.html" },
-      { type: "video_en", title: "Statistics Crash Course (StatQuest)", url: "https://www.youtube.com/watch?v=qBigTkGbj9E" },
-      { type: "video_hi", title: "Statistics in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Statistics Crash Course (StatQuest)", url: "https://www.youtube.com/watch?v=eF7HoC-cLRM" },
+      { type: "video_hi", title: "Statistics in Hindi", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "The Central Limit Theorem Explained", url: "https://www.khanacademy.org/math/statistics-probability/sampling-distributions-library/sample-means/v/central-limit-theorem" },
       { type: "github", title: "Think Stats (Book Repository)", url: "https://github.com/CamDavidsonPilon/Probabilistic-Programming-and-Bayesian-Methods-for-Hackers" },
       { type: "cheat_sheet", title: "Hypothesis Testing Cheat Sheet", url: "https://stats.stackexchange.com/questions/tagged/hypothesis-testing" },
@@ -149,7 +149,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Python Official Docs", url: "https://docs.python.org/3/library/" },
       { type: "video_en", title: "Python for Data Science (freeCodeCamp)", url: "https://www.youtube.com/watch?v=9yl6-HEY7_s" },
-      { type: "video_hi", title: "Python Hindi Tutorial (CodeWithHarry)", url: "https://www.youtube.com/watch?v=4pNSPBfJpKw" },
+      { type: "video_hi", title: "Python Hindi Tutorial (CodeWithHarry)", url: "https://www.youtube.com/watch?v=3dy_PYF9xOI" },
       { type: "article", title: "Python vs R for Data Science", url: "https://www.r-project.org/about.html" },
       { type: "github", title: "Awesome Python for Data Science", url: "https://github.com/r0f1/datascience" },
       { type: "cheat_sheet", title: "Python Data Science Cheat Sheet", url: "https://ehmatthes.github.io/pcc_2e/cheat_sheets/cheat_sheets/" },
@@ -181,7 +181,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Pandas Documentation", url: "https://pandas.pydata.org/docs/" },
       { type: "video_en", title: "Pandas Data Analysis (Keith Galli)", url: "https://www.youtube.com/watch?v=vmEHCJofslg" },
-      { type: "video_hi", title: "Pandas Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Pandas Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=CmorAWRsCAw" },
       { type: "article", title: "10 Minutes to Pandas", url: "https://pandas.pydata.org/docs/user_guide/10min.html" },
       { type: "github", title: "Pandas Cookbook", url: "https://github.com/jvns/pandas-cookbook" },
       { type: "cheat_sheet", title: "Pandas Cheat Sheet (PDF)", url: "https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf" },
@@ -245,7 +245,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Seaborn Documentation", url: "https://seaborn.pydata.org/" },
       { type: "video_en", title: "Matplotlib Tutorial (Corey Schafer)", url: "https://www.youtube.com/watch?v=UO98lJQ3QGI" },
-      { type: "video_hi", title: "Matplotlib Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Matplotlib Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=o1pR3AN8Y2c" },
       { type: "article", title: "Python Data Visualization Guide", url: "https://towardsdatascience.com/the-next-level-of-data-visualization-in-python-dd6e99039d5e" },
       { type: "github", title: "Python Graph Gallery", url: "https://github.com/holtzy/The-Python-Graph-Gallery" },
       { type: "cheat_sheet", title: "Seaborn Cheat Sheet", url: "https://s3.amazonaws.com/assets.datacamp.com/blog_assets/Python_Seaborn_Cheat_Sheet.pdf" },
@@ -277,7 +277,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Tableau Free Training", url: "https://www.tableau.com/learn/training" },
       { type: "video_en", title: "Power BI Full Course (Kevin Stratvert)", url: "https://www.youtube.com/watch?v=TmhQCQr_DCA" },
-      { type: "video_hi", title: "Power BI Tutorial Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Power BI Tutorial Hindi", url: "https://www.youtube.com/watch?v=p7kXLAJCVdI" },
       { type: "article", title: "Tableau vs Power BI: Which to choose?", url: "https://www.tableau.com/learn/articles/data-visualization" },
       { type: "github", title: "Awesome Power BI", url: "https://github.com/NajiElKotob/Awesome-Power-BI" },
       { type: "cheat_sheet", title: "DAX Cheat Sheet", url: "https://learn.microsoft.com/en-us/dax/dax-function-reference" },
@@ -308,8 +308,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Streamlit Documentation", url: "https://docs.streamlit.io/" },
-      { type: "video_en", title: "Streamlit Tutorial (Data Professor)", url: "https://www.youtube.com/watch?v=ZZ4B0ZUzy1Y" },
-      { type: "video_hi", title: "Streamlit in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Streamlit Tutorial (Data Professor)", url: "https://www.youtube.com/watch?v=l5qkg8gzY6E" },
+      { type: "video_hi", title: "Streamlit in Hindi", url: "https://www.youtube.com/watch?v=Jz1r3DeJes8" },
       { type: "article", title: "Dash vs Streamlit", url: "https://streamlit.io/" },
       { type: "github", title: "Awesome Streamlit", url: "https://github.com/MarcSkovMadsen/awesome-streamlit" },
       { type: "cheat_sheet", title: "Streamlit Cheat Sheet", url: "https://docs.streamlit.io/library/cheatsheet" },
@@ -340,8 +340,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Scikit-learn: Supervised Learning", url: "https://scikit-learn.org/stable/unsupervised_learning.html" },
-      { type: "video_en", title: "Machine Learning Full Course", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
-      { type: "video_hi", title: "Regression & Classification Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=DKSZHN7jLmI" },
+      { type: "video_en", title: "Machine Learning Full Course (Edureka)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_hi", title: "Regression & Classification Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=6ob89CbOSFU" },
       { type: "article", title: "XGBoost Algorithm Explained", url: "https://towardsdatascience.com/https-medium-com-vishalmorde-xgboost-algorithm-long-she-may-rein-edd9f99be63d" },
       { type: "github", title: "Hands-on ML Code", url: "https://github.com/jakevdp/PythonDataScienceHandbook" },
       { type: "cheat_sheet", title: "ML Algorithms Overview", url: "https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html" },
@@ -373,7 +373,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Clustering", url: "https://scikit-learn.org/stable/modules/clustering.html" },
       { type: "video_en", title: "K-Means Explained (StatQuest)", url: "https://www.youtube.com/watch?v=4b5d3muPQmA" },
-      { type: "video_hi", title: "Clustering Hindi Tutorial", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Clustering Hindi Tutorial", url: "https://www.youtube.com/watch?v=Aa4MACKaDC0" },
       { type: "article", title: "DBSCAN Clustering Tutorial", url: "https://scikit-learn.org/stable/modules/clustering.html#dbscan" },
       { type: "github", title: "Scikit-learn Clustering Examples", url: "https://github.com/scikit-learn/scikit-learn/tree/main/examples/cluster" },
       { type: "cheat_sheet", title: "Clustering Comparison Visual", url: "https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html" },
@@ -405,7 +405,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Evaluation Metrics", url: "https://scikit-learn.org/stable/modules/model_evaluation.html" },
       { type: "video_en", title: "ROC and AUC Explained", url: "https://www.youtube.com/watch?v=4jRBRDbJemM" },
-      { type: "video_hi", title: "Metrics Hindi Tutorial (Krish Naik)", url: "https://www.youtube.com/watch?v=DKSZHN7jLmI" },
+      { type: "video_hi", title: "Metrics Hindi Tutorial (Krish Naik)", url: "https://www.youtube.com/watch?v=aLaKuBnT2Qc" },
       { type: "article", title: "Beyond Accuracy: Precision and Recall", url: "https://towardsdatascience.com/beyond-accuracy-precision-and-recall-3da06bea9f6c" },
       { type: "github", title: "Model Evaluation Code Examples", url: "https://github.com/fastai/fastbook" },
       { type: "cheat_sheet", title: "Classification Metrics Cheat Sheet", url: "https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html" },
@@ -437,7 +437,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PyTorch Tutorials", url: "https://pytorch.org/tutorials/" },
       { type: "video_en", title: "Neural Networks (3Blue1Brown)", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
-      { type: "video_hi", title: "Deep Learning Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Deep Learning Hindi", url: "https://www.youtube.com/watch?v=5K0nqK2k0z0" },
       { type: "article", title: "A Visual Guide to Neural Networks", url: "https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" },
       { type: "github", title: "Fast.ai Course Notebooks", url: "https://github.com/fastai/fastbook" },
       { type: "cheat_sheet", title: "Deep Learning Cheat Sheet", url: "https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-deep-learning-tips-and-tricks" },
@@ -469,7 +469,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Statsmodels: Time Series Analysis", url: "https://www.statsmodels.org/stable/tsa.html" },
       { type: "video_en", title: "Time Series Forecasting in Python", url: "https://www.youtube.com/watch?v=vV12dGe_Fho" },
-      { type: "video_hi", title: "Time Series Hindi Tutorial", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Time Series Hindi Tutorial", url: "https://www.youtube.com/watch?v=oZR-yVQCkmg" },
       { type: "article", title: "A Comprehensive Guide to Time Series", url: "https://towardsdatascience.com/the-complete-guide-to-time-series-analysis-and-forecasting-70d476bfe775" },
       { type: "github", title: "Facebook Prophet", url: "https://github.com/facebook/prophet" },
       { type: "cheat_sheet", title: "Pandas Time Series Functions", url: "https://pandas.pydata.org/docs/user_guide/timeseries.html" },
@@ -501,7 +501,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "spaCy Documentation", url: "https://spacy.io/usage" },
       { type: "video_en", title: "NLP Tutorial with Python", url: "https://www.youtube.com/watch?v=xvqsFTUsOmc" },
-      { type: "video_hi", title: "NLP Basics in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "NLP Basics in Hindi", url: "https://www.youtube.com/watch?v=V9F1kzD5bNI" },
       { type: "article", title: "A Gentle Introduction to TF-IDF", url: "https://towardsdatascience.com/tf-idf-for-document-ranking-from-scratch-in-python-on-real-world-dataset-796d339a4089" },
       { type: "github", title: "NLTK Source", url: "https://github.com/nltk/nltk" },
       { type: "cheat_sheet", title: "Regex Cheat Sheet", url: "https://regexr.com/" },

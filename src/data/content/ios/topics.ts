@@ -9,7 +9,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Apple Developer Program Overview", type: "official", url: "https://developer.apple.com/programs/" },
             { title: "How to Set Up Apple Developer Account (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=cmaV_E0PtRk" },
-            { title: "Apple Developer Account Setup in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=5N2ZooBVXMI" },
+            { title: "Apple Developer Account Setup in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=q_2jzCbrOlU" },
             { title: "Certificates, Identifiers & Profiles Guide", type: "article", url: "https://developer.apple.com/help/account/manage-certificates/certificates-overview" },
             { title: "vsouza/awesome-ios", type: "github", url: "https://github.com/vsouza/awesome-ios" },
             { title: "Developer Account Management", type: "cheat_sheet", url: "https://developer.apple.com/support/account/" },
@@ -36,8 +36,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "App Sandbox Design Guide", type: "official", url: "https://developer.apple.com/documentation/security/app_sandbox" },
-            { title: "iOS Privacy Permissions Explained (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=kn32PHG2wcU" },
-            { title: "App Privacy in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=5N2ZooBVXMI" },
+            { title: "iOS Privacy Permissions (Info.plist Setup)", type: "video_en", url: "https://www.youtube.com/watch?v=ZGyRSctQoh0" },
+            { title: "App Privacy in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=q_2jzCbrOlU" },
             { title: "Privacy in iOS Apps", type: "article", url: "https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy" },
             { title: "fastlane/spaceship", type: "github", url: "https://github.com/fastlane/fastlane/tree/master/spaceship" },
             { title: "Privacy Nutrition Labels Reference", type: "cheat_sheet", url: "https://developer.apple.com/app-store/app-privacy-details/" },
@@ -52,7 +52,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "The Swift Programming Language (Official Book)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/" },
             { title: "Swift in 100 Seconds (Fireship)", type: "video_en", url: "https://www.youtube.com/watch?v=nAchMctX4YA" },
-            { title: "Swift Programming Full Course in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=y6rkqzqflIc" },
+            { title: "Swift Programming Full Course in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=Ulp1Kimblg0" },
             { title: "Swift Variables and Constants – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/sixty/1/1/variables" },
             { title: "matteocrippa/awesome-swift", type: "github", url: "https://github.com/matteocrippa/awesome-swift" },
             { title: "Swift Cheat Sheet (devhints.io)", type: "cheat_sheet", url: "https://www.swift.org/documentation/" },
@@ -65,8 +65,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Optionals in Swift (Official)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/thebasics/#Optionals" },
-            { title: "Swift Optionals for Beginners (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=RRKbhUkGLBc" },
-            { title: "Optionals in Swift Hindi (Code with Chris)", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
+            { title: "Swift Optionals Explained (Stanford CS193p)", type: "video_en", url: "https://www.youtube.com/watch?v=eHEeWzFP6O4" },
+            { title: "Optionals in Swift Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=8Xg7E9shq0U" },
             { title: "Understanding Optionals – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/sixty/10/1/handling-missing-data" },
             { title: "apple/swift-evolution", type: "github", url: "https://github.com/apple/swift-evolution" },
             { title: "Optional Chaining Quick Reference", type: "cheat_sheet", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/optionalchaining/" },
@@ -79,7 +79,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Protocols in Swift (Official)", type: "official", url: "https://docs.swift.org/swift-book/documentation/the-swift-programming-language/protocols/" },
             { title: "Protocol Oriented Programming in Swift (Apple WWDC)", type: "video_en", url: "https://developer.apple.com/videos/play/wwdc2015/408/" },
-            { title: "Swift OOP in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=y6rkqzqflIc" },
+            { title: "Swift OOP & Protocols Tutorial", type: "video_hi", url: "https://www.youtube.com/watch?v=6Zf79Ns8_oY" },
             { title: "Classes vs Structs – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/plus/advanced-swift/when-to-use-structs-and-when-to-use-classes" },
             { title: "raywenderlich/swift-algorithm-club", type: "github", url: "https://github.com/kodecocodes/swift-algorithm-club" },
             { title: "Swift Protocols Cheat Sheet", type: "cheat_sheet", url: "https://www.raywenderlich.com/4951992-kotlin-cheat-sheet-and-quick-reference" },
@@ -121,7 +121,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Debugging in Xcode (Apple)", type: "official", url: "https://developer.apple.com/documentation/xcode/diagnosing-and-resolving-bugs-in-your-running-app" },
             { title: "Advanced Debugging with Xcode & LLDB (WWDC)", type: "video_en", url: "https://developer.apple.com/videos/play/wwdc2018/412/" },
-            { title: "Xcode Debugging in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=g_0XtIqlagY" },
+            { title: "Xcode Debugging with LLDB (WWDC)", type: "video_en", url: "https://www.youtube.com/watch?v=PsW3RQN9R_Q" },
             { title: "Instruments Tutorial – Kodeco", type: "article", url: "https://www.kodeco.com/16126261-instruments-tutorial-with-swift-getting-started" },
             { title: "facebook/chisel (LLDB Helpers)", type: "github", url: "https://github.com/facebook/chisel" },
             { title: "LLDB Command Cheat Sheet", type: "cheat_sheet", url: "https://lldb.llvm.org/use/map.html" },
@@ -135,7 +135,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Swift Package Manager (Official)", type: "official", url: "https://www.swift.org/package-manager/" },
             { title: "Using SPM in Xcode (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=jnv3K0mbIDo" },
-            { title: "SPM in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=DVvLFGZFmbI" },
+            { title: "Swift Package Manager Tutorial (Hindi)", type: "video_hi", url: "https://www.youtube.com/watch?v=Dv1Ih1Vk9HQ" },
             { title: "Creating Your First Swift Package", type: "article", url: "https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode" },
             { title: "apple/swift-package-manager", type: "github", url: "https://github.com/apple/swift-package-manager" },
             { title: "Package.swift Reference", type: "cheat_sheet", url: "https://docs.swift.org/package-manager/PackageDescription/PackageDescription.html" },
@@ -163,7 +163,7 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Auto Layout Guide (Apple)", type: "official", url: "https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html" },
-            { title: "Auto Layout Tutorial (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=rgbnAsmPaZk" },
+            { title: "Auto Layout Tutorial in iOS (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=pUAcMruIBGg" },
             { title: "Auto Layout in Xcode Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=CO2o3-KaX5I" },
             { title: "Understanding Auto Layout Constraints", type: "article", url: "https://www.hackingwithswift.com/read/6/2/advanced-auto-layout" },
             { title: "SnapKit/SnapKit", type: "github", url: "https://github.com/SnapKit/SnapKit" },
@@ -190,8 +190,8 @@ export const topicsData: Record<string, TopicData> = {
         description: "Add life to your UI with Core Animation, UIView animations, SwiftUI transitions, and Lottie.",
         resources: [
             { title: "Core Animation (Apple)", type: "official", url: "https://developer.apple.com/documentation/quartzcore" },
-            { title: "iOS Animations Tutorial (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=qmS1Ptyizx0" },
-            { title: "iOS Animations in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=g_0XtIqlagY" },
+            { title: "iOS Animations Tutorial (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=vm64BAg2bss" },
+            { title: "iOS Animations in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=j0eQQXspSQY" },
             { title: "UIView.animate Explained – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/read/15/1/preparing-for-action" },
             { title: "airbnb/lottie-ios", type: "github", url: "https://github.com/airbnb/lottie-ios" },
             { title: "Animation Easing Curves Reference", type: "cheat_sheet", url: "https://easings.net/" },
@@ -206,7 +206,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Model-View-Controller (Apple)", type: "official", url: "https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/MVC.html" },
             { title: "MVC in iOS Explained (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=pAHVSpbftYY" },
-            { title: "MVC Architecture in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=q1X20ZNFCQ8" },
+            { title: "MVC Architecture in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=O6D1H4etqb0" },
             { title: "Solving the Massive View Controller Problem", type: "article", url: "https://www.hackingwithswift.com/articles/123/how-to-fix-massive-view-controller" },
             { title: "onmyway133/awesome-ios-architecture", type: "github", url: "https://github.com/onmyway133/awesome-ios-architecture" },
             { title: "iOS Architecture Patterns Overview", type: "cheat_sheet", url: "https://developer.apple.com/tutorials/swiftui" },
@@ -220,7 +220,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Designing for Testability with MVVM (Apple)", type: "official", url: "https://developer.apple.com/documentation/swiftui/managing-user-interface-state" },
             { title: "MVVM in iOS with SwiftUI (Phillip Lackner style)", type: "video_en", url: "https://www.youtube.com/watch?v=-xTqfilaYow" },
-            { title: "MVVM in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=09TeUXjzpKs" },
+            { title: "MVVM in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=Q8riUXOHHXA" },
             { title: "Clean Architecture on iOS (ProAndroidDev equivalent)", type: "article", url: "https://www.raywenderlich.com/7693556-ios-mvvm-tutorial-refactoring-from-mvc" },
             { title: "kudoleh/iOS-Clean-Architecture-MVVM", type: "github", url: "https://github.com/kudoleh/iOS-Clean-Architecture-MVVM" },
             { title: "MVVM Layers Cheat Sheet", type: "cheat_sheet", url: "https://github.com/onmyway133/awesome-ios-architecture#mvvm" },
@@ -233,7 +233,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Combine Documentation (Apple)", type: "official", url: "https://developer.apple.com/documentation/combine" },
             { title: "Combine in Practice (WWDC 2019)", type: "video_en", url: "https://developer.apple.com/videos/play/wwdc2019/721/" },
-            { title: "Combine Framework in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=comQ1-x2a1Q" },
+            { title: "Combine Framework FREE Course (Karin Prater)", type: "video_hi", url: "https://www.youtube.com/watch?v=bxXpC5aENgY" },
             { title: "Getting Started with Combine – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/books/ios-swiftui/introduction-to-combine" },
             { title: "OpenCombine/OpenCombine", type: "github", url: "https://github.com/OpenCombine/OpenCombine" },
             { title: "Combine Operators Cheat Sheet", type: "cheat_sheet", url: "https://heckj.github.io/swiftui-notes/" },
@@ -261,7 +261,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "SwiftData Documentation (Apple)", type: "official", url: "https://developer.apple.com/xcode/swiftdata/" },
             { title: "SwiftData Introduction (WWDC 2023)", type: "video_en", url: "https://developer.apple.com/videos/play/wwdc2023/10187/" },
-            { title: "SwiftData Tutorial in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
+            { title: "SwiftData Tutorial in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=hJ2XpvQt52E" },
             { title: "Meet SwiftData – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/quick-start/swiftdata" },
             { title: "apple/sample-apps/SwiftDataIntro", type: "github", url: "https://developer.apple.com/sample-code/" },
             { title: "SwiftData @Model Macro Reference", type: "cheat_sheet", url: "https://developer.apple.com/documentation/swiftdata/model()" },
@@ -288,8 +288,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "FileManager Documentation", type: "official", url: "https://developer.apple.com/documentation/foundation/filemanager" },
-            { title: "File System in iOS (Kodeco Tutorial)", type: "video_en", url: "https://www.youtube.com/watch?v=zfrCWV5Ey6g" },
-            { title: "FileManager in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=mj4eec3WENg" },
+            { title: "File Manager in iOS (Swiftful Thinking)", type: "video_en", url: "https://www.youtube.com/watch?v=Yiq-hdhLzVM" },
+            { title: "FileManager in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=SiRehcQ6RVE" },
             { title: "iOS App Sandbox & File System", type: "article", url: "https://developer.apple.com/library/archive/documentation/FileManagement/Conceptual/FileSystemProgrammingGuide/FileSystemOverview/FileSystemOverview.html" },
             { title: "JohnSundell/Files", type: "github", url: "https://github.com/JohnSundell/Files" },
             { title: "FileManager API Reference", type: "cheat_sheet", url: "https://developer.apple.com/documentation/foundation/filemanager" },
@@ -317,8 +317,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Encoding and Decoding Custom Types (Apple)", type: "official", url: "https://developer.apple.com/documentation/foundation/archives_and_serialization/encoding_and_decoding_custom_types" },
-            { title: "Codable in Swift (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=whNFPBEI-wM" },
-            { title: "Codable Protocol in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=1hwQCUJ8k0U" },
+            { title: "Codable in Swift (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=q_SQJyx7lhU" },
+            { title: "Codable Protocol in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=SiRehcQ6RVE" },
             { title: "Using JSON with Custom Types – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/read/7/3/parsing-json-using-the-codable-protocol" },
             { title: "SwiftyJSON/SwiftyJSON", type: "github", url: "https://github.com/SwiftyJSON/SwiftyJSON" },
             { title: "Codable CodingKeys Cheat Sheet", type: "cheat_sheet", url: "https://developer.apple.com/documentation/foundation/jsondecoder" },
@@ -332,7 +332,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "URLSessionWebSocketTask (Apple)", type: "official", url: "https://developer.apple.com/documentation/foundation/urlsessionwebsockettask" },
             { title: "WebSockets in iOS with Swift (Paul Hudson)", type: "video_en", url: "https://www.youtube.com/watch?v=favi7avxIag" },
-            { title: "WebSockets iOS in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=KK1vFqPjKGs" },
+            { title: "WebSockets in iOS (Duolingo Case Study)", type: "video_hi", url: "https://www.youtube.com/watch?v=RJtiFt5pbfs" },
             { title: "Getting Started with WebSockets in iOS", type: "article", url: "https://www.kodeco.com/861-websockets-on-ios-with-starscream" },
             { title: "daltoniam/Starscream", type: "github", url: "https://github.com/daltoniam/Starscream" },
             { title: "WebSocket Events Reference (MDN)", type: "cheat_sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" },
@@ -388,7 +388,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Core Location Documentation", type: "official", url: "https://developer.apple.com/documentation/corelocation" },
             { title: "Core Location & MapKit Tutorial (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=uDjSPVhm2iU" },
-            { title: "Maps & Location in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=kiHu0-Z6xHI" },
+            { title: "Maps & Location in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=q5D55G7Ejs8" },
             { title: "Getting Location Data – Hacking with Swift", type: "article", url: "https://www.hackingwithswift.com/read/22/overview" },
             { title: "apple/sample-MapKit", type: "github", url: "https://developer.apple.com/documentation/mapkit/displaying_an_apple_map" },
             { title: "Location Authorization Reference", type: "cheat_sheet", url: "https://developer.apple.com/documentation/corelocation/requesting_authorization_to_use_location_services" },
@@ -400,8 +400,8 @@ export const topicsData: Record<string, TopicData> = {
         description: "Capture photos and videos, process audio, and interact with device media using AVFoundation.",
         resources: [
             { title: "AVFoundation Overview (Apple)", type: "official", url: "https://developer.apple.com/documentation/avfoundation" },
-            { title: "Building a Custom Camera (Kodeco)", type: "video_en", url: "https://www.youtube.com/watch?v=ZytdiHcD91I" },
-            { title: "Camera & AVFoundation in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=4GFTuXvT3ww" },
+            { title: "Building a Custom Camera in iOS", type: "video_en", url: "https://www.youtube.com/watch?v=cLl01EjHU3Q" },
+            { title: "Camera & AVFoundation in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=Z8y15o14Klo" },
             { title: "Capturing Still Images with AVCaptureSession", type: "article", url: "https://developer.apple.com/documentation/avfoundation/capture_setup" },
             { title: "AVCam Sample App (Apple)", type: "github", url: "https://developer.apple.com/documentation/avfoundation/capture_setup/avcam_building_a_camera_app" },
             { title: "AVFoundation Reference Guide", type: "cheat_sheet", url: "https://developer.apple.com/av-foundation/" },
@@ -415,7 +415,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "UserNotifications Framework", type: "official", url: "https://developer.apple.com/documentation/usernotifications" },
             { title: "Push Notifications in iOS (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=UJree24HWx0" },
-            { title: "APNs Setup in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=omUHbu5Twfk" },
+            { title: "Push Notifications (APNs) in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=BS4RlkRkI20" },
             { title: "Registering Your App with APNs", type: "article", url: "https://developer.apple.com/documentation/usernotifications/registering_your_app_with_apns" },
             { title: "nomad/houston (APNs Ruby gem)", type: "github", url: "https://github.com/nomad/houston" },
             { title: "APNs Notification Payload Reference", type: "cheat_sheet", url: "https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification" },
@@ -429,7 +429,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Code Signing Guide (Apple)", type: "official", url: "https://developer.apple.com/support/code-signing/" },
             { title: "iOS Code Signing Explained (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=K98SSsKfcNs" },
-            { title: "Provisioning Profiles in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=nNqJjY53DLU" },
+            { title: "iOS Code Signing (EAS Tutorial)", type: "video_hi", url: "https://www.youtube.com/watch?v=VZL_e0cEwo8" },
             { title: "iOS Code Signing: The Definitive Guide", type: "article", url: "https://codesigning.guide/" },
             { title: "fastlane/match", type: "github", url: "https://github.com/fastlane/fastlane/tree/master/match" },
             { title: "Provisioning Profiles Reference", type: "cheat_sheet", url: "https://docs.fastlane.tools/codesigning/getting-started/" },
@@ -457,7 +457,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "App Store Review Guidelines", type: "official", url: "https://developer.apple.com/app-store/review/guidelines/" },
             { title: "App Store Submission Process (Sean Allen)", type: "video_en", url: "https://www.youtube.com/watch?v=9vkkJ4tC4SQ" },
-            { title: "App Store Submission in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=MFhxShGxHLC" },
+            { title: "Submit App to App Store (iOS Academy)", type: "video_en", url: "https://www.youtube.com/watch?v=bz_KJdXylh0" },
             { title: "Common App Store Rejections & Fixes", type: "article", url: "https://developer.apple.com/app-store/review/rejections/" },
             { title: "fastlane/deliver", type: "github", url: "https://github.com/fastlane/fastlane/tree/master/deliver" },
             { title: "App Store Connect Checklist", type: "cheat_sheet", url: "https://developer.apple.com/app-store/product-page/" },

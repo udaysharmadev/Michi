@@ -26,7 +26,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Pandas Official Documentation", url: "https://pandas.pydata.org/docs/user_guide/index.html" },
       { type: "video_en", title: "Python for Data Science Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=LHBE6Q9XlzI" },
-      { type: "video_hi", title: "Pandas & NumPy in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=4pNSPBfJpKw" },
+      { type: "video_hi", title: "Pandas & NumPy in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=JDcZBzb46ts" },
       { type: "article", title: "10 Minutes to Pandas", url: "https://pandas.pydata.org/docs/user_guide/10min.html" },
       { type: "github", title: "Python Data Science Handbook", url: "https://github.com/jakevdp/PythonDataScienceHandbook" },
       { type: "cheat_sheet", title: "Pandas Data Wrangling Cheat Sheet", url: "https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf" },
@@ -58,7 +58,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PyTorch Math Operations", url: "https://pytorch.org/docs/stable/torch.html#math-operations" },
       { type: "video_en", title: "Essence of Linear Algebra (3Blue1Brown)", url: "https://www.youtube.com/watch?v=fNk_zzaMoSs" },
-      { type: "video_hi", title: "Math for ML in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Math for ML in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=ILQTG5bMENI" },
       { type: "article", title: "Calculus for Deep Learning", url: "https://towardsdatascience.com/calculus-in-machine-learning-2e7cddafa21f" },
       { type: "github", title: "Mathematics for Machine Learning Book", url: "https://github.com/mml-book/mml-book.github.io" },
       { type: "cheat_sheet", title: "Linear Algebra Cheat Sheet", url: "https://ml-cheatsheet.readthedocs.io/en/latest/linear_algebra.html" },
@@ -89,8 +89,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "SciPy Stats Documentation", url: "https://docs.scipy.org/doc/scipy/reference/stats.html" },
-      { type: "video_en", title: "Statistics and Probability (StatQuest)", url: "https://www.youtube.com/watch?v=vYimHJMuTa0" },
-      { type: "video_hi", title: "Statistics for ML Hindi", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_en", title: "Statistics and Probability (StatQuest)", url: "https://www.youtube.com/watch?v=YTWM4aOqVwM" },
+      { type: "video_hi", title: "Statistics for ML Hindi", url: "https://www.youtube.com/watch?v=YTWM4aOqVwM" },
       { type: "article", title: "Probability concepts for Machine Learning", url: "https://towardsdatascience.com/probability-concepts-explained-introduction-a7c0316de465" },
       { type: "github", title: "Think Stats (Book Repository)", url: "https://github.com/AllenDowney/ThinkStats2" },
       { type: "cheat_sheet", title: "Probability Cheat Sheet", url: "https://www.probabilitycourse.com/" },
@@ -121,8 +121,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Scikit-learn: Supervised Learning", url: "https://scikit-learn.org/stable/supervised_learning.html" },
-      { type: "video_en", title: "Machine Learning Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
-      { type: "video_hi", title: "Supervised Learning Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=DKSZHN7jLmI" },
+      { type: "video_en", title: "Machine Learning Full Course (Edureka)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_hi", title: "Supervised Learning Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=p75X6QIm0aQ" },
       { type: "article", title: "Introduction to XGBoost", url: "https://xgboost.readthedocs.io/en/stable/tutorials/model.html" },
       { type: "github", title: "Machine Learning From Scratch", url: "https://github.com/eriklindernoren/ML-From-Scratch" },
       { type: "cheat_sheet", title: "Scikit-learn Algorithm Cheat Sheet", url: "https://scikit-learn.org/stable/tutorial/machine_learning_map/index.html" },
@@ -154,7 +154,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Unsupervised Learning", url: "https://scikit-learn.org/stable/unsupervised_learning.html" },
       { type: "video_en", title: "K-Means Clustering (StatQuest)", url: "https://www.youtube.com/watch?v=4b5d3muPQmA" },
-      { type: "video_hi", title: "Unsupervised Learning Hindi", url: "https://www.youtube.com/watch?v=0uxqRoHPABk" },
+      { type: "video_hi", title: "Unsupervised Learning Hindi", url: "https://www.youtube.com/watch?v=D6gtZrsYi6c" },
       { type: "article", title: "Understanding PCA", url: "https://towardsdatascience.com/a-one-stop-shop-for-principal-component-analysis-5582fb7e0a9c" },
       { type: "github", title: "UMAP: Uniform Manifold Approximation", url: "https://github.com/lmcinnes/umap" },
       { type: "cheat_sheet", title: "Clustering Algorithms Comparison", url: "https://scikit-learn.org/stable/auto_examples/cluster/plot_cluster_comparison.html" },
@@ -186,7 +186,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Model Evaluation", url: "https://scikit-learn.org/stable/modules/model_evaluation.html" },
       { type: "video_en", title: "Precision, Recall, F1 (StatQuest)", url: "https://www.youtube.com/watch?v=Kdsp6soqA7o" },
-      { type: "video_hi", title: "Evaluation Metrics Hindi", url: "https://www.youtube.com/watch?v=ZV86K7e3rS4" },
+      { type: "video_hi", title: "Evaluation Metrics Hindi", url: "https://www.youtube.com/watch?v=LbX4X71-TFI" },
       { type: "article", title: "The ultimate guide to evaluation metrics", url: "https://towardsdatascience.com/the-ultimate-guide-to-evaluation-metrics-for-machine-learning-8c5da4651054" },
       { type: "github", title: "Evaluating ML Models Code", url: "https://github.com/ageron/handson-ml3" },
       { type: "cheat_sheet", title: "Metrics Selection Cheat Sheet", url: "https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics" },
@@ -250,7 +250,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PyTorch Autograd Mechanics", url: "https://pytorch.org/docs/stable/notes/autograd.html" },
       { type: "video_en", title: "Backpropagation Calculus (3Blue1Brown)", url: "https://www.youtube.com/watch?v=Ilg3gGewQ5U" },
-      { type: "video_hi", title: "Backpropagation Hindi", url: "https://www.youtube.com/watch?v=NXSDI42LHGA" },
+      { type: "video_hi", title: "Backpropagation Hindi", url: "https://www.youtube.com/watch?v=Ilg3gGewQ5U" },
       { type: "article", title: "Yes you should understand backprop (Karpathy)", url: "https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b" },
       { type: "github", title: "Micrograd: Autograd Engine from Scratch", url: "https://github.com/karpathy/micrograd" },
       { type: "cheat_sheet", title: "Calculus for Deep Learning Cheat Sheet", url: "https://distill.pub/2017/momentum/" },
@@ -282,7 +282,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "TorchVision Documentation", url: "https://pytorch.org/vision/stable/index.html" },
       { type: "video_en", title: "CNNs Explained (Computerphile)", url: "https://www.youtube.com/watch?v=YRhxdVk_sIs" },
-      { type: "video_hi", title: "CNN Concept in Hindi", url: "https://www.youtube.com/watch?v=y-lIVDtOKgM" },
+      { type: "video_hi", title: "CNN Concept in Hindi", url: "https://www.youtube.com/watch?v=jMwaefF_pmY" },
       { type: "article", title: "A Comprehensive Guide to CNNs", url: "https://towardsdatascience.com/a-comprehensive-guide-to-convolutional-neural-networks-the-eli5-way-3bd2b1164a53" },
       { type: "github", title: "PyTorch Vision Repository", url: "https://github.com/pytorch/vision" },
       { type: "cheat_sheet", title: "CNN Architecture Cheat Sheet", url: "https://stanford.edu/~shervine/teaching/cs-230/cheatsheet-convolutional-neural-networks" },
@@ -314,7 +314,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Sentence Transformers Documentation", url: "https://sbert.net/" },
       { type: "video_en", title: "Word Embeddings (StatQuest)", url: "https://www.youtube.com/watch?v=viZrOnJclY0" },
-      { type: "video_hi", title: "Word2Vec and Embeddings Hindi", url: "https://www.youtube.com/watch?v=gE9OJ3gAIwY" },
+      { type: "video_hi", title: "Word2Vec and Embeddings Hindi", url: "https://www.youtube.com/watch?v=8aNjLpoAJHw" },
       { type: "article", title: "The Illustrated Word2Vec", url: "https://jalammar.github.io/illustrated-word2vec/" },
       { type: "github", title: "Gensim: Topic modeling and Word2Vec", url: "https://github.com/piskvorky/gensim" },
       { type: "cheat_sheet", title: "Embeddings Quick Reference", url: "https://developers.google.com/machine-learning/crash-course/embeddings/video-lecture" },
@@ -345,7 +345,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Attention Is All You Need (Paper)", url: "https://arxiv.org/abs/1706.03762" },
-      { type: "video_en", title: "Transformers Explained (Andrej Karpathy)", url: "https://www.youtube.com/watch?v=kCc8FmEb1nY" },
+      { type: "video_en", title: "Let's Build GPT from Scratch (Andrej Karpathy)", url: "https://www.youtube.com/watch?v=kCc8FmEb1nY" },
       { type: "video_hi", title: "Transformers Architecture Hindi", url: "https://www.youtube.com/watch?v=X3cFiJnxUBY" },
       { type: "article", title: "The Illustrated Transformer (Jay Alammar)", url: "https://jalammar.github.io/illustrated-transformer/" },
       { type: "github", title: "Annotated Transformer (Code Walkthrough)", url: "https://github.com/harvardnlp/annotated-transformer" },
@@ -378,7 +378,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Hugging Face Transformers Docs", url: "https://huggingface.co/docs/transformers/index" },
       { type: "video_en", title: "Hugging Face Crash Course", url: "https://www.youtube.com/watch?v=QEaBAZQCtwE" },
-      { type: "video_hi", title: "Hugging Face Hindi Tutorial", url: "https://www.youtube.com/watch?v=KtmxPdcFxRQ" },
+      { type: "video_hi", title: "Hugging Face Hindi Tutorial", url: "https://www.youtube.com/watch?v=pZ7yL6pwUNs" },
       { type: "article", title: "Hugging Face NLP Course (Official)", url: "https://huggingface.co/course/chapter1/1" },
       { type: "github", title: "Hugging Face Transformers Repo", url: "https://github.com/huggingface/transformers" },
       { type: "cheat_sheet", title: "Hugging Face Pipeline Cheat Sheet", url: "https://huggingface.co/docs/transformers/main_classes/pipelines" },
@@ -409,8 +409,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "OpenAI Prompt Engineering Guide", url: "https://platform.openai.com/docs/guides/prompt-engineering" },
-      { type: "video_en", title: "Prompt Engineering Tutorial (Andrew Ng)", url: "https://www.youtube.com/watch?v=jC4v5AS4ART" },
-      { type: "video_hi", title: "Prompt Engineering Hindi", url: "https://www.youtube.com/watch?v=AhyznRSDjw8" },
+      { type: "video_en", title: "ChatGPT Prompt Engineering for Developers (DeepLearning.AI)", url: "https://www.youtube.com/watch?v=H4YK_7MAckk" },
+      { type: "video_hi", title: "AI Prompt Engineering in Hindi", url: "https://www.youtube.com/watch?v=Yp7XG6prCl4" },
       { type: "article", title: "PromptingGuide.ai: Comprehensive Guide", url: "https://www.promptingguide.ai/" },
       { type: "github", title: "Awesome Prompt Engineering", url: "https://github.com/promptslab/Awesome-Prompt-Engineering" },
       { type: "cheat_sheet", title: "Prompt Engineering Cheat Sheet", url: "https://github.com/dair-ai/Prompt-Engineering-Guide" },
@@ -441,7 +441,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Hugging Face PEFT Documentation", url: "https://huggingface.co/docs/peft/index" },
-      { type: "video_en", title: "LoRA and QLoRA Explained", url: "https://www.youtube.com/watch?v=t50ZZcjCApM" },
+      { type: "video_en", title: "LoRA and QLoRA Explained", url: "https://www.youtube.com/watch?v=SrYXAd4nMvQ" },
       { type: "video_hi", title: "Fine-Tuning LLMs Hindi", url: "https://www.youtube.com/watch?v=tIeHLnjs5U8" },
       { type: "article", title: "Understanding LoRA (Low-Rank Adaptation)", url: "https://huggingface.co/docs/peft/index" },
       { type: "github", title: "Axolotl: LLM Fine-tuning tool", url: "https://github.com/OpenAccess-AI-Collective/axolotl" },
@@ -474,7 +474,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Llama 3 Official Site", url: "https://llama.meta.com/" },
       { type: "video_en", title: "Open Source vs Closed Source LLMs", url: "https://www.youtube.com/watch?v=L_Guz73e6fw" },
-      { type: "video_hi", title: "LLM Options Explained Hindi", url: "https://www.youtube.com/watch?v=GNhgfuwEhCY" },
+      { type: "video_hi", title: "LLM Options Explained Hindi", url: "https://www.youtube.com/watch?v=kxcb7jzCOyc" },
       { type: "article", title: "The Economics of Large Language Models", url: "https://a16z.com/" },
       { type: "github", title: "Ollama: Run LLMs locally", url: "https://github.com/ollama/ollama" },
       { type: "cheat_sheet", title: "LMSYS Chatbot Arena Leaderboard", url: "https://lmsys.org/blog/" },
@@ -506,7 +506,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Pinecone: What is a Vector Database?", url: "https://www.pinecone.io/learn/vector-database/" },
       { type: "video_en", title: "Vector Databases Explained", url: "https://www.youtube.com/watch?v=klTvEwg3oJ4" },
-      { type: "video_hi", title: "Vector Databases Hindi", url: "https://www.youtube.com/watch?v=bFnxq1lLjOo" },
+      { type: "video_hi", title: "Vector Databases Hindi", url: "https://www.youtube.com/watch?v=9oyIQg50xm4" },
       { type: "article", title: "Comprehensive Guide to ANN algorithms", url: "https://towardsdatascience.com/comprehensive-guide-to-approximate-nearest-neighbors-algorithms-8b94f057d6b6" },
       { type: "github", title: "pgvector: Vector similarity search for Postgres", url: "https://github.com/pgvector/pgvector" },
       { type: "cheat_sheet", title: "Vector DB Comparison", url: "https://github.com/milvus-io/milvus" },
@@ -538,7 +538,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenAI: RAG Strategy", url: "https://platform.openai.com/docs/tutorials/meeting-minutes" },
       { type: "video_en", title: "RAG Architecture Explained", url: "https://www.youtube.com/watch?v=T-D1OfcDW1M" },
-      { type: "video_hi", title: "RAG Tutorial Hindi", url: "https://www.youtube.com/watch?v=4B5FbZWZK4o" },
+      { type: "video_hi", title: "RAG Tutorial Hindi", url: "https://www.youtube.com/watch?v=_0i9Q5R23u4" },
       { type: "article", title: "Advanced RAG Techniques", url: "https://python.langchain.com/docs/concepts/rag/" },
       { type: "github", title: "Ragas: Evaluation framework for RAG", url: "https://github.com/explodinggradients/ragas" },
       { type: "cheat_sheet", title: "RAG Architecture Cheat Sheet", url: "https://github.com/langchain-ai/langchain" },
@@ -570,7 +570,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "LangChain Documentation", url: "https://python.langchain.com/docs/get_started/introduction" },
       { type: "video_en", title: "LangChain Crash Course", url: "https://www.youtube.com/watch?v=aywZrzNaKjs" },
-      { type: "video_hi", title: "LangChain Tutorial Hindi", url: "https://www.youtube.com/watch?v=PaFPbb66DxQ" },
+      { type: "video_hi", title: "LangChain Tutorial Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=cQUUkZnyoD0" },
       { type: "article", title: "LlamaIndex vs LangChain", url: "https://docs.llamaindex.ai/en/stable/" },
       { type: "github", title: "LlamaIndex Repository", url: "https://github.com/run-llama/llama_index" },
       { type: "cheat_sheet", title: "LangChain Expression Language (LCEL) Cheat Sheet", url: "https://python.langchain.com/docs/expression_language/" },
@@ -601,8 +601,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Weights & Biases Documentation", url: "https://docs.wandb.ai/" },
-      { type: "video_en", title: "MLflow Crash Course", url: "https://www.youtube.com/watch?v=7h2A9u-P0E4" },
-      { type: "video_hi", title: "MLOps and MLflow Hindi", url: "https://www.youtube.com/watch?v=Kdsp6soqA7o" },
+      { type: "video_en", title: "MLflow Crash Course", url: "https://www.youtube.com/watch?v=6ngxBkx05Fs" },
+      { type: "video_hi", title: "MLOps and MLflow Hindi", url: "https://www.youtube.com/watch?v=nAmC7SoVLd8" },
       { type: "article", title: "Why You Need Experiment Tracking", url: "https://mlflow.org/docs/latest/tracking.html" },
       { type: "github", title: "MLflow Source Code", url: "https://github.com/mlflow/mlflow" },
       { type: "cheat_sheet", title: "W&B Quickstart Code", url: "https://wandb.ai/quickstart" },
@@ -633,8 +633,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "vLLM Documentation", url: "https://docs.vllm.ai/en/latest/" },
-      { type: "video_en", title: "Optimizing LLM Inference (vLLM & PagedAttention)", url: "https://www.youtube.com/watch?v=5ZlakKIbqZk" },
-      { type: "video_hi", title: "LLM Deployment in Hindi", url: "https://www.youtube.com/watch?v=nFTQ7kHQWtc" },
+      { type: "video_en", title: "Optimizing LLM Inference (vLLM & PagedAttention)", url: "https://www.youtube.com/watch?v=McLdlg5Gc9s" },
+      { type: "video_hi", title: "LLM Deployment in Hindi", url: "https://www.youtube.com/watch?v=nE2skSRWTTs" },
       { type: "article", title: "Understanding PagedAttention", url: "https://blog.vllm.ai/2023/06/20/vllm.html" },
       { type: "github", title: "Text Generation Inference (Hugging Face)", url: "https://github.com/huggingface/text-generation-inference" },
       { type: "cheat_sheet", title: "LLM Memory Requirements Calculator", url: "https://huggingface.co/spaces/hf-accelerate/model-memory-usage" },
@@ -665,8 +665,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "NVIDIA NeMo Guardrails", url: "https://github.com/NVIDIA/NeMo-Guardrails" },
-      { type: "video_en", title: "AI Safety and Alignment (Computerphile)", url: "https://www.youtube.com/watch?v=gT5N_Y_vLwI" },
-      { type: "video_hi", title: "AI Ethics and Bias Hindi", url: "https://www.youtube.com/watch?v=VriqpZSHBd8" },
+      { type: "video_en", title: "AI Safety and Alignment (Computerphile)", url: "https://www.youtube.com/watch?v=IooZplHsY-A" },
+      { type: "video_hi", title: "AI Ethics and Bias Hindi", url: "https://www.youtube.com/watch?v=IooZplHsY-A" },
       { type: "article", title: "Anthropic: Constitutional AI", url: "https://www.anthropic.com/index/constitutional-ai-harmlessness-from-ai-feedback" },
       { type: "github", title: "Awesome AI Guidelines", url: "https://github.com/EthicalML/awesome-artificial-intelligence-guidelines" },
       { type: "cheat_sheet", title: "OWASP Top 10 for LLMs", url: "https://owasp.org/www-project-top-10-for-large-language-model-applications/" },

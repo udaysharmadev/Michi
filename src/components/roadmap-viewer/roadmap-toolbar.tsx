@@ -10,14 +10,12 @@ export function RoadmapToolbar() {
   const { zoomIn, zoomOut, fitView } = useReactFlow();
   const { viewMode, setViewMode, progressMap, setNodeProgress } = useRoadmapInteraction();
 
-  // Reactive zoom from React Flow store
   const zoom = useStore((s) => s.transform[2]);
   const zoomPercent = Math.round(zoom * 100);
-  
-  // Calculate Progress
+
   const nodes = useNodes();
   const topicNodes = nodes.filter(n => n.type === 'topic');
-  
+
   let completed = 0;
   for (const n of topicNodes) {
     if (progressMap[n.id] === 'completed') completed++;
@@ -36,7 +34,7 @@ export function RoadmapToolbar() {
 
   const handleMarkAll = () => {
     topicNodes.forEach(n => setNodeProgress(n.id, 'completed'));
-    toast.success("All topics marked complete! 🎉");
+    toast.success("All topics marked complete!");
   };
 
   const handleReset = () => {
@@ -45,107 +43,107 @@ export function RoadmapToolbar() {
   };
 
   return (
-    <div 
-      role="toolbar" 
+    <div
+      role="toolbar"
       aria-label="Roadmap Controls"
-      className="absolute top-5 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2.5 pointer-events-auto flex-wrap justify-center px-4"
+      className="absolute top-4 left-1/2 -translate-x-1/2 z-40 flex items-center gap-2 pointer-events-auto flex-wrap justify-center px-3"
     >
-      {/* View Mode toggle */}
-      <div className="flex bg-card border border-border rounded-xl shadow-sm overflow-hidden">
+      {/* View Mode */}
+      <div className="flex bg-card border border-border rounded-lg shadow-sm overflow-hidden">
         <button
           onClick={() => setViewMode("detailed")}
-          className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold transition-all duration-200 cursor-pointer ${
+          className={`flex items-center gap-1 px-2.5 py-1.5 text-[11px] font-semibold transition-all duration-150 cursor-pointer ${
             viewMode === "detailed"
-              ? "bg-foreground text-background"
+              ? "bg-primary text-primary-foreground"
               : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
           }`}
         >
-          <LayoutGrid className="w-3.5 h-3.5" />
+          <LayoutGrid className="w-3 h-3" />
           Detailed
         </button>
         <button
           onClick={() => setViewMode("overview")}
-          className={`flex items-center gap-1.5 px-3 py-2 text-xs font-semibold transition-all duration-200 cursor-pointer ${
+          className={`flex items-center gap-1 px-2.5 py-1.5 text-[11px] font-semibold transition-all duration-150 cursor-pointer ${
             viewMode === "overview"
-              ? "bg-foreground text-background"
+              ? "bg-primary text-primary-foreground"
               : "text-muted-foreground hover:text-foreground hover:bg-muted/50"
           }`}
         >
-          <List className="w-3.5 h-3.5" />
+          <List className="w-3 h-3" />
           Overview
         </button>
       </div>
 
-      {/* Zoom controls */}
-      <div className="flex items-center bg-card border border-border rounded-xl shadow-sm">
+      {/* Zoom */}
+      <div className="flex items-center bg-card border border-border rounded-lg shadow-sm">
         <button
           onClick={() => zoomOut()}
-          className="p-2 text-muted-foreground/70 hover:text-foreground transition-colors duration-200 cursor-pointer"
+          className="p-1.5 text-muted-foreground/60 hover:text-foreground transition-colors cursor-pointer"
         >
-          <Minus className="w-3.5 h-3.5" />
+          <Minus className="w-3 h-3" />
         </button>
-        <div className="px-1.5 text-xs font-bold text-foreground select-none min-w-[3rem] text-center tabular-nums">
+        <div className="px-1 text-[11px] font-bold text-foreground select-none min-w-[2.5rem] text-center tabular-nums">
           {zoomPercent}%
         </div>
         <button
           onClick={() => zoomIn()}
-          className="p-2 text-muted-foreground/70 hover:text-foreground transition-colors duration-200 cursor-pointer"
+          className="p-1.5 text-muted-foreground/60 hover:text-foreground transition-colors cursor-pointer"
         >
-          <Plus className="w-3.5 h-3.5" />
+          <Plus className="w-3 h-3" />
         </button>
       </div>
 
-      {/* Fit View */}
+      {/* Fit */}
       <button
         onClick={() => fitView({ duration: 600, padding: 0.04 })}
-        className="flex items-center gap-1.5 px-3 py-2 bg-card border border-border rounded-xl shadow-sm text-xs font-semibold text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors duration-200 cursor-pointer"
+        className="flex items-center gap-1 px-2.5 py-1.5 bg-card border border-border rounded-lg shadow-sm text-[11px] font-semibold text-muted-foreground hover:text-foreground hover:bg-muted/50 transition-colors cursor-pointer"
       >
-        <Maximize className="w-3.5 h-3.5" />
+        <Maximize className="w-3 h-3" />
         Fit
       </button>
 
-      {/* Share Button */}
+      {/* Share */}
       <button
         onClick={handleShare}
-        className="flex items-center gap-1.5 px-3 py-2 bg-primary/10 border border-primary/20 rounded-xl shadow-sm text-xs font-semibold text-primary hover:bg-primary/20 hover:border-primary/30 transition-all duration-200 cursor-pointer"
+        className="flex items-center gap-1 px-2.5 py-1.5 bg-primary/10 border border-primary/20 rounded-lg shadow-sm text-[11px] font-semibold text-primary hover:bg-primary/20 hover:border-primary/30 transition-all cursor-pointer"
       >
-        <Share2 className="w-3.5 h-3.5" />
+        <Share2 className="w-3 h-3" />
         Share
       </button>
 
       {/* Progress pill */}
       {totalTopics > 0 && (
-        <div className="flex items-center gap-2 px-3 py-2 bg-card border border-border rounded-xl shadow-sm text-xs font-semibold text-muted-foreground ml-2">
-          <div className="relative w-16 h-1.5 bg-muted rounded-full overflow-hidden">
-            <div 
+        <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-card border border-border rounded-lg shadow-sm text-[11px] font-semibold text-muted-foreground">
+          <div className="relative w-12 h-1 bg-muted rounded-full overflow-hidden">
+            <div
               className="absolute inset-y-0 left-0 rounded-full transition-all duration-700 ease-out"
-              style={{ 
+              style={{
                 width: `${progressPercent}%`,
-                background: progressPercent === 100 ? '#10b981' : 'linear-gradient(90deg, #6366f1, #10b981)',
+                background: progressPercent === 100 ? '#10b981' : 'linear-gradient(90deg, oklch(0.65 0.2 265), #10b981)',
               }}
             />
           </div>
-          <span className="w-8 tabular-nums">{progressPercent}%</span>
+          <span className="w-7 tabular-nums">{progressPercent}%</span>
         </div>
       )}
 
-      {/* Quick action buttons */}
+      {/* Quick actions */}
       {totalTopics > 0 && (
-        <div className="flex items-center bg-card border border-border rounded-xl shadow-sm overflow-hidden">
+        <div className="flex items-center bg-card border border-border rounded-lg shadow-sm overflow-hidden">
           <button
             onClick={handleMarkAll}
             title="Mark all topics as complete"
-            className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-muted-foreground hover:text-emerald-600 hover:bg-emerald-500/5 transition-colors duration-200 cursor-pointer"
+            className="flex items-center gap-0.5 px-2 py-1.5 text-[11px] font-semibold text-muted-foreground hover:text-emerald-600 hover:bg-emerald-500/5 transition-colors cursor-pointer"
           >
-            <CheckCheck className="w-3.5 h-3.5" />
+            <CheckCheck className="w-3 h-3" />
           </button>
-          <div className="w-px h-4 bg-border" />
+          <div className="w-px h-3 bg-border" />
           <button
             onClick={handleReset}
             title="Reset all progress"
-            className="flex items-center gap-1 px-2.5 py-2 text-xs font-semibold text-muted-foreground hover:text-rose-500 hover:bg-rose-500/5 transition-colors duration-200 cursor-pointer"
+            className="flex items-center gap-0.5 px-2 py-1.5 text-[11px] font-semibold text-muted-foreground hover:text-rose-500 hover:bg-rose-500/5 transition-colors cursor-pointer"
           >
-            <RotateCcw className="w-3.5 h-3.5" />
+            <RotateCcw className="w-3 h-3" />
           </button>
         </div>
       )}

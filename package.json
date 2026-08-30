@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "lint:gate": "eslint src/data/schema src/data/__tests__ scripts/validate-content.mts scripts/promote-content.mts scripts/lib --max-warnings=0",
+    "lint:gate": "eslint src/data/schema src/data/__tests__ scripts/validate-content.mts scripts/promote-content.mts scripts/inventory.mts scripts/verify-youtube.mts scripts/lib --max-warnings=0",
     "typecheck": "tsc --noEmit",
     "test": "node --test --import tsx \"src/**/*.test.mts\"",
     "validate": "node --import tsx scripts/validate-content.mts",
@@ -15,7 +15,11 @@
     "validate:ci": "node --import tsx scripts/validate-content.mts --baseline=content-baseline.json --limit=0",
     "validate:baseline": "node --import tsx scripts/validate-content.mts --update-baseline=content-baseline.json",
     "promote": "node --import tsx scripts/promote-content.mts",
-    "verify": "npm run typecheck && npm run lint:gate && npm run validate:ci && npm run test"
+    "inventory": "node --import tsx scripts/inventory.mts",
+    "inventory:check": "node --import tsx scripts/inventory.mts --check",
+    "verify-youtube": "node --import tsx scripts/verify-youtube.mts",
+    "verify": "npm run typecheck && npm run lint:gate && npm run validate:ci && npm run test",
+    "replace-youtube": "node --import tsx scripts/replace-youtube.mts"
   },
   "engines": {
     "node": ">=24.0.0"

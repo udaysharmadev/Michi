@@ -1,363 +1,49 @@
-import { Node, Edge } from '@xyflow/react';
+import { RoadmapContentNode, RoadmapContentEdge } from "@/data/types";
 
-export const nodes: Node[] = [
-  {
-    "id": "ux-ui",
-    "type": "roadmap",
-    "position": {
-      "x": 400,
-      "y": 50
-    },
-    "data": {
-      "label": "uxUiDesigner"
-    }
-  },
-  {
-    "id": "ux_fundamentals",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 200
-    },
-    "data": {
-      "label": "UX Fundamentals",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "design_thinking",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 280
-    },
-    "data": {
-      "label": "Design Thinking",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "user_research",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 280
-    },
-    "data": {
-      "label": "User Research",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "personas_journey_maps",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 400
-    },
-    "data": {
-      "label": "Personas & Journey Maps",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "information_architecture",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 590
-    },
-    "data": {
-      "label": "Information Architecture",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "card_sorting",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 670
-    },
-    "data": {
-      "label": "Card Sorting",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "sitemaps",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 670
-    },
-    "data": {
-      "label": "Sitemaps",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "wireframing",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 790
-    },
-    "data": {
-      "label": "Wireframing",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "ui_design",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 980
-    },
-    "data": {
-      "label": "UI Design",
-      "color": "green"
-    }
-  },
-  {
-    "id": "color_theory",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1060
-    },
-    "data": {
-      "label": "Color Theory",
-      "color": "green"
-    }
-  },
-  {
-    "id": "typography",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1060
-    },
-    "data": {
-      "label": "Typography",
-      "color": "green"
-    }
-  },
-  {
-    "id": "layout_grids",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1180
-    },
-    "data": {
-      "label": "Layout & Grids",
-      "color": "green"
-    }
-  },
-  {
-    "id": "prototyping",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 1370
-    },
-    "data": {
-      "label": "Prototyping & Tools",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "figma_basics",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1450
-    },
-    "data": {
-      "label": "Figma Basics",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "advanced_prototyping",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1450
-    },
-    "data": {
-      "label": "Advanced Prototyping",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "design_systems",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1570
-    },
-    "data": {
-      "label": "Design Systems",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "usability",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 1760
-    },
-    "data": {
-      "label": "Usability & Handoff",
-      "color": "red"
-    }
-  },
-  {
-    "id": "usability_testing",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1840
-    },
-    "data": {
-      "label": "Usability Testing",
-      "color": "red"
-    }
-  },
-  {
-    "id": "accessibility_a11y",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1840
-    },
-    "data": {
-      "label": "Accessibility (a11y)",
-      "color": "red"
-    }
-  },
-  {
-    "id": "dev_handoff",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1960
-    },
-    "data": {
-      "label": "Developer Handoff",
-      "color": "red"
-    }
-  }
+export const graphNodes: RoadmapContentNode[] = [
+    { id: "s_ux_fund", type: "section", position: { x: 0, y: 0 }, data: { title: "UX Fundamentals", sectionNumber: 1, color: "blue", sectionIcon: "lightbulb" } },
+    { id: "n_ux_1", type: "topic", parentId: "s_ux_fund", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Design Thinking", difficulty: "Beginner", estimatedTime: "5 hrs", sectionColor: "blue", icon: "brain", row: 0, col: 0 } },
+    { id: "n_ux_2", type: "topic", parentId: "s_ux_fund", extent: "parent", position: { x: 0, y: 0 }, data: { title: "User Research", difficulty: "Beginner", estimatedTime: "6 hrs", sectionColor: "blue", icon: "search", row: 0, col: 1 } },
+    { id: "n_ux_3", type: "topic", parentId: "s_ux_fund", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Personas & Journey Maps", difficulty: "Beginner", estimatedTime: "4 hrs", sectionColor: "blue", icon: "map", row: 1, col: 0 } },
+
+    { id: "s_ux_ia", type: "section", position: { x: 576, y: 0 }, data: { title: "Information Architecture", sectionNumber: 2, color: "purple", sectionIcon: "layers" } },
+    { id: "n_ux_4", type: "topic", parentId: "s_ux_ia", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Card Sorting", difficulty: "Beginner", estimatedTime: "3 hrs", sectionColor: "purple", icon: "grid", row: 0, col: 0 } },
+    { id: "n_ux_5", type: "topic", parentId: "s_ux_ia", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Sitemaps", difficulty: "Beginner", estimatedTime: "3 hrs", sectionColor: "purple", icon: "map", row: 0, col: 1 } },
+    { id: "n_ux_6", type: "topic", parentId: "s_ux_ia", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Wireframing", difficulty: "Beginner", estimatedTime: "5 hrs", sectionColor: "purple", icon: "layout", row: 1, col: 0 } },
+
+    { id: "s_ux_ui", type: "section", position: { x: 1152, y: 0 }, data: { title: "UI Design", sectionNumber: 3, color: "green", sectionIcon: "palette" } },
+    { id: "n_ux_7", type: "topic", parentId: "s_ux_ui", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Color Theory", difficulty: "Beginner", estimatedTime: "4 hrs", sectionColor: "green", icon: "palette", row: 0, col: 0 } },
+    { id: "n_ux_8", type: "topic", parentId: "s_ux_ui", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Typography", difficulty: "Beginner", estimatedTime: "4 hrs", sectionColor: "green", icon: "type", row: 0, col: 1 } },
+    { id: "n_ux_9", type: "topic", parentId: "s_ux_ui", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Layout & Grids", difficulty: "Beginner", estimatedTime: "4 hrs", sectionColor: "green", icon: "grid", row: 1, col: 0 } },
+
+    { id: "s_ux_proto", type: "section", position: { x: 0, y: 600 }, data: { title: "Prototyping & Tools", sectionNumber: 4, color: "orange", sectionIcon: "tool" } },
+    { id: "n_ux_10", type: "topic", parentId: "s_ux_proto", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Figma Basics", difficulty: "Beginner", estimatedTime: "6 hrs", sectionColor: "orange", icon: "SiFigma", row: 0, col: 0 } },
+    { id: "n_ux_11", type: "topic", parentId: "s_ux_proto", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Advanced Prototyping", difficulty: "Intermediate", estimatedTime: "6 hrs", sectionColor: "orange", icon: "SiFigma", row: 0, col: 1 } },
+    { id: "n_ux_12", type: "topic", parentId: "s_ux_proto", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Design Systems", difficulty: "Intermediate", estimatedTime: "8 hrs", sectionColor: "orange", icon: "box", row: 1, col: 0 } },
+
+    { id: "s_ux_ho", type: "section", position: { x: 576, y: 600 }, data: { title: "Usability & Handoff", sectionNumber: 5, color: "red", sectionIcon: "check" } },
+    { id: "n_ux_13", type: "topic", parentId: "s_ux_ho", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Usability Testing", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "red", icon: "users", row: 0, col: 0 } },
+    { id: "n_ux_14", type: "topic", parentId: "s_ux_ho", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Accessibility (a11y)", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "red", icon: "eye", row: 0, col: 1 } },
+    { id: "n_ux_15", type: "topic", parentId: "s_ux_ho", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Developer Handoff", difficulty: "Intermediate", estimatedTime: "3 hrs", sectionColor: "red", icon: "code", row: 1, col: 0 } },
 ];
 
-export const edges: Edge[] = [
-  {
-    "id": "e-ux-ui-ux_fundamentals",
-    "source": "ux-ui",
-    "target": "ux_fundamentals",
-    "animated": true
-  },
-  {
-    "id": "e-ux_fundamentals-design_thinking",
-    "source": "ux_fundamentals",
-    "target": "design_thinking"
-  },
-  {
-    "id": "e-ux_fundamentals-user_research",
-    "source": "ux_fundamentals",
-    "target": "user_research"
-  },
-  {
-    "id": "e-ux_fundamentals-personas_journey_maps",
-    "source": "ux_fundamentals",
-    "target": "personas_journey_maps"
-  },
-  {
-    "id": "e-ux_fundamentals-information_architecture",
-    "source": "ux_fundamentals",
-    "target": "information_architecture",
-    "animated": true
-  },
-  {
-    "id": "e-information_architecture-card_sorting",
-    "source": "information_architecture",
-    "target": "card_sorting"
-  },
-  {
-    "id": "e-information_architecture-sitemaps",
-    "source": "information_architecture",
-    "target": "sitemaps"
-  },
-  {
-    "id": "e-information_architecture-wireframing",
-    "source": "information_architecture",
-    "target": "wireframing"
-  },
-  {
-    "id": "e-information_architecture-ui_design",
-    "source": "information_architecture",
-    "target": "ui_design",
-    "animated": true
-  },
-  {
-    "id": "e-ui_design-color_theory",
-    "source": "ui_design",
-    "target": "color_theory"
-  },
-  {
-    "id": "e-ui_design-typography",
-    "source": "ui_design",
-    "target": "typography"
-  },
-  {
-    "id": "e-ui_design-layout_grids",
-    "source": "ui_design",
-    "target": "layout_grids"
-  },
-  {
-    "id": "e-ui_design-prototyping",
-    "source": "ui_design",
-    "target": "prototyping",
-    "animated": true
-  },
-  {
-    "id": "e-prototyping-figma_basics",
-    "source": "prototyping",
-    "target": "figma_basics"
-  },
-  {
-    "id": "e-prototyping-advanced_prototyping",
-    "source": "prototyping",
-    "target": "advanced_prototyping"
-  },
-  {
-    "id": "e-prototyping-design_systems",
-    "source": "prototyping",
-    "target": "design_systems"
-  },
-  {
-    "id": "e-prototyping-usability",
-    "source": "prototyping",
-    "target": "usability",
-    "animated": true
-  },
-  {
-    "id": "e-usability-usability_testing",
-    "source": "usability",
-    "target": "usability_testing"
-  },
-  {
-    "id": "e-usability-accessibility_a11y",
-    "source": "usability",
-    "target": "accessibility_a11y"
-  },
-  {
-    "id": "e-usability-dev_handoff",
-    "source": "usability",
-    "target": "dev_handoff"
-  }
+export const graphEdges: RoadmapContentEdge[] = [
+    { id: "e1", source: "n_ux_1", target: "n_ux_2", sourceHandle: "right", targetHandle: "left" },
+    { id: "e2", source: "n_ux_1", target: "n_ux_3", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_1", source: "n_ux_3", target: "n_ux_4", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e3", source: "n_ux_4", target: "n_ux_5", sourceHandle: "right", targetHandle: "left" },
+    { id: "e4", source: "n_ux_4", target: "n_ux_6", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_2", source: "n_ux_6", target: "n_ux_7", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e5", source: "n_ux_7", target: "n_ux_8", sourceHandle: "right", targetHandle: "left" },
+    { id: "e6", source: "n_ux_7", target: "n_ux_9", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_3", source: "n_ux_9", target: "n_ux_10", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e7", source: "n_ux_10", target: "n_ux_11", sourceHandle: "right", targetHandle: "left" },
+    { id: "e8", source: "n_ux_10", target: "n_ux_12", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_4", source: "n_ux_12", target: "n_ux_13", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e9", source: "n_ux_13", target: "n_ux_14", sourceHandle: "right", targetHandle: "left" },
+    { id: "e10", source: "n_ux_13", target: "n_ux_15", sourceHandle: "bottom", targetHandle: "top" },
 ];
