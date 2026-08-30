@@ -8,7 +8,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Product Lifecycle Tutorial",
         "type": "video_en",
-        "url": "https://www.youtube.com/watch?v=eijE5H2VatM"
+        "url": "https://www.youtube.com/watch?v=G6Z0wKHttXI"
       }
     ]
   },

@@ -26,8 +26,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Linux Foundation: Introduction to Linux", url: "https://ubuntu.com/tutorials/command-line-for-beginners" },
-      { type: "video_en", title: "Linux Crash Course (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=wBp0Rb-ZJak" },
-      { type: "video_hi", title: "Linux Tutorial for Beginners in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=4pNSPBfJpKw" },
+      { type: "video_en", title: "Linux Crash Course (Joseph Delgadillo)", url: "https://www.youtube.com/watch?v=wBp0Rb-ZJak" },
+      { type: "video_hi", title: "Linux Tutorial for Beginners in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=_tCY-c-sPZc" },
       { type: "article", title: "DigitalOcean: An Introduction to Linux Basics", url: "https://www.digitalocean.com/community/tutorials/an-introduction-to-linux-basics" },
       { type: "github", title: "awesome-linux: Curated Linux resources", url: "https://github.com/inputsh/awesome-linux" },
       { type: "cheat_sheet", title: "Linux Command Line Cheat Sheet (guru99)", url: "https://www.guru99.com/linux-commands-cheat-sheet.html" },
@@ -60,7 +60,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "GNU Bash Reference Manual", url: "https://linuxize.com/post/bash-scripting-tutorial/" },
       { type: "video_en", title: "Bash Scripting Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=v-F3YLd6oMw" },
-      { type: "video_hi", title: "Shell Scripting in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=zsajhz2e50U" },
+      { type: "video_hi", title: "Shell Scripting in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=TtGM9GfBuok" },
       { type: "article", title: "DigitalOcean: How To Write a Bash Script", url: "https://www.digitalocean.com/community/tutorials/how-to-write-a-bash-script" },
       { type: "github", title: "pure-bash-bible: Pure Bash solutions to common tasks", url: "https://github.com/dylanaraps/pure-bash-bible" },
       { type: "cheat_sheet", title: "devhints.io Bash cheatsheet", url: "https://devhints.io/bash" },
@@ -92,8 +92,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "systemd Documentation", url: "https://www.freedesktop.org/wiki/Software/systemd/" },
-      { type: "video_en", title: "Linux Process Management (tutorialspoint)", url: "https://www.youtube.com/watch?v=ls2xpbp-zCA" },
-      { type: "video_hi", title: "Linux Process Management Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=6VqDVVpNSI" },
+      { type: "video_en", title: "Linux Process Management (tutorialspoint)", url: "https://www.youtube.com/watch?v=OrM7nZcxXZU" },
+      { type: "video_hi", title: "Linux Process Management Hindi (Abhishek Veeramalla)", url: "https://www.youtube.com/watch?v=H9DAWegYpag" },
       { type: "article", title: "DigitalOcean: How To Use Systemctl to Manage Systemd Services", url: "https://www.digitalocean.com/community/tutorials/how-to-use-systemctl-to-manage-systemd-services-and-units" },
       { type: "github", title: "systemd: System and Service Manager", url: "https://github.com/systemd/systemd" },
       { type: "cheat_sheet", title: "systemd cheat sheet", url: "https://systemd.io/" },
@@ -125,8 +125,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Cloudflare: What is the OSI Model?", url: "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/" },
-      { type: "video_en", title: "OSI Model Explained (PowerCert Animated Videos)", url: "https://www.youtube.com/watch?v=vv4y_uOneC0" },
-      { type: "video_hi", title: "OSI Model in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "OSI Model Explained (TechTerms)", url: "https://www.youtube.com/watch?v=vv4y_uOneC0" },
+      { type: "video_hi", title: "OSI Model in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=YfUYA3WRHXo" },
       { type: "article", title: "DigitalOcean: An Introduction to Networking Terminology", url: "https://www.digitalocean.com/community/tutorials/an-introduction-to-networking-terminology-interfaces-and-protocols" },
       { type: "github", title: "computer-science: OSI + networking concepts", url: "https://github.com/ossu/computer-science" },
       { type: "cheat_sheet", title: "TCP/IP Overview (Cloudflare)", url: "https://www.cloudflare.com/learning/ddos/glossary/transmission-control-protocol-tcp/" },
@@ -158,8 +158,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Cloudflare: How Does DNS Work?", url: "https://www.cloudflare.com/learning/dns/what-is-dns/" },
-      { type: "video_en", title: "DNS Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=mpQZVYPuDGU" },
-      { type: "video_hi", title: "DNS Explained in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=3-M1D2K4M2I" },
+      { type: "video_en", title: "DNS Explained (PowerCert Animated Videos)", url: "https://www.youtube.com/watch?v=mpQZVYPuDGU" },
+      { type: "video_hi", title: "DNS Explained in Hindi (Thapa Technical)", url: "https://www.youtube.com/watch?v=FmgIQBQ87fo" },
       { type: "article", title: "MDN: An overview of HTTP", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
       { type: "github", title: "curl: Everything you need to understand HTTP requests", url: "https://github.com/curl/curl" },
       { type: "cheat_sheet", title: "HTTP Status Codes Cheat Sheet", url: "https://www.restapitutorial.com/httpstatuscodes.html" },
@@ -192,7 +192,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS: Elastic Load Balancing Documentation", url: "https://docs.aws.amazon.com/elasticloadbalancing/latest/userguide/what-is-load-balancing.html" },
       { type: "video_en", title: "Load Balancing Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=K0Ta65OqQkY" },
-      { type: "video_hi", title: "Load Balancer Explained in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=CaP6ABhI2YE" },
+      { type: "video_hi", title: "Load Balancer Explained in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=qIcEpCX5zOA" },
       { type: "article", title: "DigitalOcean: An Introduction to HAProxy and Load Balancing Concepts", url: "https://www.digitalocean.com/community/tutorials/an-introduction-to-haproxy-and-load-balancing-concepts" },
       { type: "github", title: "Nginx: High Performance Load Balancer and Web Server", url: "https://github.com/nginx/nginx" },
       { type: "cheat_sheet", title: "Nginx Cheat Sheet (devhints)", url: "https://nginx.org/en/docs/" },
@@ -258,7 +258,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Docker Compose Documentation", url: "https://docs.docker.com/compose/" },
       { type: "video_en", title: "Docker Compose Tutorial (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=SXwC9fSwct8" },
-      { type: "video_hi", title: "Docker Compose in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=fMiSCsN0NpQ" },
+      { type: "video_hi", title: "Docker Compose in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=wdjPuDMeHS4" },
       { type: "article", title: "DigitalOcean: How To Install and Use Docker Compose", url: "https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-compose-on-ubuntu-22-04" },
       { type: "github", title: "awesome-compose: Docker Compose examples", url: "https://github.com/docker/awesome-compose" },
       { type: "cheat_sheet", title: "Docker Compose Cheat Sheet (devhints)", url: "https://devhints.io/docker-compose" },
@@ -290,8 +290,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Docker Security Documentation", url: "https://docs.docker.com/engine/security/" },
-      { type: "video_en", title: "Container Security Best Practices (DevSecOps)", url: "https://www.youtube.com/watch?v=yhbPkxK8QZQ" },
-      { type: "video_hi", title: "Container Security in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=_tCY-c-sPZc" },
+      { type: "video_en", title: "Container Security Best Practices (DevSecOps)", url: "https://www.youtube.com/watch?v=mBiUKUycvts" },
+      { type: "video_hi", title: "Container Security Best Practices in Hindi", url: "https://www.youtube.com/watch?v=PE94mMYiQfE" },
       { type: "article", title: "Snyk: 10 Docker Security Best Practices", url: "https://snyk.io/blog/10-docker-image-security-best-practices/" },
       { type: "github", title: "Trivy: Vulnerability scanner for containers", url: "https://github.com/aquasecurity/trivy" },
       { type: "cheat_sheet", title: "Docker Security Cheat Sheet (OWASP)", url: "https://cheatsheetseries.owasp.org/cheatsheets/Docker_Security_Cheat_Sheet.html" },
@@ -357,7 +357,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Jenkins Pipeline Documentation", url: "https://www.jenkins.io/doc/book/pipeline/" },
       { type: "video_en", title: "Jenkins Full Course (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=7KCS70sCoK0" },
-      { type: "video_hi", title: "Jenkins Tutorial in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=FeSMRFkaRIU" },
+      { type: "video_hi", title: "Jenkins Tutorial in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=7SPe0_P8XPs" },
       { type: "article", title: "DigitalOcean: How To Set Up a Continuous Deployment Pipeline with GitLab CI/CD", url: "https://www.digitalocean.com/community/tutorials/how-to-set-up-a-continuous-deployment-pipeline-with-gitlab-on-ubuntu" },
       { type: "github", title: "jenkinsci: Official Jenkins organization", url: "https://github.com/jenkinsci/jenkins" },
       { type: "cheat_sheet", title: "Jenkins Declarative Pipeline Syntax Reference", url: "https://www.jenkins.io/doc/book/pipeline/syntax/" },
@@ -389,8 +389,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS ECR: Container Registry Documentation", url: "https://docs.aws.amazon.com/AmazonECR/latest/userguide/what-is-ecr.html" },
-      { type: "video_en", title: "Docker Registry and Artifact Management (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=0qge5l_9dKU" },
-      { type: "video_hi", title: "Docker Registry in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=I6R-SksuBmg" },
+      { type: "video_en", title: "Artifact Management (JFrog)", url: "https://www.youtube.com/watch?v=bKp1Vif9oO4" },
+      { type: "video_hi", title: "Artifact Management (JFrog)", url: "https://www.youtube.com/watch?v=bKp1Vif9oO4" },
       { type: "article", title: "DigitalOcean: How To Set Up a Private Docker Registry", url: "https://www.digitalocean.com/community/tutorials/how-to-set-up-a-private-docker-registry-on-ubuntu-22-04" },
       { type: "github", title: "distribution: The CNCF Distribution Registry", url: "https://github.com/distribution/distribution" },
       { type: "cheat_sheet", title: "Docker Registry CLI Reference", url: "https://docs.docker.com/engine/reference/commandline/registry/" },
@@ -456,7 +456,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Kubernetes: Deployments, Services, and Ingress", url: "https://kubernetes.io/docs/concepts/workloads/controllers/deployment/" },
       { type: "video_en", title: "Kubernetes Services Explained (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=T4Z7visMM4E" },
-      { type: "video_hi", title: "Kubernetes Pods and Services Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=ZbZSflqJeHs" },
+      { type: "video_hi", title: "Kubernetes Pods and Services Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=DFnV4Gp_OT0" },
       { type: "article", title: "DigitalOcean: How To Set Up an Nginx Ingress Controller", url: "https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nginx-ingress-on-digitalocean-kubernetes-using-helm" },
       { type: "github", title: "kubernetes/examples: Official Kubernetes example applications", url: "https://github.com/kubernetes/examples" },
       { type: "cheat_sheet", title: "Kubernetes YAML Cheat Sheet", url: "https://kubernetes.io/docs/reference/kubernetes-api/" },
@@ -489,7 +489,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Helm Documentation", url: "https://helm.sh/docs/" },
       { type: "video_en", title: "Helm Tutorial (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=-ykwb1d0DXU" },
-      { type: "video_hi", title: "Helm Charts in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=DcOfr_5P9hU" },
+      { type: "video_hi", title: "Helm Charts in Hindi (Kunal Kushwaha)", url: "https://www.youtube.com/watch?v=7A5cH8iqgHU" },
       { type: "article", title: "DigitalOcean: How To Install Software on Kubernetes Clusters with Helm", url: "https://www.digitalocean.com/community/tutorials/how-to-install-software-on-kubernetes-clusters-with-the-helm-3-package-manager" },
       { type: "github", title: "helm/charts: Official Helm chart repository", url: "https://github.com/helm/helm" },
       { type: "cheat_sheet", title: "Helm Commands Cheat Sheet", url: "https://helm.sh/docs/helm/helm/" },
@@ -588,7 +588,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Packer Documentation: Build Images", url: "https://developer.hashicorp.com/packer/docs" },
       { type: "video_en", title: "Immutable Infrastructure Explained (HashiCorp)", url: "https://www.youtube.com/watch?v=RO7VcUAsf-I" },
-      { type: "video_hi", title: "Blue Green Deployment Hindi (TechPrimers)", url: "https://www.youtube.com/watch?v=4-I2RMXZJSM" },
+      { type: "video_hi", title: "Blue Green Deployment & Rolling Updates in Hindi", url: "https://www.youtube.com/watch?v=HFMTbScRk3M" },
       { type: "article", title: "HashiCorp: What is Immutable Infrastructure?", url: "https://www.hashicorp.com/resources/what-is-immutable-infrastructure" },
       { type: "github", title: "hashicorp/packer: Build automated machine images", url: "https://github.com/hashicorp/packer" },
       { type: "cheat_sheet", title: "Blue/Green Deployment Patterns (AWS)", url: "https://docs.aws.amazon.com/wellarchitected/latest/reliability-pillar/rel_tracking_change_management_immutable_infrastructure.html" },
@@ -654,7 +654,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Grafana Documentation", url: "https://grafana.com/docs/grafana/latest/" },
       { type: "video_en", title: "Grafana Tutorial (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=yNRnLyVntUw" },
-      { type: "video_hi", title: "Grafana Dashboard in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=xXibS9832FM" },
+      { type: "video_hi", title: "Grafana Dashboard Tutorial in Hindi", url: "https://www.youtube.com/watch?v=9JyX1KxPtdg" },
       { type: "article", title: "DigitalOcean: How To Install Grafana on Ubuntu", url: "https://www.digitalocean.com/community/tutorials/how-to-install-and-secure-grafana-on-ubuntu-22-04" },
       { type: "github", title: "grafana/grafana: Open source observability platform", url: "https://github.com/grafana/grafana" },
       { type: "cheat_sheet", title: "Grafana Dashboard Best Practices", url: "https://grafana.com/docs/grafana/latest/dashboards/build-dashboards/best-practices/" },
@@ -687,7 +687,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Elastic Stack Documentation", url: "https://www.elastic.co/guide/index.html" },
       { type: "video_en", title: "ELK Stack Tutorial (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=4X0WLg05ASw" },
-      { type: "video_hi", title: "ELK Stack in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=tDBTMOz44Hw" },
+      { type: "video_hi", title: "ELK Stack in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=jT-y6oS10jk" },
       { type: "article", title: "DigitalOcean: How To Install Elasticsearch, Logstash, and Kibana", url: "https://www.digitalocean.com/community/tutorials/how-to-install-elasticsearch-logstash-and-kibana-elastic-stack-on-ubuntu-22-04" },
       { type: "github", title: "elastic/elasticsearch: Distributed search and analytics", url: "https://github.com/elastic/elasticsearch" },
       { type: "cheat_sheet", title: "Elasticsearch Query Cheat Sheet", url: "https://www.elastic.co/guide/en/elasticsearch/reference/current/query-dsl.html" },
@@ -719,7 +719,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS Documentation: Getting Started", url: "https://docs.aws.amazon.com/getting-started/latest/userguide/getting-started-overview.html" },
-      { type: "video_en", title: "AWS Tutorial For Beginners (freeCodeCamp)", url: "https://www.youtube.com/watch?v=ulprqHHWlng" },
+      { type: "video_en", title: "AWS Solutions Architect Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=c3Cn4xYfxJY" },
       { type: "video_hi", title: "AWS Tutorial in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=ZB5ONbD_SMY" },
       { type: "article", title: "DigitalOcean: Getting Started with AWS", url: "https://www.digitalocean.com/community/tutorials/what-is-aws" },
       { type: "github", title: "open-guides/og-aws: Practical AWS guide", url: "https://github.com/open-guides/og-aws" },
@@ -753,7 +753,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS IAM Documentation", url: "https://docs.aws.amazon.com/IAM/latest/UserGuide/introduction.html" },
       { type: "video_en", title: "AWS IAM Full Tutorial (freeCodeCamp)", url: "https://www.youtube.com/watch?v=iF9fs8Rw4Uo" },
-      { type: "video_hi", title: "AWS IAM in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=GwIo3gDZCVQ" },
+      { type: "video_hi", title: "AWS IAM in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=quWqrbIdQJQ" },
       { type: "article", title: "AWS Security Best Practices for IAM", url: "https://docs.aws.amazon.com/IAM/latest/UserGuide/best-practices.html" },
       { type: "github", title: "toniblyx/prowler: AWS Security Tool", url: "https://github.com/prowler-cloud/prowler" },
       { type: "cheat_sheet", title: "IAM Policy Conditions Cheat Sheet", url: "https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_actions-resources-contextkeys.html" },
@@ -785,8 +785,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS Lambda Documentation", url: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html" },
-      { type: "video_en", title: "AWS Lambda Tutorial (Fireship)", url: "https://www.youtube.com/watch?v=vgisbCjtHz4" },
-      { type: "video_hi", title: "AWS Lambda in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=B0iG_lCzNI8" },
+      { type: "video_en", title: "AWS Lambda Tutorial for Beginners (freeCodeCamp)", url: "https://www.youtube.com/watch?v=NWzfgAw_DYA" },
+      { type: "video_hi", title: "AWS Lambda in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=NWzfgAw_DYA" },
       { type: "article", title: "DigitalOcean: Introduction to Serverless Architecture", url: "https://www.digitalocean.com/community/tutorials/serverless-functions-introduction" },
       { type: "github", title: "aws/aws-lambda-go: Go Lambda runtime", url: "https://github.com/aws/aws-lambda-go" },
       { type: "cheat_sheet", title: "Serverless Framework Documentation", url: "https://www.serverless.com/framework/docs/" },

@@ -3,7 +3,7 @@
 import { motion, useReducedMotion } from "motion/react";
 import type { ReactNode } from "react";
 
-const easeStrong = [0.23, 1, 0.32, 1] as const;
+const easeStrong = [0.16, 1, 0.3, 1] as const;
 
 interface RevealProps {
   children: ReactNode;
@@ -12,7 +12,7 @@ interface RevealProps {
   y?: number;
 }
 
-export function Reveal({ children, delay = 0, className = "", y = 24 }: RevealProps) {
+export function Reveal({ children, delay = 0, className = "", y = 20 }: RevealProps) {
   const shouldReduce = useReducedMotion();
   return (
     <motion.div
@@ -30,7 +30,7 @@ export function Reveal({ children, delay = 0, className = "", y = 24 }: RevealPr
 export function RevealStagger({
   children,
   className = "",
-  staggerDelay = 0.07,
+  staggerDelay = 0.06,
   containerDelay = 0,
 }: {
   children: ReactNode[];
@@ -44,11 +44,11 @@ export function RevealStagger({
       {children.map((child, i) => (
         <motion.div
           key={i}
-          initial={shouldReduce ? false : { opacity: 0, y: 20 }}
+          initial={shouldReduce ? false : { opacity: 0, y: 16 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.15 }}
           transition={{
-            duration: 0.55,
+            duration: 0.5,
             delay: containerDelay + i * staggerDelay,
             ease: easeStrong,
           }}

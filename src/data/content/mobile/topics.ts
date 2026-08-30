@@ -22,8 +22,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Android Platform Architecture", type: "official", url: "https://developer.android.com/guide/platform" },
-            { title: "Android vs iOS Architecture Explained", type: "video_en", url: "https://www.youtube.com/watch?v=ada99UCvELI" },
-            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=fnHr_rsQwDA" },
+            { title: "Android vs iOS Architecture Explained (freeCodeCamp Talks)", type: "video_en", url: "https://www.youtube.com/watch?v=YVqkhuFVEDc" },
+            { title: "Android Architecture in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=DJ9niKqYtUc" },
             { title: "iOS vs Android Architecture Differences", type: "article", url: "https://developer.android.com/guide" },
             { title: "aosp-mirror/platform_frameworks_base", type: "github", url: "https://github.com/aosp-mirror/platform_frameworks_base" },
             { title: "Android Stack Architecture Layers", type: "cheat_sheet", url: "https://developer.android.com/guide/platform#library-layer" },
@@ -37,7 +37,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "AppState API - React Native", type: "official", url: "https://reactnative.dev/docs/appstate" },
             { title: "Activity Lifecycle Explained (Coding in Flow)", type: "video_en", url: "https://www.youtube.com/watch?v=1sjA4e_wG3w" },
-            { title: "App Lifecycle in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=B7wHpNUUT4Y" },
+            { title: "App Lifecycle in Hindi (Smart Programming)", type: "video_hi", url: "https://www.youtube.com/watch?v=2DYv7aiTTOA" },
             { title: "iOS App Lifecycle (Apple Docs)", type: "article", url: "https://developer.apple.com/documentation/uikit/app_and_environment/managing_your_app_s_life_cycle" },
             { title: "xxv/android-lifecycle (Visual Diagram)", type: "github", url: "https://github.com/xxv/android-lifecycle" },
             { title: "Android Activity Lifecycle Reference", type: "cheat_sheet", url: "https://developer.android.com/guide/components/activities/activity-lifecycle" },
@@ -80,7 +80,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Kotlin Basic Syntax (Official)", type: "official", url: "https://kotlinlang.org/docs/basic-syntax.html" },
             { title: "Kotlin vs Swift - Side by Side Comparison", type: "video_en", url: "https://www.youtube.com/watch?v=xT8oP0wy-A0" },
-            { title: "Kotlin Basics in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=EK_d6YhE2Wg" },
+            { title: "Kotlin Basics in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=kiHu0-Z6xHI" },
             { title: "Swift is like Kotlin – Comparison", type: "article", url: "https://nilhcem.com/swift-is-like-kotlin/" },
             { title: "Kotlin/kotlin-koans", type: "github", url: "https://github.com/Kotlin/kotlin-koans" },
             { title: "Kotlin & Swift Syntax Cheat Sheet", type: "cheat_sheet", url: "https://nilhcem.com/swift-is-like-kotlin/" },
@@ -122,7 +122,7 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Expo Official Documentation", type: "official", url: "https://docs.expo.dev/" },
-            { title: "Expo Tutorial for Beginners (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=XCifkDC0yXA" },
+            { title: "Expo Tutorial for Beginners (Traversy Media)", type: "video_en", url: "https://www.youtube.com/watch?v=XCifkDC0yXA" },
             { title: "Expo React Native in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=WSppuT4A09Y" },
             { title: "Expo Managed vs Bare Workflow", type: "article", url: "https://docs.expo.dev/workflow/overview/" },
             { title: "expo/expo", type: "github", url: "https://github.com/expo/expo" },
@@ -151,7 +151,7 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Navigation & Routing in Flutter (Official)", type: "official", url: "https://docs.flutter.dev/ui/navigation" },
-            { title: "GoRouter Tutorial (Reso Coder)", type: "video_en", url: "https://www.youtube.com/watch?v=b6Z885Z46cU" },
+            { title: "GoRouter Tutorial (Flutter)", type: "video_en", url: "https://www.youtube.com/watch?v=b6Z885Z46cU" },
             { title: "Flutter Navigation in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=QwlrHjBYQ2M" },
             { title: "Deep Linking in Flutter", type: "article", url: "https://docs.flutter.dev/ui/navigation/deep-linking" },
             { title: "flutter/packages – go_router", type: "github", url: "https://github.com/flutter/packages/tree/main/packages/go_router" },
@@ -165,8 +165,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "StyleSheet API - React Native", type: "official", url: "https://reactnative.dev/docs/stylesheet" },
-            { title: "Styling in React Native (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=XhpXOwmUYOA" },
-            { title: "React Native Styling in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=tGbZBKla1AY" },
+            { title: "Styling in React Native (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=b8hKskhFt04" },
+            { title: "React Native Styling in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=JKccS9k56_I" },
             { title: "Flexbox in React Native (Official Guide)", type: "article", url: "https://reactnative.dev/docs/flexbox" },
             { title: "GeekyAnts/NativeBase", type: "github", url: "https://github.com/GeekyAnts/NativeBase" },
             { title: "React Native Layout Props Reference", type: "cheat_sheet", url: "https://reactnative.dev/docs/layout-props" },
@@ -179,8 +179,8 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "React Native Reanimated Official Docs", type: "official", url: "https://docs.swmansion.com/react-native-reanimated/" },
-            { title: "Reanimated 3 Tutorial (William Candillon)", type: "video_en", url: "https://www.youtube.com/watch?v=rJyhU064W8E" },
-            { title: "React Native Animations in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=r2pHdnUfUXE" },
+            { title: "Reanimated 3 Tutorial (Engineer Codewala)", type: "video_en", url: "https://www.youtube.com/watch?v=rJyhU064W8E" },
+            { title: "React Native Animations in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=p6v4oEe5ohk" },
             { title: "Worklets & Shared Values in Reanimated", type: "article", url: "https://docs.swmansion.com/react-native-reanimated/docs/guides/worklets" },
             { title: "software-mansion/react-native-reanimated", type: "github", url: "https://github.com/software-mansion/react-native-reanimated" },
             { title: "Reanimated Animation Types Reference", type: "cheat_sheet", url: "https://docs.swmansion.com/react-native-reanimated/docs/animations/withTiming" },
@@ -208,7 +208,7 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Zustand Official Docs", type: "official", url: "https://zustand-demo.pmnd.rs/" },
-            { title: "Zustand Crash Course (Jack Herrington)", type: "video_en", url: "https://www.youtube.com/watch?v=LcJURRiIHMc" },
+            { title: "Zustand Crash Course (Code Genix)", type: "video_en", url: "https://www.youtube.com/watch?v=LcJURRiIHMc" },
             { title: "Zustand State Management in Hindi", type: "video_hi", url: "https://www.youtube.com/watch?v=KCr-UNsM3vA" },
             { title: "State Management in React Native – Full Comparison", type: "article", url: "https://reactnative.dev/docs/state" },
             { title: "pmndrs/zustand", type: "github", url: "https://github.com/pmndrs/zustand" },
@@ -237,7 +237,7 @@ export const topicsData: Record<string, TopicData> = {
         publishStatus: "review",
         resources: [
             { title: "Networking in React Native (Official)", type: "official", url: "https://reactnative.dev/docs/network" },
-            { title: "Axios in React Native (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=-mN3VyJuCjM" },
+            { title: "Axios in React Native (Simon Grimm)", type: "video_en", url: "https://www.youtube.com/watch?v=0VkKJOyp9Qc" },
             { title: "API Calling in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=NZ4nnZ5Z_xw" },
             { title: "Using the Fetch API (MDN)", type: "article", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API/Using_Fetch" },
             { title: "axios/axios", type: "github", url: "https://github.com/axios/axios" },
@@ -252,7 +252,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "WebSocket API (MDN)", type: "official", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket" },
             { title: "Socket.io with React Native Tutorial", type: "video_en", url: "https://www.youtube.com/watch?v=favi7avxIag" },
-            { title: "WebSockets in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=KK1vFqPjKGs" },
+            { title: "WebSockets in React Native Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=UUddpbgPEJM" },
             { title: "Getting Started with Socket.io Chat App", type: "article", url: "https://socket.io/docs/v4/" },
             { title: "socketio/socket.io-client", type: "github", url: "https://github.com/socketio/socket.io-client" },
             { title: "WebSocket Events Reference (MDN)", type: "cheat_sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket#events" },
@@ -266,7 +266,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "Firebase Cloud Messaging (FCM) Docs", type: "official", url: "https://firebase.google.com/docs/cloud-messaging" },
             { title: "Push Notifications in React Native with Expo", type: "video_en", url: "https://www.youtube.com/watch?v=SaPOWEskPG8" },
-            { title: "Push Notifications in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=LKlOH8OLLcw" },
+            { title: "Push Notifications in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=sUnHxNjLJHY" },
             { title: "Setting up Push Notifications with Expo", type: "article", url: "https://docs.expo.dev/push-notifications/overview/" },
             { title: "invertase/react-native-firebase", type: "github", url: "https://github.com/invertase/react-native-firebase" },
             { title: "FCM Notification Payload Reference", type: "cheat_sheet", url: "https://firebase.google.com/docs/reference/fcm/rest/v1/projects.messages" },
@@ -278,8 +278,8 @@ export const topicsData: Record<string, TopicData> = {
         description: "Implement secure user authentication using OAuth2, JWT tokens, and biometric authentication.",
         resources: [
             { title: "Firebase Authentication Docs", type: "official", url: "https://firebase.google.com/docs/auth" },
-            { title: "Auth in React Native (Traversy)", type: "video_en", url: "https://www.youtube.com/watch?v=xJA8tP74KD0" },
-            { title: "React Native Authentication in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=-6v9mUOEecw" },
+            { title: "Auth in React Native (ByteMonk)", type: "video_en", url: "https://www.youtube.com/watch?v=xJA8tP74KD0" },
+            { title: "React Native Authentication in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=ML0DuF9Qgis" },
             { title: "Auth Code Flow with PKCE for Mobile (Auth0)", type: "article", url: "https://auth0.com/docs/get-started/authentication-and-authorization-flow/authorization-code-flow-with-pkce" },
             { title: "FormidableLabs/react-native-app-auth", type: "github", url: "https://github.com/FormidableLabs/react-native-app-auth" },
             { title: "JWT.io – Structure & Debugger", type: "cheat_sheet", url: "https://jwt.io/" },
@@ -365,7 +365,7 @@ export const topicsData: Record<string, TopicData> = {
         resources: [
             { title: "App Store Connect Help (Apple)", type: "official", url: "https://developer.apple.com/app-store-connect/" },
             { title: "Publishing to App Store & Play Store Guide", type: "video_en", url: "https://www.youtube.com/watch?v=_P-bJW-4TmY" },
-            { title: "App Store Submission in Hindi (WsCube Tech)", type: "video_hi", url: "https://www.youtube.com/watch?v=MFhxShGxHLC" },
+            { title: "Submit App to App Store (iOS Academy)", type: "video_en", url: "https://www.youtube.com/watch?v=bz_KJdXylh0" },
             { title: "App Store Review Guidelines", type: "article", url: "https://developer.apple.com/app-store/review/guidelines/" },
             { title: "Triple-T/gradle-play-publisher", type: "github", url: "https://github.com/Triple-T/gradle-play-publisher" },
             { title: "Android App Launch Checklist", type: "cheat_sheet", url: "https://developer.android.com/distribute/best-practices/launch/launch-checklist" },

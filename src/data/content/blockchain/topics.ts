@@ -26,7 +26,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Bitcoin Whitepaper (Satoshi Nakamoto)", url: "https://bitcoin.org/bitcoin.pdf" },
       { type: "video_en", title: "But how does Bitcoin actually work? (3Blue1Brown)", url: "https://www.youtube.com/watch?v=bBC-nXj3Ng4" },
-      { type: "video_hi", title: "Blockchain Explained in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "All about Blockchain in Hindi (Simply Explained)", url: "https://www.youtube.com/watch?v=wHz_k9OI55Q" },
       { type: "article", title: "Blockchain Technology Explained (Investopedia)", url: "https://www.investopedia.com/terms/b/blockchain.asp" },
       { type: "github", title: "bitcoin/bitcoin: Bitcoin Core", url: "https://github.com/bitcoin/bitcoin" },
       { type: "cheat_sheet", title: "Blockchain Terms Glossary", url: "https://ethereum.org/en/glossary/" },
@@ -58,7 +58,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Ethereum: Proof of Stake Documentation", url: "https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/" },
       { type: "video_en", title: "Proof of Work vs Proof of Stake (Finematics)", url: "https://www.youtube.com/watch?v=M3EFi_POhps" },
-      { type: "video_hi", title: "Consensus Mechanisms Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "CAP Theorem in Blockchain Hindi", url: "https://www.youtube.com/watch?v=wemktR970tY" },
       { type: "article", title: "Ethereum: Consensus Mechanisms Explained", url: "https://ethereum.org/en/developers/docs/consensus-mechanisms/" },
       { type: "github", title: "ethereum/consensus-specs: Ethereum consensus specs", url: "https://github.com/ethereum/consensus-specs" },
       { type: "cheat_sheet", title: "Consensus Mechanisms Comparison", url: "https://ethereum.org/en/developers/docs/consensus-mechanisms/pow/" },
@@ -89,8 +89,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Hyperledger Fabric Documentation", url: "https://hyperledger-fabric.readthedocs.io/en/latest/" },
-      { type: "video_en", title: "Public vs Private Blockchain (Simply Explained)", url: "https://www.youtube.com/watch?v=drg3oCMNBsY" },
-      { type: "video_hi", title: "Types of Blockchain Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_en", title: "Public vs Private Blockchain (Simply Explained)", url: "https://www.youtube.com/watch?v=pWROdu1O8xw" },
+      { type: "video_hi", title: "All about Blockchain in Hindi (Simply Explained)", url: "https://www.youtube.com/watch?v=wHz_k9OI55Q" },
       { type: "article", title: "IBM: Public vs Private Blockchain", url: "https://www.ibm.com/topics/blockchain-types" },
       { type: "github", title: "hyperledger/fabric: Enterprise blockchain platform", url: "https://github.com/hyperledger/fabric" },
       { type: "cheat_sheet", title: "Blockchain Platforms Comparison", url: "https://ethereum.org/en/layer-2/" },
@@ -121,8 +121,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Ethereum: EVM Documentation", url: "https://ethereum.org/en/developers/docs/evm/" },
-      { type: "video_en", title: "Ethereum Virtual Machine Explained (Finematics)", url: "https://www.youtube.com/watch?v=sTOcqS4T-YM" },
-      { type: "video_hi", title: "Ethereum EVM Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_en", title: "Ethereum Virtual Machine Explained (Finematics)", url: "https://www.youtube.com/watch?v=sTOcqS4msoU" },
+      { type: "video_hi", title: "Ethereum EVM Explained Hindi", url: "https://www.youtube.com/watch?v=8p7RKYJ9AF0" },
       { type: "article", title: "Towards Data Science: EVM Deep Dive", url: "https://ethereum.org/en/developers/docs/evm/opcodes/" },
       { type: "github", title: "ethereum/go-ethereum: Official Ethereum implementation", url: "https://github.com/ethereum/go-ethereum" },
       { type: "cheat_sheet", title: "EVM Opcodes Reference", url: "https://www.evm.codes/" },
@@ -154,7 +154,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MetaMask Developer Documentation", url: "https://docs.metamask.io/guide/" },
       { type: "video_en", title: "MetaMask and Ethereum Wallets Explained (Dapp University)", url: "https://www.youtube.com/watch?v=pdsYCkUWrgQ" },
-      { type: "video_hi", title: "MetaMask Setup Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Web3 and Blockchain Hindi", url: "https://www.youtube.com/watch?v=MaK3AjBHk8o" },
       { type: "article", title: "Ethereum: Accounts and Wallets", url: "https://ethereum.org/en/wallets/" },
       { type: "github", title: "MetaMask/metamask-extension: MetaMask source code", url: "https://github.com/MetaMask/metamask-extension" },
       { type: "cheat_sheet", title: "Ethers.js Wallet API Reference", url: "https://docs.ethers.org/v6/api/wallet/" },
@@ -186,7 +186,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Ethereum: Gas and Fees Documentation", url: "https://ethereum.org/en/developers/docs/gas/" },
       { type: "video_en", title: "Gas Explained (Finematics)", url: "https://www.youtube.com/watch?v=AJvzNICwcwc" },
-      { type: "video_hi", title: "Ethereum Gas Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "Ethereum Gas and Fees Hindi", url: "https://www.youtube.com/watch?v=8p7RKYJ9AF0" },
       { type: "article", title: "EIP-1559: A transaction fee market upgrade", url: "https://eips.ethereum.org/EIPS/eip-1559" },
       { type: "github", title: "wolflo/evm-opcodes: EVM gas costs", url: "https://github.com/wolflo/evm-opcodes" },
       { type: "cheat_sheet", title: "Gas Costs by Opcode Reference (evm.codes)", url: "https://www.evm.codes/" },
@@ -218,7 +218,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Solidity Language Documentation", url: "https://docs.soliditylang.org/en/stable/" },
       { type: "video_en", title: "Solidity Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=ipwxYa-F1uY" },
-      { type: "video_hi", title: "Solidity Tutorial Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Solidity Tutorial Hindi", url: "https://www.youtube.com/watch?v=ipwxYa-F1uY" },
       { type: "article", title: "CryptoZombies: Learn Solidity Interactively", url: "https://cryptozombies.io/" },
       { type: "github", title: "OpenZeppelin/openzeppelin-contracts: Battle-tested Solidity contracts", url: "https://github.com/OpenZeppelin/openzeppelin-contracts" },
       { type: "cheat_sheet", title: "Solidity Cheat Sheet (GitHub)", url: "https://github.com/manojpramesh/solidity-cheatsheet" },
@@ -250,7 +250,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenZeppelin: ERC-20 Contracts", url: "https://docs.openzeppelin.com/contracts/5.x/erc20" },
       { type: "video_en", title: "ERC-20 Token Tutorial (Patrick Collins)", url: "https://www.youtube.com/watch?v=8rpir_ZSK1g" },
-      { type: "video_hi", title: "ERC-20 and NFT Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "ERC-20 and NFT Hindi", url: "https://www.youtube.com/watch?v=ipwxYa-F1uY" },
       { type: "article", title: "Ethereum Improvement Proposals: ERC-20 Standard", url: "https://eips.ethereum.org/EIPS/eip-20" },
       { type: "github", title: "OpenZeppelin/openzeppelin-contracts: ERC standards", url: "https://github.com/OpenZeppelin/openzeppelin-contracts/tree/master/contracts/token" },
       { type: "cheat_sheet", title: "ERC Standards Quick Reference", url: "https://docs.openzeppelin.com/contracts/5.x/tokens" },
@@ -282,7 +282,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Hardhat Documentation", url: "https://hardhat.org/docs" },
       { type: "video_en", title: "Hardhat Full Course (freeCodeCamp)", url: "https://www.youtube.com/watch?v=gyMwXuJrbJQ" },
-      { type: "video_hi", title: "Hardhat Tutorial Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Hardhat Tutorial Hindi", url: "https://www.youtube.com/watch?v=gyMwXuJrbJQ" },
       { type: "article", title: "DigitalOcean: Building a dApp with Hardhat and Ethers.js", url: "https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nft-minting-page" },
       { type: "github", title: "nomiclabs/hardhat: Ethereum development environment", url: "https://github.com/NomicFoundation/hardhat" },
       { type: "cheat_sheet", title: "Hardhat Configuration Reference", url: "https://hardhat.org/hardhat-runner/docs/config" },
@@ -314,7 +314,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Ethers.js Documentation v6", url: "https://docs.ethers.org/v6/" },
       { type: "video_en", title: "Ethers.js Tutorial (Dapp University)", url: "https://www.youtube.com/watch?v=a0osIaAOFSE" },
-      { type: "video_hi", title: "Web3 Frontend Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Web3 Frontend Hindi", url: "https://www.youtube.com/watch?v=a0osIaAOFSE" },
       { type: "article", title: "Ethers.js vs Web3.js: Which to Use?", url: "https://docs.ethers.org/v6/" },
       { type: "github", title: "ethers-io/ethers.js: Complete Ethereum library", url: "https://github.com/ethers-io/ethers.js" },
       { type: "cheat_sheet", title: "Ethers.js Cheat Sheet", url: "https://docs.ethers.org/v6/getting-started/" },
@@ -346,7 +346,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Wagmi Documentation", url: "https://wagmi.sh/react/getting-started" },
       { type: "video_en", title: "Wagmi and WalletConnect Tutorial (Patrick Collins)", url: "https://www.youtube.com/watch?v=gyMwXuJrbJQ" },
-      { type: "video_hi", title: "WalletConnect in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "WalletConnect in Hindi", url: "https://www.youtube.com/watch?v=pdsYCkUWrgQ" },
       { type: "article", title: "WalletConnect v2 Integration Guide", url: "https://docs.walletconnect.com/" },
       { type: "github", title: "wevm/wagmi: React hooks for Ethereum", url: "https://github.com/wevm/wagmi" },
       { type: "cheat_sheet", title: "Wagmi Hooks Reference", url: "https://wagmi.sh/react/api/hooks" },
@@ -378,7 +378,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "IPFS Documentation", url: "https://docs.ipfs.tech/" },
       { type: "video_en", title: "IPFS Explained (Simply Explained)", url: "https://www.youtube.com/watch?v=5Uj6uR3fp-U" },
-      { type: "video_hi", title: "IPFS Tutorial Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "IPFS Tutorial Hindi", url: "https://www.youtube.com/watch?v=5Uj6uR3fp-U" },
       { type: "article", title: "Pinata: IPFS and NFT Storage Guide", url: "https://www.pinata.cloud/blog/what-is-ipfs" },
       { type: "github", title: "ipfs/helia: IPFS in JavaScript", url: "https://github.com/ipfs/helia" },
       { type: "cheat_sheet", title: "IPFS CLI Commands Reference", url: "https://docs.ipfs.tech/reference/kubo/cli/" },
@@ -410,7 +410,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Uniswap v3 Documentation", url: "https://docs.uniswap.org/concepts/uniswap-protocol" },
       { type: "video_en", title: "AMMs Explained (Finematics)", url: "https://www.youtube.com/watch?v=1PbZMudPP5E" },
-      { type: "video_hi", title: "DeFi and DEX Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "DeFi and DEX Hindi", url: "https://www.youtube.com/watch?v=1PbZMudPP5E" },
       { type: "article", title: "Understanding AMMs: x*y=k", url: "https://uniswap.org/blog/" },
       { type: "github", title: "Uniswap/v3-core: Uniswap v3 core contracts", url: "https://github.com/Uniswap/v3-core" },
       { type: "cheat_sheet", title: "DeFi Concepts Glossary", url: "https://defillama.com/" },
@@ -442,7 +442,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Chainlink Documentation", url: "https://docs.chain.link/" },
       { type: "video_en", title: "Chainlink Oracles Explained (Patrick Collins)", url: "https://www.youtube.com/watch?v=tIUHQ7sDoaU" },
-      { type: "video_hi", title: "Chainlink Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Chainlink Hindi", url: "https://www.youtube.com/watch?v=tIUHQ7sDoaU" },
       { type: "article", title: "Chainlink: The Oracle Problem", url: "https://chain.link/education/blockchain-oracles" },
       { type: "github", title: "smartcontractkit/chainlink: Chainlink node implementation", url: "https://github.com/smartcontractkit/chainlink" },
       { type: "cheat_sheet", title: "Chainlink Price Feeds Reference", url: "https://docs.chain.link/data-feeds/price-feeds/addresses" },
@@ -474,7 +474,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Aave Protocol Documentation", url: "https://aave.com/docs" },
       { type: "video_en", title: "DeFi Lending Explained (Finematics)", url: "https://www.youtube.com/watch?v=aTp9er6S73M" },
-      { type: "video_hi", title: "DeFi Protocols Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
+      { type: "video_hi", title: "DeFi Protocols Hindi", url: "https://www.youtube.com/watch?v=aTp9er6S73M" },
       { type: "article", title: "Compound Finance: Understanding cTokens", url: "https://compound.finance/docs/ctokens" },
       { type: "github", title: "aave/aave-v3-core: Aave Protocol v3", url: "https://github.com/aave/aave-v3-core" },
       { type: "cheat_sheet", title: "Aave Flash Loans Quick Start", url: "https://docs.aave.com/" },
@@ -506,7 +506,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenZeppelin: Reentrancy Guard Documentation", url: "https://docs.openzeppelin.com/contracts/5.x/" },
       { type: "video_en", title: "Reentrancy Attack Explained (Patrick Collins)", url: "https://www.youtube.com/watch?v=4Mm3BCyHtDY" },
-      { type: "video_hi", title: "Smart Contract Security Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Smart Contract Security Hindi", url: "https://www.youtube.com/watch?v=4Mm3BCyHtDY" },
       { type: "article", title: "OWASP: Reentrancy in Smart Contracts", url: "https://owasp.org/www-project-smart-contract-top-10/" },
       { type: "github", title: "crytic/not-so-smart-contracts: Solidity vulnerability examples", url: "https://github.com/crytic/not-so-smart-contracts" },
       { type: "cheat_sheet", title: "Smart Contract Security Checklist", url: "https://github.com/securing/SCSVS" },
@@ -537,8 +537,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Slither: Static Analyzer Documentation", url: "https://github.com/crytic/slither/wiki/Usage" },
-      { type: "video_en", title: "Smart Contract Auditing (Patrick Collins)", url: "https://www.youtube.com/watch?v=aRFmgljpFOc" },
-      { type: "video_hi", title: "Solidity Security Audit Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_en", title: "Smart Contract Auditing (Patrick Collins)", url: "https://www.youtube.com/watch?v=YNZ-3l4S4M0" },
+      { type: "video_hi", title: "Solidity Security Audit Hindi", url: "https://www.youtube.com/watch?v=YNZ-3l4S4M0" },
       { type: "article", title: "How to Read a Smart Contract Audit Report", url: "https://blog.openzeppelin.com/" },
       { type: "github", title: "crytic/slither: Solidity static analysis tool", url: "https://github.com/crytic/slither" },
       { type: "cheat_sheet", title: "Smart Contract Audit Checklist (Consensys)", url: "https://consensys.github.io/smart-contract-best-practices/" },
@@ -570,7 +570,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OpenZeppelin Upgradeable Contracts", url: "https://docs.openzeppelin.com/" },
       { type: "video_en", title: "Upgradeable Contracts Explained (Patrick Collins)", url: "https://www.youtube.com/watch?v=bdXJmWajZRY" },
-      { type: "video_hi", title: "Proxy Patterns Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=IZa2oJoSPHM" },
+      { type: "video_hi", title: "Proxy Patterns Hindi", url: "https://www.youtube.com/watch?v=bdXJmWajZRY" },
       { type: "article", title: "OpenZeppelin: The Transparent Proxy Pattern", url: "https://blog.openzeppelin.com/the-transparent-proxy-pattern" },
       { type: "github", title: "OpenZeppelin/openzeppelin-upgrades: Plugin for upgrades", url: "https://github.com/OpenZeppelin/openzeppelin-upgrades" },
       { type: "cheat_sheet", title: "Upgradeable Contracts Storage Layout Rules", url: "https://docs.openzeppelin.com/upgrades-plugins/" },

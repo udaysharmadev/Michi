@@ -1,5 +1,5 @@
 import { RoadmapContent } from '../../types';
-import { nodes as graphNodes, edges } from './graph';
+import { graphNodes, graphEdges } from './graph';
 import { topics } from './topics';
 
 const nodes = graphNodes.map(node => {
@@ -18,5 +18,5 @@ const nodes = graphNodes.map(node => {
 export const devopsContent: RoadmapContent = {
   slug: "devops",
   nodes,
-  edges,
+  edges: graphEdges,
 };

@@ -1,363 +1,49 @@
-import { Node, Edge } from '@xyflow/react';
+import { RoadmapContentNode, RoadmapContentEdge } from "@/data/types";
 
-export const nodes: Node[] = [
-  {
-    "id": "llm",
-    "type": "roadmap",
-    "position": {
-      "x": 400,
-      "y": 50
-    },
-    "data": {
-      "label": "llm"
-    }
-  },
-  {
-    "id": "foundations",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 200
-    },
-    "data": {
-      "label": "Foundations",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "transformers",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 280
-    },
-    "data": {
-      "label": "Transformers Architecture",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "attention_mechanism",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 280
-    },
-    "data": {
-      "label": "Attention Mechanism",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "tokenization",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 400
-    },
-    "data": {
-      "label": "Tokenization",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "prompting",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 590
-    },
-    "data": {
-      "label": "Prompt Engineering",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "few_shot",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 670
-    },
-    "data": {
-      "label": "Few-Shot Prompting",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "chain_of_thought",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 670
-    },
-    "data": {
-      "label": "Chain of Thought (CoT)",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "react_prompting",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 790
-    },
-    "data": {
-      "label": "ReAct Prompting",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "fine_tuning",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 980
-    },
-    "data": {
-      "label": "Fine-Tuning",
-      "color": "green"
-    }
-  },
-  {
-    "id": "peft_lora",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1060
-    },
-    "data": {
-      "label": "PEFT & LoRA",
-      "color": "green"
-    }
-  },
-  {
-    "id": "rlhf",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1060
-    },
-    "data": {
-      "label": "RLHF",
-      "color": "green"
-    }
-  },
-  {
-    "id": "dpo",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1180
-    },
-    "data": {
-      "label": "Direct Preference Optimization (DPO)",
-      "color": "green"
-    }
-  },
-  {
-    "id": "rag",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 1370
-    },
-    "data": {
-      "label": "Retrieval Augmented Gen (RAG)",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "vector_dbs",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1450
-    },
-    "data": {
-      "label": "Vector Databases",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "embeddings",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1450
-    },
-    "data": {
-      "label": "Embeddings",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "langchain_llamaindex",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1570
-    },
-    "data": {
-      "label": "LangChain & LlamaIndex",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "deployment",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 1760
-    },
-    "data": {
-      "label": "Deployment & Optimization",
-      "color": "red"
-    }
-  },
-  {
-    "id": "vllm",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1840
-    },
-    "data": {
-      "label": "vLLM",
-      "color": "red"
-    }
-  },
-  {
-    "id": "quantization",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1840
-    },
-    "data": {
-      "label": "Quantization (AWQ/GPTQ)",
-      "color": "red"
-    }
-  },
-  {
-    "id": "gguf_llama_cpp",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1960
-    },
-    "data": {
-      "label": "GGUF & llama.cpp",
-      "color": "red"
-    }
-  }
+export const graphNodes: RoadmapContentNode[] = [
+    { id: "s_llm_found", type: "section", position: { x: 0, y: 0 }, data: { title: "Foundations", sectionNumber: 1, color: "blue", sectionIcon: "book-open" } },
+    { id: "n_llm_1", type: "topic", parentId: "s_llm_found", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Transformers Architecture", difficulty: "Beginner", estimatedTime: "6 hrs", sectionColor: "blue", icon: "SiPytorch", row: 0, col: 0 } },
+    { id: "n_llm_2", type: "topic", parentId: "s_llm_found", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Attention Mechanism", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "blue", icon: "brain", row: 0, col: 1 } },
+    { id: "n_llm_3", type: "topic", parentId: "s_llm_found", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Tokenization", difficulty: "Beginner", estimatedTime: "3 hrs", sectionColor: "blue", icon: "hash", row: 1, col: 0 } },
+
+    { id: "s_llm_prompt", type: "section", position: { x: 576, y: 0 }, data: { title: "Prompt Engineering", sectionNumber: 2, color: "purple", sectionIcon: "message-square" } },
+    { id: "n_llm_4", type: "topic", parentId: "s_llm_prompt", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Few-Shot Prompting", difficulty: "Beginner", estimatedTime: "3 hrs", sectionColor: "purple", icon: "list", row: 0, col: 0 } },
+    { id: "n_llm_5", type: "topic", parentId: "s_llm_prompt", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Chain of Thought (CoT)", difficulty: "Intermediate", estimatedTime: "4 hrs", sectionColor: "purple", icon: "git-branch", row: 0, col: 1 } },
+    { id: "n_llm_6", type: "topic", parentId: "s_llm_prompt", extent: "parent", position: { x: 0, y: 0 }, data: { title: "ReAct Prompting", difficulty: "Advanced", estimatedTime: "4 hrs", sectionColor: "purple", icon: "zap", row: 1, col: 0 } },
+
+    { id: "s_llm_ft", type: "section", position: { x: 1152, y: 0 }, data: { title: "Fine-Tuning", sectionNumber: 3, color: "green", sectionIcon: "tool" } },
+    { id: "n_llm_7", type: "topic", parentId: "s_llm_ft", extent: "parent", position: { x: 0, y: 0 }, data: { title: "PEFT & LoRA", difficulty: "Intermediate", estimatedTime: "6 hrs", sectionColor: "green", icon: "SiHuggingface", row: 0, col: 0 } },
+    { id: "n_llm_8", type: "topic", parentId: "s_llm_ft", extent: "parent", position: { x: 0, y: 0 }, data: { title: "RLHF", difficulty: "Advanced", estimatedTime: "6 hrs", sectionColor: "green", icon: "refresh-cw", row: 0, col: 1 } },
+    { id: "n_llm_9", type: "topic", parentId: "s_llm_ft", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Direct Preference Optimization (DPO)", difficulty: "Advanced", estimatedTime: "5 hrs", sectionColor: "green", icon: "target", row: 1, col: 0 } },
+
+    { id: "s_llm_rag", type: "section", position: { x: 0, y: 600 }, data: { title: "Retrieval Augmented Gen (RAG)", sectionNumber: 4, color: "orange", sectionIcon: "database" } },
+    { id: "n_llm_10", type: "topic", parentId: "s_llm_rag", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Vector Databases", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "orange", icon: "SiPinecone", row: 0, col: 0 } },
+    { id: "n_llm_11", type: "topic", parentId: "s_llm_rag", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Embeddings", difficulty: "Intermediate", estimatedTime: "4 hrs", sectionColor: "orange", icon: "layers", row: 0, col: 1 } },
+    { id: "n_llm_12", type: "topic", parentId: "s_llm_rag", extent: "parent", position: { x: 0, y: 0 }, data: { title: "LangChain & LlamaIndex", difficulty: "Intermediate", estimatedTime: "6 hrs", sectionColor: "orange", icon: "SiLangchain", row: 1, col: 0 } },
+
+    { id: "s_llm_dep", type: "section", position: { x: 576, y: 600 }, data: { title: "Deployment & Optimization", sectionNumber: 5, color: "red", sectionIcon: "rocket" } },
+    { id: "n_llm_13", type: "topic", parentId: "s_llm_dep", extent: "parent", position: { x: 0, y: 0 }, data: { title: "vLLM", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "red", icon: "server", row: 0, col: 0 } },
+    { id: "n_llm_14", type: "topic", parentId: "s_llm_dep", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Quantization (AWQ/GPTQ)", difficulty: "Advanced", estimatedTime: "5 hrs", sectionColor: "red", icon: "cpu", row: 0, col: 1 } },
+    { id: "n_llm_15", type: "topic", parentId: "s_llm_dep", extent: "parent", position: { x: 0, y: 0 }, data: { title: "GGUF & llama.cpp", difficulty: "Advanced", estimatedTime: "5 hrs", sectionColor: "red", icon: "SiCplusplus", row: 1, col: 0 } },
 ];
 
-export const edges: Edge[] = [
-  {
-    "id": "e-llm-foundations",
-    "source": "llm",
-    "target": "foundations",
-    "animated": true
-  },
-  {
-    "id": "e-foundations-transformers",
-    "source": "foundations",
-    "target": "transformers"
-  },
-  {
-    "id": "e-foundations-attention_mechanism",
-    "source": "foundations",
-    "target": "attention_mechanism"
-  },
-  {
-    "id": "e-foundations-tokenization",
-    "source": "foundations",
-    "target": "tokenization"
-  },
-  {
-    "id": "e-foundations-prompting",
-    "source": "foundations",
-    "target": "prompting",
-    "animated": true
-  },
-  {
-    "id": "e-prompting-few_shot",
-    "source": "prompting",
-    "target": "few_shot"
-  },
-  {
-    "id": "e-prompting-chain_of_thought",
-    "source": "prompting",
-    "target": "chain_of_thought"
-  },
-  {
-    "id": "e-prompting-react_prompting",
-    "source": "prompting",
-    "target": "react_prompting"
-  },
-  {
-    "id": "e-prompting-fine_tuning",
-    "source": "prompting",
-    "target": "fine_tuning",
-    "animated": true
-  },
-  {
-    "id": "e-fine_tuning-peft_lora",
-    "source": "fine_tuning",
-    "target": "peft_lora"
-  },
-  {
-    "id": "e-fine_tuning-rlhf",
-    "source": "fine_tuning",
-    "target": "rlhf"
-  },
-  {
-    "id": "e-fine_tuning-dpo",
-    "source": "fine_tuning",
-    "target": "dpo"
-  },
-  {
-    "id": "e-fine_tuning-rag",
-    "source": "fine_tuning",
-    "target": "rag",
-    "animated": true
-  },
-  {
-    "id": "e-rag-vector_dbs",
-    "source": "rag",
-    "target": "vector_dbs"
-  },
-  {
-    "id": "e-rag-embeddings",
-    "source": "rag",
-    "target": "embeddings"
-  },
-  {
-    "id": "e-rag-langchain_llamaindex",
-    "source": "rag",
-    "target": "langchain_llamaindex"
-  },
-  {
-    "id": "e-rag-deployment",
-    "source": "rag",
-    "target": "deployment",
-    "animated": true
-  },
-  {
-    "id": "e-deployment-vllm",
-    "source": "deployment",
-    "target": "vllm"
-  },
-  {
-    "id": "e-deployment-quantization",
-    "source": "deployment",
-    "target": "quantization"
-  },
-  {
-    "id": "e-deployment-gguf_llama_cpp",
-    "source": "deployment",
-    "target": "gguf_llama_cpp"
-  }
+export const graphEdges: RoadmapContentEdge[] = [
+    { id: "e1", source: "n_llm_1", target: "n_llm_2", sourceHandle: "right", targetHandle: "left" },
+    { id: "e2", source: "n_llm_1", target: "n_llm_3", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_1", source: "n_llm_3", target: "n_llm_4", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e3", source: "n_llm_4", target: "n_llm_5", sourceHandle: "right", targetHandle: "left" },
+    { id: "e4", source: "n_llm_4", target: "n_llm_6", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_2", source: "n_llm_6", target: "n_llm_7", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e5", source: "n_llm_7", target: "n_llm_8", sourceHandle: "right", targetHandle: "left" },
+    { id: "e6", source: "n_llm_7", target: "n_llm_9", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_3", source: "n_llm_9", target: "n_llm_10", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e7", source: "n_llm_10", target: "n_llm_11", sourceHandle: "right", targetHandle: "left" },
+    { id: "e8", source: "n_llm_10", target: "n_llm_12", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_4", source: "n_llm_12", target: "n_llm_13", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e9", source: "n_llm_13", target: "n_llm_14", sourceHandle: "right", targetHandle: "left" },
+    { id: "e10", source: "n_llm_13", target: "n_llm_15", sourceHandle: "bottom", targetHandle: "top" },
 ];

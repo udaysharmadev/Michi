@@ -35,7 +35,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Backend Roadmap", url: "/roadmaps/backend" },
       { type: "video_en", title: "Backend Web Development Bootcamp", url: "https://www.youtube.com/watch?v=Oe421EPjeBE" },
-      { type: "video_hi", title: "Backend Web Development Course in Hindi", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
+      { type: "video_hi", title: "Backend Web Development Course in Hindi (Chai aur Code)", url: "https://www.youtube.com/watch?v=EH3vGeqeIAo" },
       { type: "article", title: "How to become a Backend Developer", url: "https://roadmap.sh/backend" },
       { type: "github", title: "Backend Developer Roadmap Repo", url: "https://github.com/kamranahmedse/developer-roadmap" },
       { type: "cheat_sheet", title: "Backend Cheat Sheet", url: "https://devhints.io/" },
@@ -56,8 +56,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Dashboard metrics", "User profile pages"],
     resources: [
       { type: "official", title: "Apollo GraphQL Docs", url: "https://www.apollographql.com/docs/" },
-      { type: "video_en", title: "Connecting React to Node", url: "https://www.youtube.com/watch?v=kYAWsVvH2tE" },
-      { type: "video_hi", title: "React & Node Integration in Hindi", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
+      { type: "video_en", title: "Connecting React to Node", url: "https://www.youtube.com/watch?v=Zg4XIpnLWQg" },
+      { type: "video_hi", title: "React & Node Integration in Hindi (Chai aur Code)", url: "https://www.youtube.com/watch?v=l134cBAJCuc" },
       { type: "article", title: "Best Practices for REST API Integration", url: "https://www.smashingmagazine.com/2018/01/understanding-using-rest-api/" },
       { type: "github", title: "TRPC for Type-Safe APIs", url: "https://github.com/trpc/trpc" },
       { type: "cheat_sheet", title: "Fetch API Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API" },
@@ -76,8 +76,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Secure API endpoints", "Multi-domain architectures"],
     resources: [
       { type: "official", title: "MDN CORS", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" },
-      { type: "video_en", title: "CORS Explained Visually", url: "https://www.youtube.com/watch?v=4KHiSt0n2HQ" },
-      { type: "video_hi", title: "CORS in Node.js Hindi", url: "https://www.youtube.com/watch?v=3R-a7E0V_wE" },
+      { type: "video_en", title: "CORS Explained Visually", url: "https://www.youtube.com/watch?v=WWnR4xptSRk" },
+      { type: "video_hi", title: "CORS in 100 Seconds (Fireship)", url: "https://www.youtube.com/watch?v=4KHiSt0oLJ0" },
       { type: "article", title: "How to fix CORS errors", url: "https://javascript.info/fetch-crossorigin" },
       { type: "github", title: "Express CORS Middleware", url: "https://github.com/expressjs/cors" },
       { type: "cheat_sheet", title: "CORS Headers Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" },
@@ -96,8 +96,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Netflix UI architecture", "Mobile vs Web APIs"],
     resources: [
       { type: "official", title: "Microservices BFF Pattern", url: "https://microservices.io/patterns/apigateway.html" },
-      { type: "video_en", title: "Backend for Frontend Pattern Explained", url: "https://www.youtube.com/watch?v=mtnE_F9Tq6U" },
-      { type: "video_hi", title: "BFF Architecture Hindi", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
+      { type: "video_en", title: "Backend for Frontend Pattern Explained", url: "https://www.youtube.com/watch?v=Pmzrogq4W4I" },
+      { type: "video_hi", title: "BFF Architecture Hindi", url: "https://www.youtube.com/watch?v=7aLhQ_Wv8DY" },
       { type: "article", title: "Sam Newman on BFF", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "github", title: "BFF Boilerplate", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "cheat_sheet", title: "API Gateway vs BFF", url: "https://samnewman.io/patterns/architectural/bff/" },
@@ -118,8 +118,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Twitter Like button", "WhatsApp message sending"],
     resources: [
       { type: "official", title: "React Query Optimistic Updates", url: "https://tanstack.com/query/latest/docs/react/guides/optimistic-updates" },
-      { type: "video_en", title: "Optimistic UI in React", url: "https://www.youtube.com/watch?v=2-G8Fbz_0iY" },
-      { type: "video_hi", title: "Optimistic UI Concept Hindi", url: "https://www.youtube.com/watch?v=uX3B1u7M25c" },
+      { type: "video_en", title: "Optimistic UI in React", url: "https://www.youtube.com/watch?v=ZjtdRb-nCyg" },
+      { type: "video_hi", title: "Optimistic UI in Hindi (tapaScript)", url: "https://www.youtube.com/watch?v=x03yX-yNxas" },
       { type: "article", title: "True UI Performance with Optimistic UI", url: "https://web.dev/articles/add-manifest" },
       { type: "github", title: "SWR Mutation Example", url: "https://github.com/vercel/swr" },
       { type: "cheat_sheet", title: "Cache Update Cheat Sheet", url: "https://tkdodo.eu/blog/mastering-mutations-in-react-query" },
@@ -139,7 +139,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Socket.io Documentation", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" },
       { type: "video_en", title: "Build a Chat App with Socket.io", url: "https://www.youtube.com/watch?v=rxzOqP9YwmM" },
-      { type: "video_hi", title: "WebSockets in Hindi", url: "https://www.youtube.com/watch?v=Fj-N3nL5N6c" },
+      { type: "video_hi", title: "WebSockets in Hindi (Chai aur Code)", url: "https://www.youtube.com/watch?v=GmK_yV9_ccY" },
       { type: "article", title: "WebSockets vs Server-Sent Events", url: "https://web.dev/eventsource-basics/" },
       { type: "github", title: "Socket.io Chat Example", url: "https://github.com/socketio/chat-example" },
       { type: "cheat_sheet", title: "WebSocket API Cheat Sheet", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSocket" },
@@ -161,7 +161,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "MDN Set-Cookie", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Set-Cookie" },
       { type: "video_en", title: "Cookies vs LocalStorage", url: "https://www.youtube.com/watch?v=GihQAC1I39Q" },
-      { type: "video_hi", title: "Secure Cookies in Node Hindi", url: "https://www.youtube.com/watch?v=8b2Q9V45K3M" },
+      { type: "video_hi", title: "Secure Cookies in Node Hindi (Chai aur Code)", url: "https://www.youtube.com/watch?v=L2_gIrDxCes" },
       { type: "article", title: "The Ultimate Guide to Secure Cookies", url: "https://owasp.org/www-chapter-london/assets/slides/OWASPLondon20171130_Cookie_Security_Myths_Misconceptions_David_Johansson.pdf" },
       { type: "github", title: "Express Session Cookie", url: "https://github.com/expressjs/session" },
       { type: "cheat_sheet", title: "Cookie Attributes Map", url: "https://web.dev/samesite-cookies-explained/" },
@@ -181,7 +181,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "OAuth 2.0 Refresh Token", url: "https://oauth.net/2/grant-types/refresh-token/" },
       { type: "video_en", title: "JWT Refresh Tokens Explained", url: "https://www.youtube.com/watch?v=mbsmsi7l3r4" },
-      { type: "video_hi", title: "Refresh Token implementation Hindi", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
+      { type: "video_hi", title: "Refresh Token implementation Hindi", url: "https://www.youtube.com/watch?v=AcYF18oGn6Y" },
       { type: "article", title: "Axios Interceptors for Token Refresh", url: "https://axios-http.com/docs/interceptors" },
       { type: "github", title: "React JWT Refresh Example", url: "https://github.com/gitdagray/react_jwt_auth" },
       { type: "cheat_sheet", title: "Token Storage Cheat Sheet", url: "https://auth0.com/docs/secure/security-guidance/data-security/token-storage" },
@@ -202,8 +202,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Enterprise monorepos", "Angular + NestJS apps"],
     resources: [
       { type: "official", title: "Nx Documentation", url: "https://nx.dev/" },
-      { type: "video_en", title: "Nx Crash Course", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
-      { type: "video_hi", title: "Monorepo with Nx Hindi", url: "https://www.youtube.com/watch?v=T_7h39zVzR4" },
+      { type: "video_en", title: "Nx Crash Course", url: "https://www.youtube.com/watch?v=weZ7NAzB7PM" },
+      { type: "video_hi", title: "Monorepo with Nx Hindi", url: "https://www.youtube.com/watch?v=TnxP8wb7YYI" },
       { type: "article", title: "Why you should use a Monorepo", url: "https://monorepo.tools/" },
       { type: "github", title: "Nx Examples", url: "https://github.com/nrwl/nx-examples" },
       { type: "cheat_sheet", title: "Nx CLI Commands", url: "https://nx.dev/features/generate-code" },
@@ -222,8 +222,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Next.js monorepos", "Vercel ecosystem apps"],
     resources: [
       { type: "official", title: "Turborepo Docs", url: "https://turbo.build/repo/docs" },
-      { type: "video_en", title: "Turborepo in 100 Seconds", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
-      { type: "video_hi", title: "Turborepo Crash Course Hindi", url: "https://www.youtube.com/watch?v=Fj-N3nL5N6c" },
+      { type: "video_en", title: "Turborepo in 100 Seconds", url: "https://www.youtube.com/watch?v=9iU_IE6vnJ8" },
+      { type: "video_hi", title: "Turborepo Crash Course Hindi", url: "https://www.youtube.com/watch?v=IC8K0JsF8fM" },
       { type: "article", title: "Turborepo vs Nx", url: "https://turbo.build/repo/docs" },
       { type: "github", title: "Turborepo Starter", url: "https://github.com/vercel/turbo/tree/main/examples/basic" },
       { type: "cheat_sheet", title: "Turbo CLI Options", url: "https://turbo.build/repo/docs/reference/command-line-reference" },
@@ -242,8 +242,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Internal Design Systems", "Shared API Types"],
     resources: [
       { type: "official", title: "NPM Workspaces", url: "https://docs.npmjs.com/cli/v7/using-npm/workspaces" },
-      { type: "video_en", title: "Sharing Types in a Monorepo", url: "https://www.youtube.com/watch?v=68M-gN0B8-Q" },
-      { type: "video_hi", title: "NPM Workspaces Tutorial Hindi", url: "https://www.youtube.com/watch?v=uX3B1u7M25c" },
+      { type: "video_en", title: "Sharing Types in a Monorepo", url: "https://www.youtube.com/watch?v=0drE8cph-kA" },
+      { type: "video_hi", title: "Monorepo Setup Guide Hindi (Chai aur Code)", url: "https://www.youtube.com/watch?v=780Fyv-SAUk" },
       { type: "article", title: "How to share code in a Monorepo", url: "https://lerna.js.org/docs/getting-started" },
       { type: "github", title: "Yarn Workspaces Example", url: "https://github.com/yarnpkg/berry/tree/master/packages/plugin-workspace-tools" },
       { type: "cheat_sheet", title: "Package.json Exports", url: "https://nodejs.org/api/packages.html#exports" },
@@ -265,7 +265,7 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Vercel Deployment Docs", url: "https://vercel.com/docs/deployments/overview" },
       { type: "video_en", title: "Deploy Full Stack App to Render", url: "https://www.youtube.com/watch?v=l134cBAJCuc" },
-      { type: "video_hi", title: "Deploying MERN stack app Hindi", url: "https://www.youtube.com/watch?v=eB1wW-UuQY4" },
+      { type: "video_hi", title: "Deploying MERN stack app Hindi", url: "https://www.youtube.com/watch?v=rMQxN7skA4E" },
       { type: "article", title: "Vercel vs AWS", url: "https://www.sst.dev/blog/vercel-vs-aws.html" },
       { type: "github", title: "AWS CDK Examples", url: "https://github.com/aws-samples/aws-cdk-examples" },
       { type: "cheat_sheet", title: "Deployment Checklist", url: "https://developer.mozilla.org/en-US/docs/Learn/Tools_and_testing/Cross_browser_testing" },
@@ -284,8 +284,8 @@ export const fullstackTopics: Record<string, Partial<TopicData>> = {
     realWorldApplications: ["Next.js API routes (Serverless)", "Microservices (Containers)"],
     resources: [
       { type: "official", title: "AWS Serverless vs Containers", url: "https://aws.amazon.com/compare/the-difference-between-containers-and-serverless/" },
-      { type: "video_en", title: "Serverless vs Docker in 100 Seconds", url: "https://www.youtube.com/watch?v=7EhRvLSbFvg" },
-      { type: "video_hi", title: "Serverless Architecture Hindi", url: "https://www.youtube.com/watch?v=1F2yVq4qH4Y" },
+      { type: "video_en", title: "Serverless vs Containers (in28minutes)", url: "https://www.youtube.com/watch?v=EpW28dvm_qo" },
+      { type: "video_hi", title: "Serverless Architecture Hindi", url: "https://www.youtube.com/watch?v=7aLhQ_Wv8DY" },
       { type: "article", title: "When to use Serverless vs Containers", url: "https://www.cloudflare.com/learning/serverless/serverless-vs-containers/" },
       { type: "github", title: "Serverless Framework", url: "https://github.com/serverless/serverless" },
       { type: "cheat_sheet", title: "Docker Cheat Sheet", url: "https://docker.com/" },

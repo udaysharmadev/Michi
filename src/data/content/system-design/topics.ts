@@ -26,7 +26,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS: Scalability and Performance", url: "https://docs.aws.amazon.com/wellarchitected/latest/performance-efficiency-pillar/performance-efficiency.html" },
       { type: "video_en", title: "Scalability vs Performance (Gaurav Sen)", url: "https://www.youtube.com/watch?v=xpDnVSmNFX0" },
-      { type: "video_hi", title: "System Design Basics in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Scalability vs Performance Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=kFzHufJ8PVg" },
       { type: "article", title: "Performance vs Scalability", url: "https://highscalability.com/" },
       { type: "github", title: "System Design Primer: Scalability", url: "https://github.com/donnemartin/system-design-primer#performance-vs-scalability" },
       { type: "cheat_sheet", title: "Scalability Patterns Cheat Sheet", url: "https://github.com/donnemartin/system-design-primer" },
@@ -57,8 +57,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Google Cloud: Latency and Throughput", url: "https://cloud.google.com/architecture/framework/performance/monitor-latency" },
-      { type: "video_en", title: "Latency vs Throughput Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
-      { type: "video_hi", title: "Latency & Throughput Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Latency vs Throughput Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=lJ8ydIuPFeU" },
+      { type: "video_hi", title: "Latency vs Throughput Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=VKO1K8qyR8c" },
       { type: "article", title: "Understanding Latency vs Throughput", url: "https://www.cloudflare.com/learning/performance/latency/" },
       { type: "github", title: "Latency Numbers Every Programmer Should Know", url: "https://gist.github.com/jboner/2841832" },
       { type: "cheat_sheet", title: "System Design Latency Cheat Sheet", url: "https://colin-scott.github.io/personal_website/research/interactive_latency.html" },
@@ -90,7 +90,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS: What is the CAP Theorem?", url: "https://aws.amazon.com/what-is/cap-theorem/" },
       { type: "video_en", title: "CAP Theorem in 3 Minutes (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
-      { type: "video_hi", title: "CAP Theorem Hindi (Gaurav Sen)", url: "https://www.youtube.com/watch?v=xpDnVSmNFX0" },
+      { type: "video_hi", title: "CAP Theorem Hindi (Engineering Digest)", url: "https://www.youtube.com/watch?v=rb2R5I9S5d8" },
       { type: "article", title: "IBM: What is the CAP Theorem?", url: "https://www.ibm.com/topics/cap-theorem" },
       { type: "github", title: "System Design Primer: CAP Theorem", url: "https://github.com/donnemartin/system-design-primer#cap-theorem" },
       { type: "cheat_sheet", title: "Understanding the CAP Theorem", url: "https://www.ibm.com/topics/cap-theorem" },
@@ -122,7 +122,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS: What is Load Balancing?", url: "https://aws.amazon.com/what-is/load-balancing/" },
       { type: "video_en", title: "Load Balancing Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=K0Ta65OqQkY" },
-      { type: "video_hi", title: "Load Balancer Hindi (Gaurav Sen)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Load Balancer Hindi (Engineering Digest)", url: "https://www.youtube.com/watch?v=bIBC_RQtS2E" },
       { type: "article", title: "Layer 4 vs Layer 7 Load Balancing", url: "https://www.haproxy.com/blog/layer-4-and-layer-7-proxy-mode/" },
       { type: "github", title: "HAProxy Documentation", url: "https://github.com/haproxy/haproxy" },
       { type: "cheat_sheet", title: "NGINX: Load Balancing Guide", url: "https://www.nginx.com/resources/glossary/load-balancing/" },
@@ -153,8 +153,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS: What is an API Gateway?", url: "https://aws.amazon.com/api-gateway/" },
-      { type: "video_en", title: "API Gateway Pattern (Microservices)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
-      { type: "video_hi", title: "API Gateway Hindi (Tech Tutorials)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "API Gateway Pattern (Microservices)", url: "https://www.youtube.com/watch?v=jcibXVFiFek" },
+      { type: "video_en", title: "Using The BFF Pattern Instead of API Gateway (ByteMonk)", url: "https://www.youtube.com/watch?v=b8wPnMtL_xU" },
       { type: "article", title: "Microservices: API Gateway Pattern (Chris Richardson)", url: "https://microservices.io/patterns/apigateway.html" },
       { type: "github", title: "Kong API Gateway", url: "https://github.com/Kong/kong" },
       { type: "cheat_sheet", title: "API Security Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/REST_Security_Cheat_Sheet.html" },
@@ -185,8 +185,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MDN: WebSockets API", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" },
-      { type: "video_en", title: "WebSockets vs Long Polling vs SSE (Hussein Nasser)", url: "https://www.youtube.com/watch?v=hS5xSAyPzHs" },
-      { type: "video_hi", title: "WebSockets Explained Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "WebSockets vs Long Polling vs SSE (Hussein Nasser)", url: "https://www.youtube.com/watch?v=1BfCnjr_Vjg" },
+      { type: "video_hi", title: "WebSockets Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=xr5BLGxSuFs" },
       { type: "article", title: "The WebSocket API (Javascript.info)", url: "https://javascript.info/websocket" },
       { type: "github", title: "Socket.IO Source Code", url: "https://github.com/socketio/socket.io" },
       { type: "cheat_sheet", title: "Real-time Protocols Comparison", url: "https://ably.com/blog/websockets-vs-long-polling" },
@@ -217,8 +217,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS: SQL vs NoSQL", url: "https://aws.amazon.com/nosql/relational/" },
-      { type: "video_en", title: "SQL vs NoSQL Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
-      { type: "video_hi", title: "SQL vs NoSQL in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "SQL vs NoSQL Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=ZSvTxVeoVBE" },
+      { type: "video_hi", title: "SQL vs NoSQL in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=Oqz6Jp5raCo" },
       { type: "article", title: "When to use SQL vs NoSQL", url: "https://www.digitalocean.com/community/tutorials/sql-vs-nosql-a-brief-history" },
       { type: "github", title: "System Design: Database Section", url: "https://github.com/donnemartin/system-design-primer#sql-or-nosql" },
       { type: "cheat_sheet", title: "Database Selection Cheat Sheet", url: "https://www.ibm.com/topics/sql-vs-nosql" },
@@ -249,7 +249,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "MongoDB: Sharding Documentation", url: "https://www.mongodb.com/docs/manual/sharding/" },
-      { type: "video_en", title: "Database Sharding Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
+      { type: "video_en", title: "Database Sharding Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=ZSvTxVeoVBE" },
       { type: "video_hi", title: "Database Sharding Hindi (Gaurav Sen)", url: "https://www.youtube.com/watch?v=xpDnVSmNFX0" },
       { type: "article", title: "Understanding Database Sharding", url: "https://www.digitalocean.com/community/tutorials/understanding-database-sharding" },
       { type: "github", title: "Vitess: Database clustering system for horizontal scaling", url: "https://github.com/vitessio/vitess" },
@@ -282,7 +282,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Cassandra: Consistent Hashing", url: "https://cassandra.apache.org/doc/latest/cassandra/architecture/dynamo.html" },
       { type: "video_en", title: "Consistent Hashing Explained (Gaurav Sen)", url: "https://www.youtube.com/watch?v=zaRkONvyGr8" },
-      { type: "video_hi", title: "Consistent Hashing Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Consistent Hashing Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=jqUNbqfsnuw" },
       { type: "article", title: "A Guide to Consistent Hashing", url: "https://highscalability.com/consistent-hashing-algorithm/" },
       { type: "github", title: "System Design Primer: Consistent Hashing", url: "https://github.com/donnemartin/system-design-primer#consistent-hashing" },
       { type: "cheat_sheet", title: "Dynamo Paper Summary", url: "https://www.allthingsdistributed.com/2007/10/amazons_dynamo.html" },
@@ -314,7 +314,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS: ElastiCache Overview", url: "https://docs.aws.amazon.com/AmazonElastiCache/latest/red-ug/WhatIs.html" },
       { type: "video_en", title: "Caching Strategies Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=dGAgxozNWFE" },
-      { type: "video_hi", title: "Caching in System Design Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Caching in System Design Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=xBTGln828Ps" },
       { type: "article", title: "AWS: Caching Best Practices", url: "https://aws.amazon.com/caching/best-practices/" },
       { type: "github", title: "System Design: Caching", url: "https://github.com/donnemartin/system-design-primer#cache" },
       { type: "cheat_sheet", title: "Azure: Cache-Aside Pattern", url: "https://learn.microsoft.com/en-us/azure/architecture/patterns/cache-aside" },
@@ -346,11 +346,11 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Redis: LRU Cache Configuration", url: "https://redis.io/topics/lru-cache" },
       { type: "video_en", title: "Redis Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=jgpVdJB2sKQ" },
-      { type: "video_hi", title: "Redis Tutorial in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Redis Tutorial in Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=jNJIWQX64Bc" },
       { type: "article", title: "Redis vs Memcached: Which to Choose?", url: "https://aws.amazon.com/elasticache/redis-vs-memcached/" },
       { type: "github", title: "Redis Source Code", url: "https://github.com/redis/redis" },
       { type: "cheat_sheet", title: "Redis CLI Cheat Sheet", url: "https://gist.github.com/LeCoupa/985b82968d8285987dc3" },
-      { type: "deep_dive", title: "Under the Hood of Redis", url: "https://www.youtube.com/watch?v=gT5N_Y_vLwI" }
+      { type: "deep_dive", title: "Redis vs Memcached: Which to Choose?", url: "https://aws.amazon.com/elasticache/redis-vs-memcached/" }
     ]
   },
   "n_sdc_3": {
@@ -377,8 +377,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Cloudflare: What is a CDN?", url: "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/" },
-      { type: "video_en", title: "CDN Explained (Hussein Nasser)", url: "https://www.youtube.com/watch?v=8zX0HSNgLqg" },
-      { type: "video_hi", title: "CDN Concept in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "CDN Explained (Hussein Nasser)", url: "https://www.youtube.com/watch?v=ouqqU0FJjhQ" },
+      { type: "video_hi", title: "CDN Concept in Hindi (Gaurav Sen)", url: "https://www.youtube.com/watch?v=28fX5UaHmNs" },
       { type: "article", title: "AWS: Content Delivery Network", url: "https://aws.amazon.com/caching/cdn/" },
       { type: "github", title: "System Design: CDN Section", url: "https://github.com/donnemartin/system-design-primer#content-delivery-network" },
       { type: "cheat_sheet", title: "HTTP Cache-Control Headers Quick Guide", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control" },
@@ -409,8 +409,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "RabbitMQ: Getting Started", url: "https://www.rabbitmq.com/getstarted.html" },
-      { type: "video_en", title: "Message Queues Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
-      { type: "video_hi", title: "RabbitMQ vs Kafka Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Message Queues Explained (ByteByteGo)", url: "https://www.youtube.com/watch?v=OpcdvJLKSKU" },
+      { type: "video_hi", title: "RabbitMQ Concept Hindi (Hindi)", url: "https://www.youtube.com/watch?v=khyHN9QEDTI" },
       { type: "article", title: "AWS: What is a Message Queue?", url: "https://aws.amazon.com/message-queue/" },
       { type: "github", title: "RabbitMQ Server Source", url: "https://github.com/rabbitmq/rabbitmq-server" },
       { type: "cheat_sheet", title: "RabbitMQ Exchange Types Visualized", url: "https://www.cloudamqp.com/blog/part4-rabbitmq-for-beginners-exchanges-routing-keys-bindings.html" },
@@ -442,7 +442,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Apache Kafka Documentation", url: "https://kafka.apache.org/documentation/" },
       { type: "video_en", title: "Kafka in 100 Seconds", url: "https://www.youtube.com/watch?v=Ch5VhJzaoaI" },
-      { type: "video_hi", title: "Apache Kafka Explained Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Apache Kafka Explained Hindi", url: "https://www.youtube.com/watch?v=HJsP4iqkhkI" },
       { type: "article", title: "Apache Kafka Introduction", url: "https://kafka.apache.org/intro" },
       { type: "github", title: "Apache Kafka Source", url: "https://github.com/apache/kafka" },
       { type: "cheat_sheet", title: "Kafka Quickstart Guide", url: "https://kafka.apache.org/quickstart" },
@@ -473,8 +473,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Google Cloud: What is Pub/Sub?", url: "https://cloud.google.com/pubsub/docs/overview" },
-      { type: "video_en", title: "Pub/Sub Pattern Explained", url: "https://www.youtube.com/watch?v=O1Wg_YkMkEI" },
-      { type: "video_hi", title: "Pub/Sub vs Queue in Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Pub/Sub Pattern Explained", url: "https://www.youtube.com/watch?v=FMhbR_kQeHw" },
+      { type: "video_hi", title: "Redis Pub/Sub Tutorial Hindi", url: "https://www.youtube.com/watch?v=uPMVIEfpjzo" },
       { type: "article", title: "AWS: SNS vs SQS", url: "https://aws.amazon.com/sns/faqs/#SQS_and_SNS" },
       { type: "github", title: "Redis Pub/Sub Documentation", url: "https://redis.io/docs/manual/pubsub/" },
       { type: "cheat_sheet", title: "Messaging Patterns Glossary", url: "https://www.enterpriseintegrationpatterns.com/" },
@@ -505,8 +505,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "AWS: What are Microservices?", url: "https://aws.amazon.com/microservices/" },
-      { type: "video_en", title: "Microservices vs Monolith (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
-      { type: "video_hi", title: "Microservices Architecture Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Microservices vs Monolith (ByteByteGo)", url: "https://www.youtube.com/watch?v=7IFJb-uLEaI" },
+      { type: "video_hi", title: "Microservices Tutorial Hindi", url: "https://www.youtube.com/watch?v=ubHa5I3yP70" },
       { type: "article", title: "Martin Fowler: Microservices", url: "https://martinfowler.com/articles/microservices.html" },
       { type: "github", title: "Awesome Microservices", url: "https://github.com/mfornos/awesome-microservices" },
       { type: "cheat_sheet", title: "Microservices Design Patterns", url: "https://microservices.io/patterns/index.html" },
@@ -538,7 +538,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "AWS: Event-Driven Architecture", url: "https://aws.amazon.com/event-driven-architecture/" },
       { type: "video_en", title: "Event-Driven Architecture (GOTO Conferences)", url: "https://www.youtube.com/watch?v=STKCRSUsyP0" },
-      { type: "video_hi", title: "Event Driven Microservices Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_hi", title: "Event Driven Architecture Explained (Alex Hyett)", url: "https://www.youtube.com/watch?v=gOuAqRaDdHA" },
       { type: "article", title: "What do you mean by Event-Driven? (Martin Fowler)", url: "https://martinfowler.com/articles/201701-event-driven.html" },
       { type: "github", title: "Eventuate: Platform for Event-Driven Microservices", url: "https://github.com/eventuate-tram/eventuate-tram-core" },
       { type: "cheat_sheet", title: "Saga Pattern Reference", url: "https://microservices.io/patterns/data/saga.html" },
@@ -569,8 +569,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "Microsoft: Circuit Breaker Pattern", url: "https://learn.microsoft.com/en-us/azure/architecture/patterns/circuit-breaker" },
-      { type: "video_en", title: "Circuit Breaker Pattern (ByteByteGo)", url: "https://www.youtube.com/watch?v=k-Yaq8AHlFA" },
-      { type: "video_hi", title: "Rate Limiting System Design Hindi", url: "https://www.youtube.com/watch?v=dlO-pGLCJPk" },
+      { type: "video_en", title: "Circuit Breaker Pattern (ByteByteGo)", url: "https://www.youtube.com/watch?v=ScIIc3IXg3A" },
+      { type: "video_hi", title: "Rate Limiting Explained Hindi (Hindi)", url: "https://www.youtube.com/watch?v=A4t_q2mqTlo" },
       { type: "article", title: "Cloudflare: What is Rate Limiting?", url: "https://www.cloudflare.com/learning/bots/what-is-rate-limiting/" },
       { type: "github", title: "Resilience4j: Fault Tolerance Library", url: "https://github.com/resilience4j/resilience4j" },
       { type: "cheat_sheet", title: "Stripe: Rate Limiters and Architecture", url: "https://stripe.com/blog/rate-limiters" },

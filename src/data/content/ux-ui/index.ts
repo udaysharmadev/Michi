@@ -1,5 +1,5 @@
 import { RoadmapContent } from '../../types';
-import { nodes as graphNodes, edges } from './graph';
+import { graphNodes, graphEdges } from './graph';
 import { topics } from './topics';
 
 const nodes = graphNodes.map(node => {
@@ -18,5 +18,5 @@ const nodes = graphNodes.map(node => {
 export const uxUiDesignerContent: RoadmapContent = {
   slug: "ux-ui",
   nodes: nodes as any,
-  edges: edges as any,
+  edges: graphEdges as any,
 };

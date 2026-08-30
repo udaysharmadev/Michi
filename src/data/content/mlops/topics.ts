@@ -8,7 +8,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "ML Lifecycle Tutorial",
         "type": "video_en",
-        "url": "https://www.youtube.com/watch?v=SPExESsO4ok"
+        "url": "https://www.youtube.com/watch?v=bddiQ21qrKY"
       }
     ]
   },

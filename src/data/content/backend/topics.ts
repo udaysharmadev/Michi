@@ -27,7 +27,7 @@ export const backendTopics: Record<string, TopicData> = {
       { type: "video_en", title: "How the Internet Works in 5 Minutes", url: "https://www.youtube.com/watch?v=7_LPdttKXPc" },
       { type: "article", title: "MDN: How does the Internet work?", url: "https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/How_does_the_Internet_work" },
       { type: "official", title: "Stanford Intro to Networking", url: "https://web.stanford.edu/class/msande91si/www-spr04/readings/week1/InternetWhitepaper.htm" },
-      { type: "video_hi", title: "How Internet Works? (Hindi)", url: "https://www.youtube.com/watch?v=4pPEw3-a3b0" },
+      { type: "video_hi", title: "How Internet Works? (Hindi)", url: "https://www.youtube.com/watch?v=zN8YNNHcaZc" },
       { type: "github", title: "Networking Roadmap", url: "https://github.com/kamranahmedse/developer-roadmap" },
       { type: "cheat_sheet", title: "Networking Cheat Sheet", url: "https://www.cloudflare.com/learning/network-layer/what-is-the-network-layer/" },
       { type: "deep_dive", title: "Submarine Cable Map", url: "https://www.submarinecablemap.com/" }
@@ -57,7 +57,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "MDN: An overview of HTTP", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/Overview" },
       { type: "video_en", title: "HTTP Crash Course & Exploration", url: "https://www.youtube.com/watch?v=iYM2zFP3Zn0" },
-      { type: "video_hi", title: "HTTP vs HTTPS in Hindi", url: "https://www.youtube.com/watch?v=eXN3T4BvG2c" },
+      { type: "video_hi", title: "HTTP vs HTTPS in Hindi", url: "https://www.youtube.com/watch?v=iYM2zFP3Zn0" },
       { type: "article", title: "How HTTPS Works", url: "https://howhttps.works/" },
       { type: "github", title: "Public APIs for HTTP Testing", url: "https://github.com/public-apis/public-apis" },
       { type: "cheat_sheet", title: "HTTP Status Codes", url: "https://httpstatuses.com/" },
@@ -88,7 +88,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Cloudflare: What is DNS?", url: "https://www.cloudflare.com/learning/dns/what-is-dns/" },
       { type: "video_en", title: "DNS Explained (PowerCert)", url: "https://www.youtube.com/watch?v=mpQZVYPuDGU" },
-      { type: "video_hi", title: "DNS Tutorial in Hindi", url: "https://www.youtube.com/watch?v=R9p0kS-E1_8" },
+      { type: "video_hi", title: "DNS Tutorial in Hindi", url: "https://www.youtube.com/watch?v=o-4ffwsKzrA" },
       { type: "article", title: "A guide to DNS records", url: "https://www.digitalocean.com/community/tutorials/an-introduction-to-dns-terminology-components-and-concepts" },
       { type: "github", title: "DNS Tools", url: "https://github.com/topics/dns-tools" },
       { type: "cheat_sheet", title: "DNS Record Types Cheat Sheet", url: "https://simpledns.plus/help/dns-record-types" },
@@ -118,8 +118,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Cloudflare: What is the OSI Model?", url: "https://www.cloudflare.com/learning/ddos/glossary/open-systems-interconnection-model-osi/" },
-      { type: "video_en", title: "OSI Model Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=kjtMg3zUswg" },
-      { type: "video_hi", title: "OSI Model in Hindi", url: "https://www.youtube.com/watch?v=Gk743wB_JvI" },
+      { type: "video_en", title: "OSI Model Explained (NetworkChuck)", url: "https://www.youtube.com/watch?v=vv4y_uOneC0" },
+      { type: "video_hi", title: "OSI Model in Hindi", url: "https://www.youtube.com/watch?v=PD-wqulrEFk" },
       { type: "article", title: "L4 vs L7 Load Balancing", url: "https://www.nginx.com/resources/glossary/layer-4-load-balancing/" },
       { type: "github", title: "Computer Networking Notes", url: "https://www.nginx.com/resources/glossary/reverse-proxy-server/" },
       { type: "cheat_sheet", title: "OSI Model Cheat Sheet", url: "https://www.stationx.net/osi-model-cheat-sheet/" },
@@ -243,8 +243,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Go Documentation", url: "https://go.dev/doc/" },
-      { type: "video_en", title: "Go Crash Course (FreeCodeCamp)", url: "https://www.youtube.com/watch?v=YS4e4q9oBaU" },
-      { type: "video_hi", title: "Golang Tutorial in Hindi", url: "https://www.youtube.com/watch?v=P_XqR_x-vX8" },
+      { type: "video_en", title: "Go Programming Language Tutorial (freeCodeCamp)", url: "https://www.youtube.com/watch?v=YS4e4q9oBaU" },
+      { type: "video_hi", title: "Go Language Tutorial in Hindi (WsCube Tech)", url: "https://www.youtube.com/watch?v=eDT-AsElU2E" },
       { type: "article", title: "Tour of Go", url: "https://go.dev/tour/welcome/1" },
       { type: "github", title: "Awesome Go", url: "https://github.com/avelino/awesome-go" },
       { type: "cheat_sheet", title: "Go Cheat Sheet", url: "https://devhints.io/go" },
@@ -275,7 +275,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "The Rust Programming Language (The Book)", url: "https://doc.rust-lang.org/book/" },
       { type: "video_en", title: "Rust Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=zF34dRivLOw" },
-      { type: "video_hi", title: "Rust Programming in Hindi", url: "https://www.youtube.com/watch?v=eB1xU0M392c" },
+      { type: "video_hi", title: "Rust Programming in Hindi", url: "https://www.youtube.com/watch?v=Jcbh07P0jHU" },
       { type: "article", title: "Rust by Example", url: "https://doc.rust-lang.org/rust-by-example/" },
       { type: "github", title: "Awesome Rust", url: "https://github.com/rust-unofficial/awesome-rust" },
       { type: "cheat_sheet", title: "Rust Cheat Sheet", url: "https://cheats.rs/" },
@@ -307,7 +307,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "SQL Tutorial (W3Schools)", url: "https://www.w3schools.com/sql/" },
       { type: "video_en", title: "SQL Crash Course (FreeCodeCamp)", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
-      { type: "video_hi", title: "SQL Full Course in Hindi", url: "https://www.youtube.com/watch?v=BpHJE-HnE6k" },
+      { type: "video_hi", title: "SQL Full Course in Hindi", url: "https://www.youtube.com/watch?v=lbfixnW--sM" },
       { type: "article", title: "Select Star SQL", url: "https://selectstarsql.com/" },
       { type: "github", title: "Awesome SQL", url: "https://sqlzoo.net/" },
       { type: "cheat_sheet", title: "SQL Cheat Sheet", url: "https://www.sqltutorial.org/sql-cheat-sheet/" },
@@ -338,7 +338,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "PostgreSQL Documentation", url: "https://www.postgresql.org/docs/" },
       { type: "video_en", title: "PostgreSQL Tutorial (FreeCodeCamp)", url: "https://www.youtube.com/watch?v=qw--VYLpxG4" },
-      { type: "video_hi", title: "PostgreSQL in Hindi", url: "https://www.youtube.com/watch?v=O1HkQpMht4g" },
+      { type: "video_hi", title: "PostgreSQL in Hindi", url: "https://www.youtube.com/watch?v=WtA1pfOz5uU" },
       { type: "article", title: "Postgres Guide", url: "http://postgresguide.com/" },
       { type: "github", title: "Awesome Postgres", url: "https://github.com/dhamaniasad/awesome-postgres" },
       { type: "cheat_sheet", title: "PostgreSQL Cheat Sheet", url: "https://www.postgresqltutorial.com/postgresql-cheat-sheet/" },
@@ -368,8 +368,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "MySQL Reference Manual", url: "https://dev.mysql.com/doc/" },
-      { type: "video_en", title: "MySQL Crash Course", url: "https://www.youtube.com/watch?v=9ylj9nr0Lcg" },
-      { type: "video_hi", title: "MySQL Tutorial in Hindi", url: "https://www.youtube.com/watch?v=E_P-sN_kIJU" },
+      { type: "video_en", title: "MySQL Crash Course", url: "https://www.youtube.com/watch?v=hlGoQC332VM" },
+      { type: "video_hi", title: "MySQL Tutorial in Hindi", url: "https://www.youtube.com/watch?v=yE6tIle64tU" },
       { type: "article", title: "MySQL Indexing Basics", url: "https://www.digitalocean.com/community/tutorials/how-to-optimize-mysql-queries-with-indexes" },
       { type: "github", title: "Awesome MySQL", url: "https://github.com/shlomi-noach/awesome-mysql" },
       { type: "cheat_sheet", title: "MySQL Cheat Sheet", url: "https://devhints.io/mysql" },
@@ -400,7 +400,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Database Normalization (Microsoft)", url: "https://learn.microsoft.com/en-us/office/troubleshoot/access/database-normalization-description" },
       { type: "video_en", title: "Database Design Course", url: "https://www.youtube.com/watch?v=ztHopE5Wnpc" },
-      { type: "video_hi", title: "Database Design & ERD in Hindi", url: "https://www.youtube.com/watch?v=uK8f-7Z1w-I" },
+      { type: "video_hi", title: "Database Design & ERD in Hindi", url: "https://www.youtube.com/watch?v=suKHq3ZLPmU" },
       { type: "article", title: "A Guide to DB Schema Design", url: "https://learn.microsoft.com/en-us/sql/relational-databases/tables/tables" },
       { type: "github", title: "Schema Design Patterns", url: "https://github.com/topics/database-design" },
       { type: "cheat_sheet", title: "ER Diagram Cheat Sheet", url: "https://www.lucidchart.com/pages/er-diagrams" },
@@ -432,7 +432,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "MongoDB University", url: "https://learn.mongodb.com/" },
       { type: "video_en", title: "MongoDB Crash Course", url: "https://www.youtube.com/watch?v=ofme2o29ngU" },
-      { type: "video_hi", title: "MongoDB Tutorial in Hindi", url: "https://www.youtube.com/watch?v=W-sZOCTexZg" },
+      { type: "video_hi", title: "MongoDB Tutorial in Hindi", url: "https://www.youtube.com/watch?v=rU9ZODw5yvU" },
       { type: "article", title: "SQL vs NoSQL", url: "https://www.mongodb.com/nosql-explained/nosql-vs-sql" },
       { type: "github", title: "Awesome MongoDB", url: "https://github.com/ramnes/awesome-mongodb" },
       { type: "cheat_sheet", title: "MongoDB Cheat Sheet", url: "https://www.mongodb.com/developer/products/mongodb/cheat-sheet/" },
@@ -462,8 +462,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Redis Documentation", url: "https://redis.io/docs/" },
-      { type: "video_en", title: "Redis Crash Course", url: "https://www.youtube.com/watch?v=jgpVdJB2sKQ" },
-      { type: "video_hi", title: "Redis Tutorial in Hindi", url: "https://www.youtube.com/watch?v=kYJjZ3L1dEI" },
+      { type: "video_en", title: "Redis Crash Course (Web Dev Simplified)", url: "https://www.youtube.com/watch?v=jgpVdJB2sKQ" },
+      { type: "video_hi", title: "Redis Tutorial in Hindi", url: "https://www.youtube.com/watch?v=Vx2zPMPvmug" },
       { type: "article", title: "Caching Strategies with Redis", url: "https://aws.amazon.com/caching/best-practices/" },
       { type: "github", title: "Awesome Redis", url: "https://github.com/zhemingwang/awesome-redis" },
       { type: "cheat_sheet", title: "Redis CLI Cheat Sheet", url: "https://lzone.de/cheat-sheet/Redis" },
@@ -493,8 +493,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Cassandra Basics", url: "https://cassandra.apache.org/_/quickstart.html" },
-      { type: "video_en", title: "Cassandra Crash Course", url: "https://www.youtube.com/watch?v=3q-vOq7v3z8" },
-      { type: "video_hi", title: "Cassandra Intro in Hindi", url: "https://www.youtube.com/watch?v=qT_R0t8qFkY" },
+      { type: "video_en", title: "Cassandra Crash Course", url: "https://www.youtube.com/watch?v=TD3-INhm60Q" },
+      { type: "video_hi", title: "Cassandra Intro in Hindi", url: "https://www.youtube.com/watch?v=eOv5sty-fvQ" },
       { type: "article", title: "Basic Rules of Cassandra Data Modeling", url: "https://www.datastax.com/blog/basic-rules-cassandra-data-modeling" },
       { type: "github", title: "Awesome Cassandra", url: "https://cassandra.apache.org/doc/latest/cassandra/data_modeling/index.html" },
       { type: "cheat_sheet", title: "CQL Cheat Sheet", url: "https://www.datastax.com/cql-cheat-sheet" },
@@ -526,7 +526,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "REST Architectural Style", url: "https://restfulapi.net/" },
       { type: "video_en", title: "REST API Concepts", url: "https://www.youtube.com/watch?v=-mN3VyJuCjM" },
-      { type: "video_hi", title: "REST API Explained (Hindi)", url: "https://www.youtube.com/watch?v=T_T5Z0iB3Fk" },
+      { type: "video_hi", title: "REST API Explained (Hindi)", url: "https://www.youtube.com/watch?v=cJAyEOZQUQY" },
       { type: "article", title: "Best Practices for REST API Design", url: "https://stackoverflow.blog/2020/03/02/best-practices-for-rest-api-design/" },
       { type: "github", title: "API Guidelines", url: "https://github.com/microsoft/api-guidelines" },
       { type: "cheat_sheet", title: "REST API Cheat Sheet", url: "https://restfulapi.net/http-methods/" },
@@ -557,7 +557,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "GraphQL Official Learn", url: "https://graphql.org/learn/" },
       { type: "video_en", title: "GraphQL Full Course", url: "https://www.youtube.com/watch?v=ed8SzALpx1Q" },
-      { type: "video_hi", title: "GraphQL in Hindi", url: "https://www.youtube.com/watch?v=LqUe7-4n_gE" },
+      { type: "video_hi", title: "GraphQL in Hindi", url: "https://www.youtube.com/watch?v=WtkKwO1viI8" },
       { type: "article", title: "Solving the N+1 Problem in GraphQL", url: "https://www.apollographql.com/docs/apollo-server/data/dataloaders/" },
       { type: "github", title: "Awesome GraphQL", url: "https://github.com/chentsulin/awesome-graphql" },
       { type: "cheat_sheet", title: "GraphQL Cheat Sheet", url: "https://devhints.io/graphql" },
@@ -588,7 +588,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "gRPC Documentation", url: "https://grpc.io/docs/" },
       { type: "video_en", title: "gRPC Crash Course (Hussein Nasser)", url: "https://www.youtube.com/watch?v=Yw4rkaTc0f8" },
-      { type: "video_hi", title: "gRPC in Hindi", url: "https://www.youtube.com/watch?v=KzE_5N0_j9Y" },
+      { type: "video_hi", title: "gRPC in Hindi", url: "https://www.youtube.com/watch?v=oOv9QuzcUDQ" },
       { type: "article", title: "REST vs gRPC", url: "https://cloud.google.com/blog/products/api-management/understanding-grpc-openapi-and-rest-and-when-to-use-them" },
       { type: "github", title: "Awesome gRPC", url: "https://github.com/grpc-ecosystem/awesome-grpc" },
       { type: "cheat_sheet", title: "Protobuf Cheat Sheet", url: "https://grpc.io/docs/languages/go/quickstart/" },
@@ -619,7 +619,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "MDN: WebSockets API", url: "https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API" },
       { type: "video_en", title: "WebSockets Crash Course", url: "https://www.youtube.com/watch?v=1BfCnjr_Vjg" },
-      { type: "video_hi", title: "WebSockets & Socket.io in Hindi", url: "https://www.youtube.com/watch?v=R9K1G4G66K0" },
+      { type: "video_hi", title: "WebSockets & Socket.io in Hindi", url: "https://www.youtube.com/watch?v=GmK_yV9_ccY" },
       { type: "article", title: "HTTP vs WebSockets", url: "https://ably.com/topic/websockets" },
       { type: "github", title: "Socket.io GitHub", url: "https://github.com/socketio/socket.io" },
       { type: "cheat_sheet", title: "Socket.io Emit Cheatsheet", url: "https://socket.io/docs/v4/tutorial/step-4" },
@@ -650,8 +650,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "OWASP Password Storage Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html" },
-      { type: "video_en", title: "Hashing vs Encryption (Computerphile)", url: "https://www.youtube.com/watch?v=O6cmuiTBZVs" },
-      { type: "video_hi", title: "Password Hashing & Salting in Hindi", url: "https://www.youtube.com/watch?v=HkQj7d-8Z-M" },
+      { type: "video_en", title: "Hashing Algorithms and Security (Computerphile)", url: "https://www.youtube.com/watch?v=b4b8ktEV4Bg" },
+      { type: "video_hi", title: "Password Hashing & Salting in Hindi", url: "https://www.youtube.com/watch?v=tzB5VD-DzJE" },
       { type: "article", title: "Salted Password Hashing - Doing it Right", url: "https://crackstation.net/hashing-security.htm" },
       { type: "github", title: "Bcrypt.js Repo", url: "https://github.com/dcodeIO/bcrypt.js" },
       { type: "cheat_sheet", title: "Argon2 Config Cheat Sheet", url: "https://cheatsheetseries.owasp.org/cheatsheets/Password_Storage_Cheat_Sheet.html#argon2id" },
@@ -712,8 +712,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "OAuth 2.0 Official Specs", url: "https://oauth.net/2/" },
-      { type: "video_en", title: "OAuth 2.0 Explained in Simple Terms", url: "https://www.youtube.com/watch?v=CPbvxxSlDTU" },
-      { type: "video_hi", title: "OAuth 2.0 Tutorial in Hindi", url: "https://www.youtube.com/watch?v=Z3I-NeqP4mI" },
+      { type: "video_en", title: "OAuth 2.0 Explained in Simple Terms", url: "https://www.youtube.com/watch?v=ZV5yTm4pT8g" },
+      { type: "video_hi", title: "OAuth 2.0 Tutorial in Hindi", url: "https://www.youtube.com/watch?v=UGaO0H_1aFQ" },
       { type: "article", title: "An Illustrated Guide to OAuth and OIDC", url: "https://developer.okta.com/blog/2019/10/21/illustrated-guide-to-oauth-and-oidc" },
       { type: "github", title: "Awesome Auth", url: "https://github.com/casbin/awesome-auth" },
       { type: "cheat_sheet", title: "OAuth 2.0 Threat Model Cheat Sheet", url: "https://oauth.net/2/" },
@@ -743,8 +743,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "MDN: CORS", url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS" },
-      { type: "video_en", title: "Web Security Crash Course (FreeCodeCamp)", url: "https://www.youtube.com/watch?v=2Kz-211-73k" },
-      { type: "video_hi", title: "CORS Explained in Hindi", url: "https://www.youtube.com/watch?v=3R-sOQ802rA" },
+      { type: "video_en", title: "Web Security Crash Course (FreeCodeCamp)", url: "https://www.youtube.com/watch?v=WWnR4xptSRk" },
+      { type: "video_hi", title: "Cyber Security Introduction in Hindi", url: "https://www.youtube.com/watch?v=VBejkJSsHZ0" },
       { type: "article", title: "OWASP Top 10", url: "https://owasp.org/www-project-top-ten/" },
       { type: "github", title: "Helmet.js", url: "https://github.com/helmetjs/helmet" },
       { type: "cheat_sheet", title: "CORS Cheat Sheet", url: "https://enable-cors.org/" },
@@ -776,7 +776,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "AWS: Caching Overview", url: "https://aws.amazon.com/caching/" },
       { type: "video_en", title: "System Design: Caching", url: "https://www.youtube.com/watch?v=U3RkDLtS7uY" },
-      { type: "video_hi", title: "Caching in System Design (Hindi)", url: "https://www.youtube.com/watch?v=JBH3GVBTbR0" },
+      { type: "video_hi", title: "Caching in System Design (Hindi)", url: "https://www.youtube.com/watch?v=xBTGln828Ps" },
       { type: "article", title: "Cache Invalidation Strategies", url: "https://www.cloudflare.com/learning/cdn/what-is-a-cdn/" },
       { type: "github", title: "System Design Primer - Cache", url: "https://github.com/donnemartin/system-design-primer#cache" },
       { type: "cheat_sheet", title: "Cache Eviction Policies (LRU, LFU)", url: "https://en.wikipedia.org/wiki/Cache_replacement_policies" },
@@ -806,8 +806,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Redis Documentation", url: "https://redis.io/docs/latest/develop/" },
-      { type: "video_en", title: "Redis Crash Course (Traversy Media)", url: "https://www.youtube.com/watch?v=Bw87C6B5KZo" },
-      { type: "video_hi", title: "Redis Cache Node.js (Hindi)", url: "https://www.youtube.com/watch?v=JTkxiK0K1D8" },
+      { type: "video_en", title: "Redis Crash Course (Piyush Garg)", url: "https://www.youtube.com/watch?v=Vx2zPMPvmug" },
+      { type: "video_hi", title: "Redis Crash Course Hindi (Piyush Garg)", url: "https://www.youtube.com/watch?v=Vx2zPMPvmug" },
       { type: "article", title: "How to use Redis for Caching", url: "https://www.digitalocean.com/community/tutorials/how-to-implement-caching-in-node-js-using-redis" },
       { type: "github", title: "Node Redis Client", url: "https://github.com/redis/node-redis" },
       { type: "cheat_sheet", title: "Redis Commands", url: "https://redis.io/commands/" },
@@ -837,8 +837,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "RabbitMQ Tutorials", url: "https://www.rabbitmq.com/getstarted.html" },
-      { type: "video_en", title: "RabbitMQ in 100 Seconds", url: "https://www.youtube.com/watch?v=CjieE2F_YlU" },
-      { type: "video_hi", title: "RabbitMQ Tutorial in Hindi", url: "https://www.youtube.com/watch?v=Zp8mXF7QY2M" },
+      { type: "video_en", title: "RabbitMQ in 100 Seconds", url: "https://www.youtube.com/watch?v=-0g-1ckQgBo" },
+      { type: "video_hi", title: "RabbitMQ Tutorial in Hindi", url: "https://www.youtube.com/watch?v=khyHN9QEDTI" },
       { type: "article", title: "Understanding RabbitMQ Exchanges", url: "https://www.cloudamqp.com/blog/part4-rabbitmq-for-beginners-exchanges-routing-keys-bindings.html" },
       { type: "github", title: "Awesome RabbitMQ", url: "https://www.rabbitmq.com/tutorials/tutorial-three-javascript.html" },
       { type: "cheat_sheet", title: "RabbitMQ Cheat Sheet", url: "https://lzone.de/cheat-sheet/RabbitMQ" },
@@ -869,7 +869,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Apache Kafka Docs", url: "https://kafka.apache.org/documentation/" },
       { type: "video_en", title: "Kafka in 100 Seconds", url: "https://www.youtube.com/watch?v=Ch5VhJzaoaI" },
-      { type: "video_hi", title: "Kafka Tutorial in Hindi", url: "https://www.youtube.com/watch?v=R9_u2-o0Tgw" },
+      { type: "video_hi", title: "Kafka Tutorial in Hindi", url: "https://www.youtube.com/watch?v=HJsP4iqkhkI" },
       { type: "article", title: "Kafka vs RabbitMQ (When to use which)", url: "https://tanzu.vmware.com/developer/guides/rabbitmq-vs-kafka/" },
       { type: "github", title: "Awesome Kafka", url: "https://github.com/monksy/awesome-kafka" },
       { type: "cheat_sheet", title: "Kafka CLI Cheat Sheet", url: "https://hadoop.apache.org/docs/stable/" },
@@ -901,7 +901,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Nginx Beginner's Guide", url: "https://nginx.org/en/docs/beginners_guide.html" },
       { type: "video_en", title: "Nginx Crash Course (Hussein Nasser)", url: "https://www.youtube.com/watch?v=JKxlsvZXG7c" },
-      { type: "video_hi", title: "Nginx Tutorial in Hindi", url: "https://www.youtube.com/watch?v=J9zFmXF7uB4" },
+      { type: "video_hi", title: "Nginx Tutorial in Hindi", url: "https://www.youtube.com/watch?v=b_B1BEShfBc" },
       { type: "article", title: "How to Configure Nginx", url: "https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04" },
       { type: "github", title: "Nginx Boilerplate", url: "https://github.com/h5bp/server-configs-nginx" },
       { type: "cheat_sheet", title: "Nginx Cheat Sheet", url: "https://nginx.org/en/docs/" },
@@ -931,8 +931,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Apache Documentation", url: "https://httpd.apache.org/docs/" },
-      { type: "video_en", title: "Apache Web Server in 10 Minutes", url: "https://www.youtube.com/watch?v=a3tL9ZqR3wY" },
-      { type: "video_hi", title: "Apache Server Installation in Hindi", url: "https://www.youtube.com/watch?v=HXV3zeQKqGY" },
+      { type: "video_en", title: "Apache Web Server in 10 Minutes", url: "https://www.youtube.com/watch?v=NACRKwkXKO0" },
+      { type: "video_hi", title: "Apache Server Installation in Hindi", url: "https://www.youtube.com/watch?v=a-h1XlqR8g4" },
       { type: "article", title: "Apache vs Nginx", url: "https://www.digitalocean.com/community/tutorials/apache-vs-nginx-practical-considerations" },
       { type: "github", title: "Apache Server Configs", url: "https://github.com/h5bp/server-configs-apache" },
       { type: "cheat_sheet", title: "Apache htaccess Cheat Sheet", url: "https://github.com/phanan/htaccess" },
@@ -962,8 +962,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "HAProxy Documentation", url: "https://www.haproxy.org/#docs" },
-      { type: "video_en", title: "What is a Reverse Proxy? (Hussein Nasser)", url: "https://www.youtube.com/watch?v=T_e42uO-N4c" },
-      { type: "video_hi", title: "Load Balancer Explained in Hindi", url: "https://www.youtube.com/watch?v=ZcMhFz_zC0Q" },
+      { type: "video_en", title: "What is a Reverse Proxy? (Hussein Nasser)", url: "https://www.youtube.com/watch?v=xo5V9g9joFs" },
+      { type: "video_hi", title: "Load Balancer Explained in Hindi", url: "https://www.youtube.com/watch?v=NTOcdjMs8E4" },
       { type: "article", title: "AWS: What is Load Balancing?", url: "https://aws.amazon.com/what-is/load-balancing/" },
       { type: "github", title: "Traefik Proxy Repo", url: "https://github.com/traefik/traefik" },
       { type: "cheat_sheet", title: "HAProxy Cheat Sheet", url: "https://www.haproxy.com/documentation/" },
@@ -995,7 +995,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Jest Documentation", url: "https://jestjs.io/docs/getting-started" },
       { type: "video_en", title: "Node.js Testing with Jest", url: "https://www.youtube.com/watch?v=FgnxcUQ5vho" },
-      { type: "video_hi", title: "Jest Testing in Hindi", url: "https://www.youtube.com/watch?v=4CjA1f1vHjE" },
+      { type: "video_hi", title: "Jest Testing in Hindi", url: "https://www.youtube.com/watch?v=qwIQrIcKx8E" },
       { type: "article", title: "Martin Fowler: Unit Test", url: "https://martinfowler.com/bliki/UnitTest.html" },
       { type: "github", title: "Awesome Testing", url: "https://github.com/TheJambo/awesome-testing" },
       { type: "cheat_sheet", title: "Jest Cheat Sheet", url: "https://github.com/sapegin/jest-cheat-sheet" },
@@ -1025,8 +1025,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Supertest npm package", url: "https://github.com/ladjs/supertest" },
-      { type: "video_en", title: "Integration Testing Node.js Apps", url: "https://www.youtube.com/watch?v=r2U8F_A3i3E" },
-      { type: "video_hi", title: "API Testing Tutorial in Hindi", url: "https://www.youtube.com/watch?v=VivDp3s5Kvs" },
+      { type: "video_en", title: "Integration Testing Node.js Apps", url: "https://www.youtube.com/watch?v=FFuLKslV6yo" },
+      { type: "video_hi", title: "API Testing Tutorial in Hindi", url: "https://www.youtube.com/watch?v=FFuLKslV6yo" },
       { type: "article", title: "Integration Testing Best Practices", url: "https://kentcdodds.com/blog/write-tests" },
       { type: "github", title: "Testcontainers", url: "https://testcontainers.com/" },
       { type: "cheat_sheet", title: "Node API Testing Guide", url: "https://github.com/goldbergyoni/javascript-testing-best-practices" },
@@ -1056,8 +1056,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Playwright Documentation", url: "https://playwright.dev/" },
-      { type: "video_en", title: "Playwright Crash Course", url: "https://www.youtube.com/watch?v=aQOSPA-XqXQ" },
-      { type: "video_hi", title: "Cypress Testing in Hindi", url: "https://www.youtube.com/watch?v=wX-y0Xo1EFE" },
+      { type: "video_en", title: "Playwright Crash Course", url: "https://www.youtube.com/watch?v=68xvfrxlEYo" },
+      { type: "video_hi", title: "Cypress Testing Tutorial (Hindi)", url: "https://www.youtube.com/watch?v=2mL8wJeOOCU" },
       { type: "article", title: "Just Say No to More End-to-End Tests", url: "https://testing.googleblog.com/2015/04/just-say-no-to-more-end-to-end-tests.html" },
       { type: "github", title: "Awesome Playwright", url: "https://github.com/mxschmitt/awesome-playwright" },
       { type: "cheat_sheet", title: "Cypress Cheat Sheet", url: "https://docs.cypress.io/api/table-of-contents" },
@@ -1089,7 +1089,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Docker Official Tutorial", url: "https://docs.docker.com/get-started/" },
       { type: "video_en", title: "Docker in 100 Seconds", url: "https://www.youtube.com/watch?v=Gjnup-PuquQ" },
-      { type: "video_hi", title: "Docker Tutorial in Hindi", url: "https://www.youtube.com/watch?v=3c-iZaI7x8o" },
+      { type: "video_hi", title: "Docker Tutorial in Hindi", url: "https://www.youtube.com/watch?v=zCsbp_iBTq8" },
       { type: "article", title: "Docker Best Practices", url: "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/" },
       { type: "github", title: "Awesome Docker", url: "https://github.com/veggiemonk/awesome-docker" },
       { type: "cheat_sheet", title: "Docker CLI Cheat Sheet", url: "https://docs.docker.com/get-started/docker_cheatsheet.pdf" },
@@ -1120,7 +1120,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Docker Compose Overview", url: "https://docs.docker.com/compose/" },
       { type: "video_en", title: "Docker Compose Crash Course", url: "https://www.youtube.com/watch?v=Qw9zlE3t8Ko" },
-      { type: "video_hi", title: "Docker Compose in Hindi", url: "https://www.youtube.com/watch?v=lqMYeP1TduI" },
+      { type: "video_hi", title: "Docker Compose in Hindi", url: "https://www.youtube.com/watch?v=wdjPuDMeHS4" },
       { type: "article", title: "A Guide to Docker Compose", url: "https://docs.docker.com/compose/gettingstarted/" },
       { type: "github", title: "Awesome Compose Examples", url: "https://github.com/docker/awesome-compose" },
       { type: "cheat_sheet", title: "Docker Compose Cheat Sheet", url: "https://devhints.io/docker-compose" },
@@ -1151,7 +1151,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "What is CI/CD? (RedHat)", url: "https://www.redhat.com/en/topics/devops/what-is-ci-cd" },
       { type: "video_en", title: "CI/CD Explained (TechWorld with Nana)", url: "https://www.youtube.com/watch?v=scEDHsr3APg" },
-      { type: "video_hi", title: "CI/CD Pipeline in Hindi", url: "https://www.youtube.com/watch?v=4W_3FfPj0bE" },
+      { type: "video_hi", title: "CI/CD Pipeline in Hindi", url: "https://www.youtube.com/watch?v=gLptmcuCx6Q" },
       { type: "article", title: "Continuous Delivery vs Continuous Deployment", url: "https://www.atlassian.com/continuous-delivery/principles/continuous-integration-vs-delivery-vs-deployment" },
       { type: "github", title: "Awesome CI/CD", url: "https://github.com/ligurio/awesome-ci" },
       { type: "cheat_sheet", title: "GitLab CI Cheat Sheet", url: "https://docs.gitlab.com/ee/ci/yaml/" },
@@ -1182,7 +1182,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "GitHub Actions Docs", url: "https://docs.github.com/en/actions" },
       { type: "video_en", title: "GitHub Actions Crash Course", url: "https://www.youtube.com/watch?v=R8_veQiYBjI" },
-      { type: "video_hi", title: "GitHub Actions in Hindi", url: "https://www.youtube.com/watch?v=dB7UNv3iK7s" },
+      { type: "video_hi", title: "GitHub Actions in Hindi", url: "https://www.youtube.com/watch?v=y7S2oSjJ8PA" },
       { type: "article", title: "Building a CI/CD Pipeline with GitHub Actions", url: "https://github.com/skills/hello-github-actions" },
       { type: "github", title: "Awesome Actions", url: "https://github.com/sdras/awesome-actions" },
       { type: "cheat_sheet", title: "GitHub Actions Cheat Sheet", url: "https://github.github.io/actions-cheat-sheet/actions-cheat-sheet.pdf" },
@@ -1213,8 +1213,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "Microservices Architecture (Microsoft)", url: "https://learn.microsoft.com/en-us/azure/architecture/guide/architecture-styles/microservices" },
-      { type: "video_en", title: "Monolith vs Microservices", url: "https://www.youtube.com/watch?v=q6gEqtYgZ5Q" },
-      { type: "video_hi", title: "Microservices Explained in Hindi", url: "https://www.youtube.com/watch?v=9bZkp7q19f0" },
+      { type: "video_en", title: "Monolith vs Microservices", url: "https://www.youtube.com/watch?v=7IFJb-uLEaI" },
+      { type: "video_hi", title: "Microservices Tutorial in Hindi (Learn Code With Durgesh)", url: "https://www.youtube.com/watch?v=ubHa5I3yP70" },
       { type: "article", title: "Microservices by Martin Fowler", url: "https://martinfowler.com/articles/microservices.html" },
       { type: "github", title: "Awesome Microservices", url: "https://github.com/mfornos/awesome-microservices" },
       { type: "cheat_sheet", title: "Microservice Patterns", url: "https://microservices.io/patterns/index.html" },
@@ -1244,8 +1244,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "AWS Serverless Overview", url: "https://aws.amazon.com/serverless/" },
-      { type: "video_en", title: "Serverless in 100 Seconds", url: "https://www.youtube.com/watch?v=vxJobGtqKWA" },
-      { type: "video_hi", title: "What is Serverless? (Hindi)", url: "https://www.youtube.com/watch?v=bWwqBa9XFuE" },
+      { type: "video_en", title: "Serverless in 100 Seconds", url: "https://www.youtube.com/watch?v=AgOmeANl3ls" },
+      { type: "video_hi", title: "AWS Lambda & Serverless Computing (Hindi)", url: "https://www.youtube.com/watch?v=34Vf54YK65k" },
       { type: "article", title: "Serverless Architectures", url: "https://martinfowler.com/articles/serverless.html" },
       { type: "github", title: "Awesome Serverless", url: "https://github.com/anaibol/awesome-serverless" },
       { type: "cheat_sheet", title: "Serverless Framework CLI", url: "https://www.serverless.com/framework/docs/providers/aws/cli-reference/" },
@@ -1275,8 +1275,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "API Gateway Pattern", url: "https://microservices.io/patterns/apigateway.html" },
-      { type: "video_en", title: "What is an API Gateway?", url: "https://www.youtube.com/watch?v=1vjnCEGZq3Y" },
-      { type: "video_hi", title: "API Gateway in Hindi", url: "https://www.youtube.com/watch?v=exSwQtMxGd4" },
+      { type: "video_en", title: "What is an API Gateway?", url: "https://www.youtube.com/watch?v=b8wPnMtL_xU" },
+      { type: "video_hi", title: "API Gateway in Microservices (Hindi)", url: "https://www.youtube.com/watch?v=oOWv2OfW-NM" },
       { type: "article", title: "Pattern: Backends For Frontends", url: "https://samnewman.io/patterns/architectural/bff/" },
       { type: "github", title: "Kong API Gateway", url: "https://github.com/Kong/kong" },
       { type: "cheat_sheet", title: "GraphQL Federation Docs", url: "https://www.apollographql.com/docs/federation/" },
@@ -1306,8 +1306,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "AWS: Event-Driven Architecture", url: "https://aws.amazon.com/event-driven-architecture/" },
-      { type: "video_en", title: "Event-Driven Architecture in 5 Minutes", url: "https://www.youtube.com/watch?v=l_Q-gLwA_X0" },
-      { type: "video_hi", title: "Event Driven Architecture (Hindi)", url: "https://www.youtube.com/watch?v=x3FgpMHMWcg" },
+      { type: "video_en", title: "Event-Driven Architecture in 5 Minutes", url: "https://www.youtube.com/watch?v=gOuAqRaDdHA" },
+      { type: "video_hi", title: "Event Driven Architecture (Hindi)", url: "https://www.youtube.com/watch?v=RbAXpZAoQUk" },
       { type: "article", title: "What do you mean by Event-Driven?", url: "https://martinfowler.com/articles/201701-event-driven.html" },
       { type: "github", title: "Event Sourcing Examples", url: "https://github.com/cer/event-sourcing-examples" },
       { type: "cheat_sheet", title: "CQRS Pattern", url: "https://microservices.io/patterns/data/cqrs.html" },
@@ -1339,7 +1339,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "AWS Documentation", url: "https://docs.aws.amazon.com/" },
       { type: "video_en", title: "Cloud Computing Explained", url: "https://www.youtube.com/watch?v=M988_fsOSWo" },
-      { type: "video_hi", title: "AWS Basics in Hindi", url: "https://www.youtube.com/watch?v=P13Ol2eTaJY" },
+      { type: "video_hi", title: "AWS Basics in Hindi", url: "https://www.youtube.com/watch?v=8C_kHJ5YEiA" },
       { type: "article", title: "IaaS vs PaaS vs SaaS", url: "https://www.ibm.com/cloud/learn/iaas-paas-saas" },
       { type: "github", title: "Awesome AWS", url: "https://github.com/donnemartin/awesome-aws" },
       { type: "cheat_sheet", title: "AWS Cheat Sheet", url: "https://tutorialsdojo.com/aws-cheat-sheets/" },
@@ -1370,7 +1370,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Terraform Documentation", url: "https://developer.hashicorp.com/terraform/docs" },
       { type: "video_en", title: "Terraform Crash Course", url: "https://www.youtube.com/watch?v=l5k1ai_GBDE" },
-      { type: "video_hi", title: "Terraform Tutorial in Hindi", url: "https://www.youtube.com/watch?v=Q0sKAMal4WQ" },
+      { type: "video_hi", title: "Terraform Tutorial in Hindi (M Prashant)", url: "https://www.youtube.com/watch?v=4JYtAf4M88Y" },
       { type: "article", title: "What is Infrastructure as Code?", url: "https://www.redhat.com/en/topics/automation/what-is-infrastructure-as-code-iac" },
       { type: "github", title: "Awesome Terraform", url: "https://github.com/shuaibiyy/awesome-terraform" },
       { type: "cheat_sheet", title: "Terraform CLI Cheat Sheet", url: "https://spacelift.io/blog/terraform-commands-cheat-sheet" },
@@ -1401,7 +1401,7 @@ export const backendTopics: Record<string, TopicData> = {
     resources: [
       { type: "official", title: "Kubernetes Documentation", url: "https://kubernetes.io/docs/home/" },
       { type: "video_en", title: "Kubernetes in 100 Seconds", url: "https://www.youtube.com/watch?v=VnvRFRk_51k" },
-      { type: "video_hi", title: "Kubernetes Tutorial in Hindi", url: "https://www.youtube.com/watch?v=wXS8sCJFmS0" },
+      { type: "video_hi", title: "Kubernetes Tutorial in Hindi", url: "https://www.youtube.com/watch?v=YkJDFy6F5oM" },
       { type: "article", title: "Kubernetes Concepts", url: "https://kubernetes.io/docs/concepts/" },
       { type: "github", title: "Awesome Kubernetes", url: "https://github.com/ramitsurana/awesome-kubernetes" },
       { type: "cheat_sheet", title: "kubectl Cheat Sheet", url: "https://kubernetes.io/docs/reference/kubectl/cheatsheet/" },
@@ -1431,8 +1431,8 @@ export const backendTopics: Record<string, TopicData> = {
     ],
     resources: [
       { type: "official", title: "OpenTelemetry Documentation", url: "https://opentelemetry.io/docs/" },
-      { type: "video_en", title: "Observability vs Monitoring", url: "https://www.youtube.com/watch?v=vVj2i5K6Q3U" },
-      { type: "video_hi", title: "Prometheus & Grafana (Hindi)", url: "https://www.youtube.com/watch?v=y8YRVPCNvVQ" },
+      { type: "video_en", title: "Observability vs Monitoring", url: "https://www.youtube.com/watch?v=cYAE0ZhT43c" },
+      { type: "video_hi", title: "Prometheus & Grafana (Hindi)", url: "https://www.youtube.com/watch?v=DXZUunEeHqM" },
       { type: "article", title: "Metrics, Tracing, and Logging", url: "https://peter.bourgon.org/blog/2017/02/21/metrics-tracing-and-logging.html" },
       { type: "github", title: "Awesome Observability", url: "https://opentelemetry.io/docs/concepts/signals/" },
       { type: "cheat_sheet", title: "PromQL (Prometheus) Cheat Sheet", url: "https://promlabs.com/promql-cheat-sheet/" },

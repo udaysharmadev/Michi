@@ -1,380 +1,50 @@
-import { Node, Edge } from '@xyflow/react';
+import { RoadmapContentNode, RoadmapContentEdge } from "@/data/types";
 
-export const nodes: Node[] = [
-  {
-    "id": "data-scientist",
-    "type": "roadmap",
-    "position": {
-      "x": 400,
-      "y": 50
-    },
-    "data": {
-      "label": "dataScientist"
-    }
-  },
-  {
-    "id": "math_stats",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 200
-    },
-    "data": {
-      "label": "Math & Statistics",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "linear_algebra",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 280
-    },
-    "data": {
-      "label": "Linear Algebra",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "calculus",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 280
-    },
-    "data": {
-      "label": "Calculus",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "probability",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 400
-    },
-    "data": {
-      "label": "Probability",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "statistics",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 400
-    },
-    "data": {
-      "label": "Statistics",
-      "color": "blue"
-    }
-  },
-  {
-    "id": "programming",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 590
-    },
-    "data": {
-      "label": "Programming for Data",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "python_r",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 670
-    },
-    "data": {
-      "label": "Python / R",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "pandas_numpy",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 670
-    },
-    "data": {
-      "label": "Pandas & NumPy",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "data_structures",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 790
-    },
-    "data": {
-      "label": "Data Structures",
-      "color": "purple"
-    }
-  },
-  {
-    "id": "data_viz",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 980
-    },
-    "data": {
-      "label": "Data Visualization",
-      "color": "green"
-    }
-  },
-  {
-    "id": "matplotlib_seaborn",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1060
-    },
-    "data": {
-      "label": "Matplotlib & Seaborn",
-      "color": "green"
-    }
-  },
-  {
-    "id": "tableau_powerbi",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1060
-    },
-    "data": {
-      "label": "Tableau & PowerBI",
-      "color": "green"
-    }
-  },
-  {
-    "id": "dashboards",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1180
-    },
-    "data": {
-      "label": "Dashboards",
-      "color": "green"
-    }
-  },
-  {
-    "id": "machine_learning",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 1370
-    },
-    "data": {
-      "label": "Machine Learning",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "regression_classification",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1450
-    },
-    "data": {
-      "label": "Regression & Classification",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "clustering",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1450
-    },
-    "data": {
-      "label": "Clustering Algorithms",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "model_evaluation",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1570
-    },
-    "data": {
-      "label": "Model Evaluation",
-      "color": "orange"
-    }
-  },
-  {
-    "id": "advanced_topics",
-    "type": "section",
-    "position": {
-      "x": 400,
-      "y": 1760
-    },
-    "data": {
-      "label": "Advanced Topics",
-      "color": "red"
-    }
-  },
-  {
-    "id": "deep_learning_intro",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1840
-    },
-    "data": {
-      "label": "Intro to Deep Learning",
-      "color": "red"
-    }
-  },
-  {
-    "id": "time_series",
-    "type": "topic",
-    "position": {
-      "x": 650,
-      "y": 1840
-    },
-    "data": {
-      "label": "Time Series Analysis",
-      "color": "red"
-    }
-  },
-  {
-    "id": "nlp_basics",
-    "type": "topic",
-    "position": {
-      "x": 150,
-      "y": 1960
-    },
-    "data": {
-      "label": "NLP Basics",
-      "color": "red"
-    }
-  }
+export const graphNodes: RoadmapContentNode[] = [
+    { id: "s_ds_math", type: "section", position: { x: 0, y: 0 }, data: { title: "Math & Statistics", sectionNumber: 1, color: "blue", sectionIcon: "calculator" } },
+    { id: "n_ds_1", type: "topic", parentId: "s_ds_math", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Linear Algebra", difficulty: "Beginner", estimatedTime: "6 hrs", sectionColor: "blue", icon: "SiNumpy", row: 0, col: 0 } },
+    { id: "n_ds_2", type: "topic", parentId: "s_ds_math", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Calculus", difficulty: "Intermediate", estimatedTime: "8 hrs", sectionColor: "blue", icon: "trending-up", row: 0, col: 1 } },
+    { id: "n_ds_3", type: "topic", parentId: "s_ds_math", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Probability", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "blue", icon: "target", row: 1, col: 0 } },
+    { id: "n_ds_4", type: "topic", parentId: "s_ds_math", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Statistics", difficulty: "Intermediate", estimatedTime: "6 hrs", sectionColor: "blue", icon: "bar-chart", row: 1, col: 1 } },
+
+    { id: "s_ds_prog", type: "section", position: { x: 828, y: 0 }, data: { title: "Programming for Data", sectionNumber: 2, color: "purple", sectionIcon: "code" } },
+    { id: "n_ds_5", type: "topic", parentId: "s_ds_prog", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Python / R", difficulty: "Beginner", estimatedTime: "10 hrs", sectionColor: "purple", icon: "SiPython", row: 0, col: 0 } },
+    { id: "n_ds_6", type: "topic", parentId: "s_ds_prog", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Pandas & NumPy", difficulty: "Beginner", estimatedTime: "8 hrs", sectionColor: "purple", icon: "SiNumpy", row: 0, col: 1 } },
+    { id: "n_ds_7", type: "topic", parentId: "s_ds_prog", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Data Structures", difficulty: "Intermediate", estimatedTime: "6 hrs", sectionColor: "purple", icon: "layers", row: 1, col: 0 } },
+
+    { id: "s_ds_viz", type: "section", position: { x: 1656, y: 0 }, data: { title: "Data Visualization", sectionNumber: 3, color: "green", sectionIcon: "bar-chart" } },
+    { id: "n_ds_8", type: "topic", parentId: "s_ds_viz", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Matplotlib & Seaborn", difficulty: "Beginner", estimatedTime: "6 hrs", sectionColor: "green", icon: "SiPython", row: 0, col: 0 } },
+    { id: "n_ds_9", type: "topic", parentId: "s_ds_viz", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Tableau & PowerBI", difficulty: "Beginner", estimatedTime: "8 hrs", sectionColor: "green", icon: "SiTableau", row: 0, col: 1 } },
+    { id: "n_ds_10", type: "topic", parentId: "s_ds_viz", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Dashboards", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "green", icon: "layout", row: 1, col: 0 } },
+
+    { id: "s_ds_ml", type: "section", position: { x: 0, y: 600 }, data: { title: "Machine Learning", sectionNumber: 4, color: "orange", sectionIcon: "brain" } },
+    { id: "n_ds_11", type: "topic", parentId: "s_ds_ml", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Regression & Classification", difficulty: "Intermediate", estimatedTime: "8 hrs", sectionColor: "orange", icon: "trending-up", row: 0, col: 0 } },
+    { id: "n_ds_12", type: "topic", parentId: "s_ds_ml", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Clustering Algorithms", difficulty: "Intermediate", estimatedTime: "6 hrs", sectionColor: "orange", icon: "grid", row: 0, col: 1 } },
+    { id: "n_ds_13", type: "topic", parentId: "s_ds_ml", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Model Evaluation", difficulty: "Intermediate", estimatedTime: "5 hrs", sectionColor: "orange", icon: "check-circle", row: 1, col: 0 } },
+
+    { id: "s_ds_adv", type: "section", position: { x: 828, y: 600 }, data: { title: "Advanced Topics", sectionNumber: 5, color: "red", sectionIcon: "award" } },
+    { id: "n_ds_14", type: "topic", parentId: "s_ds_adv", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Intro to Deep Learning", difficulty: "Advanced", estimatedTime: "10 hrs", sectionColor: "red", icon: "SiPytorch", row: 0, col: 0 } },
+    { id: "n_ds_15", type: "topic", parentId: "s_ds_adv", extent: "parent", position: { x: 0, y: 0 }, data: { title: "Time Series Analysis", difficulty: "Advanced", estimatedTime: "8 hrs", sectionColor: "red", icon: "activity", row: 0, col: 1 } },
+    { id: "n_ds_16", type: "topic", parentId: "s_ds_adv", extent: "parent", position: { x: 0, y: 0 }, data: { title: "NLP Basics", difficulty: "Advanced", estimatedTime: "8 hrs", sectionColor: "red", icon: "message-square", row: 1, col: 0 } },
 ];
 
-export const edges: Edge[] = [
-  {
-    "id": "e-data-scientist-math_stats",
-    "source": "data-scientist",
-    "target": "math_stats",
-    "animated": true
-  },
-  {
-    "id": "e-math_stats-linear_algebra",
-    "source": "math_stats",
-    "target": "linear_algebra"
-  },
-  {
-    "id": "e-math_stats-calculus",
-    "source": "math_stats",
-    "target": "calculus"
-  },
-  {
-    "id": "e-math_stats-probability",
-    "source": "math_stats",
-    "target": "probability"
-  },
-  {
-    "id": "e-math_stats-statistics",
-    "source": "math_stats",
-    "target": "statistics"
-  },
-  {
-    "id": "e-math_stats-programming",
-    "source": "math_stats",
-    "target": "programming",
-    "animated": true
-  },
-  {
-    "id": "e-programming-python_r",
-    "source": "programming",
-    "target": "python_r"
-  },
-  {
-    "id": "e-programming-pandas_numpy",
-    "source": "programming",
-    "target": "pandas_numpy"
-  },
-  {
-    "id": "e-programming-data_structures",
-    "source": "programming",
-    "target": "data_structures"
-  },
-  {
-    "id": "e-programming-data_viz",
-    "source": "programming",
-    "target": "data_viz",
-    "animated": true
-  },
-  {
-    "id": "e-data_viz-matplotlib_seaborn",
-    "source": "data_viz",
-    "target": "matplotlib_seaborn"
-  },
-  {
-    "id": "e-data_viz-tableau_powerbi",
-    "source": "data_viz",
-    "target": "tableau_powerbi"
-  },
-  {
-    "id": "e-data_viz-dashboards",
-    "source": "data_viz",
-    "target": "dashboards"
-  },
-  {
-    "id": "e-data_viz-machine_learning",
-    "source": "data_viz",
-    "target": "machine_learning",
-    "animated": true
-  },
-  {
-    "id": "e-machine_learning-regression_classification",
-    "source": "machine_learning",
-    "target": "regression_classification"
-  },
-  {
-    "id": "e-machine_learning-clustering",
-    "source": "machine_learning",
-    "target": "clustering"
-  },
-  {
-    "id": "e-machine_learning-model_evaluation",
-    "source": "machine_learning",
-    "target": "model_evaluation"
-  },
-  {
-    "id": "e-machine_learning-advanced_topics",
-    "source": "machine_learning",
-    "target": "advanced_topics",
-    "animated": true
-  },
-  {
-    "id": "e-advanced_topics-deep_learning_intro",
-    "source": "advanced_topics",
-    "target": "deep_learning_intro"
-  },
-  {
-    "id": "e-advanced_topics-time_series",
-    "source": "advanced_topics",
-    "target": "time_series"
-  },
-  {
-    "id": "e-advanced_topics-nlp_basics",
-    "source": "advanced_topics",
-    "target": "nlp_basics"
-  }
+export const graphEdges: RoadmapContentEdge[] = [
+    { id: "e1", source: "n_ds_1", target: "n_ds_2", sourceHandle: "right", targetHandle: "left" },
+    { id: "e2", source: "n_ds_3", target: "n_ds_4", sourceHandle: "right", targetHandle: "left" },
+    { id: "e_sec_1", source: "n_ds_2", target: "n_ds_5", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e3", source: "n_ds_5", target: "n_ds_6", sourceHandle: "right", targetHandle: "left" },
+    { id: "e4", source: "n_ds_5", target: "n_ds_7", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_2", source: "n_ds_6", target: "n_ds_8", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e5", source: "n_ds_8", target: "n_ds_9", sourceHandle: "right", targetHandle: "left" },
+    { id: "e6", source: "n_ds_8", target: "n_ds_10", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_3", source: "n_ds_10", target: "n_ds_11", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e7", source: "n_ds_11", target: "n_ds_12", sourceHandle: "right", targetHandle: "left" },
+    { id: "e8", source: "n_ds_11", target: "n_ds_13", sourceHandle: "bottom", targetHandle: "top" },
+    { id: "e_sec_4", source: "n_ds_13", target: "n_ds_14", sourceHandle: "right", targetHandle: "left" },
+
+    { id: "e9", source: "n_ds_14", target: "n_ds_15", sourceHandle: "right", targetHandle: "left" },
+    { id: "e10", source: "n_ds_14", target: "n_ds_16", sourceHandle: "bottom", targetHandle: "top" },
 ];

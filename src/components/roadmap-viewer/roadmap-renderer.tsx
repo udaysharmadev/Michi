@@ -23,17 +23,16 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
   const [edges, setEdges, onEdgesChange] = useEdgesState<Edge>([]);
   const [isLayouted, setIsLayouted] = useState(false);
   const [sidebarOpen, setSidebarOpen] = useState(true);
-  
+
   const { getLayoutedElements } = useLayoutEngine();
   const { setCenter, getNode } = useReactFlow();
-  
+
   const [selectedNode, setSelectedNode] = useState<Node<TopicData> | null>(null);
   const topicNodesRef = useRef<Node[]>([]);
 
-  // Run layout algorithm synchronously on mount
   useEffect(() => {
     const { layoutedNodes, layoutedEdges } = getLayoutedElements(
-      initialNodes as Node[], 
+      initialNodes as Node[],
       initialEdges as Edge[],
       roadmap.slug
     );
@@ -43,7 +42,6 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
     setIsLayouted(true);
   }, [initialNodes, initialEdges, getLayoutedElements, setNodes, setEdges, roadmap.slug]);
 
-  // Escape key to close drawer
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if (e.key === 'Escape' && selectedNode) {
@@ -66,7 +64,7 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
     const targetNode = nodes.find(n => n.id === nodeId && n.type === 'topic');
     if (targetNode) {
       setSelectedNode(targetNode as Node<TopicData>);
-      
+
       const rfNode = getNode(nodeId);
       if (rfNode) {
         const parentNode = rfNode.parentId ? getNode(rfNode.parentId) : null;
@@ -95,8 +93,8 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
     return (
       <div className="flex w-full h-full items-center justify-center bg-background">
         <div className="flex flex-col items-center gap-3">
-          <div className="w-8 h-8 border-2 border-border border-t-foreground rounded-full animate-spin" />
-          <span className="text-sm font-medium text-muted-foreground">Mapping knowledge graph...</span>
+          <div className="w-6 h-6 border-2 border-border border-t-primary rounded-full animate-spin" />
+          <span className="text-xs font-medium text-muted-foreground">Mapping knowledge graph...</span>
         </div>
       </div>
     );
@@ -104,27 +102,25 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
 
   return (
     <div className="flex w-full h-screen bg-background overflow-hidden">
-      
-      {/* Sidebar — togglable on mobile */}
+      {/* Sidebar */}
       <div className={`
-        ${sidebarOpen ? 'w-[320px]' : 'w-0'} 
-        shrink-0 h-full border-r border-border shadow-[4px_0_24px_rgba(0,0,0,0.02)] z-10 bg-card
+        ${sidebarOpen ? 'w-[300px]' : 'w-0'}
+        shrink-0 h-full border-r border-border z-10 bg-card
         transition-[width] duration-300 overflow-hidden
       `}>
-        <RoadmapSidebar 
-          roadmap={roadmap} 
-          nodes={initialNodes} 
+        <RoadmapSidebar
+          roadmap={roadmap}
+          nodes={initialNodes}
           onToggleSidebar={() => setSidebarOpen(s => !s)}
         />
       </div>
 
-      {/* Main Viewport Container */}
+      {/* Main Viewport */}
       <div className="flex-1 h-full relative flex flex-col min-w-0">
-        {/* Mobile sidebar toggle button */}
         {!sidebarOpen && (
           <button
             onClick={() => setSidebarOpen(true)}
-            className="absolute top-5 left-5 z-40 p-2 bg-card border border-border rounded-xl shadow-sm text-muted-foreground hover:text-foreground transition-colors"
+            className="absolute top-4 left-4 z-40 p-1.5 bg-card border border-border rounded-lg shadow-sm text-muted-foreground hover:text-foreground transition-colors"
             aria-label="Open sidebar"
           >
             <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -133,15 +129,11 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
           </button>
         )}
 
-        {/* Floating Toolbar */}
         <RoadmapToolbar />
-        
-        {/* Command Palette */}
         <CommandPalette nodes={initialNodes} onNodeSelect={handleNodeFocus} />
-        
-        {/* The React Flow Canvas */}
+
         <div className="flex-1 w-full h-full relative">
-          <RoadmapCanvas 
+          <RoadmapCanvas
             nodes={nodes}
             edges={edges}
             onNodesChange={onNodesChange}
@@ -149,8 +141,7 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
             onNodeSelect={handleNodeSelect}
           />
 
-          {/* Slide-in Details Drawer */}
-          <NodeDetailsDrawer 
+          <NodeDetailsDrawer
             nodeData={selectedNode?.data || null}
             nodeId={selectedNode?.id || null}
             onClose={handleCloseDrawer}
@@ -159,7 +150,6 @@ function RoadmapRendererInner({ roadmap, initialNodes, initialEdges }: RoadmapRe
           />
         </div>
       </div>
-
     </div>
   );
 }

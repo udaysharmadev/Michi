@@ -140,7 +140,7 @@ export const topics: Record<string, TopicData> = {
       {
         "title": "Chaos Mesh Tutorial",
         "type": "video_en",
-        "url": "https://www.youtube.com/watch?v=THzYL5G-ZvE"
+        "url": "https://www.youtube.com/watch?v=YAH6P2kjVYU"
       }
     ]
   },

@@ -26,7 +26,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "NumPy Linear Algebra Documentation", url: "https://numpy.org/doc/stable/reference/routines.linalg.html" },
       { type: "video_en", title: "Essence of Linear Algebra (3Blue1Brown)", url: "https://www.youtube.com/watch?v=fNk_zzaMoSs" },
-      { type: "video_hi", title: "Linear Algebra in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=mTmqgR9M_vg" },
+      { type: "video_hi", title: "Linear Algebra in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=iv3cQh-fzyg" },
       { type: "article", title: "A Beginner's Guide to the Mathematics of Neural Networks", url: "https://numpy.org/doc/stable/user/quickstart.html" },
       { type: "github", title: "fastai/numerical-linear-algebra: Applied Linear Algebra course", url: "https://github.com/fastai/numerical-linear-algebra" },
       { type: "cheat_sheet", title: "Linear Algebra Cheat Sheet for Deep Learning", url: "https://ml-cheatsheet.readthedocs.io/en/latest/linear_algebra.html" },
@@ -58,7 +58,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PyTorch Autograd Documentation", url: "https://pytorch.org/docs/stable/autograd.html" },
       { type: "video_en", title: "Essence of Calculus (3Blue1Brown)", url: "https://www.youtube.com/watch?v=WUvTyaaNkzM" },
-      { type: "video_hi", title: "Calculus for ML in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=sxQaBpKfDRk" },
+      { type: "video_hi", title: "Calculus for ML in Hindi (Gate Smashers)", url: "https://www.youtube.com/watch?v=w2h2fajpbQI" },
       { type: "article", title: "Calculus for Machine Learning (Towards Data Science)", url: "https://www.khanacademy.org/math/calculus-1" },
       { type: "github", title: "karpathy/micrograd: Tiny scalar autograd engine", url: "https://github.com/karpathy/micrograd" },
       { type: "cheat_sheet", title: "ML Calculus Cheat Sheet", url: "https://ml-cheatsheet.readthedocs.io/en/latest/calculus.html" },
@@ -89,8 +89,8 @@ export const topics: Record<string, Partial<TopicData>> = {
     ],
     resources: [
       { type: "official", title: "SciPy Statistics Documentation", url: "https://docs.scipy.org/doc/scipy/reference/stats.html" },
-      { type: "video_en", title: "Statistics and Probability (StatQuest)", url: "https://www.youtube.com/watch?v=vYimHJMuTa0" },
-      { type: "video_hi", title: "Probability and Statistics Hindi (NPTEL)", url: "https://www.youtube.com/watch?v=KzfWUEJjG18" },
+      { type: "video_en", title: "Statistics and Probability (StatQuest)", url: "https://www.youtube.com/watch?v=6KBUU2Aa6lw" },
+      { type: "video_hi", title: "Probability and Statistics Hindi (NPTEL)", url: "https://www.youtube.com/watch?v=NkIo4pnEkjQ" },
       { type: "article", title: "Probability for Machine Learning (Towards Data Science)", url: "https://www.khanacademy.org/math/statistics-probability" },
       { type: "github", title: "probml/pml-book: Probabilistic Machine Learning", url: "https://github.com/probml/pml-book" },
       { type: "cheat_sheet", title: "Probability Cheat Sheet for ML", url: "https://ml-cheatsheet.readthedocs.io/en/latest/math_notation.html" },
@@ -122,7 +122,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Pandas User Guide", url: "https://pandas.pydata.org/docs/user_guide/index.html" },
       { type: "video_en", title: "Pandas Full Course (Keith Galli)", url: "https://www.youtube.com/watch?v=vmEHCJofslg" },
-      { type: "video_hi", title: "Pandas and NumPy in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=CmorAWRsCAw" },
+      { type: "video_hi", title: "Pandas and NumPy in Hindi (Hitesh Choudhary)", url: "https://www.youtube.com/watch?v=V19VGmFszIk" },
       { type: "article", title: "10 Minutes to Pandas (official)", url: "https://pandas.pydata.org/docs/user_guide/10min.html" },
       { type: "github", title: "jvns/pandas-cookbook: Recipes for using Pandas", url: "https://github.com/jvns/pandas-cookbook" },
       { type: "cheat_sheet", title: "Pandas Cheat Sheet (official PDF)", url: "https://pandas.pydata.org/Pandas_Cheat_Sheet.pdf" },
@@ -154,7 +154,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Preprocessing Documentation", url: "https://scikit-learn.org/stable/modules/preprocessing.html" },
       { type: "video_en", title: "Data Cleaning with Python (Corey Schafer)", url: "https://www.youtube.com/watch?v=xi0vhXFPegw" },
-      { type: "video_hi", title: "Data Preprocessing Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=7uwa9aPbBRU" },
+      { type: "video_hi", title: "Data Preprocessing Hindi (CodeWithHarry)", url: "https://www.youtube.com/watch?v=0x6sLvBpHn4" },
       { type: "article", title: "Towards Data Science: Data Cleaning Techniques", url: "https://towardsdatascience.com/the-ultimate-guide-to-data-cleaning-3969843991d4" },
       { type: "github", title: "ResidentMario/missingno: Missing data visualization", url: "https://github.com/ResidentMario/missingno" },
       { type: "cheat_sheet", title: "Scikit-learn Preprocessing Cheat Sheet", url: "https://scikit-learn.org/stable/modules/preprocessing.html" },
@@ -186,7 +186,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Feature Engineering Documentation", url: "https://scikit-learn.org/stable/modules/feature_extraction.html" },
       { type: "video_en", title: "Feature Engineering for ML (StatQuest)", url: "https://www.youtube.com/watch?v=Gv9_4yMHFhI" },
-      { type: "video_hi", title: "Feature Engineering Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=DKSZHN7jLmI" },
+      { type: "video_hi", title: "Feature Engineering Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=K-A2aZ5XbfI" },
       { type: "article", title: "Feature Engineering Techniques (Towards Data Science)", url: "https://towardsdatascience.com/feature-engineering-for-machine-learning-3a5e293a5114" },
       { type: "github", title: "feature-engine/feature_engine: Feature engineering library", url: "https://github.com/feature-engine/feature_engine" },
       { type: "cheat_sheet", title: "Feature Engineering Cheat Sheet", url: "https://www.kaggle.com/learn/feature-engineering" },
@@ -218,7 +218,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Linear Model Documentation", url: "https://scikit-learn.org/stable/modules/linear_model.html" },
       { type: "video_en", title: "Linear Regression (StatQuest)", url: "https://www.youtube.com/watch?v=7ArmBVF2dCs" },
-      { type: "video_hi", title: "Regression Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=3uPYrJalmEI" },
+      { type: "video_hi", title: "Regression Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=_nvQKN8L1ZE" },
       { type: "article", title: "Towards Data Science: Ridge and Lasso Regression", url: "https://towardsdatascience.com/ridge-and-lasso-regression-a-complete-guide-with-python-scikit-learn-e20e34bcbf0b" },
       { type: "github", title: "eriklindernoren/ML-From-Scratch: Linear Regression from scratch", url: "https://github.com/eriklindernoren/ML-From-Scratch" },
       { type: "cheat_sheet", title: "ML Algorithms Cheat Sheet (scikit-learn)", url: "https://scikit-learn.org/stable/tutorial/machine_learning_map/" },
@@ -250,7 +250,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Decision Trees", url: "https://scikit-learn.org/stable/modules/tree.html" },
       { type: "video_en", title: "Random Forests (StatQuest)", url: "https://www.youtube.com/watch?v=J4Wdy0Wc_xQ" },
-      { type: "video_hi", title: "Decision Trees Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=i_LwzRVP7bg" },
+      { type: "video_hi", title: "Decision Trees Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=NxEHSAfFlK8" },
       { type: "article", title: "An Introduction to Random Forests", url: "https://www.stat.berkeley.edu/~breiman/RandomForests/cc_home.htm" },
       { type: "github", title: "dmlc/xgboost: Gradient Boosted Trees", url: "https://github.com/dmlc/xgboost" },
       { type: "cheat_sheet", title: "XGBoost Parameters Cheat Sheet", url: "https://xgboost.readthedocs.io/en/stable/parameter.html" },
@@ -282,7 +282,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: SVM Documentation", url: "https://scikit-learn.org/stable/modules/svm.html" },
       { type: "video_en", title: "Support Vector Machines (StatQuest)", url: "https://www.youtube.com/watch?v=efR1C6CvhmE" },
-      { type: "video_hi", title: "SVM Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=3uPYrJalmEI" },
+      { type: "video_hi", title: "SVM Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=FB5BdZfLKBk" },
       { type: "article", title: "Understanding the Mathematics Behind SVMs", url: "https://towardsdatascience.com/understanding-support-vector-machine-part-1-lagrange-multipliers-5c24a52ffc5e" },
       { type: "github", title: "eriklindernoren/ML-From-Scratch: SVM from scratch", url: "https://github.com/eriklindernoren/ML-From-Scratch#support-vector-machine" },
       { type: "cheat_sheet", title: "SVM Parameters Reference", url: "https://scikit-learn.org/stable/modules/generated/sklearn.svm.SVC.html" },
@@ -346,7 +346,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: PCA Documentation", url: "https://scikit-learn.org/stable/modules/decomposition.html#pca" },
       { type: "video_en", title: "Principal Component Analysis (StatQuest)", url: "https://www.youtube.com/watch?v=FgakZw6K1QQ" },
-      { type: "video_hi", title: "PCA Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=r8d8s-gPNwY" },
+      { type: "video_hi", title: "PCA Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=Dv-Kk7PDEas" },
       { type: "article", title: "A Step-by-Step Explanation of PCA", url: "https://builtin.com/data-science/step-step-explanation-principal-component-analysis" },
       { type: "github", title: "lmcinnes/umap: UMAP dimension reduction", url: "https://github.com/lmcinnes/umap" },
       { type: "cheat_sheet", title: "Dimensionality Reduction Techniques Comparison", url: "https://scikit-learn.org/stable/modules/manifold.html" },
@@ -378,7 +378,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Novelty and Outlier Detection", url: "https://scikit-learn.org/stable/modules/outlier_detection.html" },
       { type: "video_en", title: "Anomaly Detection (Andrew Ng — Coursera)", url: "https://www.youtube.com/watch?v=ZjaBn93YPWo" },
-      { type: "video_hi", title: "Anomaly Detection Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=GNhgfuwEhCY" },
+      { type: "video_hi", title: "Anomaly Detection Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=z8FWHRbDYAU" },
       { type: "article", title: "Introduction to Anomaly Detection (Towards Data Science)", url: "https://scikit-learn.org/stable/modules/outlier_detection.html" },
       { type: "github", title: "yzhao062/pyod: Python Outlier Detection library", url: "https://github.com/yzhao062/pyod" },
       { type: "cheat_sheet", title: "Outlier Detection Algorithms Comparison", url: "https://scikit-learn.org/stable/auto_examples/miscellaneous/plot_anomaly_comparison.html" },
@@ -410,7 +410,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PyTorch: Neural Networks Tutorial", url: "https://pytorch.org/tutorials/beginner/blitz/neural_networks_tutorial.html" },
       { type: "video_en", title: "Neural Networks (3Blue1Brown)", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
-      { type: "video_hi", title: "Neural Networks Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=tIeHLnjs5U8" },
+      { type: "video_hi", title: "Neural Networks Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=5K0nqK2k0z0" },
       { type: "article", title: "A Visual and Interactive Guide to Neural Networks", url: "https://jalammar.github.io/visual-interactive-guide-basics-neural-networks/" },
       { type: "github", title: "karpathy/nn-zero-to-hero: Neural Networks from scratch", url: "https://github.com/karpathy/nn-zero-to-hero" },
       { type: "cheat_sheet", title: "Activation Functions Cheat Sheet", url: "https://ml-cheatsheet.readthedocs.io/en/latest/activation_functions.html" },
@@ -474,7 +474,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "PyTorch: Training a Classifier", url: "https://pytorch.org/tutorials/beginner/blitz/cifar10_tutorial.html" },
       { type: "video_en", title: "Convolutional Neural Networks (3Blue1Brown)", url: "https://www.youtube.com/watch?v=aircAruvnKk" },
-      { type: "video_hi", title: "CNN Tutorial Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=4B5FbZWZK4o" },
+      { type: "video_hi", title: "CNN Tutorial Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=zgQN3GfD1v0" },
       { type: "article", title: "CS231n: Convolutional Neural Networks", url: "https://cs231n.github.io/convolutional-networks/" },
       { type: "github", title: "pytorch/vision: PyTorch Computer Vision library", url: "https://github.com/pytorch/vision" },
       { type: "cheat_sheet", title: "CNN Architecture Comparison (parameters, accuracy)", url: "https://pytorch.org/hub/research-models/compact" },
@@ -506,7 +506,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Cross-Validation Documentation", url: "https://scikit-learn.org/stable/modules/cross_validation.html" },
       { type: "video_en", title: "Cross Validation (StatQuest)", url: "https://www.youtube.com/watch?v=fSytzGwwBVw" },
-      { type: "video_hi", title: "Cross Validation Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=LbX4X71-TFI" },
+      { type: "video_hi", title: "Cross Validation Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=UfPeVsqwVzI" },
       { type: "article", title: "Towards Data Science: K-Fold Cross Validation", url: "https://towardsdatascience.com/cross-validation-in-machine-learning-72924a69872f" },
       { type: "github", title: "scikit-learn/scikit-learn: Cross validation examples", url: "https://github.com/scikit-learn/scikit-learn/tree/main/examples" },
       { type: "cheat_sheet", title: "Cross-Validation Strategies Reference", url: "https://scikit-learn.org/stable/model_selection.html" },
@@ -538,7 +538,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Model Evaluation Metrics", url: "https://scikit-learn.org/stable/modules/model_evaluation.html" },
       { type: "video_en", title: "Precision, Recall, ROC (StatQuest)", url: "https://www.youtube.com/watch?v=4jRBRDbJemM" },
-      { type: "video_hi", title: "Classification Metrics Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=LbX4X71-TFI" },
+      { type: "video_hi", title: "Classification Metrics Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=aLaKuBnT2Qc" },
       { type: "article", title: "Towards Data Science: Classification Evaluation", url: "https://towardsdatascience.com/20-popular-machine-learning-metrics-part-1-classification-regression-evaluation-metrics-1ca3e282a2ce" },
       { type: "github", title: "eriklindernoren/ML-From-Scratch: Evaluation metrics", url: "https://github.com/eriklindernoren/ML-From-Scratch" },
       { type: "cheat_sheet", title: "Classification Metrics Cheat Sheet", url: "https://ml-cheatsheet.readthedocs.io/en/latest/loss_functions.html" },
@@ -570,7 +570,7 @@ export const topics: Record<string, Partial<TopicData>> = {
     resources: [
       { type: "official", title: "Scikit-learn: Hyperparameter Tuning", url: "https://scikit-learn.org/stable/modules/grid_search.html" },
       { type: "video_en", title: "Hyperparameter Tuning (StatQuest)", url: "https://www.youtube.com/watch?v=Aa4MACKaDC0" },
-      { type: "video_hi", title: "Hyperparameter Tuning Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=LbX4X71-TFI" },
+      { type: "video_hi", title: "Hyperparameter Tuning Hindi (Krish Naik)", url: "https://www.youtube.com/watch?v=9HINk3zTnFQ" },
       { type: "article", title: "A Conceptual Explanation of Bayesian Hyperparameter Optimization", url: "https://towardsdatascience.com/a-conceptual-explanation-of-bayesian-model-based-hyperparameter-optimization-for-machine-learning-b8172278050f" },
       { type: "github", title: "optuna/optuna: Hyperparameter Optimization Framework", url: "https://github.com/optuna/optuna" },
       { type: "cheat_sheet", title: "Optuna Quick Start", url: "https://optuna.readthedocs.io/en/stable/tutorial/10_key_features/001_first.html" },
