@@ -81,7 +81,7 @@ test('every category offered as a filter has at least one roadmap behind it', ()
 });
 
 test('a category whose every roadmap is planned is not offered as a filter', () => {
-  // `Research` is the live example: all three of its entries are unbuilt. The
+  // `Research` and `Product` are the live examples: all of their entries are unbuilt. The
   // `Category` type must keep the name — planned entries are typed with it — so the
   // exclusion has to come from the data, and this is the test that says so.
   const liveCategories = new Set(getAllRoadmaps().map((r) => r.category));
@@ -90,6 +90,7 @@ test('a category whose every roadmap is planned is not offered as a filter', () 
       .map((r) => r.category)
       .filter((category) => !liveCategories.has(category)),
   );
-  assert.deepEqual([...plannedOnly], ['Research']);
+  assert.deepEqual([...plannedOnly].sort(), ['Product', 'Research']);
   assert.equal(getCategories().includes('Research'), false);
+  assert.equal(getCategories().includes('Product'), false);
 });
